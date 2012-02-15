@@ -4,13 +4,13 @@ source 'http://rubygems.org'
 #gem 'rails'
 
 # Bundle edge Rails instead:
-gem 'rails',     :git => 'git://github.com/rails/rails.git'
+ gem 'rails' #,     :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+gem 'mysql'
 
 gem 'json'
 
-gem "railties", "~> 4.0.0"
+# gem "railties", "~> 4.0.0"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -20,7 +20,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'therubyracer'
+# gem 'therubyracer'
 
 gem 'jquery-rails'
 
@@ -38,8 +38,11 @@ gem 'capistrano'
 
 
 #gem 'spree'
-gem 'spree'
+gem 'spree' 
 #, :git => 'git://github.com/spree/spree.git'
 gem 'spree_store_credits'
 #, :git => 'git://github.com/spree/spree_store_credits.git'
+
+# gem 'therubyracer'
+# gem 'libv8', '3.3.10.4'
 
