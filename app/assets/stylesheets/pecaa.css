@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0px; padding:0px; background:url(/assets/bg.gif); font:normal 12px Arial, Helvetica, sans-serif;
+}
+
+.mainContainer {
+	margin:auto; width:100%; text-align:center;
+}
+
+.rcTable {
+	border:1px solid #9b9b9b; border-radius:5px; -moz-border-radius:5px; background-color:#ffffff; width:600px; height:300px; padding-top:45px; margin:auto; margin-top:150px; box-shadow: 2px 2px 2px 0px #999999; -mox-box-shadow: 2px 2px 2px 0px #999999;
+}
+
+.rcTable2 {
+	border:1px solid #9b9b9b; border-radius:5px; -moz-border-radius:5px; background-color:#ffffff; width:600px; height:400px; padding-top:45px; margin:auto; margin-top:150px; box-shadow: 2px 2px 2px 0px #999999; -mox-box-shadow: 2px 2px 2px 0px #999999; position:relative;
+}
+
+.logo {
+	background:url(/assets/logo.jpg) no-repeat left top; width:221px; height:39px; margin:auto;
+}
+
+.fieldsHolder {
+	margin:auto; width:400px; margin-top:50px; padding-left:100px;
+}
+
+.inp {
+	float:left; border:1px solid #9b9b9b; border-radius:5px; -moz-border-radius:5px; width:300px; height:30px; margin-bottom:10px;
+}
+
+.lblTxt {
+	float:left; font:bold 14px Arial, Helvetica, sans-serif; color:#999999; margin-bottom:5px;
+}
+
+.clear {
+	clear:both;
+}
+
+.btnLogin {
+	background:url(/assets/btn-login.png) no-repeat left top; width:175px; height:35px; color:#ffffff; font:bold 14px Arial, Helvetica, sans-serif; border:none; margin-top:30px;
+}
+
+.btnGetUsername {
+	margin-top:20px; float:left; margin-left:60px; width:174px; height:35px; background:url(/assets/btn-get-user-name.png) no-repeat left top; color:#ffffff; font:bold 14px Arial, Helvetica, sans-serif; border:none;
+}
+
+.btnForgot {
+	margin:auto; margin-top:20px; width:215px; height:34px; background:url(../images/btn-forgot.png) no-repeat left top; color:#7199ad; font:bold 12px Arial, Helvetica, sans-serif; border:none;
+}
+
+.cornerFold {
+	position:absolute; background:url(/assets/corner-fold.jpg) no-repeat left top; top:-1px; left:-1px; width:115px; height:115px;
+}
+
+.btnGoBack {
+	position:absolute; width:73px; height:73px; top:0px; left:0px;
+}
