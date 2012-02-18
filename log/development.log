@@ -2736,3 +2736,1209 @@ Served asset /bg.gif - 304 Not Modified (1ms)
 
 Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 08:32:35 +0530
 Served asset /corner-fold.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-18 09:14:14 +0530
+  Processing by UserPasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HpbSD64mRZ7tEO0VmRY+N6Vv3tvlsuXY8AwFXQW2Pmk=", "user"=>{"email"=>""}, "commit"=>"Get User Name"}
+Rendered user_passwords/new.html.erb within layouts/spree_application (2.0ms)
+Completed 200 OK in 45ms (Views: 13.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:14:16 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-18 09:14:18 +0530
+Served asset /btn-go-back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:14:19 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 09:14:21 +0530
+Served asset /corner-fold.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 09:14:23 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 09:14:25 +0530
+Served asset /btn-get-user-name.png - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-02-18 09:21:26 +0530
+  Processing by Admin::OverviewController#index as HTML
+  [1m[36mProperty Load (1.0ms)[0m  [1mSELECT `properties`.* FROM `properties` WHERE `properties`.`name` = 'brand' LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed 302 Found in 905ms
+
+
+Started GET "/login" for 127.0.0.1 at 2012-02-18 09:21:29 +0530
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/new.html.erb within layouts/spree_application (3.0ms)
+Completed 200 OK in 45ms (Views: 13.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:21:32 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:21:33 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 09:21:35 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-login.png" for 127.0.0.1 at 2012-02-18 09:21:37 +0530
+Served asset /btn-login.png - 304 Not Modified (153ms)
+
+
+Started GET "/assets/btn-forgot.png" for 127.0.0.1 at 2012-02-18 09:21:40 +0530
+Served asset /btn-forgot.png - 304 Not Modified (1ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2012-02-18 09:21:43 +0530
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HpbSD64mRZ7tEO0VmRY+N6Vv3tvlsuXY8AwFXQW2Pmk=", "user"=>{"email"=>"manikandan.nitt@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log In"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1
+  [1m[36mSQL (24.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (102.0ms)[0m  SELECT COUNT(DISTINCT `users`.`id`) FROM `users` LEFT OUTER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` LEFT OUTER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles`.`name` = 'admin'
+  [1m[36m (68.0ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2012-02-17 20:01:11', `current_sign_in_at` = '2012-02-18 03:51:46', `sign_in_count` = 13, `updated_at` = '2012-02-18 03:51:46' WHERE `users`.`id` = 1[0m
+  [1m[35m (78.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 1124ms
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-02-18 09:21:47 +0530
+  Processing by Admin::OverviewController#index as HTML
+  [1m[36mUser Load (40.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mRole Load (0.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM `orders` [0m
+[1;32mDeface:[0m 2 overrides found for 'layouts/admin'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface:[0m 'promo_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_dash-0.70.3/app/views/admin/overview/index.html.erb within layouts/admin (4.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_head.html.erb (80.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_tabs.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_alert.html.erb (0.0ms)
+Completed 200 OK in 792ms (Views: 614.0ms | ActiveRecord: 60.0ms)
+
+
+Started GET "/assets/admin/all.css" for 127.0.0.1 at 2012-02-18 09:21:49 +0530
+Served asset /admin/all.css - 304 Not Modified (385ms)
+
+
+Started GET "/assets/admin/all.js" for 127.0.0.1 at 2012-02-18 09:21:52 +0530
+Served asset /admin/all.js - 304 Not Modified (884ms)
+
+
+Started GET "/assets/admin/bg/admin_tab_back.png" for 127.0.0.1 at 2012-02-18 09:21:56 +0530
+Served asset /admin/bg/admin_tab_back.png - 200 OK (54ms)
+
+
+Started GET "/assets/admin/icons/tick.png" for 127.0.0.1 at 2012-02-18 09:21:58 +0530
+Served asset /admin/icons/tick.png - 200 OK (23ms)
+
+
+Started GET "/assets/admin/progress.gif" for 127.0.0.1 at 2012-02-18 09:22:00 +0530
+Served asset /admin/progress.gif - 200 OK (22ms)
+
+
+Started GET "/admin/configurations" for 127.0.0.1 at 2012-02-18 09:22:02 +0530
+[1;32mDeface:[0m 1 overrides found for 'admin/configurations/index'
+[1;32mDeface:[0m 'store_credits_admin_configurations_menu' matched 1 times with '[data-hook='admin_configurations_menu']'
+  Processing by Admin::ConfigurationsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+[1;32mDeface:[0m 1 overrides found for 'admin/configurations/index'
+[1;32mDeface:[0m 'store_credits_admin_configurations_menu' matched 1 times with '[data-hook='admin_configurations_menu']'
+[1;32mDeface:[0m 2 overrides found for 'layouts/admin'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface:[0m 'promo_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/configurations/index.html.erb within layouts/admin (9.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_head.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_tabs.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_alert.html.erb (0.0ms)
+Completed 200 OK in 475ms (Views: 387.0ms | ActiveRecord: 23.0ms)
+
+
+Started GET "/assets/admin/all.css" for 127.0.0.1 at 2012-02-18 09:22:05 +0530
+Served asset /admin/all.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin/all.js" for 127.0.0.1 at 2012-02-18 09:22:07 +0530
+Served asset /admin/all.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/admin/bg/grid_header_back.png" for 127.0.0.1 at 2012-02-18 09:22:09 +0530
+Served asset /admin/bg/grid_header_back.png - 200 OK (99ms)
+
+
+Started GET "/assets/admin/progress.gif" for 127.0.0.1 at 2012-02-18 09:22:11 +0530
+Served asset /admin/progress.gif - 200 OK (0ms)
+
+
+Started GET "/admin/mail_methods" for 127.0.0.1 at 2012-02-18 09:22:22 +0530
+  Processing by Admin::MailMethodsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (0.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+[1;32mDeface:[0m 2 overrides found for 'layouts/admin'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface:[0m 'promo_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_configuration_menu.html.erb (6.0ms)
+  [1m[35mMailMethod Load (0.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` 
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/mail_methods/index.html.erb within layouts/admin (297.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_head.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_tabs.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_alert.html.erb (0.0ms)
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`environment` = 'development' LIMIT 1[0m
+Completed 200 OK in 472ms (Views: 381.0ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/assets/admin/all.js" for 127.0.0.1 at 2012-02-18 09:22:25 +0530
+Served asset /admin/all.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/admin/all.css" for 127.0.0.1 at 2012-02-18 09:22:27 +0530
+Served asset /admin/all.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin/buttons/right_01.png" for 127.0.0.1 at 2012-02-18 09:22:29 +0530
+Served asset /admin/buttons/right_01.png - 200 OK (32ms)
+
+
+Started GET "/assets/admin/buttons/left_01.png" for 127.0.0.1 at 2012-02-18 09:22:31 +0530
+Served asset /admin/buttons/left_01.png - 200 OK (13ms)
+
+
+Started GET "/assets/admin/icons/add.png" for 127.0.0.1 at 2012-02-18 09:22:33 +0530
+Served asset /admin/icons/add.png - 200 OK (18ms)
+
+
+Started GET "/assets/admin/bg/content-back.png" for 127.0.0.1 at 2012-02-18 09:22:35 +0530
+Served asset /admin/bg/content-back.png - 200 OK (31ms)
+
+
+Started GET "/assets/admin/bg/menu-current.png" for 127.0.0.1 at 2012-02-18 09:22:38 +0530
+Served asset /admin/bg/menu-current.png - 200 OK (26ms)
+
+
+Started GET "/admin/mail_methods/new" for 127.0.0.1 at 2012-02-18 09:23:02 +0530
+  Processing by Admin::MailMethodsController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+[1;32mDeface:[0m 2 overrides found for 'layouts/admin'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface:[0m 'promo_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_configuration_menu.html.erb (5.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_error_messages.html.erb (1.0ms)
+  [1m[35mPreference Load (22.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` IS NULL AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'enable_mail_delivery' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` IS NULL AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mails_from' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` IS NULL AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_bcc' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` IS NULL AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'intercept_email' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` IS NULL AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_domain' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` IS NULL AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_host' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` IS NULL AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_port' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` IS NULL AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'secure_connection_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` IS NULL AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_auth_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mPreference Load (0.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` IS NULL AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'smtp_username' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/mail_methods/_form.html.erb (373.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/mail_methods/new.html.erb within layouts/admin (436.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_head.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_tabs.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_alert.html.erb (0.0ms)
+  [1m[35mMailMethod Load (2.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`environment` = 'development' LIMIT 1
+Completed 200 OK in 613ms (Views: 269.0ms | ActiveRecord: 276.0ms)
+
+
+Started GET "/assets/admin/all.css" for 127.0.0.1 at 2012-02-18 09:23:05 +0530
+Served asset /admin/all.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin/all.js" for 127.0.0.1 at 2012-02-18 09:23:07 +0530
+Served asset /admin/all.js - 304 Not Modified (9ms)
+
+
+Started POST "/admin/mail_methods" for 127.0.0.1 at 2012-02-18 09:25:03 +0530
+  Processing by Admin::MailMethodsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HpbSD64mRZ7tEO0VmRY+N6Vv3tvlsuXY8AwFXQW2Pmk=", "mail_method"=>{"environment"=>"development", "preferred_enable_mail_delivery"=>"0", "preferred_mails_from"=>"no-reply@example.com", "preferred_mail_bcc"=>"spree@example.com", "preferred_intercept_email"=>"", "preferred_mail_domain"=>"localhost", "preferred_mail_host"=>"smtp.gmail.com", "preferred_mail_port"=>"587", "preferred_secure_connection_type"=>"None", "preferred_mail_auth_type"=>"none", "preferred_smtp_username"=>"pecaa.spree", "preferred_smtp_password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mRole Load (0.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (113.0ms)[0m  INSERT INTO `mail_methods` (`active`, `created_at`, `environment`, `updated_at`) VALUES (?, ?, ?, ?)  [["active", true], ["created_at", Sat, 18 Feb 2012 03:55:05 UTC +00:00], ["environment", "development"], ["updated_at", Sat, 18 Feb 2012 03:55:05 UTC +00:00]]
+  [1m[36mPreference Load (7.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'enable_mail_delivery' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mSQL (92.0ms)[0m  INSERT INTO `preferences` (`created_at`, `group_id`, `group_type`, `name`, `owner_id`, `owner_type`, `updated_at`, `value`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["group_id", nil], ["group_type", nil], ["name", "enable_mail_delivery"], ["owner_id", 1], ["owner_type", "MailMethod"], ["updated_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["value", "0"]]
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mails_from' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `preferences` (`created_at`, `group_id`, `group_type`, `name`, `owner_id`, `owner_type`, `updated_at`, `value`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["group_id", nil], ["group_type", nil], ["name", "mails_from"], ["owner_id", 1], ["owner_type", "MailMethod"], ["updated_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["value", "no-reply@example.com"]]
+  [1m[35mMailMethod Load (0.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_bcc' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `preferences` (`created_at`, `group_id`, `group_type`, `name`, `owner_id`, `owner_type`, `updated_at`, `value`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["group_id", nil], ["group_type", nil], ["name", "mail_bcc"], ["owner_id", 1], ["owner_type", "MailMethod"], ["updated_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["value", "spree@example.com"]]
+  [1m[36mMailMethod Load (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'intercept_email' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mSQL (16.0ms)[0m  [1mINSERT INTO `preferences` (`created_at`, `group_id`, `group_type`, `name`, `owner_id`, `owner_type`, `updated_at`, `value`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["group_id", nil], ["group_type", nil], ["name", "intercept_email"], ["owner_id", 1], ["owner_type", "MailMethod"], ["updated_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["value", ""]]
+  [1m[35mMailMethod Load (1.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_domain' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `preferences` (`created_at`, `group_id`, `group_type`, `name`, `owner_id`, `owner_type`, `updated_at`, `value`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["group_id", nil], ["group_type", nil], ["name", "mail_domain"], ["owner_id", 1], ["owner_type", "MailMethod"], ["updated_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["value", "localhost"]]
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_host' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `preferences` (`created_at`, `group_id`, `group_type`, `name`, `owner_id`, `owner_type`, `updated_at`, `value`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["group_id", nil], ["group_type", nil], ["name", "mail_host"], ["owner_id", 1], ["owner_type", "MailMethod"], ["updated_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["value", "smtp.gmail.com"]]
+  [1m[35mMailMethod Load (1.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1
+  [1m[36mPreference Load (0.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_port' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO `preferences` (`created_at`, `group_id`, `group_type`, `name`, `owner_id`, `owner_type`, `updated_at`, `value`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["group_id", nil], ["group_type", nil], ["name", "mail_port"], ["owner_id", 1], ["owner_type", "MailMethod"], ["updated_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["value", "587"]]
+  [1m[36mMailMethod Load (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'secure_connection_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `preferences` (`created_at`, `group_id`, `group_type`, `name`, `owner_id`, `owner_type`, `updated_at`, `value`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["group_id", nil], ["group_type", nil], ["name", "secure_connection_type"], ["owner_id", 1], ["owner_type", "MailMethod"], ["updated_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["value", "None"]]
+  [1m[35mMailMethod Load (1.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1
+  [1m[36mPreference Load (0.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_auth_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `preferences` (`created_at`, `group_id`, `group_type`, `name`, `owner_id`, `owner_type`, `updated_at`, `value`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["group_id", nil], ["group_type", nil], ["name", "mail_auth_type"], ["owner_id", 1], ["owner_type", "MailMethod"], ["updated_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["value", "none"]]
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (0.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'smtp_username' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `preferences` (`created_at`, `group_id`, `group_type`, `name`, `owner_id`, `owner_type`, `updated_at`, `value`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["group_id", nil], ["group_type", nil], ["name", "smtp_username"], ["owner_id", 1], ["owner_type", "MailMethod"], ["updated_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["value", "pecaa.spree"]]
+  [1m[35mMailMethod Load (0.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1
+  [1m[36mPreference Load (78.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'smtp_password' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `preferences` (`created_at`, `group_id`, `group_type`, `name`, `owner_id`, `owner_type`, `updated_at`, `value`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["group_id", nil], ["group_type", nil], ["name", "smtp_password"], ["owner_id", 1], ["owner_type", "MailMethod"], ["updated_at", Sat, 18 Feb 2012 03:55:06 UTC +00:00], ["value", "pecaa123"]]
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35m (25.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin/mail_methods
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`environment` = 'development' LIMIT 1[0m
+  [1m[35mPreference Load (2.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'enable_mail_delivery' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+Completed 302 Found in 1367ms
+
+
+Started GET "/admin/mail_methods" for 127.0.0.1 at 2012-02-18 09:25:07 +0530
+  Processing by Admin::MailMethodsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+[1;32mDeface:[0m 2 overrides found for 'layouts/admin'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface:[0m 'promo_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_configuration_menu.html.erb (91.0ms)
+  [1m[35mMailMethod Load (1.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` 
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/mail_methods/index.html.erb within layouts/admin (118.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_head.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_tabs.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_alert.html.erb (0.0ms)
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`environment` = 'development' LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'enable_mail_delivery' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 347ms (Views: 196.0ms | ActiveRecord: 32.0ms)
+
+
+Started GET "/assets/admin/all.css" for 127.0.0.1 at 2012-02-18 09:25:09 +0530
+Served asset /admin/all.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/admin/all.js" for 127.0.0.1 at 2012-02-18 09:25:11 +0530
+Served asset /admin/all.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/admin/icons/delete.png" for 127.0.0.1 at 2012-02-18 09:25:13 +0530
+Served asset /admin/icons/delete.png - 200 OK (34ms)
+
+
+Started GET "/assets/admin/icons/edit.png" for 127.0.0.1 at 2012-02-18 09:25:15 +0530
+Served asset /admin/icons/edit.png - 200 OK (16ms)
+
+
+Started GET "/assets/admin/icons/send-email.png" for 127.0.0.1 at 2012-02-18 09:25:17 +0530
+Served asset /admin/icons/send-email.png - 200 OK (37ms)
+
+
+Started GET "/user/logout" for 127.0.0.1 at 2012-02-18 09:25:25 +0530
+  Processing by UserSessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-18 09:25:28 +0530
+  Processing by HomeController#index as HTML
+  [1m[35mProperty Load (0.0ms)[0m  SELECT `properties`.* FROM `properties` WHERE `properties`.`name` = 'brand' LIMIT 1
+  [1m[36mTaxonomy Load (7.0ms)[0m  [1mSELECT `taxonomies`.* FROM `taxonomies` INNER JOIN `taxons` ON `taxons`.`taxonomy_id` = `taxonomies`.`id` AND `taxons`.`parent_id` IS NULL[0m
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_taxonomies.html.erb (238.0ms)
+  [1m[35m (57.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-18 03:55:30') LIMIT 10 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-18 03:55:30') LIMIT 10 OFFSET 0) subquery_for_count [0m
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-18 03:55:30')
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_products.html.erb (104.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/home/index.html.erb within layouts/spree_application (362.0ms)
+Completed 200 OK in 772ms (Views: 578.0ms | ActiveRecord: 155.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:25:31 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:25:33 +0530
+Served asset /bg.gif - 304 Not Modified (181ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-02-18 09:25:40 +0530
+  Processing by Admin::OverviewController#index as HTML
+  [1m[36mProperty Load (1.0ms)[0m  [1mSELECT `properties`.* FROM `properties` WHERE `properties`.`name` = 'brand' LIMIT 1[0m
+Redirected to http://localhost:3000/login
+Completed 302 Found in 211ms
+
+
+Started GET "/login" for 127.0.0.1 at 2012-02-18 09:25:42 +0530
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/new.html.erb within layouts/spree_application (3.0ms)
+Completed 200 OK in 44ms (Views: 13.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:25:45 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:25:48 +0530
+Served asset /bg.gif - 304 Not Modified (87ms)
+
+
+Started GET "/assets/btn-forgot.png" for 127.0.0.1 at 2012-02-18 09:25:50 +0530
+Served asset /btn-forgot.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-login.png" for 127.0.0.1 at 2012-02-18 09:25:52 +0530
+Served asset /btn-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 09:25:55 +0530
+Served asset /logo.jpg - 304 Not Modified (87ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-18 09:25:59 +0530
+  Processing by UserPasswordsController#new as HTML
+Rendered user_passwords/new.html.erb within layouts/spree_application (117.0ms)
+Completed 200 OK in 446ms (Views: 438.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:26:02 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-18 09:26:04 +0530
+Served asset /btn-go-back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 09:26:06 +0530
+Served asset /corner-fold.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 09:26:08 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:26:10 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 09:26:13 +0530
+Served asset /btn-get-user-name.png - 304 Not Modified (0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-18 09:26:52 +0530
+  Processing by UserPasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9UGZ8BjFaMO2NPxxAKPb3/Au8wVn4VWy6y5amrJ3an4=", "user"=>{"email"=>""}, "commit"=>"Get User Name"}
+Rendered user_passwords/new.html.erb within layouts/spree_application (2.0ms)
+Completed 200 OK in 44ms (Views: 12.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:26:54 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-18 09:26:56 +0530
+Served asset /btn-go-back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:26:57 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 09:27:00 +0530
+Served asset /corner-fold.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 09:27:02 +0530
+Served asset /logo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 09:27:04 +0530
+Served asset /btn-get-user-name.png - 304 Not Modified (0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-18 09:28:23 +0530
+  Processing by UserPasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9UGZ8BjFaMO2NPxxAKPb3/Au8wVn4VWy6y5amrJ3an4=", "user"=>{"email"=>""}, "commit"=>"Get User Name"}
+Rendered user_passwords/new.html.erb within layouts/spree_application (2.0ms)
+Completed 200 OK in 45ms (Views: 13.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:28:25 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-18 09:28:27 +0530
+Served asset /btn-go-back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:28:29 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 09:28:31 +0530
+Served asset /corner-fold.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 09:28:33 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 09:28:36 +0530
+Served asset /btn-get-user-name.png - 304 Not Modified (0ms)
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`environment` = 'development' LIMIT 1[0m
+  [1m[35mPreference Load (28.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'enable_mail_delivery' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-18 09:31:11 +0530
+  Processing by UserPasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9UGZ8BjFaMO2NPxxAKPb3/Au8wVn4VWy6y5amrJ3an4=", "user"=>{"email"=>""}, "commit"=>"Get User Name"}
+  [1m[35mAppConfiguration Load (1.0ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`type` IN ('AppConfiguration') AND `configurations`.`name` = 'Default configuration' LIMIT 1
+Rendered user_passwords/new.html.erb within layouts/spree_application (74.0ms)
+Completed 200 OK in 448ms (Views: 296.0ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:31:12 +0530
+Served asset /pecaa.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-18 09:31:14 +0530
+Served asset /btn-go-back.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:31:16 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 09:31:18 +0530
+Served asset /corner-fold.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 09:31:20 +0530
+Served asset /btn-get-user-name.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 09:31:23 +0530
+Served asset /logo.jpg - 304 Not Modified (2ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-18 09:33:17 +0530
+  Processing by UserPasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9UGZ8BjFaMO2NPxxAKPb3/Au8wVn4VWy6y5amrJ3an4=", "user"=>{"email"=>""}, "commit"=>"Get User Name"}
+Rendered user_passwords/new.html.erb within layouts/spree_application (2.0ms)
+Completed 200 OK in 46ms (Views: 12.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:33:20 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-18 09:33:22 +0530
+Served asset /btn-go-back.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:33:24 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 09:33:27 +0530
+Served asset /btn-get-user-name.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 09:33:30 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 09:33:32 +0530
+Served asset /corner-fold.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-18 09:33:36 +0530
+  Processing by UserPasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9UGZ8BjFaMO2NPxxAKPb3/Au8wVn4VWy6y5amrJ3an4=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}, "commit"=>"Get User Name"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1[0m
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_auth-0.70.3/app/views/user_mailer/reset_password_instructions.text.erb (1.0ms)
+  [1m[35mMailMethod Load (1.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`environment` = 'development' LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mails_from' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mMailMethod Load (1.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'intercept_email' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_bcc' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_bcc' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1
+
+Sent mail to manikandan.nitt@gmail.com (478ms)
+Date: Sat, 18 Feb 2012 09:33:40 +0530
+From: no-reply@example.com
+To: manikandan.nitt@gmail.com
+Message-ID: <4f3f231c87b93_8dc41c5878487d4@manikandan-HP.mail>
+Subject: Spree Demo Site Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+A request to reset your password has been made. 
+If you did not make this request, simply ignore this email. 
+
+If you did make this request just click the link below:
+ 
+http://demo.spreecommerce.com/user/password/edit
+ 
+If the above URL does not work try copying and pasting it into your browser. 
+If you continue to have problem please feel free to contact us.
+
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1694ms
+
+
+Started GET "/login" for 127.0.0.1 at 2012-02-18 09:33:40 +0530
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/new.html.erb within layouts/spree_application (3.0ms)
+Completed 200 OK in 120ms (Views: 14.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:33:43 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-login.png" for 127.0.0.1 at 2012-02-18 09:33:46 +0530
+Served asset /btn-login.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-forgot.png" for 127.0.0.1 at 2012-02-18 09:33:48 +0530
+Served asset /btn-forgot.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:33:50 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 09:33:53 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2012-02-18 09:37:55 +0530
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9UGZ8BjFaMO2NPxxAKPb3/Au8wVn4VWy6y5amrJ3an4=", "user"=>{"email"=>"manikandan.nitt@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log In"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(DISTINCT `users`.`id`) FROM `users` LEFT OUTER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` LEFT OUTER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles`.`name` = 'admin'[0m
+  [1m[35m (33.0ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2012-02-18 03:51:46', `current_sign_in_at` = '2012-02-18 04:07:57', `sign_in_count` = 14, `updated_at` = '2012-02-18 04:07:57' WHERE `users`.`id` = 1
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 413ms
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-02-18 09:37:57 +0530
+  Processing by Admin::OverviewController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (0.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `orders` 
+[1;32mDeface:[0m 2 overrides found for 'layouts/admin'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface:[0m 'promo_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_dash-0.70.3/app/views/admin/overview/index.html.erb within layouts/admin (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_head.html.erb (4.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_tabs.html.erb (4.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_alert.html.erb (0.0ms)
+Completed 200 OK in 328ms (Views: 209.0ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/assets/admin/all.css" for 127.0.0.1 at 2012-02-18 09:38:00 +0530
+Served asset /admin/all.css - 304 Not Modified (67ms)
+
+
+Started GET "/assets/admin/all.js" for 127.0.0.1 at 2012-02-18 09:38:02 +0530
+Served asset /admin/all.js - 304 Not Modified (158ms)
+
+
+Started GET "/admin/configurations" for 127.0.0.1 at 2012-02-18 09:38:08 +0530
+[1;32mDeface:[0m 1 overrides found for 'admin/configurations/index'
+[1;32mDeface:[0m 'store_credits_admin_configurations_menu' matched 1 times with '[data-hook='admin_configurations_menu']'
+  Processing by Admin::ConfigurationsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mRole Load (1.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1
+[1;32mDeface:[0m 1 overrides found for 'admin/configurations/index'
+[1;32mDeface:[0m 'store_credits_admin_configurations_menu' matched 1 times with '[data-hook='admin_configurations_menu']'
+[1;32mDeface:[0m 2 overrides found for 'layouts/admin'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface:[0m 'promo_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/configurations/index.html.erb within layouts/admin (8.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_head.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_tabs.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_alert.html.erb (0.0ms)
+Completed 200 OK in 246ms (Views: 88.0ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/assets/admin/all.js" for 127.0.0.1 at 2012-02-18 09:38:11 +0530
+Served asset /admin/all.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/admin/all.css" for 127.0.0.1 at 2012-02-18 09:38:13 +0530
+Served asset /admin/all.css - 304 Not Modified (4ms)
+
+
+Started GET "/admin/mail_methods" for 127.0.0.1 at 2012-02-18 09:38:18 +0530
+  Processing by Admin::MailMethodsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mRole Load (1.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1
+[1;32mDeface:[0m 2 overrides found for 'layouts/admin'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface:[0m 'promo_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_configuration_menu.html.erb (7.0ms)
+  [1m[36mMailMethod Load (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` [0m
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/mail_methods/index.html.erb within layouts/admin (74.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_head.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_tabs.html.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_alert.html.erb (0.0ms)
+  [1m[35mMailMethod Load (1.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`environment` = 'development' LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'enable_mail_delivery' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mMailMethod Load (0.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1
+Completed 200 OK in 520ms (Views: 366.0ms | ActiveRecord: 33.0ms)
+
+
+Started GET "/assets/admin/all.js" for 127.0.0.1 at 2012-02-18 09:38:21 +0530
+Served asset /admin/all.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/admin/all.css" for 127.0.0.1 at 2012-02-18 09:38:23 +0530
+Served asset /admin/all.css - 304 Not Modified (4ms)
+
+
+Started GET "/admin/mail_methods/1/edit" for 127.0.0.1 at 2012-02-18 09:38:27 +0530
+  Processing by Admin::MailMethodsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+[1;32mDeface:[0m 2 overrides found for 'layouts/admin'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface:[0m 'promo_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_configuration_menu.html.erb (6.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_error_messages.html.erb (1.0ms)
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'enable_mail_delivery' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mMailMethod Load (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mails_from' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_bcc' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (0.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'intercept_email' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_domain' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_host' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (0.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_port' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'secure_connection_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_auth_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (0.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'smtp_username' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/mail_methods/_form.html.erb (97.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/mail_methods/edit.html.erb within layouts/admin (139.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_head.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_tabs.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_alert.html.erb (0.0ms)
+  [1m[35mMailMethod Load (0.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`environment` = 'development' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'enable_mail_delivery' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1
+Completed 200 OK in 554ms (Views: 210.0ms | ActiveRecord: 45.0ms)
+
+
+Started GET "/assets/admin/all.css" for 127.0.0.1 at 2012-02-18 09:38:30 +0530
+Served asset /admin/all.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin/all.js" for 127.0.0.1 at 2012-02-18 09:38:32 +0530
+Served asset /admin/all.js - 304 Not Modified (10ms)
+
+
+Started PUT "/admin/mail_methods/1" for 127.0.0.1 at 2012-02-18 09:39:33 +0530
+  Processing by Admin::MailMethodsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9UGZ8BjFaMO2NPxxAKPb3/Au8wVn4VWy6y5amrJ3an4=", "mail_method"=>{"environment"=>"development", "preferred_enable_mail_delivery"=>"1", "preferred_mails_from"=>"no-reply@example.com", "preferred_mail_bcc"=>"pecaa.spree@gmail.com", "preferred_intercept_email"=>"", "preferred_mail_domain"=>"Google", "preferred_mail_host"=>"smtp.gmail.com", "preferred_mail_port"=>"587", "preferred_secure_connection_type"=>"TLS", "preferred_mail_auth_type"=>"none", "preferred_smtp_username"=>"pecaa.spree", "preferred_smtp_password"=>"[FILTERED]"}, "id"=>"1"}
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'enable_mail_delivery' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  UPDATE `preferences` SET `value` = '1', `updated_at` = '2012-02-18 04:09:35' WHERE `preferences`.`id` = 1
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mails_from' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_bcc' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  UPDATE `preferences` SET `value` = 'pecaa.spree@gmail.com', `updated_at` = '2012-02-18 04:09:35' WHERE `preferences`.`id` = 3
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'intercept_email' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_domain' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  UPDATE `preferences` SET `value` = 'Google', `updated_at` = '2012-02-18 04:09:35' WHERE `preferences`.`id` = 5
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_host' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_port' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'secure_connection_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mUPDATE `preferences` SET `value` = 'TLS', `updated_at` = '2012-02-18 04:09:35' WHERE `preferences`.`id` = 8[0m
+  [1m[35mMailMethod Load (0.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_auth_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'smtp_username' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'smtp_password' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35m (3.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin/mail_methods
+  [1m[36mMailMethod Load (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`environment` = 'development' LIMIT 1[0m
+  [1m[35mPreference Load (78.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'enable_mail_delivery' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_host' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (0.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_domain' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_port' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_auth_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_auth_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'secure_connection_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+Completed 302 Found in 286ms
+
+
+Started GET "/admin/mail_methods" for 127.0.0.1 at 2012-02-18 09:39:35 +0530
+  Processing by Admin::MailMethodsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+[1;32mDeface:[0m 2 overrides found for 'layouts/admin'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface:[0m 'promo_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_configuration_menu.html.erb (5.0ms)
+  [1m[35mMailMethod Load (1.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` 
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/mail_methods/index.html.erb within layouts/admin (32.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_head.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_tabs.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_alert.html.erb (0.0ms)
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`environment` = 'development' LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'enable_mail_delivery' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_host' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_domain' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_port' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_auth_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_auth_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'secure_connection_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 415ms (Views: 255.0ms | ActiveRecord: 29.0ms)
+
+
+Started GET "/assets/admin/all.css" for 127.0.0.1 at 2012-02-18 09:39:38 +0530
+Served asset /admin/all.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/admin/all.js" for 127.0.0.1 at 2012-02-18 09:39:40 +0530
+Served asset /admin/all.js - 304 Not Modified (10ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-18 09:50:09 +0530
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProperty Load (0.0ms)[0m  [1mSELECT `properties`.* FROM `properties` WHERE `properties`.`name` = 'brand' LIMIT 1[0m
+  [1m[35mTaxonomy Load (0.0ms)[0m  SELECT `taxonomies`.* FROM `taxonomies` INNER JOIN `taxons` ON `taxons`.`taxonomy_id` = `taxonomies`.`id` AND `taxons`.`parent_id` IS NULL
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_taxonomies.html.erb (266.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-18 04:20:11') LIMIT 10 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-18 04:20:11') LIMIT 10 OFFSET 0) subquery_for_count 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-18 04:20:11')[0m
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_products.html.erb (20.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/home/index.html.erb within layouts/spree_application (304.0ms)
+Completed 200 OK in 466ms (Views: 294.0ms | ActiveRecord: 49.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:50:11 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:50:15 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-02-18 09:50:22 +0530
+  Processing by Admin::OverviewController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `orders` 
+[1;32mDeface:[0m 2 overrides found for 'layouts/admin'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface:[0m 'promo_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_dash-0.70.3/app/views/admin/overview/index.html.erb within layouts/admin (0.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_head.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_tabs.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_alert.html.erb (0.0ms)
+Completed 200 OK in 314ms (Views: 73.0ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/assets/admin/all.css" for 127.0.0.1 at 2012-02-18 09:50:24 +0530
+Served asset /admin/all.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/admin/all.js" for 127.0.0.1 at 2012-02-18 09:50:26 +0530
+Served asset /admin/all.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/admin/progress.gif" for 127.0.0.1 at 2012-02-18 09:50:29 +0530
+Served asset /admin/progress.gif - 304 Not Modified (6ms)
+
+
+Started GET "/assets/admin/bg/admin_tab_back.png" for 127.0.0.1 at 2012-02-18 09:50:31 +0530
+Served asset /admin/bg/admin_tab_back.png - 304 Not Modified (8ms)
+
+
+Started GET "/assets/admin/bg/admin_tab_selected_back.png" for 127.0.0.1 at 2012-02-18 09:50:33 +0530
+Served asset /admin/bg/admin_tab_selected_back.png - 304 Not Modified (31ms)
+
+
+Started GET "/user/logout" for 127.0.0.1 at 2012-02-18 09:50:35 +0530
+  Processing by UserSessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-18 09:50:38 +0530
+  Processing by HomeController#index as HTML
+  [1m[36mProperty Load (1.0ms)[0m  [1mSELECT `properties`.* FROM `properties` WHERE `properties`.`name` = 'brand' LIMIT 1[0m
+  [1m[35mTaxonomy Load (1.0ms)[0m  SELECT `taxonomies`.* FROM `taxonomies` INNER JOIN `taxons` ON `taxons`.`taxonomy_id` = `taxonomies`.`id` AND `taxons`.`parent_id` IS NULL
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_taxonomies.html.erb (142.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-18 04:20:40') LIMIT 10 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-18 04:20:40') LIMIT 10 OFFSET 0) subquery_for_count 
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-18 04:20:40')[0m
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_products.html.erb (16.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/home/index.html.erb within layouts/spree_application (176.0ms)
+Completed 200 OK in 206ms (Views: 161.0ms | ActiveRecord: 41.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:50:40 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:50:43 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-02-18 09:50:49 +0530
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/new.html.erb within layouts/spree_application (4.0ms)
+Completed 200 OK in 489ms (Views: 378.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:50:53 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-login.png" for 127.0.0.1 at 2012-02-18 09:50:56 +0530
+Served asset /btn-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-forgot.png" for 127.0.0.1 at 2012-02-18 09:50:58 +0530
+Served asset /btn-forgot.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 09:51:01 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:51:03 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2012-02-18 09:51:08 +0530
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GwpHtfC37QdXDG/kz40nb8gjfDhtGI0fkYAl8BZ4xWs=", "user"=>{"email"=>"manikandan.nitt@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log In"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(DISTINCT `users`.`id`) FROM `users` LEFT OUTER JOIN `roles_users` ON `roles_users`.`user_id` = `users`.`id` LEFT OUTER JOIN `roles` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles`.`name` = 'admin'
+  [1m[36m (1.0ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2012-02-18 04:07:57', `current_sign_in_at` = '2012-02-18 04:21:11', `sign_in_count` = 15, `updated_at` = '2012-02-18 04:21:11' WHERE `users`.`id` = 1[0m
+  [1m[35m (3.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/products
+Completed 302 Found in 78ms
+
+
+Started GET "/products" for 127.0.0.1 at 2012-02-18 09:51:11 +0530
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProperty Load (1.0ms)[0m  SELECT `properties`.* FROM `properties` WHERE `properties`.`name` = 'brand' LIMIT 1
+  [1m[36mTaxonomy Load (1.0ms)[0m  [1mSELECT `taxonomies`.* FROM `taxonomies` INNER JOIN `taxons` ON `taxons`.`taxonomy_id` = `taxonomies`.`id` AND `taxons`.`parent_id` IS NULL[0m
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_taxonomies.html.erb (220.0ms)
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-18 04:21:13') LIMIT 10 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-18 04:21:13') LIMIT 10 OFFSET 0) subquery_for_count [0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-18 04:21:13')
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_products.html.erb (18.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/products/index.html.erb within layouts/spree_application (337.0ms)
+Completed 200 OK in 419ms (Views: 354.2ms | ActiveRecord: 49.6ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:51:13 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:51:16 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-02-18 09:51:27 +0530
+  Processing by Admin::OverviewController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mRole Load (1.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM `orders` [0m
+[1;32mDeface:[0m 2 overrides found for 'layouts/admin'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface:[0m 'promo_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_dash-0.70.3/app/views/admin/overview/index.html.erb within layouts/admin (0.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_head.html.erb (4.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_tabs.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_alert.html.erb (0.0ms)
+Completed 200 OK in 744ms (Views: 76.0ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/assets/admin/all.css" for 127.0.0.1 at 2012-02-18 09:51:31 +0530
+Served asset /admin/all.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/admin/all.js" for 127.0.0.1 at 2012-02-18 09:51:33 +0530
+Served asset /admin/all.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/admin/bg/admin_tab_back.png" for 127.0.0.1 at 2012-02-18 09:51:37 +0530
+Served asset /admin/bg/admin_tab_back.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin/bg/admin_tab_selected_back.png" for 127.0.0.1 at 2012-02-18 09:51:39 +0530
+Served asset /admin/bg/admin_tab_selected_back.png - 200 OK (1ms)
+
+
+Started GET "/assets/admin/progress.gif" for 127.0.0.1 at 2012-02-18 09:51:41 +0530
+Served asset /admin/progress.gif - 304 Not Modified (0ms)
+
+
+Started GET "/user/logout" for 127.0.0.1 at 2012-02-18 09:51:44 +0530
+  Processing by UserSessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-18 09:51:46 +0530
+  Processing by HomeController#index as HTML
+  [1m[35mProperty Load (0.0ms)[0m  SELECT `properties`.* FROM `properties` WHERE `properties`.`name` = 'brand' LIMIT 1
+  [1m[36mTaxonomy Load (0.0ms)[0m  [1mSELECT `taxonomies`.* FROM `taxonomies` INNER JOIN `taxons` ON `taxons`.`taxonomy_id` = `taxonomies`.`id` AND `taxons`.`parent_id` IS NULL[0m
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_taxonomies.html.erb (235.0ms)
+  [1m[35m (2.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-18 04:21:48') LIMIT 10 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-18 04:21:48') LIMIT 10 OFFSET 0) subquery_for_count [0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-18 04:21:48')
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_products.html.erb (19.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/home/index.html.erb within layouts/spree_application (271.0ms)
+Completed 200 OK in 301ms (Views: 255.0ms | ActiveRecord: 42.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:51:49 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:51:51 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-02-18 09:51:57 +0530
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/new.html.erb within layouts/spree_application (2.0ms)
+Completed 200 OK in 45ms (Views: 13.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:52:00 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-login.png" for 127.0.0.1 at 2012-02-18 09:52:03 +0530
+Served asset /btn-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 09:52:05 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:52:08 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-forgot.png" for 127.0.0.1 at 2012-02-18 09:52:10 +0530
+Served asset /btn-forgot.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-18 09:52:13 +0530
+  Processing by UserPasswordsController#new as HTML
+Rendered user_passwords/new.html.erb within layouts/spree_application (32.0ms)
+Completed 200 OK in 45ms (Views: 35.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:52:15 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-18 09:52:17 +0530
+Served asset /btn-go-back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:52:20 +0530
+Served asset /bg.gif - 200 OK (1ms)
+
+
+Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 09:52:22 +0530
+Served asset /corner-fold.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 09:52:25 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 09:52:28 +0530
+Served asset /btn-get-user-name.png - 304 Not Modified (0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-18 09:52:33 +0530
+  Processing by UserPasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JjGNJ2hzEmZyE0ZeH00p0HlHUYdfEw+kQXJ5mXlLHrU=", "user"=>{"email"=>""}, "commit"=>"Get User Name"}
+Rendered user_passwords/new.html.erb within layouts/spree_application (2.0ms)
+Completed 200 OK in 530ms (Views: 412.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:52:37 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-18 09:52:39 +0530
+Served asset /btn-go-back.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 09:52:41 +0530
+Served asset /btn-get-user-name.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 09:52:43 +0530
+Served asset /logo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 09:52:46 +0530
+Served asset /corner-fold.jpg - 304 Not Modified (0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-18 09:53:48 +0530
+  Processing by UserPasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JjGNJ2hzEmZyE0ZeH00p0HlHUYdfEw+kQXJ5mXlLHrU=", "user"=>{"email"=>""}, "commit"=>"Get User Name"}
+Rendered user_passwords/new.html.erb within layouts/spree_application (3.0ms)
+Completed 200 OK in 45ms (Views: 13.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:53:50 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-18 09:53:53 +0530
+Served asset /btn-go-back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 09:53:56 +0530
+Served asset /corner-fold.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 09:53:58 +0530
+Served asset /btn-get-user-name.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 09:54:01 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:54:04 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-18 09:54:08 +0530
+  Processing by UserPasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JjGNJ2hzEmZyE0ZeH00p0HlHUYdfEw+kQXJ5mXlLHrU=", "user"=>{"email"=>"manikandan.nitt@gmail.com", "login"=>""}, "commit"=>"Get User Name"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1[0m
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_auth-0.70.3/app/views/user_mailer/reset_password_instructions.text.erb (0.0ms)
+  [1m[35mMailMethod Load (1.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`environment` = 'development' LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mails_from' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mMailMethod Load (1.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'intercept_email' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1
+  [1m[36mPreference Load (1.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_bcc' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_bcc' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1
+
+Sent mail to manikandan.nitt@gmail.com (4674ms)
+Date: Sat, 18 Feb 2012 09:54:12 +0530
+From: no-reply@example.com
+To: manikandan.nitt@gmail.com
+Message-ID: <4f3f27ec8b7f9_8dc3f36ec448852@manikandan-HP.mail>
+Subject: Spree Demo Site Password Reset Instructions
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+A request to reset your password has been made. 
+If you did not make this request, simply ignore this email. 
+
+If you did make this request just click the link below:
+ 
+http://demo.spreecommerce.com/user/password/edit
+ 
+If the above URL does not work try copying and pasting it into your browser. 
+If you continue to have problem please feel free to contact us.
+
+Redirected to http://localhost:3000/login
+Completed 302 Found in 5378ms
+
+
+Started GET "/login" for 127.0.0.1 at 2012-02-18 09:54:17 +0530
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/new.html.erb within layouts/spree_application (2.0ms)
+Completed 200 OK in 44ms (Views: 11.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 09:54:20 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 09:54:23 +0530
+Served asset /bg.gif - 304 Not Modified (169ms)
+
+
+Started GET "/assets/btn-login.png" for 127.0.0.1 at 2012-02-18 09:54:25 +0530
+Served asset /btn-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-forgot.png" for 127.0.0.1 at 2012-02-18 09:54:28 +0530
+Served asset /btn-forgot.png - 200 OK (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 09:54:31 +0530
+Served asset /logo.jpg - 304 Not Modified (258ms)
