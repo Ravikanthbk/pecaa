@@ -1982,3 +1982,757 @@ Started GET "/images/btn-forgot.png" for 127.0.0.1 at 2012-02-18 01:33:23 +0530
   Processing by ContentController#show as 
   Parameters: {"path"=>"images/btn-forgot"}
 Completed 406 Not Acceptable in 2ms
+
+
+Started POST "/user/password/new" for 127.0.0.1 at 2012-02-18 01:39:16 +0530
+  Processing by ContentController#show as HTML
+  Parameters: {"authenticity_token"=>"WxVXVzMMuVh/ioy11kT5Sss44BIvMbHHtTKxAwvskww=", "path"=>"user/password/new"}
+Redirected to 
+Completed 500 Internal Server Error in 169ms
+
+ArgumentError (Nil location provided. Can't build URI.):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started GET "/images/btn-forgot.png" for 127.0.0.1 at 2012-02-18 01:41:21 +0530
+  Processing by ContentController#show as 
+  Parameters: {"path"=>"images/btn-forgot"}
+Completed 406 Not Acceptable in 3ms
+
+
+Started GET "/images/btn-forgot.png" for 127.0.0.1 at 2012-02-18 01:41:30 +0530
+  Processing by ContentController#show as 
+  Parameters: {"path"=>"images/btn-forgot"}
+Completed 406 Not Acceptable in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at 2012-02-18 01:42:01 +0530
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/new.html.erb within layouts/spree_application (4.0ms)
+Completed 200 OK in 48ms (Views: 16.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 01:42:04 +0530
+Compiled pecaa.css  (0ms)  (pid 1120)
+Served asset /pecaa.css - 200 OK (90ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 01:42:06 +0530
+Served asset /bg.gif - 304 Not Modified (27ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 01:42:09 +0530
+Served asset /logo.jpg - 304 Not Modified (48ms)
+
+
+Started GET "/images/assets/btn-forgot.png" for 127.0.0.1 at 2012-02-18 01:42:12 +0530
+  Processing by ContentController#show as 
+  Parameters: {"path"=>"images/assets/btn-forgot"}
+Completed 406 Not Acceptable in 2ms
+
+
+Started GET "/assets/btn-login.png" for 127.0.0.1 at 2012-02-18 01:42:16 +0530
+Served asset /btn-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/images/assets/btn-forgot.png" for 127.0.0.1 at 2012-02-18 01:42:19 +0530
+  Processing by ContentController#show as 
+  Parameters: {"path"=>"images/assets/btn-forgot"}
+Completed 406 Not Acceptable in 2ms
+
+
+Started GET "/login" for 127.0.0.1 at 2012-02-18 01:42:40 +0530
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/new.html.erb within layouts/spree_application (2.0ms)
+Completed 200 OK in 153ms (Views: 121.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 01:42:44 +0530
+Compiled pecaa.css  (0ms)  (pid 1120)
+Served asset /pecaa.css - 200 OK (20ms)
+
+
+Started GET "/assets/btn-login.png" for 127.0.0.1 at 2012-02-18 01:42:47 +0530
+Served asset /btn-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 01:42:49 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 01:42:52 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-forgot.png" for 127.0.0.1 at 2012-02-18 01:42:54 +0530
+Served asset /btn-forgot.png - 200 OK (31ms)
+
+
+Started POST "/user/password/new" for 127.0.0.1 at 2012-02-18 01:43:04 +0530
+  Processing by ContentController#show as HTML
+  Parameters: {"authenticity_token"=>"WxVXVzMMuVh/ioy11kT5Sss44BIvMbHHtTKxAwvskww=", "path"=>"user/password/new"}
+Redirected to 
+Completed 500 Internal Server Error in 33ms
+
+ArgumentError (Nil location provided. Can't build URI.):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started POST "/user/password/new" for 127.0.0.1 at 2012-02-18 01:43:15 +0530
+  Processing by ContentController#show as HTML
+  Parameters: {"authenticity_token"=>"2dVqhTOgtlkUNqMnxww/EmZyh0mVgJ4+TTvlxYaH/9U=", "path"=>"user/password/new"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Redirected to 
+Completed 500 Internal Server Error in 69ms
+
+ArgumentError (Nil location provided. Can't build URI.):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-02-18 01:46:22 +0530
+  Processing by UserSessionsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 38ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-18 01:46:26 +0530
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mProperty Load (1.0ms)[0m  [1mSELECT `properties`.* FROM `properties` WHERE `properties`.`name` = 'brand' LIMIT 1[0m
+  [1m[35mTaxonomy Load (57.0ms)[0m  SELECT `taxonomies`.* FROM `taxonomies` INNER JOIN `taxons` ON `taxons`.`taxonomy_id` = `taxonomies`.`id` AND `taxons`.`parent_id` IS NULL
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_taxonomies.html.erb (201.0ms)
+  [1m[36m (74.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:16:31') LIMIT 10 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:16:31') LIMIT 10 OFFSET 0) subquery_for_count 
+  [1m[36m (2.0ms)[0m  [1mSELECT COUNT(*) FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:16:31')[0m
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_products.html.erb (127.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/home/index.html.erb within layouts/spree_application (353.0ms)
+Completed 200 OK in 960ms (Views: 214.0ms | ActiveRecord: 198.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 01:46:31 +0530
+Served asset /pecaa.css - 200 OK (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 01:46:34 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-02-18 01:46:59 +0530
+  Processing by UserSessionsController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 38ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-18 01:47:03 +0530
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mProperty Load (1.0ms)[0m  SELECT `properties`.* FROM `properties` WHERE `properties`.`name` = 'brand' LIMIT 1
+  [1m[36mTaxonomy Load (1.0ms)[0m  [1mSELECT `taxonomies`.* FROM `taxonomies` INNER JOIN `taxons` ON `taxons`.`taxonomy_id` = `taxonomies`.`id` AND `taxons`.`parent_id` IS NULL[0m
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_taxonomies.html.erb (164.0ms)
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:17:07') LIMIT 10 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:17:07') LIMIT 10 OFFSET 0) subquery_for_count [0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:17:07')
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_products.html.erb (19.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/home/index.html.erb within layouts/spree_application (204.0ms)
+Completed 200 OK in 813ms (Views: 624.0ms | ActiveRecord: 51.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 01:47:07 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 01:47:10 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2012-02-18 01:47:28 +0530
+  Processing by ContentController#show as HTML
+  Parameters: {"path"=>"logout"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Rendered public/404.html (1.0ms)
+Completed 404 Not Found in 100ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-18 01:47:57 +0530
+  Processing by HomeController#index as HTML
+  [1m[35mProperty Load (1.0ms)[0m  SELECT `properties`.* FROM `properties` WHERE `properties`.`name` = 'brand' LIMIT 1
+  [1m[36mTaxonomy Load (1.0ms)[0m  [1mSELECT `taxonomies`.* FROM `taxonomies` INNER JOIN `taxons` ON `taxons`.`taxonomy_id` = `taxonomies`.`id` AND `taxons`.`parent_id` IS NULL[0m
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_taxonomies.html.erb (471.0ms)
+  [1m[35m (2.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:18:00') LIMIT 10 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:18:00') LIMIT 10 OFFSET 0) subquery_for_count [0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:18:00')
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_products.html.erb (17.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/home/index.html.erb within layouts/spree_application (505.0ms)
+Completed 200 OK in 536ms (Views: 278.0ms | ActiveRecord: 255.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 01:48:00 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 01:48:03 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-18 01:48:41 +0530
+  Processing by HomeController#index as HTML
+  [1m[36mProperty Load (1.0ms)[0m  [1mSELECT `properties`.* FROM `properties` WHERE `properties`.`name` = 'brand' LIMIT 1[0m
+  [1m[35mTaxonomy Load (1.0ms)[0m  SELECT `taxonomies`.* FROM `taxonomies` INNER JOIN `taxons` ON `taxons`.`taxonomy_id` = `taxonomies`.`id` AND `taxons`.`parent_id` IS NULL
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_taxonomies.html.erb (357.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:18:43') LIMIT 10 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:18:43') LIMIT 10 OFFSET 0) subquery_for_count 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:18:43')[0m
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_products.html.erb (17.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/home/index.html.erb within layouts/spree_application (391.0ms)
+Completed 200 OK in 422ms (Views: 381.0ms | ActiveRecord: 37.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 01:48:44 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 01:48:46 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-02-18 01:49:05 +0530
+  Processing by Admin::OverviewController#index as HTML
+  [1m[35mProperty Load (0.0ms)[0m  SELECT `properties`.* FROM `properties` WHERE `properties`.`name` = 'brand' LIMIT 1
+Redirected to http://localhost:3000/login
+Completed 302 Found in 131ms
+
+
+Started GET "/login" for 127.0.0.1 at 2012-02-18 01:49:08 +0530
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/new.html.erb within layouts/spree_application (4.0ms)
+Completed 200 OK in 47ms (Views: 15.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 01:49:10 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-login.png" for 127.0.0.1 at 2012-02-18 01:49:13 +0530
+Served asset /btn-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-forgot.png" for 127.0.0.1 at 2012-02-18 01:49:15 +0530
+Served asset /btn-forgot.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 01:49:18 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 01:49:21 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started POST "/user/password/new" for 127.0.0.1 at 2012-02-18 01:49:26 +0530
+  Processing by ContentController#show as HTML
+  Parameters: {"authenticity_token"=>"2GWyOai7ewfB8bkaCp5zTRqxv0cWdIMslI+kf/WroKY=", "path"=>"user/password/new"}
+Redirected to 
+Completed 500 Internal Server Error in 32ms
+
+ArgumentError (Nil location provided. Can't build URI.):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-02-18 01:49:43 +0530
+  Processing by Admin::OverviewController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mRole Load (1.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM `orders` [0m
+[1;32mDeface:[0m 2 overrides found for 'layouts/admin'
+[1;32mDeface:[0m 'auth_admin_login_navigation_bar' matched 1 times with '[data-hook='admin_login_navigation_bar'], #admin_login_navigation_bar[data-hook]'
+[1;32mDeface:[0m 'promo_admin_tabs' matched 1 times with '[data-hook='admin_tabs'], #admin_tabs[data-hook]'
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_dash-0.70.3/app/views/admin/overview/index.html.erb within layouts/admin (0.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_head.html.erb (4.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_tabs.html.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/admin/shared/_alert.html.erb (0.0ms)
+Completed 200 OK in 1045ms (Views: 953.1ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/assets/admin/all.css" for 127.0.0.1 at 2012-02-18 01:49:49 +0530
+Served asset /admin/all.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin/all.js" for 127.0.0.1 at 2012-02-18 01:49:53 +0530
+Served asset /admin/all.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/admin/bg/admin_tab_selected_back.png" for 127.0.0.1 at 2012-02-18 01:49:57 +0530
+Served asset /admin/bg/admin_tab_selected_back.png - 200 OK (0ms)
+
+
+Started GET "/assets/admin/bg/admin_tab_back.png" for 127.0.0.1 at 2012-02-18 01:50:00 +0530
+Served asset /admin/bg/admin_tab_back.png - 200 OK (0ms)
+
+
+Started GET "/assets/admin/progress.gif" for 127.0.0.1 at 2012-02-18 01:50:04 +0530
+Served asset /admin/progress.gif - 200 OK (0ms)
+
+
+Started GET "/user/logout" for 127.0.0.1 at 2012-02-18 01:50:07 +0530
+  Processing by UserSessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-18 01:50:10 +0530
+  Processing by HomeController#index as HTML
+  [1m[35mProperty Load (0.0ms)[0m  SELECT `properties`.* FROM `properties` WHERE `properties`.`name` = 'brand' LIMIT 1
+  [1m[36mTaxonomy Load (0.0ms)[0m  [1mSELECT `taxonomies`.* FROM `taxonomies` INNER JOIN `taxons` ON `taxons`.`taxonomy_id` = `taxonomies`.`id` AND `taxons`.`parent_id` IS NULL[0m
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_taxonomies.html.erb (379.0ms)
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:20:12') LIMIT 10 OFFSET 0) subquery_for_count 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:20:12') LIMIT 10 OFFSET 0) subquery_for_count [0m
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:20:12')
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_products.html.erb (18.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/home/index.html.erb within layouts/spree_application (415.0ms)
+Completed 200 OK in 445ms (Views: 404.0ms | ActiveRecord: 39.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 01:50:13 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 01:50:15 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-18 01:51:18 +0530
+  Processing by HomeController#index as HTML
+  [1m[36mProperty Load (1.0ms)[0m  [1mSELECT `properties`.* FROM `properties` WHERE `properties`.`name` = 'brand' LIMIT 1[0m
+  [1m[35mTaxonomy Load (1.0ms)[0m  SELECT `taxonomies`.* FROM `taxonomies` INNER JOIN `taxons` ON `taxons`.`taxonomy_id` = `taxonomies`.`id` AND `taxons`.`parent_id` IS NULL
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_taxonomies.html.erb (581.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:21:20') LIMIT 10 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:21:20') LIMIT 10 OFFSET 0) subquery_for_count 
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-17 20:21:20')[0m
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_products.html.erb (17.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/home/index.html.erb within layouts/spree_application (615.0ms)
+Completed 200 OK in 647ms (Views: 602.0ms | ActiveRecord: 41.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2012-02-18 01:51:27 +0530
+  Processing by Admin::OverviewController#index as HTML
+  [1m[35mProperty Load (1.0ms)[0m  SELECT `properties`.* FROM `properties` WHERE `properties`.`name` = 'brand' LIMIT 1
+Redirected to http://localhost:3000/login
+Completed 302 Found in 239ms
+
+
+Started GET "/login" for 127.0.0.1 at 2012-02-18 01:51:30 +0530
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/new.html.erb within layouts/spree_application (3.0ms)
+Completed 200 OK in 46ms (Views: 14.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 01:51:34 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-forgot.png" for 127.0.0.1 at 2012-02-18 01:51:37 +0530
+Served asset /btn-forgot.png - 200 OK (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 01:51:39 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 01:51:42 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-login.png" for 127.0.0.1 at 2012-02-18 01:51:44 +0530
+Served asset /btn-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-02-18 01:53:32 +0530
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/new.html.erb within layouts/spree_application (3.0ms)
+Completed 200 OK in 608ms (Views: 457.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 01:53:37 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 01:53:40 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-login.png" for 127.0.0.1 at 2012-02-18 01:53:43 +0530
+Served asset /btn-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 01:53:46 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-18 01:53:49 +0530
+  Processing by UserPasswordsController#new as HTML
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_auth-0.70.3/app/views/user_passwords/new.html.erb within layouts/spree_application (31.0ms)
+Completed 200 OK in 48ms (Views: 41.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 01:53:53 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 01:53:55 +0530
+Served asset /bg.gif - 200 OK (1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-02-18 01:55:22 +0530
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/new.html.erb within layouts/spree_application (3.0ms)
+Completed 200 OK in 739ms (Views: 594.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 01:55:26 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 01:55:30 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 01:55:33 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-login.png" for 127.0.0.1 at 2012-02-18 01:55:36 +0530
+Served asset /btn-login.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-forgot.png" for 127.0.0.1 at 2012-02-18 01:55:39 +0530
+Served asset /btn-forgot.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-18 01:55:48 +0530
+  Processing by UserPasswordsController#new as HTML
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_auth-0.70.3/app/views/user_passwords/new.html.erb within layouts/spree_application (32.0ms)
+Completed 200 OK in 50ms (Views: 40.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 01:55:52 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 01:55:56 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-18 02:03:12 +0530
+  Processing by UserPasswordsController#new as HTML
+Rendered user_passwords/new.html.erb within layouts/spree_application (34.0ms)
+Completed 200 OK in 48ms (Views: 39.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 02:03:17 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 02:03:22 +0530
+Served asset /btn-get-user-name.png - 200 OK (40ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 02:03:24 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-18 02:08:04 +0530
+  Processing by UserPasswordsController#new as HTML
+Rendered user_passwords/new.html.erb within layouts/spree_application (33.0ms)
+Completed 200 OK in 47ms (Views: 39.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 02:08:09 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/images/btn-go-back.png" for 127.0.0.1 at 2012-02-18 02:08:12 +0530
+  Processing by ContentController#show as 
+  Parameters: {"path"=>"user/password/images/btn-go-back"}
+Completed 406 Not Acceptable in 2ms
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 02:08:15 +0530
+Served asset /bg.gif - 304 Not Modified (348ms)
+
+
+Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 02:08:18 +0530
+Served asset /corner-fold.jpg - 200 OK (7ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 02:08:21 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 02:08:24 +0530
+Served asset /btn-get-user-name.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-18 02:11:53 +0530
+  Processing by UserPasswordsController#new as HTML
+Rendered user_passwords/new.html.erb within layouts/spree_application (34.0ms)
+Completed 200 OK in 46ms (Views: 37.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 02:11:57 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/images/btn-go-back.png" for 127.0.0.1 at 2012-02-18 02:12:00 +0530
+  Processing by ContentController#show as 
+  Parameters: {"path"=>"user/password/images/btn-go-back"}
+Completed 406 Not Acceptable in 2ms
+
+
+Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 02:12:03 +0530
+Served asset /corner-fold.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 02:12:06 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 02:12:09 +0530
+Served asset /logo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 02:12:13 +0530
+Served asset /btn-get-user-name.png - 304 Not Modified (1ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-18 02:14:20 +0530
+  Processing by UserPasswordsController#new as HTML
+Rendered user_passwords/new.html.erb within layouts/spree_application (31.0ms)
+Completed 200 OK in 58ms (Views: 50.6ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 02:14:23 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-18 02:14:26 +0530
+Served asset /btn-go-back.png - 200 OK (137ms)
+
+
+Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 02:14:28 +0530
+Served asset /corner-fold.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 02:14:31 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 02:14:34 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 02:14:38 +0530
+Served asset /btn-get-user-name.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-18 07:59:18 +0530
+  Processing by UserPasswordsController#new as HTML
+Rendered user_passwords/new.html.erb within layouts/spree_application (160.0ms)
+Completed 200 OK in 293ms (Views: 284.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 07:59:21 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-18 07:59:24 +0530
+Served asset /btn-go-back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 07:59:26 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 07:59:29 +0530
+Served asset /corner-fold.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 07:59:32 +0530
+Served asset /logo.jpg - 304 Not Modified (492ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 07:59:35 +0530
+Served asset /btn-get-user-name.png - 304 Not Modified (0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-18 07:59:50 +0530
+  Processing by UserPasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HpbSD64mRZ7tEO0VmRY+N6Vv3tvlsuXY8AwFXQW2Pmk=", "user"=>{"email"=>""}, "commit"=>"Get User Name"}
+Rendered user_passwords/new.html.erb within layouts/spree_application (2.0ms)
+Completed 200 OK in 48ms (Views: 13.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 07:59:54 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-18 07:59:58 +0530
+Served asset /btn-go-back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 08:00:01 +0530
+Served asset /corner-fold.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 08:00:03 +0530
+Served asset /btn-get-user-name.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 08:00:07 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 08:00:10 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`environment` = 'development' LIMIT 1[0m
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-18 08:10:23 +0530
+  Processing by UserPasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HpbSD64mRZ7tEO0VmRY+N6Vv3tvlsuXY8AwFXQW2Pmk=", "user"=>{"email"=>""}, "commit"=>"Get User Name"}
+Completed 500 Internal Server Error in 1117ms
+
+NameError (undefined local variable or method `ss' for #<UserPasswordsController:0x83ae7a8>):
+  app/controllers/user_passwords_controller.rb:4:in `create'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (88.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-18 08:29:42 +0530
+  Processing by UserPasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HpbSD64mRZ7tEO0VmRY+N6Vv3tvlsuXY8AwFXQW2Pmk=", "user"=>{"email"=>""}, "commit"=>"Get User Name"}
+Rendered user_passwords/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 154ms (Views: 43.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-02-18 08:29:44 +0530
+Served asset /application.css - 404 Not Found (14ms)
+  Processing by ContentController#show as CSS
+  Parameters: {"path"=>"assets/application"}
+  [1m[35mAppConfiguration Load (90.0ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`type` IN ('AppConfiguration') AND `configurations`.`name` = 'Default configuration' LIMIT 1
+Completed 406 Not Acceptable in 212ms
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-02-18 08:29:46 +0530
+Served asset /application.js - 404 Not Found (14ms)
+  Processing by ContentController#show as JS
+  Parameters: {"path"=>"assets/application"}
+Completed 406 Not Acceptable in 2ms
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-18 08:29:48 +0530
+Served asset /btn-go-back.png - 304 Not Modified (2ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-18 08:31:03 +0530
+  Processing by UserPasswordsController#new as HTML
+Rendered user_passwords/new.html.erb within layouts/application (103.0ms)
+Completed 200 OK in 134ms (Views: 125.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2012-02-18 08:31:05 +0530
+Served asset /application.css - 404 Not Found (84ms)
+  Processing by ContentController#show as CSS
+  Parameters: {"path"=>"assets/application"}
+Completed 406 Not Acceptable in 2ms
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2012-02-18 08:31:07 +0530
+Served asset /application.js - 404 Not Found (13ms)
+  Processing by ContentController#show as JS
+  Parameters: {"path"=>"assets/application"}
+Completed 406 Not Acceptable in 2ms
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-18 08:31:09 +0530
+Served asset /btn-go-back.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-18 08:31:56 +0530
+  Processing by UserPasswordsController#new as HTML
+Rendered user_passwords/new.html.erb within layouts/spree_application (32.0ms)
+Completed 200 OK in 45ms (Views: 35.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 08:31:58 +0530
+Served asset /pecaa.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-18 08:32:00 +0530
+Served asset /btn-go-back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 08:32:02 +0530
+Served asset /bg.gif - 304 Not Modified (3ms)
+
+
+Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 08:32:04 +0530
+Served asset /corner-fold.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 08:32:06 +0530
+Served asset /logo.jpg - 304 Not Modified (3ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 08:32:08 +0530
+Served asset /btn-get-user-name.png - 304 Not Modified (269ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-18 08:32:22 +0530
+  Processing by UserPasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HpbSD64mRZ7tEO0VmRY+N6Vv3tvlsuXY8AwFXQW2Pmk=", "user"=>{"email"=>""}, "commit"=>"Get User Name"}
+Rendered user_passwords/new.html.erb within layouts/spree_application (2.0ms)
+Completed 200 OK in 382ms (Views: 275.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-18 08:32:26 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-18 08:32:27 +0530
+Served asset /btn-go-back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-get-user-name.png" for 127.0.0.1 at 2012-02-18 08:32:29 +0530
+Served asset /btn-get-user-name.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 08:32:31 +0530
+Served asset /logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-18 08:32:33 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/corner-fold.jpg" for 127.0.0.1 at 2012-02-18 08:32:35 +0530
+Served asset /corner-fold.jpg - 304 Not Modified (0ms)

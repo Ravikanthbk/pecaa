@@ -46,7 +46,7 @@ body {
 }
 
 .btnForgot {
-	margin:auto; margin-top:20px; width:215px; height:34px; background:url(../images/btn-forgot.png) no-repeat left top; color:#7199ad; font:bold 12px Arial, Helvetica, sans-serif; border:none;
+	margin:auto; margin-top:20px; width:215px; height:34px; background:url(/assets/btn-forgot.png) no-repeat left top; color:#7199ad; font:bold 12px Arial, Helvetica, sans-serif; border:none;
 }
 
 .cornerFold {
