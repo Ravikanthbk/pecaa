@@ -1,4 +1,9 @@
 Mystore3::Application.routes.draw do
+
+  get 'uploads/new'
+  get 'uploads/index'
+  get 'uploads/show'
+  resources :uploads
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
