@@ -8,6 +8,10 @@ source 'http://rubygems.org'
 
 gem 'mysql'
 
+gem "rake", "0.8.7"
+gem 'mysql'
+gem 'paperclip'
+
 gem 'json'
 
 # gem "railties", "~> 4.0.0"
