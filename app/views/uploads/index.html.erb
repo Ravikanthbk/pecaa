@@ -1,0 +1,3 @@
+<% @uploads.each do |x| %>
+  <p><%= image_tag x.upload.url(:thumb) %> <%= link_to 'Destroy', x, :confirm => 'Are you sure?', :method => :delete %></p>
+<% end %>
