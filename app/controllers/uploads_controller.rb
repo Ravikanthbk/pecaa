@@ -31,11 +31,12 @@ class UploadsController < ApplicationController
   end
 
   def destroy
+    logger.info("\n From delete of uploads controller \n")
     @upload = Upload.find(params[:id])
     @upload.destroy
 
     respond_to do |format|
-      format.html { redirect_to(customers_url) }
+      format.html { redirect_to(uploads_url) }
       format.xml  { head :ok }
     end
   end
