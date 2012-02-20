@@ -37,6 +37,7 @@ GEM
     acts_as_list (0.1.4)
     arel (2.2.1)
     bcrypt-ruby (3.0.1)
+    bcrypt-ruby (3.0.1-x86-mingw32)
     braintree (2.13.2)
       builder (>= 2.0.0)
     builder (3.0.0)
@@ -89,7 +90,8 @@ GEM
       polyamorous (~> 0.5.0)
     mime-types (1.17.2)
     multi_json (1.0.4)
-    mysql2 (0.3.11)
+    mysql (2.8.1)
+    mysql (2.8.1-x86-mingw32)
     nested_set (1.6.8)
       activerecord (>= 3.0.0)
       railties (>= 3.0.0)
@@ -101,6 +103,7 @@ GEM
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
     nokogiri (1.5.0)
+    nokogiri (1.5.0-x86-mingw32)
     orm_adapter (0.0.5)
     paperclip (2.4.1)
       activerecord (>= 2.3.0)
@@ -206,14 +209,15 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   capistrano
   coffee-rails (~> 3.1.1)
   jquery-rails
   json
-  mysql2
-  rails (= 3.1.3)
+  mysql
+  rails
   sass-rails (~> 3.1.5)
   spree
   spree_store_credits
