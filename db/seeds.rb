@@ -7,8 +7,5 @@
 #   Mayor.create(:name => 'Emanuel', :city => cities.first)
 
 
-SpreeCore::Engine.load_seed if defined?(SpreeCore)
-SpreeAuth::Engine.load_seed if defined?(SpreeAuth)
-
 role = Role.create(:name=>"admin")
-User.create(:email=>"admin-pecaa@gmail.com",:login=>"admin-pecaa@gmail.com",:password=>"pecaa123",:role=>role )
+User.create(:email=>"admin-pecaa@gmail.com",:username=>"admin-pecaa",:password=>"pecaa123",:role=>role )
