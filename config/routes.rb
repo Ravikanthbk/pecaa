@@ -1,6 +1,8 @@
 Mystore3::Application.routes.draw do
 
   
+  devise_for :users
+
   get 'uploads/new'
   get 'uploads/index'
   get 'uploads/show'

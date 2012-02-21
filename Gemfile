@@ -8,7 +8,7 @@ source 'http://rubygems.org'
 
 gem 'mysql'
 
-gem "rake", "0.8.7"
+gem "rake", "0.9.2.2"
 gem 'mysql'
 gem 'paperclip'
 
@@ -39,12 +39,12 @@ gem 'capistrano'
 
 # To use debugger
 # gem 'ruby-debug'
+gem 'devise'
+gem 'cancan'
 
-
-#gem 'spree'
-gem 'spree' 
+#gem 'spree' 
 #, :git => 'git://github.com/spree/spree.git'
-gem 'spree_store_credits'
+#gem 'spree_store_credits'
 #, :git => 'git://github.com/spree/spree_store_credits.git'
 
 # gem 'therubyracer'
