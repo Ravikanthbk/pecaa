@@ -15,7 +15,7 @@ development:
   pool: 5
   username: root
   password:
-    
+
 production:
   adapter: mysql
   encoding: utf8
