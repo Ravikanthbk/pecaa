@@ -56,3 +56,233 @@ body {
 .btnGoBack {
 	position:absolute; width:73px; height:73px; top:0px; left:0px;
 }
+
+/* user edit */
+.userEditHolder {
+	margin:auto; width:1024px;
+}
+
+.ueHeader {
+	float:left; width:1024px; height:53px; 
+}
+
+.ueHeader img, ueHeader img a {
+	float:left; border:none;
+}
+
+.ueBody {
+	margin:auto; width:968px;
+}
+
+.ueNavHolder {
+	margin:15px auto 0px auto; width:962px;
+}
+
+.ueNavMid {
+	float:left; width:944px; background:url(/assets/ue-nav-bg.png) repeat-x left top; height:47px;
+}
+
+.ueNav {
+	font:normal 18px "calibri", Arial, Helvetica, sans-serif; margin:0px 0px 0px 0px; padding:0px;
+}
+
+.ueNav li {
+	list-style-type:none; text-decoration:none; margin-right:5px;
+}
+
+.ueNav li a {
+	float:left; color:#cccccc; margin:0px 0px 0px 0px; text-decoration:none; padding:0px 0px 0px 0px; height:47px;
+}
+
+.ueNav li a span {
+	float:left; color:#cccccc; margin:0px 0px 0px 0px; text-decoration:none; padding:12px 20px 0px 20px; height:47px;
+}
+
+.ueNav li a:hover, .ueNav li.select a {
+	float:left; font:normal 18px "calibri", Arial, Helvetica, sans-serif; color:#666666; background:url(/assets/ue-nav-bg.png) no-repeat right bottom; height:47px; padding:0px 20px 0px 0px; text-decoration:none;
+}
+
+.ueNav li:hover span, .ueNav li.select span {
+	background:url(/assets/ue-nav-bg.png) no-repeat left bottom; height:35px; float:left; padding:12px 0px 0px 20px; text-decoration:none; color:#666666;
+}
+
+.ueBodyContent {
+	float:left; width:948px; background:url(/assets/user-edit-table-shade.jpg) repeat-y left top; padding:10px;
+}
+
+.btnGrey {
+	background:url(/assets/btn-grey.png) no-repeat right bottom; border:0px; padding-right:10px; height:24px; color:#ffffff;
+}
+
+.btnGreyLeft {
+	float:right; background:url(/assets/btn-grey.png) no-repeat left top; padding-left:5px; height:24px;
+}
+
+.rcBlack {
+	background-color:#0f0f0f; border-radius:5px; -moz-border-radius:5px; float:left; width:918px; margin-top:15px; padding:15px;
+}
+
+.ueNameDisplay {
+	float:left; font:normal 16px Arial, Helvetica, sans-serif; color:#ffffff;
+}
+
+.lastActivity {
+	float:right; width:180px; color:#ffffff; text-align:right;
+}
+
+.lastActivity span {
+	color:#cccccc;
+}
+
+.created {
+	float:right; width:120px; color:#ffffff; text-align:right;
+}
+
+.created span {
+	color:#cccccc;
+}
+
+.status {
+	float:right; color:#ffffff; width:100px;
+}
+
+.status span {
+	float:left; padding:1px 0px 0px 10px;
+}
+
+.status img {
+	float:left;
+}
+
+.col1 {
+	float:left; width:290px; margin-top:20px;
+}
+
+.col2 {
+	float:left; width:320px; margin:20px 0px 0px 20px;
+}
+
+.col3 {
+	float:left; width:268px; margin:20px 0px 0px 20px;
+}
+
+.col3Head {
+	color:#8d8d8d; float:left;
+}
+
+.row1 {
+	float:left; width:290px; margin-bottom:3px;
+}
+
+.inpTxt {
+	float:left; width:75px; padding:3px 5px 0px 0px; text-align:right; color:#999999;
+}
+
+.ueInp {
+	float:left; width:180px; background-color:#272727; border-radius:5px; -moz-border-radius:5px; border:none; padding:3px; color:#ffffff; height:19px;
+}
+
+.ueInpAdd {
+	float:left; width:153px; background-color:#272727; border-radius:5px; -moz-border-radius:5px; border:none; padding:3px; color:#ffffff; height:19px; padding-right:27px;
+}
+
+.ueInpRemove {
+	float:left; width:153px; background-color:#272727; border-radius:5px; -moz-border-radius:5px; border:none; padding:3px; color:#ffffff; height:19px; padding-right:27px;
+}
+
+.correctField {
+	float:left; background:url(/assets/correct-field.png) no-repeat left top; border:none; width:140px; height:25px; padding:0px 35px 0px 5px;
+}
+
+.correctFieldTxt {
+	color:#bce990;
+}
+
+.errorField {
+	float:left; background:url(/assets/error-field.png) no-repeat left top; border:none; width:140px; height:25px; padding:0px 35px 0px 5px;
+}
+
+.errorFieldTxt {
+	color:#ff0000;
+}
+
+.rcRoles {
+	float:left; width:238px; background-color:#272727; border-radius:5px; -moz-border-radius:5px; padding:15px; margin:10px 0px 30px 0px; text-align:left;
+}
+
+.roles {
+	float:left; color:#ffffff; margin-bottom:5px;
+}
+
+.roles span {
+float:left; padding:1px 0px 0px 10px;
+}
+
+.roles img {
+	float:left;
+}
+
+.rcNotes {
+	float:left; width:228px; background-color:#272727; border-radius:5px; -moz-border-radius:5px; padding:10px 30px 10px 10px; margin:10px 0px 5px 0px; text-align:left; color:#ffffff; position:relative; height:34px;
+}
+
+.seeMore {
+	float:left; color:#ffffff; width:252px; height:29px; background:url(/assets/see-more-bg.gif) no-repeat left top; margin:20px 0px 0px 8px; padding-top:11px;
+}
+
+.seeMore a {
+	color:#ffffff; text-decoration:none; font-size:11px;
+}
+
+.seeMore a:hover {
+	color:#ffffff; text-decoration:underline;
+}
+
+.btnAshGrey {
+	background:url(/assets/btn-ash-grey.png) no-repeat right bottom; border:0px; padding-right:10px; height:35px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif;
+}
+
+.btnAshGreyLeft {
+	float:right; background:url(/assets/btn-ash-grey.png) no-repeat left top; padding-left:0px; height:35px;
+}
+
+.btnGreen {
+	background:url(/assets/btn-green.png) no-repeat right bottom; border:0px; padding-right:15px; height:34px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif;
+}
+
+.btnGreenLeft {
+	float:right; background:url(/assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px;
+}
+
+.rcFooter {
+	float:left; width:968px; background:url(/assets/rc-footer.jpg) no-repeat left top; height:12px;
+}
+
+.footerLinks {
+	float:left; width:968px; text-align:right;
+}
+
+.ueNavBottom {
+	font:normal 15px "calibri", Arial, Helvetica, sans-serif; margin:0px 0px 0px 0px; padding:0px; float:right; width:500px;
+}
+
+.ueNavBottom li {
+	list-style-type:none; text-decoration:none; margin-right:0px; display:inline; float:right;
+}
+
+.ueNavBottom li a {
+	float:left; color:#6c95a9; margin:0px 10px 0px 0px; text-decoration:none; padding:0px 0px 0px 0px; height:34px; background:url(/assets/footer-nav-bg.png) no-repeat right -5px;
+}
+
+.ueNavBottom li a span {
+	float:left; color:#6c95a9; margin:0px 20px 0px 0px; text-decoration:none; padding:0px 0px 0px 20px; height:34px; background:url(/assets/footer-nav-bg.png) no-repeat left -5px;
+}
+
+.ueNavBottom li a:hover {
+	float:left; color:#6c95a9; text-decoration:none;
+}
+
+.ueNavBottom li:hover span {
+	float:left; text-decoration:underline; color:#6c95a9;
+}
+/* end of user edit */
