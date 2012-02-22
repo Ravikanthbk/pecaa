@@ -5,10 +5,6 @@ source 'http://rubygems.org'
 
 # Bundle edge Rails instead:
  gem 'rails' #,     :git => 'git://github.com/rails/rails.git'
-
-gem 'mysql'
-
-gem "rake", "0.8.7"
 gem 'mysql'
 gem 'paperclip'
 
