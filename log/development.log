@@ -3942,3 +3942,64 @@ Served asset /btn-forgot.png - 200 OK (0ms)
 
 Started GET "/assets/logo.jpg" for 127.0.0.1 at 2012-02-18 09:54:31 +0530
 Served asset /logo.jpg - 304 Not Modified (258ms)
+  [1m[36mMailMethod Load (51.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`environment` = 'development' LIMIT 1[0m
+  [1m[35mPreference Load (58.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'enable_mail_delivery' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_host' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mMailMethod Load (2.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_domain' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (1.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_port' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (2.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_auth_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (2.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'mail_auth_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+  [1m[35mPreference Load (2.0ms)[0m  SELECT `preferences`.* FROM `preferences` WHERE `preferences`.`owner_id` = 1 AND `preferences`.`owner_type` = 'MailMethod' AND `preferences`.`name` = 'secure_connection_type' AND `preferences`.`group_id` IS NULL AND `preferences`.`group_type` IS NULL LIMIT 1
+  [1m[36mMailMethod Load (1.0ms)[0m  [1mSELECT `mail_methods`.* FROM `mail_methods` WHERE `mail_methods`.`id` = 1 LIMIT 1[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-21 02:40:17 +0530
+  Processing by HomeController#index as HTML
+  [1m[35mAppConfiguration Load (2.0ms)[0m  SELECT `configurations`.* FROM `configurations` WHERE `configurations`.`type` IN ('AppConfiguration') AND `configurations`.`name` = 'Default configuration' LIMIT 1
+  [1m[36mProperty Load (2.0ms)[0m  [1mSELECT `properties`.* FROM `properties` WHERE `properties`.`name` = 'brand' LIMIT 1[0m
+  [1m[35mTaxonomy Load (1.0ms)[0m  SELECT `taxonomies`.* FROM `taxonomies` INNER JOIN `taxons` ON `taxons`.`taxonomy_id` = `taxonomies`.`id` AND `taxons`.`parent_id` IS NULL
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_taxonomies.html.erb (1088.1ms)
+  [1m[36m (32.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-20 21:10:19') LIMIT 10 OFFSET 0) subquery_for_count [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-20 21:10:19') LIMIT 10 OFFSET 0) subquery_for_count 
+  [1m[36m (6.0ms)[0m  [1mSELECT COUNT(*) FROM `products` WHERE `products`.`deleted_at` IS NULL AND (`products`.`available_on` <= '2012-02-20 21:10:19')[0m
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/shared/_products.html.erb (217.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/spree_core-0.70.3/app/views/home/index.html.erb within layouts/spree_application (1695.1ms)
+Completed 200 OK in 2713ms (Views: 2249.1ms | ActiveRecord: 293.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-21 02:40:21 +0530
+Served asset /pecaa.css - 200 OK (102ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-21 02:40:26 +0530
+Served asset /bg.gif - 200 OK (4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2012-02-21 02:40:31 +0530
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/new.html.erb within layouts/spree_application (5.0ms)
+Completed 200 OK in 358ms (Views: 184.0ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/assets/pecaa.css" for 127.0.0.1 at 2012-02-21 02:40:36 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-login.png" for 127.0.0.1 at 2012-02-21 02:40:41 +0530
+Served asset /btn-login.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/btn-forgot.png" for 127.0.0.1 at 2012-02-21 02:40:44 +0530
+
+TypeError (exception class/object expected):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.0ms)

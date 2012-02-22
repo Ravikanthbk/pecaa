@@ -11,7 +11,7 @@
 development:
   adapter: mysql
   encoding: utf8
-  database: PECAA_Spree_Store_development
+  database: PECAA_development
   pool: 5
   username: root
   password:

@@ -1,0 +1,20 @@
+        <div class="rcTable2">
+	<div class="cornerFold"></div>
+    <div class="btnGoBack"><img src="/assets/btn-go-back.png" /></div>
+    
+    	<div class="logo"></div>
+		<%= form_for User.new, :as => :user, :url => user_password_path do |f| %>
+		<div class="fieldsHolder">
+        <span class="lblTxt">forgot user name</span>
+        <%= f.email_field :email,:class=>"inp" %>
+        <div class="clear" style="height:10px;"></div>
+        <span class="lblTxt">forgot password</span>
+        <%= f.email_field :username,:class=>"inp" %>
+        <%= f.text_field :username,:class=>"inp" %>
+        <div class="clear"></div>
+        <span style="width:300px; float:left; color:#999999;">Your username will be emailed to you</span>
+        <div class="clear"></div>
+		<%=f.submit 'Get User Name',:class=>"btnGetUsername"%>
+        </div>
+	 <%end%>
+    </div>

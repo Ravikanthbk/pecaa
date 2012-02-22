@@ -6,6 +6,9 @@ source 'http://rubygems.org'
 # Bundle edge Rails instead:
  gem 'rails' #,     :git => 'git://github.com/rails/rails.git'
 gem 'mysql'
+
+gem "rake", "0.9.2.2"
+
 gem 'paperclip'
 
 gem 'json'
@@ -35,12 +38,12 @@ gem 'capistrano'
 
 # To use debugger
 # gem 'ruby-debug'
+gem 'devise'
+gem 'cancan'
 
-
-#gem 'spree'
-gem 'spree' 
+#gem 'spree' 
 #, :git => 'git://github.com/spree/spree.git'
-gem 'spree_store_credits'
+#gem 'spree_store_credits'
 #, :git => 'git://github.com/spree/spree_store_credits.git'
 
 # gem 'therubyracer'
