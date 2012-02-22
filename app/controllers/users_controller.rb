@@ -29,9 +29,10 @@ class UsersController < ApplicationController
   # GET /users/new.json                                    HTML AND AJAX
   #-------------------------------------------------------------------
   def new
+    @user_obj=User.new
     respond_to do |format|
-      format.json { render :json => @user }   
-      format.xml  { render :xml => @user }
+      format.json { render :json => @user_obj }   
+      format.xml  { render :xml => @user_obj }
       format.html
     end
   end
@@ -42,13 +43,10 @@ class UsersController < ApplicationController
   #-------------------------------------------------------------------
   def show
     respond_to do |format|
-      format.json { render :json => @user }
-      format.xml  { render :xml => @user }
+      format.json { render :json => @user_obj }
+      format.xml  { render :xml => @user_obj }
       format.html      
     end
- 
-  rescue ActiveRecord::RecordNotFound
-    respond_to_not_found(:json, :xml, :html)
   end
  
   # GET /users/1/edit                                                      
@@ -56,9 +54,10 @@ class UsersController < ApplicationController
   # GET /users/1/edit.json                                HTML AND AJAX
   #-------------------------------------------------------------------
   def edit
+    @user_obj = User.find(params[:id])
     respond_to do |format|
-      format.json { render :json => @user }   
-      format.xml  { render :xml => @user }
+      format.json { render :json => @user_obj }   
+      format.xml  { render :xml => @user_obj }
       format.html
     end
  
@@ -71,7 +70,7 @@ class UsersController < ApplicationController
   # DELETE /users/1.json                                  HTML AND AJAX
   #-------------------------------------------------------------------
   def destroy
-    @user.destroy!
+    @user_obj.destroy!
  
     respond_to do |format|
       format.json { respond_to_destroy(:ajax) }
@@ -88,11 +87,11 @@ class UsersController < ApplicationController
   # POST /users.json                                      HTML AND AJAX
   #-----------------------------------------------------------------
   def create
-    @user = User.new(params[:user])
+    @user_obj = User.new(params[:user])
  
-    if @user.save
+    if @user_obj.save
       respond_to do |format|
-        format.json { render :json => @user.to_json, :status => 200 }
+        format.json { render :json => @user_obj.to_json, :status => 200 }
         format.xml  { head :ok }
         format.html { redirect_to :action => :index }
       end
