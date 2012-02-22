@@ -1,0 +1,704 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0px; padding:0px; background:url(../images/bg.gif); font:normal 12px Arial, Helvetica, sans-serif;
+}
+
+.mainContainer {
+	margin:auto; width:100%; text-align:center;
+}
+
+.rcTable {
+	border:1px solid #9b9b9b; border-radius:5px; -moz-border-radius:5px; background-color:#ffffff; width:600px; height:300px; padding-top:45px; margin:auto; margin-top:150px; box-shadow: 2px 2px 2px 0px #999999; -mox-box-shadow: 2px 2px 2px 0px #999999;
+}
+
+.rcTable2 {
+	border:1px solid #9b9b9b; border-radius:5px; -moz-border-radius:5px; background-color:#ffffff; width:600px; height:400px; padding-top:45px; margin:auto; margin-top:150px; box-shadow: 2px 2px 2px 0px #999999; -mox-box-shadow: 2px 2px 2px 0px #999999; position:relative;
+}
+
+.logo {
+	background:url(../images/logo.jpg) no-repeat left top; width:221px; height:39px; margin:auto;
+}
+
+.fieldsHolder {
+	margin:auto; width:400px; margin-top:50px; padding-left:100px;
+}
+
+.inp {
+	float:left; border:1px solid #9b9b9b; border-radius:5px; -moz-border-radius:5px; width:300px; height:30px; margin-bottom:10px;
+}
+
+.lblTxt {
+	float:left; font:bold 14px Arial, Helvetica, sans-serif; color:#999999; margin-bottom:5px;
+}
+
+.clear {
+	clear:both;
+}
+
+.clearHeight30 {
+	clear:both; height:30px;
+}
+
+.clearHeight10 {
+	clear:both; height:10px;
+}
+
+.clearHeight10Border {
+	clear:both; height:10px; border-bottom:1px solid #666666;
+}
+
+.btnLogin {
+	background:url(../images/btn-login.png) no-repeat left top; width:175px; height:35px; color:#ffffff; font:bold 14px Arial, Helvetica, sans-serif; border:none; margin-top:30px;
+}
+
+.btnGetUsername {
+	margin-top:20px; float:left; margin-left:60px; width:174px; height:35px; background:url(../images/btn-get-user-name.png) no-repeat left top; color:#ffffff; font:bold 14px Arial, Helvetica, sans-serif; border:none;
+}
+
+.btnForgot {
+	margin:auto; margin-top:20px; width:215px; height:34px; background:url(../images/btn-forgot.png) no-repeat left top; color:#7199ad; font:bold 12px Arial, Helvetica, sans-serif; border:none;
+}
+
+.cornerFold {
+	position:absolute; background:url(../images/corner-fold.jpg) no-repeat left top; top:-1px; left:-1px; width:115px; height:115px;
+}
+
+.btnGoBack {
+	position:absolute; width:73px; height:73px; top:0px; left:0px;
+}
+
+/* user edit */
+.userEditHolder {
+	margin:auto; width:1024px;
+}
+
+.ueHeader {
+	float:left; width:1024px; height:53px; 
+}
+
+.ueHeader img, ueHeader img a {
+	float:left; border:none;
+}
+
+.ueBody {
+	margin:auto; width:968px;
+}
+
+.ueNavHolder {
+	margin:15px auto 0px auto; width:962px;
+}
+
+.ueNavMid {
+	float:left; width:944px; background:url(../images/ue-nav-bg.png) repeat-x left top; height:47px;
+}
+
+.ueNav {
+	font:normal 18px "calibri", Arial, Helvetica, sans-serif; margin:0px 0px 0px 0px; padding:0px;
+}
+
+.ueNav li {
+	list-style-type:none; text-decoration:none; margin-right:5px;
+}
+
+.ueNav li a {
+	float:left; color:#cccccc; margin:0px 0px 0px 0px; text-decoration:none; padding:0px 0px 0px 0px; height:47px;
+}
+
+.ueNav li a span {
+	float:left; color:#cccccc; margin:0px 0px 0px 0px; text-decoration:none; padding:12px 20px 0px 20px; height:47px;
+}
+
+.ueNav li a:hover, .ueNav li.select a {
+	float:left; font:normal 18px "calibri", Arial, Helvetica, sans-serif; color:#666666; background:url(../images/ue-nav-bg.png) no-repeat right bottom; height:47px; padding:0px 20px 0px 0px; text-decoration:none;
+}
+
+.ueNav li:hover span, .ueNav li.select span {
+	background:url(../images/ue-nav-bg.png) no-repeat left bottom; height:35px; float:left; padding:12px 0px 0px 20px; text-decoration:none; color:#666666;
+}
+
+.ueBodyContent {
+	float:left; width:948px; background:url(../images/user-edit-table-shade.jpg) repeat-y left top; padding:10px; color:#999999;
+}
+
+.btnGrey {
+	background:url(../images/btn-grey.png) no-repeat right bottom; border:0px; padding-right:10px; height:24px; color:#ffffff;
+}
+
+.btnGreyLeft {
+	float:right; background:url(../images/btn-grey.png) no-repeat left top; padding-left:5px; height:24px;
+}
+
+.ueBtnCreateNewUser {
+	width:115px;
+}
+
+.rcBlack {
+	background-color:#0f0f0f; border-radius:5px; -moz-border-radius:5px; float:left; width:918px; margin-top:15px; padding:15px;
+}
+
+.ueNameDisplay {
+	float:left; font:normal 16px Arial, Helvetica, sans-serif; color:#ffffff;
+}
+
+.lastActivity {
+	float:right; width:180px; color:#ffffff; text-align:right;
+}
+
+.lastActivity span {
+	color:#cccccc;
+}
+
+.created {
+	float:right; width:120px; color:#ffffff; text-align:right;
+}
+
+.created span {
+	color:#cccccc;
+}
+
+.status {
+	float:right; color:#ffffff; width:100px;
+}
+
+.status span {
+	float:left; padding:1px 0px 0px 10px;
+}
+
+.status img {
+	float:left;
+}
+
+.col1 {
+	float:left; width:290px; margin-top:20px;
+}
+
+.col2 {
+	float:left; width:320px; margin:20px 0px 0px 20px;
+}
+
+.col3 {
+	float:left; width:268px; margin:20px 0px 0px 20px;
+}
+
+.col3Head {
+	color:#8d8d8d; float:left;
+}
+
+.row1 {
+	float:left; width:290px; margin-bottom:3px;
+}
+
+.posrel {
+	position:relative;
+}
+
+.addFieldPos {
+	position:absolute; top:0px; right:23px;
+}
+
+.selectPos {
+	height:25px !important; margin:10px 0px;
+}
+
+.inpTxt {
+	float:left; width:75px; padding:3px 5px 0px 0px; text-align:right; color:#999999;
+}
+
+.ueInp {
+	float:left; width:180px; background-color:#272727; border-radius:5px; -moz-border-radius:5px; border:none; padding:3px; color:#ffffff; height:19px;
+}
+
+.ueInpAdd {
+	float:left; width:153px; background-color:#272727; border-radius:5px; -moz-border-radius:5px; border:none; padding:3px; color:#ffffff; height:19px; padding-right:27px;
+}
+
+.ueInpRemove {
+	float:left; width:153px; background-color:#272727; border-radius:5px; -moz-border-radius:5px; border:none; padding:3px; color:#ffffff; height:19px; padding-right:27px;
+}
+
+.correctField {
+	float:left; background:url(../images/correct-field.png) no-repeat left top; border:none; width:140px; height:25px; padding:0px 35px 0px 5px;
+}
+
+.correctFieldTxt {
+	color:#bce990;
+}
+
+.errorField {
+	float:left; background:url(../images/error-field.png) no-repeat left top; border:none; width:140px; height:25px; padding:0px 35px 0px 5px;
+}
+
+.errorFieldTxt {
+	color:#ff0000;
+}
+
+.rcRoles {
+	float:left; width:238px; background-color:#272727; border-radius:5px; -moz-border-radius:5px; padding:15px; margin:10px 0px 30px 0px; text-align:left;
+}
+
+.roles {
+	float:left; color:#ffffff; margin-bottom:5px;
+}
+
+.roles span {
+float:left; padding:1px 0px 0px 10px;
+}
+
+.roles img {
+	float:left;
+}
+
+.rcNotes {
+	float:left; width:228px; background-color:#272727; border-radius:5px; -moz-border-radius:5px; padding:10px 30px 10px 10px; margin:10px 0px 5px 0px; text-align:left; color:#ffffff; position:relative; height:34px;
+}
+
+.addNotesPos {
+	position:absolute; top:0; right:0;
+}
+
+.noteAuthor {
+	color:#999999; float:right; font-size:10px;
+}
+
+.ueBdrBottom {
+	background:url(../images/border-bottom.gif) repeat-x left bottom; height:10px; margin-bottom:20px;
+}
+
+.seeMore {
+	float:left; color:#ffffff; width:252px; height:29px; background:url(../images/see-more-bg.gif) no-repeat left top; margin:20px 0px 0px 8px; padding-top:11px;
+}
+
+.seeMore a {
+	color:#ffffff; text-decoration:none; font-size:11px;
+}
+
+.seeMore a:hover {
+	color:#ffffff; text-decoration:underline;
+}
+
+.btnAshGrey {
+	background:url(../images/btn-ash-grey.png) no-repeat right bottom; border:0px; padding-right:10px; height:35px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif;
+}
+
+.btnAshGreyLeft {
+	float:right; background:url(../images/btn-ash-grey.png) no-repeat left top; padding-left:0px; height:35px;
+}
+
+.ueBtnCancel {
+	width:80px; float:left;
+}
+
+.btnGreen {
+	background:url(../images/btn-green.png) no-repeat right bottom; border:0px; padding-right:15px; height:34px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif;
+}
+
+.btnGreenLeft {
+	float:right; background:url(../images/btn-green.png) no-repeat left top; padding-left:0px; height:34px;
+}
+
+.ueBtnSave {
+	width:76px; float:right;
+}
+
+.rcFooter {
+	float:left; width:968px; background:url(../images/rc-footer.jpg) no-repeat left top; height:12px;
+}
+
+.footerLinks {
+	float:left; width:968px; text-align:right;
+}
+
+.ueNavBottom {
+	font:normal 15px "calibri", Arial, Helvetica, sans-serif; margin:0px 0px 0px 0px; padding:0px; float:right; width:500px;
+}
+
+.ueNavBottom li {
+	list-style-type:none; text-decoration:none; margin-right:0px; display:inline; float:right;
+}
+
+.ueNavBottom li a {
+	float:left; color:#6c95a9; margin:0px 10px 0px 0px; text-decoration:none; padding:0px 0px 0px 0px; height:34px; background:url(../images/footer-nav-bg.png) no-repeat right -5px;
+}
+
+.ueNavBottom li a span {
+	float:left; color:#6c95a9; margin:0px 20px 0px 0px; text-decoration:none; padding:0px 0px 0px 20px; height:34px; background:url(../images/footer-nav-bg.png) no-repeat left -5px;
+}
+
+.ueNavBottom li a:hover {
+	float:left; color:#6c95a9; text-decoration:none;
+}
+
+.ueNavBottom li:hover span {
+	float:left; text-decoration:underline; color:#6c95a9;
+}
+
+.footerHomeIcon {
+	float:left; border:none; margin:3px 0px 0px 10px;
+}
+
+.fLeft {
+	float:left;
+}
+
+/* end of user edit */
+
+/* users */
+.userSearch {
+	float:left; width:225px; margin:20px 0px 0px 0px;
+}
+
+.btnBlue {
+	background:url(../images/btn-blue.png) no-repeat right bottom; border:0px; padding-right:10px; height:24px; color:#ffffff;
+}
+
+.btnBlueLeft {
+	float:right; background:url(../images/btn-blue.png) no-repeat left top; padding-left:5px; height:24px;
+}
+
+.rcPaleBlue {
+	float:left; width:215px; background-color:#f2f6f8; border-radius:5px; -moz-border-radius:5px;
+}
+
+.userSearchField {
+	position:absolute; left:0; width:180px; height:34px; border:none; background:url(../images/user-search-field-bg.png) no-repeat left top; padding:0px 40px 0px 5px; top:0px;
+}
+
+.rcBlue2 {
+	float:left; height:25px; background-color:#bbcfe2; padding:0px 0px 0px 0px; border-radius:5px; -moz-border-radius:5px; color:#ffffff; margin-bottom:5px;
+}
+
+.rcBlue2 span {
+	line-height:25px; padding:0px 10px 0px 5px; color:#666666;
+}
+
+.rcBlack2 {
+	float:left; width:auto; background-color:#666666; padding:0px 10px 0px 5px; height:25px; border-radius:5px; -moz-border-radius:5px; line-height:25px;
+}
+
+.rcBlack2 span {
+	float:left; line-height:25px; color:#ffffff;
+}
+
+.rcBlack2 img {
+	float:left; margin:5px 0px 0px 0px;
+}
+
+.searchOptions {
+	float:left; color:#999999; margin-bottom:5px;
+}
+
+.searchOptions span {
+float:left; padding:1px 0px 0px 10px;
+}
+
+.searchOptions img {
+	float:left;
+}
+
+.userGrid {
+	float:right; width:707px; margin:20px 0px 0px 0px;
+}
+
+.userGridHeader {
+	float:left; width:707px; height:37px; background:url(../images/user-grid-header-bg.png) no-repeat left top;
+}
+
+.userGridBody {
+	float:left; width:705px; border-left:1px solid #333333; border-right:1px solid #333333;
+}
+
+.userGridFooter {
+	float:right; width:707px; height:17px; background:url(../images/user-grid-footer-bg.png) no-repeat left top;
+}
+
+ul.userList {
+	margin:0px; padding:0px; width:693px;
+}
+
+ul.userList li {
+	list-style-type:none; height:25px; line-height:25px;
+}
+
+ul.userList li.light {
+	background:url(../images/grid-bg-light.gif) repeat-x left top;
+}
+
+ul.userList li.dark {
+	background:url(../images/grid-bg-dark.gif) repeat-x left top;
+}
+
+ul.userList .userName {
+	float:left; width:200px; text-align:left; padding:0px 5px; border-right:1px solid #999999;
+}
+
+ul.userList .userName p {
+	float:left; margin:0px; padding:0px; padding:0px 5px; width:150px;
+}
+
+ul.userList .userName img {
+	float:left; width:20px; height:20px; margin:2px 0px 0px 0px;
+}
+
+ul.userList .name {
+	float:left; width:130px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.userList .role {
+	float:left; width:70px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.userList .dateCrea {
+	float:left; width:70px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.userList .lastActi {
+	float:left; width:70px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.userList .edit {
+	float:left; padding:0px 5px; text-align:center; margin-top:2px; 
+}
+
+ul.userListHeads {
+	margin:0px; padding:0px;
+}
+
+ul.userListHeads li {
+	list-style-type:none; font:normal 15px Arial, Helvetica, sans-serif; color:#ffffff;
+}
+
+ul.userListHeads .userName {
+	float:left; width:200px; text-align:left; padding:0px 5px;border-right:1px solid #999999;
+}
+
+ul.userListHeads .name {
+	float:left; width:130px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.userListHeads .role {
+	float:left; width:70px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.userListHeads .dateCrea {
+	float:left; width:70px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.userListHeads .lastActi {
+	float:left; width:70px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.userListHeads .edit {
+	float:left; padding:0px 5px; text-align:center; margin-top:2px;
+}
+
+
+/* end of users */
+
+
+/* content library */
+.addButtons {
+	float:left; width:948px; text-align:right;
+}
+
+.addImage, .addImage a {
+	float:right; width:110px; height:24px; background:url(../images/btn-add-image.png) no-repeat left top; border:none; display:block; margin-left:5px;
+}
+
+.addImage a:hover {
+	background:url(../images/btn-add-image-hover.png) no-repeat left top;
+}
+
+.addVideo, .addVideo a {
+	float:right; width:110px; height:24px; background:url(../images/btn-add-video.png) no-repeat left top; border:none; display:block; margin-left:5px;
+}
+
+.addVideo a:hover {
+	background:url(../images/btn-add-video-hover.png) no-repeat left top;
+}
+
+.addText, .addText a {
+	float:right; width:110px; height:24px; background:url(../images/btn-add-text.png) no-repeat left top; border:none; display:block; margin-left:5px;
+}
+
+.addText a:hover {
+	background:url(../images/btn-add-text-hover.png) no-repeat left top;
+}
+
+.addForm, .addForm a {
+	float:right; width:110px; height:24px; background:url(../images/btn-add-form.png) no-repeat left top; border:none; display:block; margin-left:5px;
+}
+
+.addForm a:hover {
+	background:url(../images/btn-add-form-hover.png) no-repeat left top;
+}
+
+.addFile, .addFile a {
+	float:right; width:110px; height:24px; background:url(../images/btn-add-file.png) no-repeat left top; border:none; display:block; margin-left:5px;
+}
+
+.addFile a:hover {
+	background:url(../images/btn-add-file-hover.png) no-repeat left top;
+}
+
+.datePicker {
+	float:left; width:65px; height:20px; border-radius:5px 0px 0px 5px; border:1px solid #cccccc;
+}
+
+.datePickerRight {
+	float:left; width:65px; height:20px; margin-left:10px; border-radius:5px 0px 0px 5px; border:1px solid #cccccc; position:relative;
+}
+
+.calender {
+	float:left;
+}
+
+ul.ConLibra {
+	margin:0px; padding:0px; width:693px;
+}
+
+ul.ConLibra li {
+	list-style-type:none; height:25px; line-height:25px;
+}
+
+ul.ConLibra li.light {
+	background:url(../images/grid-bg-light.gif) repeat-x left top;
+}
+
+ul.ConLibra li.dark {
+	background:url(../images/grid-bg-dark.gif) repeat-x left top;
+}
+
+ul.ConLibra li.hover {
+	background-color:#6f6f6f;
+}
+
+ul.ConLibra .name {
+	float:left; width:200px; text-align:left; padding:0px 5px; border-right:1px solid #999999;
+}
+
+ul.ConLibra .name p {
+	float:left; margin:0px; padding:0px; padding:0px 5px; width:150px;
+}
+
+ul.ConLibra .name img {
+	float:left; margin:2px 0px 0px 0px;
+}
+
+ul.ConLibra .type {
+	float:left; width:60px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.ConLibra .lastUsed {
+	float:left; width:70px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.ConLibra .timesUsed {
+	float:left; width:70px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.ConLibra .dateAdded {
+	float:left; width:70px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.ConLibra .addedBy {
+	float:left; width:70px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.ConLibra .edit {
+	float:left; padding:0px 5px; text-align:center; margin-top:2px; 
+}
+
+ul.ConLibraHeads {
+	margin:0px; padding:0px;
+}
+
+ul.ConLibraHeads li {
+	list-style-type:none; font:normal 15px Arial, Helvetica, sans-serif; color:#ffffff;
+}
+
+ul.ConLibraHeads .name {
+	float:left; width:200px; text-align:left; padding:0px 5px;border-right:1px solid #999999;
+}
+
+ul.ConLibraHeads .type {
+	float:left; width:60px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.ConLibraHeads .lastUsed {
+	float:left; width:70px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.ConLibraHeads .timesUsed {
+	float:left; width:70px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.ConLibraHeads .dateAdded {
+	float:left; width:70px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.ConLibraHeads .addedBy {
+	float:left; width:70px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+}
+
+ul.ConLibraHeads .edit {
+	float:left; padding:0px 5px; text-align:center; margin-top:2px;
+}
+
+/* end of content library */
+
+
+/* add file */
+.addFileHolder {
+	margin:200px 0px 0px 0px; width:450px; border-radius:5px; -moz-border-radius:5px; box-shadow: 2px 2px 2px 0px #999999; position:relative;
+}
+
+.addFileTop {
+	float:left; width:433px; border:1px solid #797979; border-radius:5px 5px 0px 0px; background:url(../images/add-file-bg.jpg) repeat left top; font:bold 25px Arial, Helvetica, sans-serif; color:#d9e5eb; line-height:38px; text-align:left; padding-left:15px; position:relative;
+}
+
+.help {
+	 position:absolute; top:5px; right:17px;
+}
+
+.addFileBody {
+	float:left; width:420px; background-color:#dbe6eb; padding:15px;
+}
+
+.addFileBody p {
+	color:#666666; margin:0px; padding:0px; font:normal 11px Arial, Helvetica, sans-serif;
+}
+
+.addFileBottom {
+	float:left; width:418px; border:1px solid #797979; border-radius:0px 0px 5px 5px; background:url(../images/add-file-bg.jpg) repeat left top; padding:15px;
+}
+
+.btnUploadFile {
+	background:url(../images/btn-green.png) no-repeat right bottom; border:0px; padding-right:15px; height:34px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif; margin-left:10px;
+}
+
+.btnUploadFileLeft {
+	background:url(../images/btn-green.png) no-repeat left top; padding-left:0px; height:34px; width:100px; width:10px; float:left; margin-left:300px;
+}
+
+.btnCancel {
+	background:url(../images/btn-red.png) no-repeat right bottom; border:0px; padding-right:15px; height:34px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif; margin-left:10px;
+}
+
+.btnCancelLeft {
+	background:url(../images/btn-red.png) no-repeat left top; padding-left:0px; height:34px; width:100px; width:10px; float:left;
+}
+
+.helpPopUp {
+	width:450px; height:134px; background:url(../images/help-popup.png) no-repeat left top; position:absolute; top:-100px; left:0px; z-index:999; 
+}
+
+.helpPopUp p {
+	font:bold 13px Arial, Helvetica, sans-serif; margin-left:20px;
+}
+
+.helpGreyTxt {
+	color:#686b6c; margin-left:20px;
+}
+/* end of add file */
