@@ -7,5 +7,5 @@
 #   Mayor.create(:name => 'Emanuel', :city => cities.first)
 
 
-role = Role.create(:name=>"admin")
+role = Role.create(:name=>"SuperAdmin")
 User.create(:email=>"admin-pecaa@gmail.com",:username=>"admin-pecaa",:password=>"pecaa123",:role=>role )

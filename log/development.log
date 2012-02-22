@@ -9433,3 +9433,4510 @@ Served asset /rc-footer.jpg - 304 Not Modified (0ms)
 
 Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:03:18 +0530
 Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 23:08:50 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (1.0ms)
+Completed 200 OK in 181ms (Views: 18.0ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 23:08:50 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 23:08:50 +0530
+
+AbstractController::ActionNotFound (The action 'tabs' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 23:08:51 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 23:08:51 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 23:08:51 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 23:08:51 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 23:08:51 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 23:08:51 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 23:08:51 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (1ms)
+
+
+Started GET "/users/images/remove-field.png" for 127.0.0.1 at 2012-02-22 23:08:51 +0530
+
+AbstractController::ActionNotFound (The action 'images' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/images/add-field.png" for 127.0.0.1 at 2012-02-22 23:08:51 +0530
+
+AbstractController::ActionNotFound (The action 'images' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/images/add-notes.png" for 127.0.0.1 at 2012-02-22 23:08:52 +0530
+
+AbstractController::ActionNotFound (The action 'images' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 23:08:52 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 23:08:52 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:08:52 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-22 23:08:52 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-22 23:08:52 +0530
+Served asset /btn-grey.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/correct-field.png" for 127.0.0.1 at 2012-02-22 23:08:52 +0530
+Served asset /correct-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-22 23:08:52 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-22 23:08:52 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-22 23:08:52 +0530
+Served asset /tabs.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-22 23:08:52 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:08:52 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 23:08:52 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 23:09:36 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (2.0ms)
+Completed 200 OK in 169ms (Views: 20.0ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/users/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 23:09:36 +0530
+
+AbstractController::ActionNotFound (The action 'tabs' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 23:09:36 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /remove-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /add-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /add-notes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /btn-grey.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/correct-field.png" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /correct-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /tabs.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:09:37 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 23:09:39 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 135ms (Views: 20.0ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 23:09:40 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 23:09:40 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 23:09:40 +0530
+
+AbstractController::ActionNotFound (The action 'tabs' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 23:09:40 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 23:09:40 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /remove-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /add-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /add-notes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /btn-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correct-field.png" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /correct-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /tabs.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:09:41 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 23:11:26 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 120ms (Views: 17.0ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 23:11:26 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 23:11:26 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 23:11:26 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 23:11:26 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 23:11:26 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /remove-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /add-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /add-notes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /icon-home.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /btn-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correct-field.png" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /correct-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /tabs.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:11:27 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 23:11:49 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (1.0ms)
+Completed 200 OK in 110ms (Views: 20.0ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 23:11:50 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 23:11:50 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 23:11:50 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/users/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 23:11:50 +0530
+
+AbstractController::ActionNotFound (The action 'tabs' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 23:11:50 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 23:11:50 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 23:11:50 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 23:11:50 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 23:11:50 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/images/add-field.png" for 127.0.0.1 at 2012-02-22 23:11:50 +0530
+
+AbstractController::ActionNotFound (The action 'images' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/images/remove-field.png" for 127.0.0.1 at 2012-02-22 23:11:51 +0530
+
+AbstractController::ActionNotFound (The action 'images' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/images/add-notes.png" for 127.0.0.1 at 2012-02-22 23:11:51 +0530
+
+AbstractController::ActionNotFound (The action 'images' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 23:11:51 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 23:11:51 +0530
+Served asset /bg.gif - 304 Not Modified (45ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:11:51 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-22 23:11:51 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-22 23:11:51 +0530
+Served asset /btn-grey.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-22 23:11:51 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-22 23:11:51 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-22 23:11:51 +0530
+Served asset /tabs.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correct-field.png" for 127.0.0.1 at 2012-02-22 23:11:52 +0530
+Served asset /correct-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-22 23:11:52 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 23:11:52 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:11:52 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 23:12:08 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (2.0ms)
+Completed 200 OK in 430ms (Views: 20.0ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/users/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 23:12:08 +0530
+
+AbstractController::ActionNotFound (The action 'tabs' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /remove-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-active.png" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /icon-active.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /add-field.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/icon-close.png" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /icon-close.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /add-notes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /bg.gif - 304 Not Modified (55ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /btn-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correct-field.png" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /correct-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-22 23:12:09 +0530
+Served asset /tabs.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-22 23:12:10 +0530
+Served asset /border-bottom.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-22 23:12:10 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-22 23:12:10 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-22 23:12:10 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:12:10 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 23:12:10 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 23:19:01 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (1.0ms)
+Compiled tabs.css  (0ms)  (pid 2404)
+Completed 200 OK in 530ms (Views: 174.0ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 23:19:02 +0530
+Served asset /tabs.css - 200 OK (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 23:19:02 +0530
+Served asset /pecaa.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 23:19:02 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (4ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 23:19:02 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/users/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 23:19:02 +0530
+
+AbstractController::ActionNotFound (The action 'tabs' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 23:19:02 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 23:19:02 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 23:19:02 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 23:19:02 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-22 23:19:02 +0530
+Served asset /remove-field.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-22 23:19:02 +0530
+Served asset /add-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-22 23:19:03 +0530
+Served asset /add-notes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 23:19:03 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 23:19:03 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:19:03 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-22 23:19:03 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/images/tabs.gif" for 127.0.0.1 at 2012-02-22 23:19:03 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/tabs.gif"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-22 23:19:03 +0530
+Served asset /btn-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correct-field.png" for 127.0.0.1 at 2012-02-22 23:19:03 +0530
+Served asset /correct-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-22 23:19:03 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (5ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-22 23:19:03 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (115ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-22 23:19:03 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 23:19:03 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:19:03 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 23:22:12 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (3.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (0.0ms)
+Compiled pecaa.css  (1ms)  (pid 2404)
+Completed 200 OK in 196ms (Views: 62.0ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 23:22:13 +0530
+Served asset /pecaa.css - 200 OK (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 23:22:13 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 23:22:13 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 23:22:13 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/users/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 23:22:14 +0530
+
+AbstractController::ActionNotFound (The action 'tabs' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 23:22:14 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 23:22:14 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 23:22:14 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 23:22:14 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-22 23:22:14 +0530
+Served asset /remove-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-22 23:22:14 +0530
+Served asset /add-notes.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 23:22:14 +0530
+Served asset /icon-home.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-22 23:22:14 +0530
+Served asset /add-field.png - 304 Not Modified (2ms)
+
+
+Started GET "/images/bg.gif" for 127.0.0.1 at 2012-02-22 23:22:14 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/bg.gif"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:22:14 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/ue-nav-bg.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-22 23:22:14 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/user-edit-table-shade.jpg"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/btn-grey.png" for 127.0.0.1 at 2012-02-22 23:22:14 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/btn-grey.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/correct-field.png" for 127.0.0.1 at 2012-02-22 23:22:14 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/correct-field.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/tabs.gif" for 127.0.0.1 at 2012-02-22 23:22:15 +0530
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/images/see-more-bg.gif" for 127.0.0.1 at 2012-02-22 23:22:25 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/see-more-bg.gif"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/images/border-bottom.gif" for 127.0.0.1 at 2012-02-22 23:22:25 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/border-bottom.gif"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/btn-ash-grey.png" for 127.0.0.1 at 2012-02-22 23:22:25 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/btn-ash-grey.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/images/btn-green.png" for 127.0.0.1 at 2012-02-22 23:22:25 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/btn-green.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 23:22:25 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/rc-footer.jpg"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/images/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:22:25 +0530
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5 seconds.  The max pool size is currently 5; consider increasing it.):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 23:25:34 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (1.0ms)
+Compiled pecaa.css  (1ms)  (pid 2404)
+Completed 200 OK in 222ms (Views: 122.0ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 23:25:34 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 23:25:34 +0530
+Served asset /pecaa.css - 200 OK (0ms)
+
+
+Started GET "/users/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 23:25:34 +0530
+
+AbstractController::ActionNotFound (The action 'tabs' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 23:25:35 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 23:25:35 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 23:25:35 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (7ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 23:25:35 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (7ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 23:25:35 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-22 23:25:35 +0530
+Served asset /remove-field.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 23:25:35 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (61ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-22 23:25:35 +0530
+Served asset /add-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-22 23:25:35 +0530
+Served asset /add-notes.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 23:25:35 +0530
+Served asset /icon-home.jpg - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 23:25:35 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:25:35 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-22 23:25:35 +0530
+Served asset /btn-grey.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-22 23:25:35 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/correct-field.png" for 127.0.0.1 at 2012-02-22 23:25:35 +0530
+Served asset /correct-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/images/tabs.gif" for 127.0.0.1 at 2012-02-22 23:25:35 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/tabs.gif"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-22 23:25:36 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-22 23:25:36 +0530
+Served asset /border-bottom.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-22 23:25:36 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (55ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-22 23:25:36 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 23:25:36 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:25:36 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 23:26:01 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (1.0ms)
+Compiled tabs.css  (1ms)  (pid 2404)
+Completed 200 OK in 439ms (Views: 48.0ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 23:26:02 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 23:26:02 +0530
+
+AbstractController::ActionNotFound (The action 'tabs' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 23:26:02 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 23:26:02 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 23:26:02 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 23:26:02 +0530
+Served asset /tabs.css - 200 OK (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 23:26:02 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 23:26:02 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /remove-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /add-field.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /icon-home.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /add-notes.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /btn-grey.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/correct-field.png" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /correct-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /tabs.gif - 304 Not Modified (4ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /border-bottom.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /btn-green.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:26:03 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 23:51:36 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (9.0ms)
+Completed 500 Internal Server Error in 146ms
+
+ActionView::Template::Error (undefined method `user_name' for #<User:0x5204748>):
+    10:     <!-- black table -->
+    11:     <div class="rcBlack">
+    12:         <div class="ueNameDisplay">
+    13:             <%@user.user_name if @user%>
+    14:         </div>
+    15:         <div class="lastActivity">
+    16:             <span>last activity:</span>
+  app/views/users/new.html.erb:13:in `_app_views_users_new_html_erb__784752820_41534064'
+  app/controllers/users_controller.rb:32:in `new'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 23:52:15 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (8.0ms)
+Completed 500 Internal Server Error in 491ms
+
+ActionView::Template::Error (undefined method `strftime' for nil:NilClass):
+    18:         </div>
+    19:         <div class="created">
+    20:             <span>created:</span>
+    21:             <%@user.created_at.strftime('%d/%m/%y') if @user%>
+    22:         </div>
+    23:         <div class="status">
+    24:             <div id="checkboxDemo">
+  app/views/users/new.html.erb:21:in `_app_views_users_new_html_erb__784752820_47089608'
+  app/controllers/users_controller.rb:32:in `new'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 23:52:34 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (8493.5ms)
+Completed 500 Internal Server Error in 8612ms
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x57068d0>:0x5702e08>):
+    36:                 <div class="inpTxt">
+    37:                     user name:
+    38:                 </div>
+    39:                 <%f.text_field :username,:class=>"ueInp"%>
+    40:             </div>
+    41:             <div class="row1">
+    42:                 <div class="inpTxt">
+  app/views/users/new.html.erb:39:in `_app_views_users_new_html_erb__784752820_45615432'
+  app/controllers/users_controller.rb:32:in `new'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 23:57:48 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (9.0ms)
+Completed 500 Internal Server Error in 282ms
+
+ActionView::Template::Error (undefined method `role_title' for #<User:0x5c0edd0>):
+    73:                 <div class="inpTxt">
+    74:                     role:
+    75:                 </div>
+    76:                 <%f.text_field :role_title,:class=>"ueInp"%>
+    77:             </div>
+    78:             <div class="row1">
+    79:                 <div class="inpTxt">
+  app/views/users/new.html.erb:76:in `block in _app_views_users_new_html_erb__784752820_57715296'
+  app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb__784752820_57715296'
+  app/controllers/users_controller.rb:32:in `new'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUploads (20120218101128)
+Migrating to CreateUsers (20120221172049)
+Migrating to CreateAddresses (20120221172149)
+Migrating to AddDeviseToUsers (20120221172349)
+Migrating to AddColumnToUsers (20120221231047)
+Migrating to CreateRoles (20120221231847)
+Migrating to UsersHaveAndBelongToManyRoles (20120221232047)
+Migrating to AddExtraColumnToUsers (20120222232047)
+  [1m[35m (440.0ms)[0m  ALTER TABLE `users` ADD `last_login` datetime
+  [1m[36m (120.0ms)[0m  [1mALTER TABLE `users` ADD `role_title` varchar(255)[0m
+  [1m[35m (31.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20120222232047')
+  [1m[36m (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (1.0ms)[0m  SHOW KEYS FROM `addresses`
+  [1m[36m (1.0ms)[0m  [1mSHOW KEYS FROM `roles`[0m
+  [1m[35m (1.0ms)[0m  SHOW KEYS FROM `roles_users`
+  [1m[36m (1.0ms)[0m  [1mSHOW KEYS FROM `uploads`[0m
+  [1m[35m (1.0ms)[0m  SHOW KEYS FROM `users`
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:01:01 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (13.0ms)
+Compiled prettyCheckboxes.js  (1ms)  (pid 2404)
+Compiled prettyCheckboxes.css  (2ms)  (pid 2404)
+Completed 200 OK in 409ms (Views: 295.0ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:01:02 +0530
+Served asset /prettyCheckboxes.js - 200 OK (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:01:02 +0530
+Served asset /prettyCheckboxes.css - 200 OK (0ms)
+
+
+Started GET "/users/tabs/activatables.js" for 127.0.0.1 at 2012-02-23 00:01:02 +0530
+
+AbstractController::ActionNotFound (The action 'tabs' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:01:03 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:01:03 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:01:03 +0530
+Served asset /bg.gif - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:01:03 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (11ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:01:03 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /btn-grey.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /remove-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /add-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /tabs.gif - 304 Not Modified (4ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /add-notes.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (2ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /border-bottom.gif - 304 Not Modified (56ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /icon-home.jpg - 304 Not Modified (109ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:01:04 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:03:21 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (10.0ms)
+Completed 200 OK in 131ms (Views: 29.0ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:03:22 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:03:22 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:03:22 +0530
+Served asset /pecaa.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:03:22 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/tabs/activatables.js" for 127.0.0.1 at 2012-02-23 00:03:22 +0530
+
+AbstractController::ActionNotFound (The action 'tabs' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:03:22 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:03:22 +0530
+Served asset /bg.gif - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:03:22 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /btn-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /remove-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /add-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /tabs.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /add-notes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /border-bottom.gif - 304 Not Modified (6ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /btn-green.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:03:23 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:04:29 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (12.0ms)
+Completed 200 OK in 137ms (Views: 33.0ms | ActiveRecord: 23.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:04:30 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:04:30 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:04:30 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/tabs/activatables.js" for 127.0.0.1 at 2012-02-23 00:04:30 +0530
+
+AbstractController::ActionNotFound (The action 'tabs' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (4ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /remove-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /add-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /add-notes.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /icon-home.jpg - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /btn-grey.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /tabs.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /border-bottom.gif - 304 Not Modified (2ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /btn-green.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:04:31 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:07:34 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:07:38 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:09:24 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (6ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:13:34 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (6.0ms)
+Completed 200 OK in 454ms (Views: 49.0ms | ActiveRecord: 29.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:13:34 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:13:34 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:13:34 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:13:35 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activatetables.js" for 127.0.0.1 at 2012-02-23 00:13:35 +0530
+Served asset /activatetables.js - 404 Not Found (11ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/activatetables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:13:36 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:13:36 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (7ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:13:36 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /bg.gif - 304 Not Modified (49ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /btn-grey.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /remove-field.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /add-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /tabs.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /add-notes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /border-bottom.gif - 304 Not Modified (2ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /btn-green.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/images/checkbox.png" for 127.0.0.1 at 2012-02-23 00:13:37 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/checkbox.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:15:30 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (11.0ms)
+Completed 200 OK in 497ms (Views: 332.0ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/assets/activatetables.js" for 127.0.0.1 at 2012-02-23 00:15:31 +0530
+Served asset /activatetables.js - 404 Not Found (12ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/activatetables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:15:31 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:15:31 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:15:31 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:15:31 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:15:31 +0530
+Served asset /bg.gif - 304 Not Modified (92ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:15:31 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (3ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (63ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /btn-grey.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /remove-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /add-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /tabs.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /add-notes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /border-bottom.gif - 304 Not Modified (2ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /icon-home.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:15:32 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (106ms)
+
+
+Started GET "/images/checkbox.png" for 127.0.0.1 at 2012-02-23 00:15:33 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/checkbox.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:20:06 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (10.0ms)
+Completed 200 OK in 538ms (Views: 49.0ms | ActiveRecord: 260.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:20:06 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:20:06 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:20:06 +0530
+Served asset /tabs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:20:07 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activatetables.js" for 127.0.0.1 at 2012-02-23 00:20:07 +0530
+Served asset /activatetables.js - 404 Not Found (21ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/activatetables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:20:07 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:20:07 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:20:07 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:20:07 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:20:07 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:20:07 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:20:07 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:20:07 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:20:07 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (6ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:20:07 +0530
+Served asset /btn-grey.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:20:07 +0530
+Served asset /remove-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:20:07 +0530
+Served asset /add-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:20:08 +0530
+Served asset /tabs.gif - 304 Not Modified (2ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:20:08 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:20:08 +0530
+Served asset /add-notes.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:20:08 +0530
+Served asset /border-bottom.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:20:08 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:20:08 +0530
+Served asset /btn-green.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:20:08 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:20:08 +0530
+Served asset /icon-home.jpg - 304 Not Modified (102ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:20:08 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/images/checkbox.png" for 127.0.0.1 at 2012-02-23 00:20:08 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/checkbox.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:20:59 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (3.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (90.0ms)
+Completed 200 OK in 321ms (Views: 204.0ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:26:42 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (69.0ms)
+Completed 200 OK in 244ms (Views: 161.0ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:26:43 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activatetables.js" for 127.0.0.1 at 2012-02-23 00:26:43 +0530
+Served asset /activatetables.js - 404 Not Found (14ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/activatetables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:26:43 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:26:43 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:26:43 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:26:43 +0530
+Served asset /bg.gif - 304 Not Modified (123ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:26:43 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:26:43 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:26:43 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:26:43 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (3ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:26:43 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:26:44 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:26:44 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:26:44 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:26:44 +0530
+Served asset /btn-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:26:44 +0530
+Served asset /remove-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:26:44 +0530
+Served asset /add-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:26:44 +0530
+Served asset /tabs.gif - 304 Not Modified (2ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:26:44 +0530
+Served asset /add-notes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:26:44 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:26:44 +0530
+Served asset /border-bottom.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:26:44 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:26:44 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:26:44 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:26:44 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:26:44 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/images/checkbox.png" for 127.0.0.1 at 2012-02-23 00:26:44 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/checkbox.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:27:34 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (10.0ms)
+Completed 200 OK in 212ms (Views: 46.0ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/assets/activatetables.js" for 127.0.0.1 at 2012-02-23 00:27:34 +0530
+Served asset /activatetables.js - 404 Not Found (13ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/activatetables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:27:34 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:27:34 +0530
+Served asset /pecaa.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:27:34 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:27:34 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:27:34 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (83ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /remove-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /add-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /add-notes.png - 304 Not Modified (63ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /icon-home.jpg - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /btn-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /tabs.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /border-bottom.gif - 304 Not Modified (2ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/images/checkbox.png" for 127.0.0.1 at 2012-02-23 00:27:35 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/checkbox.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:28:29 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (3.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (81.0ms)
+Completed 200 OK in 341ms (Views: 233.0ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activatetables.js" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /activatetables.js - 404 Not Found (16ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/activatetables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (7ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /remove-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /add-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /add-notes.png - 304 Not Modified (62ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:28:30 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:28:31 +0530
+Served asset /btn-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:28:31 +0530
+Served asset /tabs.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:28:31 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:28:31 +0530
+Served asset /border-bottom.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:28:31 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:28:31 +0530
+Served asset /btn-green.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:28:31 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:28:31 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/images/checkbox.png" for 127.0.0.1 at 2012-02-23 00:28:31 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/checkbox.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:28:42 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (7.0ms)
+Completed 200 OK in 94ms (Views: 29.0ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:28:42 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:28:42 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:28:42 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:28:42 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:28:42 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:28:42 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:28:42 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:28:42 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:28:42 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:28:42 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:28:42 +0530
+Served asset /remove-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:28:42 +0530
+Served asset /add-field.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:28:42 +0530
+Served asset /add-notes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:28:43 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:28:43 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:28:43 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:28:43 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:28:43 +0530
+Served asset /btn-grey.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:28:43 +0530
+Served asset /tabs.gif - 304 Not Modified (2ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:28:43 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (5ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:28:43 +0530
+Served asset /border-bottom.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:28:43 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:28:43 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:28:43 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:28:43 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:29:54 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (15.0ms)
+Completed 200 OK in 200ms (Views: 109.0ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/assets/activatetables.js" for 127.0.0.1 at 2012-02-23 00:29:55 +0530
+Served asset /activatetables.js - 404 Not Found (11ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/activatetables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:29:55 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:29:55 +0530
+Served asset /pecaa.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:29:55 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:29:55 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:29:55 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:29:55 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (68ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (12ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (10ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /btn-grey.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /remove-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /tabs.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /add-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /add-notes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /border-bottom.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:29:56 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (47ms)
+
+
+Started GET "/images/checkbox.png" for 127.0.0.1 at 2012-02-23 00:29:57 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/checkbox.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:31:00 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (16.0ms)
+Completed 200 OK in 214ms (Views: 116.0ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:31:01 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:31:01 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activatetables.js" for 127.0.0.1 at 2012-02-23 00:31:01 +0530
+Served asset /activatetables.js - 404 Not Found (65ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/activatetables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:31:01 +0530
+Served asset /pecaa.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:31:01 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:31:01 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:31:01 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:31:01 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:31:01 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (7ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:31:01 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:31:01 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:31:01 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:31:02 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:31:02 +0530
+Served asset /btn-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:31:02 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:31:02 +0530
+Served asset /add-notes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:31:02 +0530
+Served asset /remove-field.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:31:02 +0530
+Served asset /tabs.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:31:02 +0530
+Served asset /add-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:31:02 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:31:02 +0530
+Served asset /border-bottom.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:31:02 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (67ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:31:02 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:31:02 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:31:02 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:31:02 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/images/checkbox.png" for 127.0.0.1 at 2012-02-23 00:31:02 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/checkbox.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-23 00:32:28 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (1.0ms)
+Completed 200 OK in 128ms (Views: 38.0ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:32:29 +0530
+Served asset /prettyCheckboxes.js - 200 OK (0ms)
+
+
+Started GET "/assets/activatetables.js" for 127.0.0.1 at 2012-02-23 00:32:29 +0530
+Served asset /activatetables.js - 404 Not Found (12ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/activatetables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:32:29 +0530
+Served asset /pecaa.css - 200 OK (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:32:29 +0530
+Served asset /prettyCheckboxes.css - 200 OK (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:32:29 +0530
+Served asset /ue-nav-logo.jpg - 200 OK (6ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:32:29 +0530
+Served asset /ue-nav-btn-help.jpg - 200 OK (3ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:32:29 +0530
+Served asset /tabs.css - 200 OK (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:32:29 +0530
+Served asset /ue-nav-btn-my-account.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:32:29 +0530
+Served asset /ue-nav-btn-logout.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:32:29 +0530
+Served asset /ue-nav-bg-left.png - 200 OK (2ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:32:29 +0530
+Served asset /ue-nav-bg-right.png - 200 OK (2ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:32:29 +0530
+Served asset /icon-home.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:32:29 +0530
+Served asset /ue-nav-bg.png - 200 OK (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:32:29 +0530
+Served asset /footer-nav-bg.png - 200 OK (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:32:29 +0530
+Served asset /rc-footer.jpg - 200 OK (1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:32:38 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (14.0ms)
+Completed 200 OK in 526ms (Views: 57.0ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/assets/activatetables.js" for 127.0.0.1 at 2012-02-23 00:32:39 +0530
+Served asset /activatetables.js - 404 Not Found (15ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/activatetables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:32:39 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:32:39 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:32:40 +0530
+Served asset /remove-field.png - 200 OK (2ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:32:40 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:32:40 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:32:40 +0530
+Served asset /add-field.png - 200 OK (1ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:32:40 +0530
+Served asset /add-notes.png - 200 OK (2ms)
+
+
+Started GET "/assets/activatetables.js" for 127.0.0.1 at 2012-02-23 00:32:40 +0530
+Served asset /activatetables.js - 404 Not Found (76ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/activatetables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:32:40 +0530
+Served asset /btn-grey.png - 200 OK (0ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:32:40 +0530
+Served asset /see-more-bg.gif - 200 OK (1ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:32:40 +0530
+Served asset /tabs.gif - 200 OK (1ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:32:40 +0530
+Served asset /border-bottom.gif - 200 OK (1ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:32:40 +0530
+Served asset /btn-ash-grey.png - 200 OK (0ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:32:40 +0530
+Served asset /user-edit-table-shade.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:32:40 +0530
+Served asset /btn-green.png - 200 OK (1ms)
+
+
+Started GET "/images/checkbox.png" for 127.0.0.1 at 2012-02-23 00:32:41 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/checkbox.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:33:53 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (10.0ms)
+Compiled activatables.js  (2ms)  (pid 2404)
+Completed 200 OK in 186ms (Views: 82.0ms | ActiveRecord: 23.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:33:54 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:33:54 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:33:54 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:33:54 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activatables.js?body=1" for 127.0.0.1 at 2012-02-23 00:33:54 +0530
+Served asset /activatables.js - 200 OK (0ms)
+
+
+Started GET "/images/checkbox.png" for 127.0.0.1 at 2012-02-23 00:33:56 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/checkbox.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:35:39 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (18.0ms)
+Completed 200 OK in 184ms (Views: 43.0ms | ActiveRecord: 26.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:35:39 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activatables.js?body=1" for 127.0.0.1 at 2012-02-23 00:35:40 +0530
+Served asset /activatables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:35:40 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:35:40 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:35:40 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:35:40 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:35:40 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:35:40 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (4ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:35:40 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:35:40 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:35:40 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:35:40 +0530
+Served asset /remove-field.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:35:40 +0530
+Served asset /add-field.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:35:40 +0530
+Served asset /add-notes.png - 304 Not Modified (8ms)
+
+
+Started GET "/images/checkbox.png" for 127.0.0.1 at 2012-02-23 00:35:40 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/checkbox.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:35:41 +0530
+Served asset /icon-home.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:35:41 +0530
+Served asset /bg.gif - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:35:41 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:35:41 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:35:41 +0530
+Served asset /btn-grey.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:35:41 +0530
+Served asset /tabs.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:35:41 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (4ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:35:41 +0530
+Served asset /border-bottom.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:35:41 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (49ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:35:41 +0530
+Served asset /btn-green.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:35:41 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:35:41 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:36:11 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:36:37 +0530
+Served asset /border-bottom.gif - 304 Not Modified (2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:37:28 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (74.0ms)
+Compiled prettyCheckboxes.css  (2ms)  (pid 2404)
+Completed 200 OK in 221ms (Views: 126.0ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:37:29 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activatables.js?body=1" for 127.0.0.1 at 2012-02-23 00:37:29 +0530
+Served asset /activatables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:37:29 +0530
+Served asset /prettyCheckboxes.css - 200 OK (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:37:29 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:37:29 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:37:29 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:37:29 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (4ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (50ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /add-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /remove-field.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /add-notes.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /btn-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /tabs.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /border-bottom.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (57ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /btn-green.png - 304 Not Modified (1ms)
+
+
+Started GET "/checkbox.png" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+
+ActionController::RoutingError (No route matches [GET] "/checkbox.png"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:37:30 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (147ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:38:44 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (10.0ms)
+Compiled prettyCheckboxes.css  (2ms)  (pid 2404)
+Completed 200 OK in 166ms (Views: 65.0ms | ActiveRecord: 23.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:38:44 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activatables.js?body=1" for 127.0.0.1 at 2012-02-23 00:38:44 +0530
+Served asset /activatables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:38:44 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:38:44 +0530
+Served asset /tabs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:38:44 +0530
+Served asset /prettyCheckboxes.css - 200 OK (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:38:45 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:38:45 +0530
+Served asset /remove-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:38:45 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:38:45 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (8ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:38:45 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:38:45 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:38:45 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:38:45 +0530
+Served asset /add-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:38:45 +0530
+Served asset /add-notes.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:38:45 +0530
+Served asset /icon-home.jpg - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:38:45 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:38:45 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:38:45 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:38:45 +0530
+Served asset /btn-grey.png - 304 Not Modified (7ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:38:45 +0530
+Served asset /tabs.gif - 304 Not Modified (2ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:38:46 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:38:46 +0530
+Served asset /border-bottom.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:38:46 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:38:46 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:38:46 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (6ms)
+
+
+Started GET "/assets/checkbox.png" for 127.0.0.1 at 2012-02-23 00:38:46 +0530
+Served asset /checkbox.png - 200 OK (23ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:38:46 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:43:19 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+ERROR: compiling _app_views_users_new_html_erb__784752820_46287936 RAISED C:/Users/manikandan/pecaa_new/pecaa_21/pecaa/app/views/users/new.html.erb:259: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Users/manikandan/pecaa_new/pecaa_21/pecaa/app/views/users/new.html.erb:261: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_users_new_html_erb__784752820_46287936(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "users/new";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append= form_for(@user) do |f|@output_buffer.safe_concat('	
+');@output_buffer.safe_concat('<div class="ueBodyContent">
+    <div class="fLeft">
+        Here is where some brief instructional text could be placed for each page
+    </div>
+    <div class="btnGreyLeft ueBtnCreateNewUser">
+    	');@output_buffer.append= ( button_to "create new user", User.new,:class=>'btnGrey',:method=>"get" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        
+    </div>
+    <div class="clear">
+    </div>
+    <!-- black table -->
+    <div class="rcBlack">
+        <div class="ueNameDisplay">
+');            @user.username if @user
+@output_buffer.safe_concat('        </div>
+        <div class="lastActivity">
+            <span>last activity:</span>
+');            @user.last_login.strftime('%d/%m/%y') if @user and @user.last_login
+@output_buffer.safe_concat('        </div>
+        <div class="created">
+            <span>created:</span>
+');            @user.created_at.strftime('%d/%m/%y') if @user and @user.created_at
+@output_buffer.safe_concat('        </div>
+        <div class="status">
+            <div id="checkboxDemo">
+                <label for="checkbox-4" tabindex="4" class="txtColorWhite">
+                    active
+                </label>
+                <input type="checkbox" name="checkbox-4[braket]" id="checkbox-4" value="checkbox-4" />
+            </div>
+        </div>
+        <div class="clearHeight10Border">
+        </div>
+        <!-- first column -->
+        <div class="col1">
+            <div class="row1">
+                <div class="inpTxt">
+                    user name:
+                </div>
+                ');@output_buffer.append= (f.text_field :username,:class=>"ueInp");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                    password:
+                </div>
+                ');@output_buffer.append= (f.password_field :password,:class=>"ueInp");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('            </div>
+            <div class="row1">
+                <div class="inpTxt correctFieldTxt">
+                    email:
+                </div>
+                ');@output_buffer.append= (f.text_field :email,:class=>"ueInp");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                    phone:
+                </div>
+                ');@output_buffer.append= (f.text_field :phone_number,:class=>"ueInp");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                    company:
+                </div>
+                ');@output_buffer.append= (f.text_field :company,:class=>"ueInp");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                    title:
+                </div>
+                ');@output_buffer.append= (f.text_field :title,:class=>"ueInp");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                    role:
+                </div>
+                ');@output_buffer.append= (f.text_field :role_title,:class=>"ueInp");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                    login page:
+                </div>
+                ');@output_buffer.append= (f.text_field :login_page,:class=>"ueInp");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                    user #:
+                </div>
+                ');@output_buffer.append= (f.text_field :user_identity,:class=>"ueInp");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                    websites:
+                </div>
+                <input type="text" class="ueInp" />
+            </div>
+            <div class="row1 posrel">
+                <div class="inpTxt">
+                </div>
+                <input type="text" class="ueInpRemove" /><img src="/assets/remove-field.png" class="addFieldPos" />
+            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                </div>
+                <input type="text" class="ueInp" />
+            </div>
+            <div class="row1 posrel">
+                <div class="inpTxt">
+                </div>
+                <input type="text" class="ueInpAdd" /><img src="/assets/add-field.png" class="addFieldPos" />
+            </div>
+        </div><!-- end of first column --><!-- second column -->
+        <div class="col2">
+        	');@output_buffer.append= f.fields_for(:addresses, :include_id => false) do |address|@output_buffer.safe_concat('
+');@output_buffer.safe_concat('            <ol id="toc">
+                <li>
+                    <a href="#page-1"><span>shipping address</span></a>
+                </li>
+                <li>
+                    <a href="#page-2"><span>billing address</span></a>
+                </li>
+            </ol>
+            <div class="content" id="page-1">
+                <div class="row1">
+                    <div class="inpTxt">
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        nick name:
+                    </div>
+                    ');@output_buffer.append= (address.text_field :nickname,:class=>"ueInp");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        address:
+                    </div>
+                    ');@output_buffer.append= (address.text_field :address,:class=>"ueInp");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        city:
+                    </div>
+                    ');@output_buffer.append= (address.text_field :city,:class=>"ueInp");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        state:
+                    </div>
+                    ');@output_buffer.append= (address.text_field :state,:class=>"ueInp");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        zip:
+                    </div>
+                    ');@output_buffer.append= (address.text_field :zipcode,:class=>"ueInp");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <div class="content" id="page-2">
+                <div class="row1">
+                    <div class="inpTxt">
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        nick name:
+                    </div>
+                    <input type="text" class="ueInp" />
+                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        address:
+                    </div>
+                    <input type="text" class="ueInp" />
+                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        city:
+                    </div>
+                    <input type="text" class="ueInp" />
+                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        state:
+                    </div>
+                    <input type="text" class="ueInp" />
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+');			end
+@output_buffer.safe_concat('        </div>
+        <!-- end of second column --><!-- third column -->
+        <div class="col3">
+            <div class="col3Head">
+                roles
+            </div>
+            <div class="rcRoles">
+                <!--     <div class="roles"><img src="/assets/icon-close.png" /><span>System Administrator</span></div>
+                <div class="clear"></div>
+                <div class="roles"><img src="/assets/icon-active.png" /><span>Administrator</span></div>
+                <div class="clear"></div>
+                <div class="roles"><img src="/assets/icon-close.png" /><span>Website Builder</span></div>
+                <div class="clear"></div>-->
+                <div id="checkboxDemo">
+                    <label for="checkbox-1" tabindex="1" class="txtColorWhite">
+                        System Administrator
+                    </label>
+                    <input type="checkbox" name="checkbox-1[braket]" id="checkbox-1" value="checkbox-1" />
+                    <label for="checkbox-2" tabindex="2" class="txtColorWhite">
+                        Administrator
+                    </label>
+                    <input type="checkbox" name="checkbox-2[braket]" id="checkbox-2" value="checkbox-2" />
+                    <label for="checkbox-3" tabindex="3" class="txtColorWhite">
+                        Website Builder
+                    </label>
+                    <input type="checkbox" name="checkbox-3[braket]" id="checkbox-3" value="checkbox-3" />
+                </div>
+            </div>
+            <div class="col3Head">
+                notes
+            </div>
+            <div class="rcNotes">
+                Here is a note about shomething 
+                to do with this account <img src="/assets/add-notes.png" class="addNotesPos" />
+            </div><span class="noteAuthor">10/22/2011 by k.keane</span>
+            <div class="rcNotes">
+                Here is a note about shomething
+                to do with this account
+            </div>
+            <span class="noteAuthor">10/22/2011 by k.keane</span>
+            <div class="rcNotes">
+                Here is a note about shomething
+                to do with this account
+            </div>
+            <span class="noteAuthor">10/22/2011 by k.keane</span>
+            <div class="clear">
+            </div>
+            <div class="seeMore">
+                <a href="#">see more</a>
+            </div>
+        </div>
+        <!-- end of third column -->
+        <div class="clear ueBdrBottom">
+        </div>
+        <div class="btnAshGreyLeft ueBtnCancel">
+        	');@output_buffer.append= ( button_to "Cancel", '/users',:class=>'btnAshGrey',:method=>"get" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        </div>
+        <div class="btnGreenLeft ueBtnSave">
+        	');@output_buffer.append= (f.submit "Save",:class=>"btnGreen");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        </div>
+    </div><!-- end of black table -->
+</div>
+
+
+v');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:309:in `module_eval'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:309:in `compile'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:217:in `compile!'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:170:in `block in render'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:55:in `instrument'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:169:in `render'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:9:in `render'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:17:in `render'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:120:in `_render_template'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:99:in `render'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+C:/Ruby192/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/mime_responds.rb:195:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/mime_responds.rb:195:in `respond_to'
+C:/Users/manikandan/pecaa_new/pecaa_21/pecaa/app/controllers/users_controller.rb:32:in `new'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/base.rb:167:in `process_action'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:443:in `_run__937345905__process_action__612753416__callbacks'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/base.rb:121:in `process'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:45:in `process'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal.rb:193:in `dispatch'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal.rb:236:in `block in action'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:65:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:29:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:124:in `optimized_each'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:532:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/warden-1.0.6/lib/warden/manager.rb:35:in `block in call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/warden-1.0.6/lib/warden/manager.rb:34:in `catch'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/warden-1.0.6/lib/warden/manager.rb:34:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/etag.rb:23:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/conditionalget.rb:25:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/flash.rb:247:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/session/abstract/id.rb:195:in `context'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/session/abstract/id.rb:190:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/cookies.rb:331:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/query_cache.rb:64:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/sendfile.rb:101:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/rack/logger.rb:13:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/runtime.rb:17:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/lock.rb:15:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/static.rb:53:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/engine.rb:456:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/content_length.rb:14:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/rack/log_tailer.rb:14:in `call'
+C:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/handler/webrick.rb:59:in `service'
+C:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered users/new.html.erb within layouts/pecaa_application (22.0ms)
+Completed 500 Internal Server Error in 155ms
+
+ActionView::Template::Error (C:/Users/manikandan/pecaa_new/pecaa_21/pecaa/app/views/users/new.html.erb:259: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Users/manikandan/pecaa_new/pecaa_21/pecaa/app/views/users/new.html.erb:261: syntax error, unexpected $end, expecting keyword_end):
+    256: 
+    257: 
+    258: v
+  app/controllers/users_controller.rb:32:in `new'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:43:28 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (82.0ms)
+Completed 200 OK in 291ms (Views: 178.0ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:43:28 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:43:28 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activatables.js?body=1" for 127.0.0.1 at 2012-02-23 00:43:28 +0530
+Served asset /activatables.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:43:28 +0530
+Served asset /tabs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:43:29 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:43:29 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:43:29 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:43:29 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (63ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /remove-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /add-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /add-notes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /icon-home.jpg - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /btn-grey.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /tabs.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /border-bottom.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/checkbox.png" for 127.0.0.1 at 2012-02-23 00:43:30 +0530
+Served asset /checkbox.png - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-02-23 00:43:49 +0530
+
+ActionController::RoutingError (uninitialized constant Users):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-02-23 00:44:27 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 106ms (Views: 22.0ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/assets/activatables.js?body=1" for 127.0.0.1 at 2012-02-23 00:44:27 +0530
+Served asset /activatables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:44:28 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:44:28 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:44:28 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:44:28 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:44:28 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:44:28 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:44:28 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:44:28 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:44:28 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:44:28 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:44:28 +0530
+Served asset /icon-home.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:44:28 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:44:28 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:44:28 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:44:28 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:45:29 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (11.0ms)
+Completed 200 OK in 159ms (Views: 35.0ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:45:29 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activatables.js?body=1" for 127.0.0.1 at 2012-02-23 00:45:29 +0530
+Served asset /activatables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (19ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (61ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /add-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /remove-field.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /add-notes.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /bg.gif - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (55ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /btn-grey.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /tabs.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /border-bottom.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:45:30 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:45:31 +0530
+Served asset /btn-green.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:45:31 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:45:31 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/checkbox.png" for 127.0.0.1 at 2012-02-23 00:45:31 +0530
+Served asset /checkbox.png - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-02-23 00:45:34 +0530
+
+ActionController::RoutingError (uninitialized constant Users):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-02-23 00:46:24 +0530
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QppPdbPFeQI8srbTN4a1LSzSEaNYKcscndWhgIQOgNg=", "user"=>{"username"=>"", "password"=>"[FILTERED]", "email"=>"", "phone_number"=>"", "company"=>"", "title"=>"", "role_title"=>"", "login_page"=>"", "user_identity"=>"", "addresses"=>{"nickname"=>"", "address"=>"", "city"=>"", "state"=>"", "zipcode"=>""}}, "commit"=>"Save"}
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Completed 500 Internal Server Error in 192ms
+
+NameError (undefined local variable or method `a' for #<UsersController:0x6c1daa8>):
+  app/controllers/users_controller.rb:91:in `create'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-23 00:46:50 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 116ms (Views: 26.0ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:46:51 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:46:51 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:46:51 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activatables.js?body=1" for 127.0.0.1 at 2012-02-23 00:46:51 +0530
+Served asset /activatables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:46:51 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:46:51 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:46:52 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:46:52 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:46:52 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:46:52 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:46:52 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (69ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:46:52 +0530
+Served asset /icon-home.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:46:52 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:46:52 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:46:52 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:46:52 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-23 00:47:00 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (12.0ms)
+Completed 200 OK in 152ms (Views: 39.0ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:47:01 +0530
+Served asset /pecaa.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/activatables.js?body=1" for 127.0.0.1 at 2012-02-23 00:47:01 +0530
+Served asset /activatables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:47:01 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /tabs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (8ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /remove-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /add-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /add-notes.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /icon-home.jpg - 304 Not Modified (60ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (4ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /btn-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /tabs.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /border-bottom.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (62ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:47:02 +0530
+Served asset /btn-green.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:47:03 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:47:03 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/checkbox.png" for 127.0.0.1 at 2012-02-23 00:47:03 +0530
+Served asset /checkbox.png - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-02-23 00:47:08 +0530
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QppPdbPFeQI8srbTN4a1LSzSEaNYKcscndWhgIQOgNg=", "user"=>{"username"=>"", "password"=>"[FILTERED]", "email"=>"dasdfasd", "phone_number"=>"", "company"=>"", "title"=>"", "role_title"=>"", "login_page"=>"", "user_identity"=>"", "addresses"=>{"nickname"=>"", "address"=>"", "city"=>"", "state"=>"", "zipcode"=>""}}, "commit"=>"Save"}
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Completed 500 Internal Server Error in 379ms
+
+NameError (undefined local variable or method `a' for #<UsersController:0x6a45020>):
+  app/controllers/users_controller.rb:91:in `create'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-02-23 00:47:22 +0530
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QppPdbPFeQI8srbTN4a1LSzSEaNYKcscndWhgIQOgNg=", "user"=>{"username"=>"", "password"=>"[FILTERED]", "email"=>"dasdfasd", "phone_number"=>"", "company"=>"", "title"=>"", "role_title"=>"", "login_page"=>"", "user_identity"=>"", "addresses"=>{"nickname"=>"", "address"=>"", "city"=>"", "state"=>"", "zipcode"=>""}}, "commit"=>"Save"}
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: username, phone_number, company, title, role_title, login_page, user_identity, addresses
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36m (35.0ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'dasdfasd' LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  ROLLBACK
+Rendered users/new.html.erb within layouts/pecaa_application (11.0ms)
+Completed 422 Unprocessable Entity in 312ms (Views: 34.0ms | ActiveRecord: 59.0ms)
+
+
+Started GET "/assets/activatables.js?body=1" for 127.0.0.1 at 2012-02-23 00:47:23 +0530
+Served asset /activatables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:47:23 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:47:23 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:47:23 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:47:23 +0530
+Served asset /pecaa.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:47:24 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:47:24 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:47:24 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (65ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:47:24 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:47:24 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:47:24 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:47:24 +0530
+Served asset /remove-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:47:24 +0530
+Served asset /add-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:47:24 +0530
+Served asset /add-notes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:47:24 +0530
+Served asset /icon-home.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:47:24 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:47:25 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:47:25 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:47:25 +0530
+Served asset /btn-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:47:25 +0530
+Served asset /tabs.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:47:25 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:47:25 +0530
+Served asset /border-bottom.gif - 304 Not Modified (2ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:47:25 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:47:25 +0530
+Served asset /btn-green.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:47:25 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:47:25 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/checkbox.png" for 127.0.0.1 at 2012-02-23 00:47:25 +0530
+Served asset /checkbox.png - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-02-23 00:48:45 +0530
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QppPdbPFeQI8srbTN4a1LSzSEaNYKcscndWhgIQOgNg=", "user"=>{"username"=>"test", "password"=>"[FILTERED]", "email"=>"manikandan.nitt@gmail.com", "phone_number"=>"123", "company"=>"test", "title"=>"sd", "role_title"=>"s", "login_page"=>"s", "user_identity"=>"a", "addresses"=>{"nickname"=>"", "address"=>"asdf", "city"=>"asdf", "state"=>"ads", "zipcode"=>""}}, "commit"=>"Save"}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1
+WARNING: Can't mass-assign protected attributes: username, phone_number, company, title, role_title, login_page, user_identity, addresses
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.0ms)[0m  SELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'manikandan.nitt@gmail.com' LIMIT 1
+  [1m[36m (1.0ms)[0m  [1mROLLBACK[0m
+Rendered users/new.html.erb within layouts/pecaa_application (10.0ms)
+Completed 422 Unprocessable Entity in 356ms (Views: 32.0ms | ActiveRecord: 28.0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-23 00:48:46 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/activatables.js?body=1" for 127.0.0.1 at 2012-02-23 00:48:46 +0530
+Served asset /activatables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-23 00:48:46 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-23 00:48:46 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-23 00:48:46 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-23 00:48:46 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-23 00:48:46 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-23 00:48:46 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-23 00:48:46 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-23 00:48:46 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-23 00:48:46 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-23 00:48:46 +0530
+Served asset /remove-field.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-23 00:48:46 +0530
+Served asset /add-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-23 00:48:46 +0530
+Served asset /add-notes.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-23 00:48:46 +0530
+Served asset /icon-home.jpg - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-23 00:48:46 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:48:47 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (52ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-23 00:48:47 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-23 00:48:47 +0530
+Served asset /btn-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-23 00:48:47 +0530
+Served asset /tabs.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-23 00:48:47 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (51ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-23 00:48:47 +0530
+Served asset /border-bottom.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-23 00:48:47 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-23 00:48:47 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-23 00:48:47 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-23 00:48:47 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/checkbox.png" for 127.0.0.1 at 2012-02-23 00:48:47 +0530
+Served asset /checkbox.png - 304 Not Modified (1ms)

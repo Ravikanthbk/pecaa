@@ -1,179 +1,258 @@
-            <div class="ueBodyContent">
-            	<div style="float:left; color:#999999;">Here is where some brief instructional text could be placed for each page</div>
-                <div class="btnGreyLeft" style="width:115px;"><input type="button" value="create new user" class="btnGrey" /></div>
-                <div class="clear"></div>
-<!-- black table -->
-              <div class="rcBlack">
-                <div class="ueNameDisplay">John Smith</div>
-                <div class="lastActivity"><span>last activity:</span> 01/02/2011</div>
-                <div class="created"><span>created:</span> 01/02/2010</div>
-                <div class="status"><img src="/assets/icon-active.png" /><span>active</span></div>
-                <div class="clear" style="border-bottom:1px solid #666666; height:10px;"></div>
-                
-<!-- first column -->
-	<div class="col1">
-    <div class="row1">
-    <div class="inpTxt">user name:</div><input type="text" class="ueInp" />
+<%=form_for(@user) do |f|%>	
+<div class="ueBodyContent">
+    <div class="fLeft">
+        Here is where some brief instructional text could be placed for each page
     </div>
-    
-    <div class="row1">
-    <div class="inpTxt">password:</div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt correctFieldTxt">email:</div><input type="text" class="correctField" />
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt">phone:</div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt">company:</div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt">title:</div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt">role:</div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt">login page:</div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt">user #:</div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt">websites:</div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="row1" style="position:relative;">
-    <div class="inpTxt"></div><input type="text" class="ueInpRemove" /><img src="/assets/remove-field.png" style="position:absolute; top:0px; right:23px;" />
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt"></div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="row1" style="position:relative;">
-    <div class="inpTxt"></div><input type="text" class="ueInpAdd" /><img src="/assets/add-field.png" style="position:absolute; top:0px; right:23px;" />
-    </div>
-    </div>
-<!-- end of first column -->
-
-<!-- second column -->
-	<div class="col2">
-    	<ol id="toc">
-    <li><a href="#page-1"><span>shipping address</span></a></li>
-    <li><a href="#page-2"><span>billing address</span></a></li>
-</ol>
-<div class="content" id="page-1">
-    <div class="row1">
-    <div class="inpTxt"></div>
-    	<select class="ueInp" style="height:25px; margin:10px 0px">
-        	<option>Select an existing address</option>
-            <option></option>
-        </select>
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt">nick name:</div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt">address:</div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt">city:</div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt">state:</div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt">zip:</div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="clear"></div>
-</div>
-<div class="content" id="page-2">
-    <div class="row1">
-    <div class="inpTxt"></div>
-    	<select class="ueInp" style="height:25px; margin:10px 0px">
-        	<option>Select an existing address</option>
-            <option></option>
-        </select>
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt">nick name:</div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt">address:</div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt">city:</div><input type="text" class="ueInp" />
-    </div>
-    
-    <div class="row1">
-    <div class="inpTxt">state:</div><input type="text" class="ueInp" />
-    </div>
-    
-    
-    
-    <div class="clear"></div>
-</div>
-    </div>
-<!-- end of second column -->
-
-<!-- third column -->
-	<div class="col3">
-    <div class="col3Head">roles</div>
-    	<div class="rcRoles">
-        <div class="roles"><img src="/assets/icon-close.png" /><span>System Administrator</span></div>
-        <div class="clear"></div>
-        <div class="roles"><img src="/assets/icon-active.png" /><span>Administrator</span></div>
-        <div class="clear"></div>
-        <div class="roles"><img src="/assets/icon-close.png" /><span>Website Builder</span></div>
-        </div>
+    <div class="btnGreyLeft ueBtnCreateNewUser">
+    	<%= button_to "create new user", User.new,:class=>'btnGrey',:method=>"get" %>
         
-    <div class="col3Head">notes</div>
-    <div class="rcNotes">Here is a note about shomething
-    to do with this account <img src="/assets/add-notes.png" style="position:absolute; top:0; right:0;" /></div>
-    <span style="color:#999999; float:right; font-size:10px;">10/22/2011 by k.keane</span>
-    
-    <div class="rcNotes">Here is a note about shomething
-    to do with this account</div>
-    <span style="color:#999999; float:right; font-size:10px;">10/22/2011 by k.keane</span>
-    
-    <div class="rcNotes">Here is a note about shomething
-    to do with this account</div>
-    <span style="color:#999999; float:right; font-size:10px;">10/22/2011 by k.keane</span>
-    
-    <div class="clear"></div>
-    
-    <div class="seeMore"><a href="#">see more</a></div>
-    
     </div>
-    
-    
-<!-- end of third column -->
-
-	<div class="clear" style="background:url(/assets/border-bottom.gif) repeat-x left bottom; height:10px; margin-bottom:20px;"></div>
-
-<div class="btnAshGreyLeft" style="width:80px; float:left;"><input type="button" value="Cancel" class="btnAshGrey" /></div>
-
-<div class="btnGreenLeft" style="width:76px; float:right;"><input type="button" value="Save" class="btnGreen" /></div>
-
-              </div>
-<!-- end of black table -->
+    <div class="clear">
+    </div>
+    <!-- black table -->
+    <div class="rcBlack">
+        <div class="ueNameDisplay">
+            <%@user.username if @user%>
+        </div>
+        <div class="lastActivity">
+            <span>last activity:</span>
+            <%@user.last_login.strftime('%d/%m/%y') if @user and @user.last_login%>
+        </div>
+        <div class="created">
+            <span>created:</span>
+            <%@user.created_at.strftime('%d/%m/%y') if @user and @user.created_at%>
+        </div>
+        <div class="status">
+            <div id="checkboxDemo">
+                <label for="checkbox-4" tabindex="4" class="txtColorWhite">
+                    active
+                </label>
+                <input type="checkbox" name="checkbox-4[braket]" id="checkbox-4" value="checkbox-4" />
             </div>
+        </div>
+        <div class="clearHeight10Border">
+        </div>
+        <!-- first column -->
+        <div class="col1">
+            <div class="row1">
+                <div class="inpTxt">
+                    user name:
+                </div>
+                <%=f.text_field :username,:class=>"ueInp"%>
+            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                    password:
+                </div>
+                <%=f.password_field :password,:class=>"ueInp"%>
+            </div>
+            <div class="row1">
+                <div class="inpTxt correctFieldTxt">
+                    email:
+                </div>
+                <%=f.text_field :email,:class=>"ueInp"%>
+            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                    phone:
+                </div>
+                <%=f.text_field :phone_number,:class=>"ueInp"%>
+            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                    company:
+                </div>
+                <%=f.text_field :company,:class=>"ueInp"%>
+            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                    title:
+                </div>
+                <%=f.text_field :title,:class=>"ueInp"%>
+            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                    role:
+                </div>
+                <%=f.text_field :role_title,:class=>"ueInp"%>
+            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                    login page:
+                </div>
+                <%=f.text_field :login_page,:class=>"ueInp"%>
+            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                    user #:
+                </div>
+                <%=f.text_field :user_identity,:class=>"ueInp"%>
+            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                    websites:
+                </div>
+                <input type="text" class="ueInp" />
+            </div>
+            <div class="row1 posrel">
+                <div class="inpTxt">
+                </div>
+                <input type="text" class="ueInpRemove" /><img src="/assets/remove-field.png" class="addFieldPos" />
+            </div>
+            <div class="row1">
+                <div class="inpTxt">
+                </div>
+                <input type="text" class="ueInp" />
+            </div>
+            <div class="row1 posrel">
+                <div class="inpTxt">
+                </div>
+                <input type="text" class="ueInpAdd" /><img src="/assets/add-field.png" class="addFieldPos" />
+            </div>
+        </div><!-- end of first column --><!-- second column -->
+        <div class="col2">
+        	<%=f.fields_for(:addresses, :include_id => false) do |address|%>
+            <ol id="toc">
+                <li>
+                    <a href="#page-1"><span>shipping address</span></a>
+                </li>
+                <li>
+                    <a href="#page-2"><span>billing address</span></a>
+                </li>
+            </ol>
+            <div class="content" id="page-1">
+                <div class="row1">
+                    <div class="inpTxt">
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        nick name:
+                    </div>
+                    <%=address.text_field :nickname,:class=>"ueInp"%>
+                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        address:
+                    </div>
+                    <%=address.text_field :address,:class=>"ueInp"%>
+                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        city:
+                    </div>
+                    <%=address.text_field :city,:class=>"ueInp"%>
+                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        state:
+                    </div>
+                    <%=address.text_field :state,:class=>"ueInp"%>
+                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        zip:
+                    </div>
+                    <%=address.text_field :zipcode,:class=>"ueInp"%>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <div class="content" id="page-2">
+                <div class="row1">
+                    <div class="inpTxt">
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        nick name:
+                    </div>
+                    <input type="text" class="ueInp" />
+                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        address:
+                    </div>
+                    <input type="text" class="ueInp" />
+                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        city:
+                    </div>
+                    <input type="text" class="ueInp" />
+                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        state:
+                    </div>
+                    <input type="text" class="ueInp" />
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+			<%end%>
+        </div>
+        <!-- end of second column --><!-- third column -->
+        <div class="col3">
+            <div class="col3Head">
+                roles
+            </div>
+            <div class="rcRoles">
+                <!--     <div class="roles"><img src="/assets/icon-close.png" /><span>System Administrator</span></div>
+                <div class="clear"></div>
+                <div class="roles"><img src="/assets/icon-active.png" /><span>Administrator</span></div>
+                <div class="clear"></div>
+                <div class="roles"><img src="/assets/icon-close.png" /><span>Website Builder</span></div>
+                <div class="clear"></div>-->
+                <div id="checkboxDemo">
+                    <label for="checkbox-1" tabindex="1" class="txtColorWhite">
+                        System Administrator
+                    </label>
+                    <input type="checkbox" name="checkbox-1[braket]" id="checkbox-1" value="checkbox-1" />
+                    <label for="checkbox-2" tabindex="2" class="txtColorWhite">
+                        Administrator
+                    </label>
+                    <input type="checkbox" name="checkbox-2[braket]" id="checkbox-2" value="checkbox-2" />
+                    <label for="checkbox-3" tabindex="3" class="txtColorWhite">
+                        Website Builder
+                    </label>
+                    <input type="checkbox" name="checkbox-3[braket]" id="checkbox-3" value="checkbox-3" />
+                </div>
+            </div>
+            <div class="col3Head">
+                notes
+            </div>
+            <div class="rcNotes">
+                Here is a note about shomething 
+                to do with this account <img src="/assets/add-notes.png" class="addNotesPos" />
+            </div><span class="noteAuthor">10/22/2011 by k.keane</span>
+            <div class="rcNotes">
+                Here is a note about shomething
+                to do with this account
+            </div>
+            <span class="noteAuthor">10/22/2011 by k.keane</span>
+            <div class="rcNotes">
+                Here is a note about shomething
+                to do with this account
+            </div>
+            <span class="noteAuthor">10/22/2011 by k.keane</span>
+            <div class="clear">
+            </div>
+            <div class="seeMore">
+                <a href="#">see more</a>
+            </div>
+        </div>
+        <!-- end of third column -->
+        <div class="clear ueBdrBottom">
+        </div>
+        <div class="btnAshGreyLeft ueBtnCancel">
+        	<%= button_to "Cancel", '/users',:class=>'btnAshGrey',:method=>"get" %>
+        </div>
+        <div class="btnGreenLeft ueBtnSave">
+        	<%=f.submit "Save",:class=>"btnGreen"%>
+        </div>
+    </div><!-- end of black table -->
+</div>
+
+
+<%end%>
