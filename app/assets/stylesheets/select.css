@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* all form DIVs have position property set to relative so we can easily position newly created SPAN */
+.selectDiv{position:relative; top:-19px; left:-5px;} 
+
+/* setting the width and height of the SELECT element to match the replacing graphics */
+select.select{
+		position:relative;
+		z-index:10;
+		width:225px !important;
+		height:26px !important;
+		line-height:26px;
+}
+
+/* dynamically created SPAN, placed below the SELECT */
+span.select{
+	position:absolute; margin-top:34px;
+	bottom:0;
+	float:left;
+	left:0;
+	width:190px; padding-right:35px; text-align:left;
+	height:23px;
+	line-height:23px;
+	text-indent:10px;
+	background:url(../images/user-select-field-bg.png) no-repeat 0 0;
+	cursor:default;
+	z-index:1;
+	}
+	
+/* first variation (LABEL is above the SELECT) */	
+form div.variation1 label{display:block;line-height:23px;}
+
+/* second variation (LABEL is placed on the left of the SELECT) */	
+form div.variation2 label{float:left;width:100px;line-height:26px;}
+form div.variation2 span.select{left:0px;}

@@ -1,20 +1,23 @@
 Mystore3::Application.routes.draw do
 
-  
   get "users/index"
   
   match 'users/list', :to => "users/users#index", :as => :user_list
-    namespace :users do
-      resources :users
-    end
-  
-  
-  devise_for :users,  :controllers => { :registrations => "users/registrations" }
+  namespace :users do
+    resources :users
+  end
+
+ devise_for :users
+ resources :users
+# devise_for :user,
+#         :path_names => {:sign_in => "", :sign_out => "logout",:sign_up => "register"}
 
   get 'uploads/new'
   get 'uploads/index'
   get 'uploads/show'
   get 'uploads/destroy'
+  
+#  match 'users_list' => 'users#index'
 #  match 'uploads/delete', :to => 'uploads#delete'
 #  match 'uploads/show', :to => 'uploads#show'
   resources :uploads
@@ -67,7 +70,7 @@ Mystore3::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => redirect('/users/sign_in')
+   root :to => 'users#index'
 
   # See how all your routes lay out with "rake routes"
 
