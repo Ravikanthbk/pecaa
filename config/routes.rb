@@ -1,6 +1,14 @@
 Mystore3::Application.routes.draw do
 
   
+  get "users/index"
+  
+  match 'users/list', :to => "users/users#index", :as => :user_list
+    namespace :users do
+      resources :users
+    end
+  
+  
   devise_for :users,  :controllers => { :registrations => "users/registrations" }
 
   get 'uploads/new'
