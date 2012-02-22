@@ -1,8 +1,16 @@
 class UsersController < ApplicationController
-#  before_filter :get_user, :only => [:index,:new,:edit]
-#  before_filter :accessible_roles, :only => [:new, :edit, :show, :update, :create]
   load_and_authorize_resource :only => [:show,:new,:destroy,:edit,:update]
+  
+  before_filter :check_permissions, :only => [:new, :create, :cancel]
+  skip_before_filter :require_no_authentication
+  
   layout 'pecaa_application'
+ 
+  def check_permissions
+    authorize! :create, User
+  end
+
+  
   # GET /users
   # GET /users.xml                                                
   # GET /users.json                                       HTML and AJAX

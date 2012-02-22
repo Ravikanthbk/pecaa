@@ -7909,3 +7909,1527 @@ Served asset /rc-footer.jpg - 304 Not Modified (0ms)
 
 Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:30:40 +0530
 Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 22:41:12 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 550ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-22 22:41:13 +0530
+
+
+Started GET "/users" for 127.0.0.1 at 2012-02-22 22:41:13 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (3.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (1.0ms)
+Completed 200 OK in 109ms (Views: 18.0ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:41:13 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:41:13 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:41:13 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:41:13 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:41:13 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:41:13 +0530
+Served asset /pecaa.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:41:13 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:41:13 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:41:14 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:41:14 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:41:14 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:41:14 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:41:14 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:41:14 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 22:41:19 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 523ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-22 22:41:20 +0530
+
+
+Started GET "/users" for 127.0.0.1 at 2012-02-22 22:41:20 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (1.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (1.0ms)
+Completed 200 OK in 105ms (Views: 17.0ms | ActiveRecord: 23.0ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:41:21 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:41:21 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:41:21 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:41:21 +0530
+Served asset /tabs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:41:21 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:41:21 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:41:21 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:41:21 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:41:21 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:41:21 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:41:21 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:41:21 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:41:21 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:41:21 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-02-22 22:41:24 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 492ms (Views: 22.0ms | ActiveRecord: 29.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:41:25 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:41:25 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:41:25 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:41:25 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:41:25 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:41:25 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:41:25 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:41:25 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:41:25 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:41:25 +0530
+Served asset /icon-home.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:41:25 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:41:25 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:41:25 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:41:25 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 22:41:43 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (3.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (4.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 252ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-22 22:41:43 +0530
+
+
+Started GET "/users" for 127.0.0.1 at 2012-02-22 22:41:43 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (1.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 493ms (Views: 18.0ms | ActiveRecord: 26.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:41:44 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:41:44 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:41:44 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:41:44 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:41:44 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:41:44 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:41:44 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:41:44 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:41:44 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:41:45 +0530
+Served asset /icon-home.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:41:45 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:41:45 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:41:45 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:41:45 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-02-22 22:42:12 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (1.0ms)
+Completed 200 OK in 312ms (Views: 20.0ms | ActiveRecord: 30.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:42:12 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:42:12 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:42:12 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:42:12 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:42:13 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:42:13 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:42:13 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:42:13 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:42:13 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:42:13 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:42:13 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:42:13 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:42:13 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:42:13 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-02-22 22:42:15 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (1.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 128ms (Views: 19.0ms | ActiveRecord: 29.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:42:15 +0530
+Served asset /tabs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:42:15 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:42:15 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:42:15 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:42:15 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:42:15 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:42:15 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:42:15 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:42:15 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:42:15 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:42:16 +0530
+Served asset /bg.gif - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:42:16 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:42:16 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:42:16 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 22:42:18 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 124ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-22 22:42:18 +0530
+
+
+Started GET "/users" for 127.0.0.1 at 2012-02-22 22:42:19 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (3.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (3.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 130ms (Views: 18.0ms | ActiveRecord: 32.0ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:42:19 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:42:19 +0530
+Served asset /pecaa.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:42:19 +0530
+Served asset /tabs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:42:19 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:42:19 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:42:19 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:42:20 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:42:20 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:42:20 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:42:20 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:42:20 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:42:20 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:42:20 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:42:20 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-22 22:42:43 +0530
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-22 22:43:04 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (1.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 511ms (Views: 18.0ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:43:04 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:43:04 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:43:04 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:43:04 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:43:04 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:43:05 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:43:05 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:43:05 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:43:05 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:43:05 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:43:05 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:43:05 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:43:05 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:43:05 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 22:43:11 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (3.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 317ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-22 22:43:11 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 110ms (Views: 17.0ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:43:11 +0530
+Served asset /tabs.css - 304 Not Modified (1ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:43:12 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:43:12 +0530
+Served asset /pecaa.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:43:12 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:43:12 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:43:12 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:43:12 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:43:12 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:43:12 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:43:12 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:43:12 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:43:12 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:43:12 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:43:12 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-22 22:47:15 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 104ms (Views: 15.0ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:47:16 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:47:16 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:47:16 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:47:16 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:47:16 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:47:16 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:47:16 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:47:16 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:47:16 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:47:16 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:47:16 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:47:16 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:47:16 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:47:16 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 22:47:25 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (3.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 357ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-22 22:47:26 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 203ms (Views: 18.0ms | ActiveRecord: 29.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:47:26 +0530
+Served asset /tabs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:47:26 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:47:26 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:47:27 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:47:27 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:47:27 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:47:27 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:47:27 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:47:27 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:47:27 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:47:27 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:47:27 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:47:27 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:47:27 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 22:47:33 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 104ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-22 22:47:34 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 108ms (Views: 17.0ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:47:34 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:47:34 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:47:34 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:47:34 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:47:35 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:47:35 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:47:35 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:47:35 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:47:35 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:47:35 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:47:35 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:47:35 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:47:35 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:47:35 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 22:48:43 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 192ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-22 22:48:43 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 112ms (Views: 17.0ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:48:44 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:48:44 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:48:44 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:48:44 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:48:44 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:48:44 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:48:44 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:48:44 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:48:44 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:48:44 +0530
+Served asset /icon-home.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:48:44 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:48:44 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:48:44 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:48:44 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-22 22:55:53 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 109ms (Views: 18.0ms | ActiveRecord: 26.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:55:54 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:55:54 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:55:54 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:55:54 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:55:54 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:55:54 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:55:54 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:55:54 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:55:54 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:55:54 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:55:54 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:55:54 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:55:54 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:55:54 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 22:55:58 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (1.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 107ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-22 22:55:59 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (1.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 106ms (Views: 17.0ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:55:59 +0530
+Served asset /tabs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:55:59 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:55:59 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:55:59 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:55:59 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:55:59 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:56:00 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:56:00 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:56:00 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:56:00 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:56:00 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:56:00 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:56:00 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:56:00 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-22 22:58:09 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (1.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 487ms (Views: 20.0ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:58:10 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:58:10 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:58:10 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:58:10 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:58:10 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:58:10 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:58:10 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:58:10 +0530
+Served asset /bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:58:10 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:58:10 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:58:10 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:58:10 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:58:10 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:58:10 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 22:58:15 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (3.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (1.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 302ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-22 22:58:15 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (1.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 119ms (Views: 18.0ms | ActiveRecord: 26.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:58:16 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:58:16 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:58:16 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:58:16 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:58:16 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:58:16 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:58:16 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:58:16 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:58:16 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:58:16 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:58:16 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:58:16 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:58:16 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:58:16 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 22:58:47 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (1.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (0.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 161ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-22 22:58:48 +0530
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (2.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (0.0ms)
+Completed 200 OK in 228ms (Views: 20.0ms | ActiveRecord: 26.0ms)
+
+
+Started GET "/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 22:58:48 +0530
+
+ActionController::RoutingError (No route matches [GET] "/tabs/activatables.js"):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 22:58:48 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 22:58:48 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 22:58:48 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 22:58:48 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 22:58:48 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (9ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 22:58:48 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 22:58:48 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 22:58:48 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 22:58:48 +0530
+Served asset /icon-home.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 22:58:49 +0530
+Served asset /bg.gif - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:58:49 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 22:58:49 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 22:58:49 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 22:59:34 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (4.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Completed 500 Internal Server Error in 1205ms
+
+NameError (undefined local variable or method `resource' for #<UsersController:0x56bff20>):
+  app/controllers/users_controller.rb:10:in `check_permissions'
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2012-02-22 23:03:15 +0530
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mRole Load (2.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` = 1 AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+Rendered users/new.html.erb within layouts/pecaa_application (1.0ms)
+Completed 200 OK in 147ms (Views: 21.0ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-22 23:03:16 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-22 23:03:16 +0530
+Served asset /pecaa.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/tabs/activatables.js" for 127.0.0.1 at 2012-02-22 23:03:16 +0530
+
+AbstractController::ActionNotFound (The action 'tabs' could not be found for UsersController):
+  
+
+Rendered C:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-active.png" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /icon-active.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove-field.png" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /remove-field.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add-field.png" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /add-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-close.png" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /icon-close.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add-notes.png" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /add-notes.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /icon-home.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.gif" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /bg.gif - 304 Not Modified (5ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user-edit-table-shade.jpg" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /user-edit-table-shade.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-grey.png" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /btn-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/correct-field.png" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /correct-field.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.gif" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /tabs.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/see-more-bg.gif" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /see-more-bg.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/border-bottom.gif" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /border-bottom.gif - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-ash-grey.png" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /btn-ash-grey.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-green.png" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /btn-green.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-22 23:03:17 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-22 23:03:18 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
