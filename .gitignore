@@ -1,5 +1,3 @@
-log/*
-tmp/*
 .bundle
 db/*.sql
 log/*.log
