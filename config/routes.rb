@@ -3,10 +3,10 @@ Mystore3::Application.routes.draw do
   
   devise_for :users,  :controllers => { :registrations => "users/registrations" }
 
-  get 'uploads/new'
-  get 'uploads/index'
-  get 'uploads/show'
-  get 'uploads/destroy'
+#  get 'uploads/new'
+#  get 'uploads/index'
+#  get 'uploads/show'
+#  get 'uploads/destroy'
 #  match 'uploads/delete', :to => 'uploads#delete'
 #  match 'uploads/show', :to => 'uploads#show'
   resources :uploads
