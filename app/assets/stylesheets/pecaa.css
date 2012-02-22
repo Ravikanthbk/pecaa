@@ -2,11 +2,11 @@
 /* CSS Document */
 
 body {
-	margin:0px; padding:0px; background:url(/assets/bg.gif); font:normal 12px Arial, Helvetica, sans-serif;
+	margin:0px; padding:0px; background:url(../assets/bg.gif); font:normal 12px Arial, Helvetica, sans-serif;
 }
 
 .mainContainer {
-	margin:auto; width:100%; text-align:center;
+	margin:auto; width:100%;
 }
 
 .rcTable {
@@ -18,7 +18,7 @@ body {
 }
 
 .logo {
-	background:url(/assets/logo.jpg) no-repeat left top; width:221px; height:39px; margin:auto;
+	background:url(../assets/logo.jpg) no-repeat left top; width:221px; height:39px; margin:auto;
 }
 
 .fieldsHolder {
@@ -50,19 +50,19 @@ body {
 }
 
 .btnLogin {
-	background:url(/assets/btn-login.png) no-repeat left top; width:175px; height:35px; color:#ffffff; font:bold 14px Arial, Helvetica, sans-serif; border:none; margin-top:30px;
+	background:url(../assets/btn-login.png) no-repeat left top; width:175px; height:35px; color:#ffffff; font:bold 14px Arial, Helvetica, sans-serif; border:none; margin-top:30px;
 }
 
 .btnGetUsername {
-	margin-top:20px; float:left; margin-left:60px; width:174px; height:35px; background:url(/assets/btn-get-user-name.png) no-repeat left top; color:#ffffff; font:bold 14px Arial, Helvetica, sans-serif; border:none;
+	margin-top:20px; float:left; margin-left:60px; width:174px; height:35px; background:url(../assets/btn-get-user-name.png) no-repeat left top; color:#ffffff; font:bold 14px Arial, Helvetica, sans-serif; border:none;
 }
 
 .btnForgot {
-	margin:auto; margin-top:20px; width:215px; height:34px; background:url(/assets/btn-forgot.png) no-repeat left top; color:#7199ad; font:bold 12px Arial, Helvetica, sans-serif; border:none;
+	margin:auto; margin-top:20px; width:215px; height:34px; background:url(../assets/btn-forgot.png) no-repeat left top; color:#7199ad; font:bold 12px Arial, Helvetica, sans-serif; border:none;
 }
 
 .cornerFold {
-	position:absolute; background:url(/assets/corner-fold.jpg) no-repeat left top; top:-1px; left:-1px; width:115px; height:115px;
+	position:absolute; background:url(../assets/corner-fold.jpg) no-repeat left top; top:-1px; left:-1px; width:115px; height:115px;
 }
 
 .btnGoBack {
@@ -75,7 +75,7 @@ body {
 }
 
 .ueHeader {
-	float:left; width:1024px; height:53px; 
+	float:left; width:1024px; height:53px;
 }
 
 .ueHeader img, ueHeader img a {
@@ -91,7 +91,7 @@ body {
 }
 
 .ueNavMid {
-	float:left; width:944px; background:url(/assets/ue-nav-bg.png) repeat-x left top; height:47px;
+	float:left; width:944px; background:url(../assets/ue-nav-bg.png) repeat-x left top; height:47px;
 }
 
 .ueNav {
@@ -111,27 +111,23 @@ body {
 }
 
 .ueNav li a:hover, .ueNav li.select a {
-	float:left; font:normal 18px "calibri", Arial, Helvetica, sans-serif; color:#666666; background:url(/assets/ue-nav-bg.png) no-repeat right bottom; height:47px; padding:0px 20px 0px 0px; text-decoration:none;
+	float:left; font:normal 18px "calibri", Arial, Helvetica, sans-serif; color:#666666; background:url(../assets/ue-nav-bg.png) no-repeat right bottom; height:47px; padding:0px 20px 0px 0px; text-decoration:none;
 }
 
 .ueNav li:hover span, .ueNav li.select span {
-	background:url(/assets/ue-nav-bg.png) no-repeat left bottom; height:35px; float:left; padding:12px 0px 0px 20px; text-decoration:none; color:#666666;
+	background:url(../assets/ue-nav-bg.png) no-repeat left bottom; height:35px; float:left; padding:12px 0px 0px 20px; text-decoration:none; color:#666666;
 }
 
 .ueBodyContent {
-	float:left; width:948px; background:url(/assets/user-edit-table-shade.jpg) repeat-y left top; padding:10px; color:#999999;
+	float:left; width:948px; background:url(../assets/user-edit-table-shade.jpg) repeat-y left top; padding:10px;
 }
 
 .btnGrey {
-	background:url(/assets/btn-grey.png) no-repeat right bottom; border:0px; padding-right:10px; height:24px; color:#ffffff;
+	background:url(../assets/btn-grey.png) no-repeat right bottom; border:0px; padding-right:10px; height:24px; color:#ffffff;
 }
 
 .btnGreyLeft {
-	float:right; background:url(/assets/btn-grey.png) no-repeat left top; padding-left:5px; height:24px;
-}
-
-.ueBtnCreateNewUser {
-	width:115px;
+	float:right; background:url(../assets/btn-grey.png) no-repeat left top; padding-left:5px; height:24px;
 }
 
 .rcBlack {
@@ -190,18 +186,6 @@ body {
 	float:left; width:290px; margin-bottom:3px;
 }
 
-.posrel {
-	position:relative;
-}
-
-.addFieldPos {
-	position:absolute; top:0px; right:23px;
-}
-
-.selectPos {
-	height:25px !important; margin:10px 0px;
-}
-
 .inpTxt {
 	float:left; width:75px; padding:3px 5px 0px 0px; text-align:right; color:#999999;
 }
@@ -219,7 +203,7 @@ body {
 }
 
 .correctField {
-	float:left; background:url(/assets/correct-field.png) no-repeat left top; border:none; width:140px; height:25px; padding:0px 35px 0px 5px;
+	float:left; background:url(../assets/correct-field.png) no-repeat left top; border:none; width:140px; height:25px; padding:0px 35px 0px 5px;
 }
 
 .correctFieldTxt {
@@ -227,7 +211,7 @@ body {
 }
 
 .errorField {
-	float:left; background:url(/assets/error-field.png) no-repeat left top; border:none; width:140px; height:25px; padding:0px 35px 0px 5px;
+	float:left; background:url(../assets/error-field.png) no-repeat left top; border:none; width:140px; height:25px; padding:0px 35px 0px 5px;
 }
 
 .errorFieldTxt {
@@ -254,20 +238,9 @@ float:left; padding:1px 0px 0px 10px;
 	float:left; width:228px; background-color:#272727; border-radius:5px; -moz-border-radius:5px; padding:10px 30px 10px 10px; margin:10px 0px 5px 0px; text-align:left; color:#ffffff; position:relative; height:34px;
 }
 
-.addNotesPos {
-	position:absolute; top:0; right:0;
-}
-
-.noteAuthor {
-	color:#999999; float:right; font-size:10px;
-}
-
-.ueBdrBottom {
-	background:url(/assets/border-bottom.gif) repeat-x left bottom; height:10px; margin-bottom:20px;
-}
 
 .seeMore {
-	float:left; color:#ffffff; width:252px; height:29px; background:url(/assets/see-more-bg.gif) no-repeat left top; margin:20px 0px 0px 8px; padding-top:11px;
+	float:left; color:#ffffff; width:252px; height:29px; background:url(../assets/see-more-bg.gif) no-repeat left top; margin:20px 0px 0px 8px; padding-top:11px;
 }
 
 .seeMore a {
@@ -279,31 +252,23 @@ float:left; padding:1px 0px 0px 10px;
 }
 
 .btnAshGrey {
-	background:url(/assets/btn-ash-grey.png) no-repeat right bottom; border:0px; padding-right:10px; height:35px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif;
+	background:url(../assets/btn-ash-grey.png) no-repeat right bottom; border:0px; padding-right:10px; height:35px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif;
 }
 
 .btnAshGreyLeft {
-	float:right; background:url(/assets/btn-ash-grey.png) no-repeat left top; padding-left:0px; height:35px;
-}
-
-.ueBtnCancel {
-	width:80px; float:left;
+	float:right; background:url(../assets/btn-ash-grey.png) no-repeat left top; padding-left:0px; height:35px;
 }
 
 .btnGreen {
-	background:url(/assets/btn-green.png) no-repeat right bottom; border:0px; padding-right:15px; height:34px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif;
+	background:url(../assets/btn-green.png) no-repeat right bottom; border:0px; padding-right:15px; height:34px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif;
 }
 
 .btnGreenLeft {
-	float:right; background:url(/assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px;
-}
-
-.ueBtnSave {
-	width:76px; float:right;
+	float:right; background:url(../assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px;
 }
 
 .rcFooter {
-	float:left; width:968px; background:url(/assets/rc-footer.jpg) no-repeat left top; height:12px;
+	float:left; width:968px; background:url(../assets/rc-footer.jpg) no-repeat left top; height:12px;
 }
 
 .footerLinks {
@@ -319,11 +284,11 @@ float:left; padding:1px 0px 0px 10px;
 }
 
 .ueNavBottom li a {
-	float:left; color:#6c95a9; margin:0px 10px 0px 0px; text-decoration:none; padding:0px 0px 0px 0px; height:34px; background:url(/assets/footer-nav-bg.png) no-repeat right -5px;
+	float:left; color:#6c95a9; margin:0px 10px 0px 0px; text-decoration:none; padding:0px 0px 0px 0px; height:34px; background:url(../assets/footer-nav-bg.png) no-repeat right -5px;
 }
 
 .ueNavBottom li a span {
-	float:left; color:#6c95a9; margin:0px 20px 0px 0px; text-decoration:none; padding:0px 0px 0px 20px; height:34px; background:url(/assets/footer-nav-bg.png) no-repeat left -5px;
+	float:left; color:#6c95a9; margin:0px 20px 0px 0px; text-decoration:none; padding:0px 0px 0px 20px; height:34px; background:url(../assets/footer-nav-bg.png) no-repeat left -5px;
 }
 
 .ueNavBottom li a:hover {
@@ -334,14 +299,6 @@ float:left; padding:1px 0px 0px 10px;
 	float:left; text-decoration:underline; color:#6c95a9;
 }
 
-.footerHomeIcon {
-	float:left; border:none; margin:3px 0px 0px 10px;
-}
-
-.fLeft {
-	float:left;
-}
-
 /* end of user edit */
 
 /* users */
@@ -350,11 +307,11 @@ float:left; padding:1px 0px 0px 10px;
 }
 
 .btnBlue {
-	background:url(/assets/btn-blue.png) no-repeat right bottom; border:0px; padding-right:10px; height:24px; color:#ffffff;
+	background:url(../assets/btn-blue.png) no-repeat right bottom; border:0px; padding-right:10px; height:24px; color:#ffffff;
 }
 
 .btnBlueLeft {
-	float:right; background:url(/assets/btn-blue.png) no-repeat left top; padding-left:5px; height:24px;
+	float:right; background:url(../assets/btn-blue.png) no-repeat left top; padding-left:5px; height:24px;
 }
 
 .rcPaleBlue {
@@ -362,7 +319,7 @@ float:left; padding:1px 0px 0px 10px;
 }
 
 .userSearchField {
-	position:absolute; left:0; width:180px; height:34px; border:none; background:url(/assets/user-search-field-bg.png) no-repeat left top; padding:0px 40px 0px 5px; top:0px;
+	position:absolute; left:0; width:180px; height:34px; border:none; background:url(../assets/user-search-field-bg.png) no-repeat left top; padding:0px 40px 0px 5px; top:0px;
 }
 
 .rcBlue2 {
@@ -402,7 +359,7 @@ float:left; padding:1px 0px 0px 10px;
 }
 
 .userGridHeader {
-	float:left; width:707px; height:37px; background:url(/assets/user-grid-header-bg.png) no-repeat left top;
+	float:left; width:707px; height:37px; background:url(../assets/user-grid-header-bg.png) no-repeat left top;
 }
 
 .userGridBody {
@@ -410,7 +367,7 @@ float:left; padding:1px 0px 0px 10px;
 }
 
 .userGridFooter {
-	float:right; width:707px; height:17px; background:url(/assets/user-grid-footer-bg.png) no-repeat left top;
+	float:right; width:707px; height:17px; background:url(../assets/user-grid-footer-bg.png) no-repeat left top;
 }
 
 ul.userList {
@@ -422,11 +379,11 @@ ul.userList li {
 }
 
 ul.userList li.light {
-	background:url(/assets/grid-bg-light.gif) repeat-x left top;
+	background:url(../assets/grid-bg-light.gif) repeat-x left top;
 }
 
 ul.userList li.dark {
-	background:url(/assets/grid-bg-dark.gif) repeat-x left top;
+	background:url(../assets/grid-bg-dark.gif) repeat-x left top;
 }
 
 ul.userList .userName {
@@ -458,7 +415,7 @@ ul.userList .lastActi {
 }
 
 ul.userList .edit {
-	float:left; padding:0px 5px; text-align:center; margin-top:2px; 
+	float:left; padding:0px 5px; text-align:center; margin-top:2px;
 }
 
 ul.userListHeads {
@@ -503,43 +460,43 @@ ul.userListHeads .edit {
 }
 
 .addImage, .addImage a {
-	float:right; width:110px; height:24px; background:url(/assets/btn-add-image.png) no-repeat left top; border:none; display:block; margin-left:5px;
+	float:right; width:110px; height:24px; background:url(../assets/btn-add-image.png) no-repeat left top; border:none; display:block; margin-left:5px;
 }
 
 .addImage a:hover {
-	background:url(/assets/btn-add-image-hover.png) no-repeat left top;
+	background:url(../assets/btn-add-image-hover.png) no-repeat left top;
 }
 
 .addVideo, .addVideo a {
-	float:right; width:110px; height:24px; background:url(/assets/btn-add-video.png) no-repeat left top; border:none; display:block; margin-left:5px;
+	float:right; width:110px; height:24px; background:url(../assets/btn-add-video.png) no-repeat left top; border:none; display:block; margin-left:5px;
 }
 
 .addVideo a:hover {
-	background:url(/assets/btn-add-video-hover.png) no-repeat left top;
+	background:url(../assets/btn-add-video-hover.png) no-repeat left top;
 }
 
 .addText, .addText a {
-	float:right; width:110px; height:24px; background:url(/assets/btn-add-text.png) no-repeat left top; border:none; display:block; margin-left:5px;
+	float:right; width:110px; height:24px; background:url(../assets/btn-add-text.png) no-repeat left top; border:none; display:block; margin-left:5px;
 }
 
 .addText a:hover {
-	background:url(/assets/btn-add-text-hover.png) no-repeat left top;
+	background:url(../assets/btn-add-text-hover.png) no-repeat left top;
 }
 
 .addForm, .addForm a {
-	float:right; width:110px; height:24px; background:url(/assets/btn-add-form.png) no-repeat left top; border:none; display:block; margin-left:5px;
+	float:right; width:110px; height:24px; background:url(../assets/btn-add-form.png) no-repeat left top; border:none; display:block; margin-left:5px;
 }
 
 .addForm a:hover {
-	background:url(/assets/btn-add-form-hover.png) no-repeat left top;
+	background:url(../assets/btn-add-form-hover.png) no-repeat left top;
 }
 
 .addFile, .addFile a {
-	float:right; width:110px; height:24px; background:url(/assets/btn-add-file.png) no-repeat left top; border:none; display:block; margin-left:5px;
+	float:right; width:110px; height:24px; background:url(../assets/btn-add-file.png) no-repeat left top; border:none; display:block; margin-left:5px;
 }
 
 .addFile a:hover {
-	background:url(/assets/btn-add-file-hover.png) no-repeat left top;
+	background:url(../assets/btn-add-file-hover.png) no-repeat left top;
 }
 
 .datePicker {
@@ -563,11 +520,11 @@ ul.ConLibra li {
 }
 
 ul.ConLibra li.light {
-	background:url(/assets/grid-bg-light.gif) repeat-x left top;
+	background:url(../assets/grid-bg-light.gif) repeat-x left top;
 }
 
 ul.ConLibra li.dark {
-	background:url(/assets/grid-bg-dark.gif) repeat-x left top;
+	background:url(../assets/grid-bg-dark.gif) repeat-x left top;
 }
 
 ul.ConLibra li.hover {
@@ -607,7 +564,7 @@ ul.ConLibra .addedBy {
 }
 
 ul.ConLibra .edit {
-	float:left; padding:0px 5px; text-align:center; margin-top:2px; 
+	float:left; padding:0px 5px; text-align:center; margin-top:2px;
 }
 
 ul.ConLibraHeads {
@@ -655,7 +612,7 @@ ul.ConLibraHeads .edit {
 }
 
 .addFileTop {
-	float:left; width:433px; border:1px solid #797979; border-radius:5px 5px 0px 0px; background:url(/assets/add-file-bg.jpg) repeat left top; font:bold 25px Arial, Helvetica, sans-serif; color:#d9e5eb; line-height:38px; text-align:left; padding-left:15px; position:relative;
+	float:left; width:433px; border:1px solid #797979; border-radius:5px 5px 0px 0px; background:url(../assets/add-file-bg.jpg) repeat left top; font:bold 25px Arial, Helvetica, sans-serif; color:#d9e5eb; line-height:38px; text-align:left; padding-left:15px; position:relative;
 }
 
 .help {
@@ -671,27 +628,27 @@ ul.ConLibraHeads .edit {
 }
 
 .addFileBottom {
-	float:left; width:418px; border:1px solid #797979; border-radius:0px 0px 5px 5px; background:url(/assets/add-file-bg.jpg) repeat left top; padding:15px;
+	float:left; width:418px; border:1px solid #797979; border-radius:0px 0px 5px 5px; background:url(../assets/add-file-bg.jpg) repeat left top; padding:15px;
 }
 
 .btnUploadFile {
-	background:url(/assets/btn-green.png) no-repeat right bottom; border:0px; padding-right:15px; height:34px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif; margin-left:10px;
+	background:url(../assets/btn-green.png) no-repeat right bottom; border:0px; padding-right:15px; height:34px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif; margin-left:10px;
 }
 
 .btnUploadFileLeft {
-	background:url(/assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px; width:100px; width:10px; float:left; margin-left:300px;
+	background:url(../assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px; width:100px; width:10px; float:left; margin-left:300px;
 }
 
 .btnCancel {
-	background:url(/assets/btn-red.png) no-repeat right bottom; border:0px; padding-right:15px; height:34px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif; margin-left:10px;
+	background:url(../assets/btn-red.png) no-repeat right bottom; border:0px; padding-right:15px; height:34px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif; margin-left:10px;
 }
 
 .btnCancelLeft {
-	background:url(/assets/btn-red.png) no-repeat left top; padding-left:0px; height:34px; width:100px; width:10px; float:left;
+	background:url(../assets/btn-red.png) no-repeat left top; padding-left:0px; height:34px; width:100px; width:10px; float:left;
 }
 
 .helpPopUp {
-	width:450px; height:134px; background:url(/assets/help-popup.png) no-repeat left top; position:absolute; top:-100px; left:0px; z-index:999; 
+	width:450px; height:134px; background:url(../assets/help-popup.png) no-repeat left top; position:absolute; top:-100px; left:0px; z-index:999;
 }
 
 .helpPopUp p {

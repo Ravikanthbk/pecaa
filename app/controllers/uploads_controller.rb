@@ -13,9 +13,10 @@ class UploadsController < ApplicationController
   def create
     @upload = Upload.new(params[:upload])
     if @upload.save
-      redirect_to @upload
+#      redirect_to @upload
+      redirect_to uploads_path
     else
-     # redirect_to Upload_path
+      render new_upload_path
     end
   end
 
@@ -31,10 +32,8 @@ class UploadsController < ApplicationController
   end
 
   def destroy
-    logger.info("\n From delete of uploads controller \n")
     @upload = Upload.find(params[:id])
     @upload.destroy
-
     respond_to do |format|
       format.html { redirect_to(uploads_url) }
       format.xml  { head :ok }
