@@ -16,12 +16,13 @@ class UsersController < ApplicationController
   # GET /users.json                                       HTML and AJAX
   #-----------------------------------------------------------------------
   def index
-    @users = User.accessible_by(current_ability, :index).limit(20)
-    respond_to do |format|
-      format.json { render :json => @users }
-      format.xml  { render :xml => @users }
-      format.html
-    end
+    # @users = User.accessible_by(current_ability, :index).limit(20)
+    # respond_to do |format|
+    #   format.json { render :json => @users }
+    #   format.xml  { render :xml => @users }
+    #   format.html
+    # end
+    redirect_to "/users/list"
   end
  
   # GET /users/new
