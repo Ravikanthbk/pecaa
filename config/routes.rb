@@ -6,9 +6,14 @@ Mystore3::Application.routes.draw do
   namespace :users do
     resources :users
   end
+  
+  devise_scope :user do
+    get "login"  => "devise/sessions#new"    
+    get "logout" => "devise/sessions#destroy"
+  end
 
- devise_for :users
- resources :users
+  devise_for :users
+  resources :users
 # devise_for :user,
 #         :path_names => {:sign_in => "", :sign_out => "logout",:sign_up => "register"}
 
