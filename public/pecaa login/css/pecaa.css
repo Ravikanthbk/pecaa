@@ -10,7 +10,7 @@ body {
 }
 
 .rcTable {
-	border:1px solid #9b9b9b; border-radius:5px; -moz-border-radius:5px; background-color:#ffffff; width:600px; height:300px; padding-top:45px; margin:auto; margin-top:150px; box-shadow: 2px 2px 2px 0px #999999; -mox-box-shadow: 2px 2px 2px 0px #999999;
+	border:1px solid #9b9b9b; border-radius:5px; -moz-border-radius:5px; background-color:#ffffff; width:600px; height:400px; padding-top:45px; margin:auto; margin-top:150px; box-shadow: 2px 2px 2px 0px #999999; -mox-box-shadow: 2px 2px 2px 0px #999999;
 }
 
 .rcTable2 {

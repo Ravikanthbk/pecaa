@@ -1,22 +1,19 @@
 <div class="rcTable">
-    	<div class="logo"></div>
-		<% if flash[:alert] %>
-  <div class="flash errors"><%= flash[:alert] %></div>
-<% end %>
-
-		<%= form_for :user, :url => user_session_path do |f| %>
-
-        <div class="fieldsHolder">
-        	<%= f.text_field :email, :class => 'inp' %>
-		    <%= f.password_field :password, :class => 'inp' %>
-		  
-        <div class="clear"></div>
-        <span style="width:300px; float:left; color:#999999;">Remember me on this computer <%= f.check_box :remember_me %></span>
-        <div class="clear"></div>
-		<%= f.submit "Login",:class=>'btnLogin'%>
-        </div>
-		
+  <div class="logo"></div>
+  <% if flash[:alert] %>
+    <div class="flash errors"><%= flash[:alert] %></div>
+  <% end %>
+  <div class="fieldsHolder">
+	  <%= form_for :user, :url => user_session_path do |f| %>
+      <%= f.text_field :email, :class => 'inp' %>
+      <%= f.password_field :password, :class => 'inp' %>
+      <div class="clear"></div>
+      <span style="width:300px; float:left; color:#999999;">
+        Remember me on this computer <%= f.check_box :remember_me %>
+      </span>
+      <div class="clear"></div>
+		  <%= f.submit "Login",:class=>'btnLogin'%>
 		<%end%>
-    </div>
-    <%= button_to "forgot username / password", new_user_password_path,:class=>'btnForgot',:method=>"get" %>
+		<%= button_to "forgot username / password", new_user_password_path, :class=>'btnForgot', :method=>"get" %>
+  </div>
 </div>
