@@ -2,18 +2,19 @@ Mystore3::Application.routes.draw do
 
   get "users/index"
   
-  match 'users/list', :to => "users/users#index", :as => :user_list
-  namespace :users do
-    resources :users
-  end
+  # match 'users/list', :to => "users/users#index", :as => :user_list
+  # namespace :users do
+  #   resources :users
+  # end
   
   devise_scope :user do
     get "login"  => "devise/sessions#new"    
     get "logout" => "devise/sessions#destroy"
   end
-
+  post '/users/index'
   devise_for :users
   resources :users
+
 # devise_for :user,
 #         :path_names => {:sign_in => "", :sign_out => "logout",:sign_up => "register"}
 

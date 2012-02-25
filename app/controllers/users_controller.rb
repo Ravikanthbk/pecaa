@@ -16,7 +16,13 @@ class UsersController < ApplicationController
   # GET /users.json                                       HTML and AJAX
   #-----------------------------------------------------------------------
   def index
-    @users= User.all
+    if params[:query].blank? && params[:date_added].blank?
+      @users= User.all
+    elsif !params[:query].blank? && params[:date_added].blank?
+      @users= User.where("#{params[:search_on]} like ?", "%#{params[:query]}%")
+    elsif params[:query].blank? && !params[:date_added].blank?
+      @users= User.where(:created_at => (Date.strptime(params[:start_date],"%m-%d-%Y")..Date.strptime(params[:end_date],"%m-%d-%Y")))
+    end
     respond_to do |format|
       format.json { render :json => @users }
       format.xml  { render :xml => @users }

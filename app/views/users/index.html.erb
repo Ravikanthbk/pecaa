@@ -36,25 +36,14 @@
       <!-- rc table -->
       <div class="rcPaleBlue" style="padding:50px 5px 10px 5px; position:relative;">
         <!-- search and select -->
-        <input type="text" class="userSearchField"> <img src="/assets/users/images/icon-user-search-field.png" style="position:absolute; right:0; top:0;">
-        <div class="selectDiv">
-          <select class="select" title="Select one">
-            <option selected>Name</option>
-            <option>Type</option>
-            <option>Added By</option>
-          </select>
-        </div><!-- end of search and select -->
-        <!-- names -->
-        <div class="rcBlue2">
-          <div class="rcBlack2">
-            <span>Smith</span> <img src="/assets/users/images/icon-remove.png">
-          </div><span>name</span>
-        </div>
-        <div class="rcBlue2">
-          <div class="rcBlack2">
-            <span>Admin</span> <img src="/assets/users/images/icon-remove-red.png">
-          </div><span>role</span>
-        </div><!-- end of names -->
+        <form action=<%=url_for(:action=>:index)%> method="post" name="searchbox" id='searchbox'>
+          <input id="tokentag" type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+          <input type="text" name='query' class="userSearchField"> <img src="/assets/users/images/icon-user-search-field.png" style="position:absolute; right:0; top:0;">
+          <div class="selectDiv">
+            <select name='search_on'class="select" title="Select one">
+              <option>Added By</option>
+            </select>
+          </div><!-- end of search and select -->
       </div>
       <div style="float:left; width:225px; margin:10px 0px;">
         <img src="/assets/users/images/seperator-dot.gif" style="margin:0px 5px;"> <img src="/assets/users/images/seperator-dot.gif" style="margin:0px 5px;"> <img src="/assets/users/images/seperator-dot.gif" style="margin:0px 5px;">
@@ -62,18 +51,20 @@
       <!-- slider rc -->
       <div class="rcPaleBlue" style="padding:5px 5px 5px 5px; position:relative;">
         <div class="searchOptions">
-            <%=check_box_tag "date added", "",:onclick => "$('#date_range').show"%><span>date added</span>
+          <input type=checkbox id="date_added" name="date_added" ><span>date added</span>
         </div>
         <div class="clear"></div>
           <div id="date_range" style="display:none">
               Start Date:
-              <%= text_field_tag "timezone", Date.today.strftime('%m-%d-%Y'), :class=>'datepicker', :id=>"datepicker1", :size=>10 %>
+              <%= text_field_tag "start_date", Date.today.strftime('%m-%d-%Y'), :class=>'datepicker', :id=>"datepicker1", :size=>10 %>
               <br/>
               End Date:
-              <%= text_field_tag "timezone", Date.today.strftime('%m-%d-%Y'), :class=>'datepicker', :id=>"datepicker2", :size=>10 %>
+              <%= text_field_tag "end_date", Date.today.strftime('%m-%d-%Y'), :class=>'datepicker', :id=>"datepicker2", :size=>10 %>
         </div>
         <div class="clear"></div>
         <div class="clearHeight10"></div>
+          <input type="submit" value='Search' class="btnLogin">
+        </form>
         <div class="searchOptions">
         </div>
       </div><!-- end of rc slider -->
@@ -127,9 +118,19 @@
 $(function() {
 	$( ".datepicker" ).datepicker({
 		showOn: "button",
-		buttonImage: "images/calendar.gif",
+		buttonImage: "/images/calendar.gif",
 		buttonImageOnly: true,
 		dateFormat: "mm-dd-yy"
 	});
+});
+$('#date_added').click(function(){
+  if ($('#date_added').data('checked') == false){
+    $('#date_added').data('checked', true)
+    $('#date_range').hide();
+  }else{
+    $('#date_added').data('checked', false)
+    $('#date_range').show();
+  }
+    
 });
 </script>
