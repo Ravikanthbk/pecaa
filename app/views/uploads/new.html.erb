@@ -6,7 +6,7 @@
 <span><span class="helpGreyTxt">max file size:</span> 10mb</span>
 </div>
     <div class="addFileTop">Add File <img src="/assets/icon-help.png" class="help" /></div>
-    <%= form_for(@upload, :html => { :multipart => true }) do |f| %>
+    <%= form_for(@upload, :html => { :multipart => true }, :remote => true) do |f| %>
     <%#= f.object.errors %>
     <div class="addFileBody">
       <%= f.file_field :upload %>
