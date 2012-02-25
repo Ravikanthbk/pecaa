@@ -365,6 +365,7 @@ float:left; padding:1px 0px 0px 10px;
 .userGridBody {
 	float:left; width:705px; border-left:1px solid #333333; border-right:1px solid #333333;
 }
+.userGridBodyImage {float:left; width:705px; border:1px solid #333333;}
 
 .userGridFooter {
 	float:right; width:707px; height:17px; background:url(../assets/user-grid-footer-bg.png) no-repeat left top;
@@ -608,7 +609,7 @@ ul.ConLibraHeads .edit {
 
 /* add file */
 .addFileHolder {
-	margin:200px 0px 0px 0px; width:450px; border-radius:5px; -moz-border-radius:5px; box-shadow: 2px 2px 2px 0px #999999; position:relative;
+	margin:110px 0px 0px 0px; width:450px; border-radius:5px; -moz-border-radius:5px; box-shadow: 2px 2px 2px 0px #999999; position:relative;
 }
 
 .addFileTop {

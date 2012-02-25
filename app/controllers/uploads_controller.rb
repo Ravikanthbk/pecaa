@@ -1,6 +1,7 @@
 class UploadsController < ApplicationController
+  layout 'pecaa_application', :except => [:new]
   def index
-    @uploads = Upload.all
+    @uploads = Upload.order("created_at desc")
   end
   def show
     @upload = Upload.find(params[:id])
@@ -13,7 +14,6 @@ class UploadsController < ApplicationController
   def create
     @upload = Upload.new(params[:upload])
     if @upload.save
-#      redirect_to @upload
       redirect_to uploads_path
     else
       render new_upload_path

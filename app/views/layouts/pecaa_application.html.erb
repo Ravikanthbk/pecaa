@@ -13,6 +13,14 @@
 <%= stylesheet_link_tag "pecaa" %>
 <%= stylesheet_link_tag "tabs" %>
 <%= stylesheet_link_tag "prettyCheckboxes.css" %>
+
+<%#= stylesheet_link_tag "pecaa" %>
+<%= stylesheet_link_tag "facebox" %>
+<%= csrf_meta_tag %>
+<%#= javascript_include_tag 'jquery.min.js','rails.js'%>
+<%= javascript_include_tag 'rails.js'%>
+<%= javascript_include_tag 'facebox.js'%>
+<%= javascript_include_tag 'common.js'%>
 </head>
 
 <body>
@@ -43,7 +51,7 @@
             <img src="/assets/ue-nav-bg-right.png" style="float:left;" />
             </div>
             
-           <%=yield%>   
+           <%=yield%>
             <div class="rcFooter"></div>
             <div class="clear"></div>
             
