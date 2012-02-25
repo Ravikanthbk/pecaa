@@ -81,8 +81,8 @@
   <!-- end of col1 -->
 
   <!-- col 2 -->
-  <%#*<div class="userGridBody">%>
   <div class="userGrid">
+    <div class ="imagPagination"><%= paginate @uploads %></div>
     <div class="userGridBodyImage">
       <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
       <div class="viewport">
@@ -95,16 +95,13 @@
             <a href='<%= image %>' rel="facebox"><%= image_tag file.upload.url(:thumb) %></a>
             </td>
             <td>
-            <%= link_to 'Destroy', file, :confirm => 'Are you sure?', :method => :delete %>
+            <%= link_to image_tag('icon-remove-red.png'), file, :confirm => 'Are you sure?', :method => :delete, :title => 'Delete' %>
             </td>
             </tr>
           </table>
           <% end %>
         </div>
     </div>
-    </div>
-    <div>
-      <a href='<%= new_upload_path %>' rel="facebox">New Upload</a>
     </div>
   </div>
 

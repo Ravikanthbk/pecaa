@@ -1,7 +1,7 @@
 class UploadsController < ApplicationController
   layout 'pecaa_application', :except => [:new]
   def index
-    @uploads = Upload.order("created_at desc")
+    @uploads = Upload.order("created_at desc").page(params[:page]).per(5)
   end
   def show
     @upload = Upload.find(params[:id])
