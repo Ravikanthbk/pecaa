@@ -5,7 +5,7 @@
     <span class="addForm"><a href="#"></a></span>
     <span class="addText"><a href="#"></a></span>
     <span class="addVideo"><a href="#"></a></span>
-    <span class="addImage"><a href="#"></a></span>
+    <span class="addImage"><a href='<%= new_upload_path %>' rel="facebox"></a></span>
   </div>
   <!-- end of add buttons -->
   <div class="clear"></div>
@@ -81,8 +81,9 @@
   <!-- end of col1 -->
 
   <!-- col 2 -->
-  <div class="userGridBody">
-    <div id="scrollbar1">
+  <div class="userGrid">
+    <div class ="imagPagination"><%= paginate @uploads %></div>
+    <div class="userGridBodyImage">
       <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
       <div class="viewport">
         <div class="overview">
@@ -90,12 +91,11 @@
           <table border="0.5">
             <tr>
             <td>
-            <%#= image_tag file.upload.url(:thumb) %>
-            <% image = file.upload.url(:medium).split('?')[0] %>
+           <% image = file.upload.url(:medium).split('?')[0] %>
             <a href='<%= image %>' rel="facebox"><%= image_tag file.upload.url(:thumb) %></a>
             </td>
             <td>
-            <%= link_to 'Destroy', file, :confirm => 'Are you sure?', :method => :delete %>
+            <%= link_to image_tag('icon-remove-red.png'), file, :confirm => 'Are you sure?', :method => :delete, :title => 'Delete' %>
             </td>
             </tr>
           </table>
@@ -103,7 +103,6 @@
         </div>
     </div>
     </div>
-    <div><%= link_to 'New Upload', new_upload_path %></div>
   </div>
 
 </div>

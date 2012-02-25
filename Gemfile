@@ -49,3 +49,5 @@ gem 'cancan'
 # gem 'therubyracer'
 # gem 'libv8', '3.3.10.4'
 
+gem 'kaminari'
+
