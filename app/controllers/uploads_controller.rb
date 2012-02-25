@@ -16,7 +16,9 @@ class UploadsController < ApplicationController
     if @upload.save
       redirect_to uploads_path
     else
-      render new_upload_path
+      respond_to do |format|
+        format.html  { render(:nothing => true)}
+      end
     end
   end
 
