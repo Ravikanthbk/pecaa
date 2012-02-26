@@ -1,15 +1,14 @@
 <div class="rcTable">
   <div class="logo"></div>
-  <% if flash[:alert] %>
-    <div class="flash errors"><%= flash[:alert] %></div>
-  <% end %>
   <div class="fieldsHolder">
+    <div class="flash errors">&nbsp;<% if flash[:alert] %><%= flash[:alert] %>  <% end %></div>
 	  <%= form_for :user, :url => user_session_path do |f| %>
-      <%= f.text_field :email, :class => 'inp' %>
-      <%= f.password_field :password, :class => 'inp' %>
+      <%= f.text_field :email, :class => "inp defaultText", :title => "username" %>
+      <%= text_field_tag "password-clear", "", :class => 'inp defaultText', :title => "password" %>
+      <%= f.password_field :password, :class => 'inp', :title => "password", :autocomplete => 'off'%>
       <div class="clear"></div>
-      <span style="width:300px; float:left; color:#999999;">
-        Remember me on this computer <%= f.check_box :remember_me %>
+      <span style="width:300px; float:left; color:#999999; margin-left:37px">
+         <%= f.check_box :remember_me %> Remember me on this computer
       </span>
       <div class="clear"></div>
 		  <%= f.submit "Login",:class=>'btnLogin'%>
@@ -17,3 +16,50 @@
 		<%= button_to "forgot username / password?", new_user_password_path, :class=>'btnForgot', :method=>"get" %>
   </div>
 </div>
+<style media="screen" type="text/css">
+    .defaultText { width: 230px; }
+    .flash{ color:#FF0000 !important;font-weight:normal; !important; font:bold 12px Arial, Helvetica, sans-serif; border:none; margin:5px auto 5px 38px;}
+    .defaultTextActive { color: #a1a1a1; font-style: italic; }
+    #user_password {display: none;width: 230px;}
+</style>
+<script language="javascript">
+<!--
+$(document).ready(function()
+{
+    $(".defaultText").focus(function(srcc)
+    {
+        if ($(this).val() == $(this)[0].title)
+        {
+            $(this).removeClass("defaultTextActive");
+            $(this).val("");
+        }
+    });
+    
+    $(".defaultText").blur(function()
+    {
+        if ($(this).val() == "")
+        {
+            $(this).addClass("defaultTextActive");
+            $(this).val($(this)[0].title);
+        }
+    });
+    
+    $(".defaultText").blur();
+    
+    $('#password-clear').show();
+    $('#user_password').hide();
+
+    $('#password-clear').focus(function() {
+       $('#password-clear').hide();
+       $('#user_password').show();
+       $('#user_password').focus();
+    });
+    $('#user_password').blur(function() {
+       if($('#user_password').val() == '') {
+           $('#password-clear').show();
+           $('#user_password').hide();
+       }
+    });
+});
+//-->
+</script>

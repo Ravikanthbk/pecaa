@@ -50,7 +50,7 @@ body {
 }
 
 .btnLogin {
-	background:url(../assets/btn-login.png) no-repeat left top; width:175px; height:35px; color:#ffffff; font:bold 14px Arial, Helvetica, sans-serif; border:none; margin-top:30px;
+	background:url(../assets/btn-login.png) no-repeat left top; width:175px; height:35px; color:#ffffff; font:bold 14px Arial, Helvetica, sans-serif; border:none; margin:16px auto auto 38px;
 }
 
 .btnGetUsername {
@@ -63,7 +63,7 @@ body {
     color: #7199AD;
     font: bold 12px Arial,Helvetica,sans-serif;
     height: 34px;
-    margin: 42px auto auto;
+    margin: 35px auto auto 33px;
     padding-top: 8px;
     text-align: center;
     width: 215px;
