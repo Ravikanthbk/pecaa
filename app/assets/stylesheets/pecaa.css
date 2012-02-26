@@ -58,7 +58,15 @@ body {
 }
 
 .btnForgot {
-	margin:auto; margin-top:20px; width:215px; height:34px; background:url(../assets/btn-forgot.png) no-repeat left top; color:#7199ad; font:bold 12px Arial, Helvetica, sans-serif; border:none;
+    background: url("../images/btn-forgot.png") no-repeat scroll left top transparent;
+    border: medium none;
+    color: #7199AD;
+    font: bold 12px Arial,Helvetica,sans-serif;
+    height: 34px;
+    margin: 42px auto auto;
+    padding-top: 8px;
+    text-align: center;
+    width: 215px;
 }
 
 .cornerFold {
