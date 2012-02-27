@@ -6,9 +6,9 @@ class Ability
  
     if user.role? :super_admin
       can :manage, :all
-    elsif user.role? :product_admin
-      can :manage, [Product, Asset, Issue]
-    elsif user.role? :product_team
+    elsif user.role? :administrator
+      can :manage, [Image]
+    elsif user.role? :website_builder
       can :read, [Product, Asset]
       # manage products, assets he owns
       can :manage, Product do |product|

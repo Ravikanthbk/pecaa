@@ -219,7 +219,7 @@ body {
 }
 
 .correctField {
-	float:left; background:url(/assets/correct-field.png) no-repeat left top; border:none; width:140px; height:25px; padding:0px 35px 0px 5px;
+	float:left; background:url(/assets/correct-field.png) no-repeat left top; border:none; width:140px; height:25px; padding:0px 35px 0px 5px; color:#000;
 }
 
 .correctFieldTxt {
@@ -701,4 +701,11 @@ ul.ConLibraHeads .edit {
 .helpGreyTxt {
 	color:#686b6c; margin-left:20px;
 }
+
+.error{
+	color:#FF5A5A
+}
+
 /* end of add file */
+
+ */
