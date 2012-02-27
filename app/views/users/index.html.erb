@@ -1,0 +1,136 @@
+<div class="ueHeader">
+  <img src="/assets/users/images/ue-nav-logo.jpg"> <img src="/assets/users/images/ue-nav-btn-help.jpg"> <img src="/assets/users/images/ue-nav-btn-my-account.jpg"> <a href='/logout'><img src="/assets/users/images/ue-nav-btn-logout.jpg"></a>
+</div>
+<div class="clear"></div>
+<div class="ueBody">
+  <div class="ueNavHolder">
+    <img src="/assets/users/images/ue-nav-bg-left.png" style="float:left;">
+    <div class="ueNavMid">
+      <ul class="ueNav">
+        <li>
+          <a href="#"><span>Website List</span></a>
+        </li>
+        <li>
+          <a href="#"><span>System Stats</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Reports</span></a>
+        </li>
+        <li>
+          <a href="#"><span>Ad Setup</span></a>
+        </li>
+        <li >
+          <a href="/uploads"><span>Content Library</span></a>
+        </li>
+        <li class="select">
+          <a href="/users"><span>Users</span></a>
+        </li>
+        <li>
+          <a href="#"><span>System Config</span></a>
+        </li>
+      </ul>
+    </div><img src="/assets/users/images/ue-nav-bg-right.png" style="float:left;">
+  </div>
+  <div class="ueBodyContent">
+    <div class="userSearch">
+      <!-- rc table -->
+      <div class="rcPaleBlue" style="padding:50px 5px 10px 5px; position:relative;">
+        <!-- search and select -->
+        <form action=<%=url_for(:action=>:index)%> method="post" name="searchbox" id='searchbox'>
+          <input id="tokentag" type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+          <input type="text" name='query' class="userSearchField"> <img src="/assets/users/images/icon-user-search-field.png" style="position:absolute; right:0; top:0;">
+          <div class="selectDiv">
+            <select name='search_on'class="select" title="Select one">
+              <option selected value='username'>Name</option>
+            </select>
+          </div><!-- end of search and select -->
+      </div>
+      <div style="float:left; width:225px; margin:10px 0px;">
+        <img src="/assets/users/images/seperator-dot.gif" style="margin:0px 5px;"> <img src="/assets/users/images/seperator-dot.gif" style="margin:0px 5px;"> <img src="/assets/users/images/seperator-dot.gif" style="margin:0px 5px;">
+      </div><!-- end of rc table -->
+      <!-- slider rc -->
+      <div class="rcPaleBlue" style="padding:5px 5px 5px 5px; position:relative;">
+        <div class="searchOptions">
+          <input type=checkbox id="date_added" name="date_added" ><span>date added</span>
+        </div>
+        <div class="clear"></div>
+          <div id="date_range" style="display:none">
+              Start Date:
+              <%= text_field_tag "start_date", Date.today.strftime('%m-%d-%Y'), :class=>'datepicker', :id=>"datepicker1", :size=>10 %>
+              <br/>
+              End Date:
+              <%= text_field_tag "end_date", Date.today.strftime('%m-%d-%Y'), :class=>'datepicker', :id=>"datepicker2", :size=>10 %>
+        </div>
+        <div class="clear"></div>
+        <div class="clearHeight10"></div>
+          <input type="submit" value='Search' class="btnLogin">
+        </form>
+        <div class="searchOptions">
+        </div>
+      </div><!-- end of rc slider -->
+    </div><!-- end of col1 -->
+    <!-- col 2 -->
+    <div class="userGrid">
+      <div class="userGridHeader">
+        <ul class="ConLibraHeads">
+          <li>
+            <span class="name">Name<br><br><br></span>
+            <span class="type">Type<br><br></span>
+            <span class="name">Date Added<br><br></span>
+            <span class="addedBy">Added By<br><br></span>
+          </li>
+        </ul>
+      </div><!-- grid body -->
+      <div class="userGridBody">
+        <div id="scrollbar1">
+          <div class="scrollbar">
+            <div class="track">
+              <div class="thumb">
+                <div class="end"></div>
+              </div>
+            </div>
+          </div>
+          <div class="viewport">
+            <div class="overview">
+              <ul class="ConLibra">
+                <%@users.each do |u|%>
+                  <li class="dark">
+                    <p>
+                      <span class="name"><%=u.username%></span>
+                    </p>
+                    <span class="type"><%=u.roles.first.name%></span> 
+                    <span class="name"><%=u.created_at.strftime("%m/%d/%Y %T")%></span>
+                    <span class="addedBy">John</span> 
+                    <span class="edit"><img src="/assets/users/images/btn-edit.png"></span>
+                  </li>
+                <%end%>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- end of grid body -->
+    <div class="userGridFooter"></div>
+    <div class="clear"></div>
+  </div><!-- end of col 2 -->
+</div>
+<script>
+$(function() {
+	$( ".datepicker" ).datepicker({
+		showOn: "button",
+		buttonImage: "/images/calendar.gif",
+		buttonImageOnly: true,
+		dateFormat: "mm-dd-yy"
+	});
+});
+$('#date_added').click(function(){
+  if ($('#date_added').data('checked') == false){
+    $('#date_added').data('checked', true)
+    $('#date_range').hide();
+  }else{
+    $('#date_added').data('checked', false)
+    $('#date_range').show();
+  }
+    
+});
+</script>
