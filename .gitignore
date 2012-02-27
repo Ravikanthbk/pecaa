@@ -1,7 +1,7 @@
 .bundle
 db/*.sql
 log/*
-tmp/**/*
+tmp/*
 config/database.yml
 *~
 *.project
