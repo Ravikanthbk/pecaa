@@ -13940,3 +13940,2764 @@ Served asset /footer-nav-bg.png - 304 Not Modified (0ms)
 
 Started GET "/assets/checkbox.png" for 127.0.0.1 at 2012-02-23 00:48:47 +0530
 Served asset /checkbox.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-28 22:33:58 +0530
+  Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 30ms
+
+NoMethodError (undefined method `authenticate_user!' for #<UsersController:0x4abc980>):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-28 22:34:47 +0530
+  Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 99ms
+
+NoMethodError (undefined method `authenticate_user!' for #<UsersController:0x5773a70>):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-28 22:35:29 +0530
+  Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 43ms
+
+NameError (undefined local variable or method `current_user' for #<UsersController:0x5a74688>):
+  app/controllers/users_controller.rb:19:in `index'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-28 22:35:45 +0530
+  Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 43ms
+
+NoMethodError (undefined method `authenticate_user!' for #<UsersController:0x58e48c0>):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-28 22:36:01 +0530
+  Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 102ms
+
+NameError (undefined local variable or method `current_user' for #<UsersController:0x5803218>):
+  app/controllers/users_controller.rb:19:in `index'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-28 22:36:45 +0530
+  Processing by UsersController#index as HTML
+  [1m[36mRole Load (14.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` IS NULL AND `roles`.`name` = 'SuperAdmin' LIMIT 1[0m
+  [1m[35mRole Load (1.0ms)[0m  SELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` IS NULL AND `roles`.`name` = 'ProductAdmin' LIMIT 1
+  [1m[36mRole Load (1.0ms)[0m  [1mSELECT `roles`.* FROM `roles` INNER JOIN `roles_users` ON `roles`.`id` = `roles_users`.`role_id` WHERE `roles_users`.`user_id` IS NULL AND `roles`.`name` = 'ProductTeam' LIMIT 1[0m
+Rendered users/index.html.erb within layouts/pecaa_application (1.0ms)
+Compiled prettyCheckboxes.js  (22ms)  (pid 6336)
+Compiled activatables.js  (2ms)  (pid 6336)
+Compiled tabs.css  (1ms)  (pid 6336)
+Compiled prettyCheckboxes.css  (1ms)  (pid 6336)
+Completed 200 OK in 1823ms (Views: 341.0ms | ActiveRecord: 221.0ms)
+
+
+Started GET "/assets/activatables.js?body=1" for 127.0.0.1 at 2012-02-28 22:36:48 +0530
+Served asset /activatables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prettyCheckboxes.js?body=1" for 127.0.0.1 at 2012-02-28 22:36:48 +0530
+Served asset /prettyCheckboxes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tabs.css?body=1" for 127.0.0.1 at 2012-02-28 22:36:48 +0530
+Served asset /tabs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ue-nav-btn-help.jpg" for 127.0.0.1 at 2012-02-28 22:36:48 +0530
+Served asset /ue-nav-btn-help.jpg - 304 Not Modified (94ms)
+
+
+Started GET "/assets/ue-nav-logo.jpg" for 127.0.0.1 at 2012-02-28 22:36:48 +0530
+Served asset /ue-nav-logo.jpg - 304 Not Modified (29ms)
+
+
+Started GET "/assets/prettyCheckboxes.css?body=1" for 127.0.0.1 at 2012-02-28 22:36:48 +0530
+Served asset /prettyCheckboxes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-28 22:36:48 +0530
+Served asset /pecaa.css - 200 OK (0ms)
+
+
+Started GET "/assets/ue-nav-btn-my-account.jpg" for 127.0.0.1 at 2012-02-28 22:36:48 +0530
+Served asset /ue-nav-btn-my-account.jpg - 304 Not Modified (29ms)
+
+
+Started GET "/assets/ue-nav-btn-logout.jpg" for 127.0.0.1 at 2012-02-28 22:36:48 +0530
+Served asset /ue-nav-btn-logout.jpg - 304 Not Modified (27ms)
+
+
+Started GET "/assets/ue-nav-bg-left.png" for 127.0.0.1 at 2012-02-28 22:36:48 +0530
+Served asset /ue-nav-bg-left.png - 304 Not Modified (79ms)
+
+
+Started GET "/assets/ue-nav-bg-right.png" for 127.0.0.1 at 2012-02-28 22:36:49 +0530
+Served asset /ue-nav-bg-right.png - 304 Not Modified (21ms)
+
+
+Started GET "/assets/icon-home.jpg" for 127.0.0.1 at 2012-02-28 22:36:49 +0530
+Served asset /icon-home.jpg - 304 Not Modified (27ms)
+
+
+Started GET "/assets/rc-footer.jpg" for 127.0.0.1 at 2012-02-28 22:36:49 +0530
+Served asset /rc-footer.jpg - 304 Not Modified (18ms)
+
+
+Started GET "/assets/ue-nav-bg.png" for 127.0.0.1 at 2012-02-28 22:36:49 +0530
+Served asset /ue-nav-bg.png - 304 Not Modified (25ms)
+
+
+Started GET "/assets/footer-nav-bg.png" for 127.0.0.1 at 2012-02-28 22:36:49 +0530
+Served asset /footer-nav-bg.png - 304 Not Modified (221ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-28 22:37:01 +0530
+  Processing by UsersController#index as HTML
+Completed   in 1ms
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-28 22:37:01 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 123ms (Views: 33.0ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/pecaa.css?body=1" for 127.0.0.1 at 2012-02-28 22:37:02 +0530
+Served asset /pecaa.css - 304 Not Modified (1ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-28 22:42:38 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+Compiled style.css  (0ms)  (pid 6336)
+Completed 200 OK in 320ms (Views: 237.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 22:42:39 +0530
+Served asset /style.css - 200 OK (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 22:42:39 +0530
+Served asset /logo.png - 200 OK (35ms)
+
+
+Started GET "/images/bg.png" for 127.0.0.1 at 2012-02-28 22:42:39 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/bg.png"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/images/blueButtonLogin.png" for 127.0.0.1 at 2012-02-28 22:42:39 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/blueButtonLogin.png"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/bg2.png" for 127.0.0.1 at 2012-02-28 22:42:39 +0530
+
+ActionController::RoutingError (No route matches [GET] "/images/bg2.png"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-28 22:45:10 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (4.0ms)
+Compiled style.css  (0ms)  (pid 6336)
+Completed 200 OK in 265ms (Views: 59.0ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 22:45:11 +0530
+Served asset /style.css - 200 OK (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 22:45:11 +0530
+Served asset /logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 22:45:11 +0530
+Served asset /bg2.png - 200 OK (20ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-28 22:45:11 +0530
+Served asset /blueButtonLogin.png - 200 OK (54ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 22:45:11 +0530
+Served asset /bg.png - 200 OK (80ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-28 22:52:58 +0530
+  Processing by Devise::SessionsController#new as HTML
+ERROR: compiling _app_views_devise_sessions_new_html_erb__908220107_41423784 RAISED c:/Users/manikandan/pecaa_new/pecaa_28/pecaa/app/views/devise/sessions/new.html.erb:46: syntax error, unexpected keyword_ensure, expecting keyword_end
+c:/Users/manikandan/pecaa_new/pecaa_28/pecaa/app/views/devise/sessions/new.html.erb:48: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_devise_sessions_new_html_erb__908220107_41423784(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "devise/sessions/new";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<div id="logo">
+        <img src="/assets/logo.png" width="210" height="35" />
+</div>
+    ');@output_buffer.append=  form_for :user, :url => user_session_path do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <div id="login">
+    	');@output_buffer.append= ( f.text_field :email, :value=>"username", :class => 'textbox', :id=>'gUsername' );@output_buffer.safe_concat('<br />
+		');@output_buffer.append= ( f.password_field :email, :value=>"password", :class => 'textbox', :id=>'gPassword' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+    
+    <p>');@output_buffer.append= ( f.check_box :remember_me );@output_buffer.safe_concat(' 
+');@output_buffer.safe_concat('    remember me on this computer</p>
+    
+    <p>');@output_buffer.append= ( f.submit "Login",:class=>'blueButton',:id=>"gLogin");@output_buffer.safe_concat('</p>
+    
+    <div id="forgotPassword">
+    	');@output_buffer.append= (link_to "login - Forgot Username.html",new_user_password_path);@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+
+
+
+<!--<div class="rcTable">
+    	<div class="logo"></div>
+');		 if flash[:alert] 
+@output_buffer.safe_concat('  <div class="flash errors">');@output_buffer.append= ( flash[:alert] );@output_buffer.safe_concat('</div>
+'); end 
+@output_buffer.safe_concat('
+		');@output_buffer.append=  form_for :user, :url => user_session_path do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+        <div class="fieldsHolder">
+        	');@output_buffer.append= ( f.text_field :email, :class => 'inp' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		    ');@output_buffer.append= ( f.password_field :password, :class => 'inp' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		  
+        <div class="clear"></div>
+        <span style="width:300px; float:left; color:#999999;">Remember me on this computer ');@output_buffer.append= ( f.check_box :remember_me );@output_buffer.safe_concat('</span>
+        <div class="clear"></div>
+		');@output_buffer.append= ( f.submit "Login",:class=>'btnLogin');@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        </div>
+		
+');		end
+@output_buffer.safe_concat('    </div>
+    ');@output_buffer.append= ( button_to "forgot username / password", new_user_password_path,:class=>'btnForgot',:method=>"get" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</div>
+-->
+
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:309:in `module_eval'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:309:in `compile'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:217:in `compile!'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:170:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:55:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:169:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:9:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:17:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:120:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:99:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rendering.rb:16:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby192/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/devise-1.4.7/lib/devise/controllers/scoped_views.rb:28:in `render_with_scope'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/devise-1.4.7/app/controllers/devise/sessions_controller.rb:10:in `block in new'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/responder.rb:231:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/responder.rb:231:in `default_render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/responder.rb:160:in `to_html'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/responder.rb:153:in `respond'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/responder.rb:146:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/mime_responds.rb:238:in `respond_with'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/devise-1.4.7/lib/devise/controllers/internal_helpers.rb:142:in `respond_with_navigational'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/devise-1.4.7/app/controllers/devise/sessions_controller.rb:10:in `new'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/base.rb:167:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:443:in `_run__1020171718__process_action__405951573__callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/base.rb:121:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:45:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal.rb:193:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal.rb:236:in `block in action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:65:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:29:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/mapper.rb:41:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:532:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/warden-1.0.6/lib/warden/manager.rb:35:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/warden-1.0.6/lib/warden/manager.rb:34:in `catch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/warden-1.0.6/lib/warden/manager.rb:34:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/etag.rb:23:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/conditionalget.rb:25:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/flash.rb:247:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/session/abstract/id.rb:195:in `context'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/session/abstract/id.rb:190:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/cookies.rb:331:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/query_cache.rb:64:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/sendfile.rb:101:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/runtime.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/lock.rb:15:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/static.rb:53:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/engine.rb:456:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/content_length.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/handler/webrick.rb:59:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+c:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered devise/sessions/new.html.erb within layouts/application (299.0ms)
+Completed 500 Internal Server Error in 445ms
+
+ActionView::Template::Error (c:/Users/manikandan/pecaa_new/pecaa_28/pecaa/app/views/devise/sessions/new.html.erb:46: syntax error, unexpected keyword_ensure, expecting keyword_end
+c:/Users/manikandan/pecaa_new/pecaa_28/pecaa/app/views/devise/sessions/new.html.erb:48: syntax error, unexpected $end, expecting keyword_end):
+    43: -->
+    44: 
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-28 22:53:25 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 184ms (Views: 34.0ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 22:53:26 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 22:53:26 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-28 22:53:26 +0530
+Served asset /blueButtonLogin.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 22:53:26 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 22:53:26 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-28 22:55:46 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (134.0ms)
+Completed 200 OK in 355ms (Views: 229.0ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 22:55:47 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 22:55:47 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 22:55:47 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 22:55:47 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-28 22:55:47 +0530
+Served asset /blueButtonLogin.png - 304 Not Modified (0ms)
+
+
+Started POST "/user/sign_in" for 127.0.0.1 at 2012-02-28 22:56:12 +0530
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"pecaa123", "remember_me"=>"0"}, "commit"=>"Login"}
+Completed   in 1ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"pecaa123", "remember_me"=>"0"}, "commit"=>"Login"}
+Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 118ms (Views: 31.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 22:56:12 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 22:56:12 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 22:56:12 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 22:56:13 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-28 22:56:13 +0530
+Served asset /blueButtonLogin.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-28 22:56:21 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 119ms (Views: 74.0ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 22:56:21 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/btn-go-back.png" for 127.0.0.1 at 2012-02-28 22:56:22 +0530
+Served asset /btn-go-back.png - 200 OK (60ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 22:56:22 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 22:56:22 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-28 23:02:51 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (112.0ms)
+Completed 200 OK in 178ms (Views: 133.0ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:02:52 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/images/goBack.png" for 127.0.0.1 at 2012-02-28 23:02:52 +0530
+
+ActionController::RoutingError (No route matches [GET] "/user/password/images/goBack.png"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/user/password/images/logo.png" for 127.0.0.1 at 2012-02-28 23:02:52 +0530
+
+ActionController::RoutingError (No route matches [GET] "/user/password/images/logo.png"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:02:52 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:02:52 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-28 23:02:52 +0530
+Served asset /blueButton.png - 200 OK (143ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-28 23:03:13 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (217.0ms)
+Completed 200 OK in 280ms (Views: 238.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/user/password/images/goBack.png" for 127.0.0.1 at 2012-02-28 23:03:14 +0530
+
+ActionController::RoutingError (No route matches [GET] "/user/password/images/goBack.png"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:03:14 +0530
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:03:14 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:03:14 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:03:14 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-28 23:03:14 +0530
+Served asset /blueButton.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-28 23:03:40 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (115.0ms)
+Completed 200 OK in 187ms (Views: 138.0ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/assets/goBack.png" for 127.0.0.1 at 2012-02-28 23:03:41 +0530
+Served asset /goBack.png - 200 OK (40ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:03:41 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:03:41 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:03:41 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:03:41 +0530
+Served asset /bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-28 23:03:41 +0530
+Served asset /blueButton.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-28 23:03:55 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 143ms (Views: 79.0ms | ActiveRecord: 29.0ms)
+
+
+Started GET "/assets/goBack.png" for 127.0.0.1 at 2012-02-28 23:03:55 +0530
+Served asset /goBack.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:03:55 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:03:55 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-28 23:03:56 +0530
+Served asset /blueButton.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:03:56 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:03:56 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-28 23:03:57 +0530
+  Processing by UsersController#index as HTML
+Completed   in 1ms
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-28 23:03:57 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 285ms (Views: 139.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:03:58 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:03:58 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:03:58 +0530
+Served asset /bg2.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:03:58 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-28 23:03:58 +0530
+Served asset /blueButtonLogin.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-28 23:04:03 +0530
+  Processing by UsersController#index as HTML
+Completed   in 0ms
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-28 23:04:03 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 283ms (Views: 32.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:04:03 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:04:04 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-28 23:04:04 +0530
+Served asset /blueButtonLogin.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:04:04 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:04:04 +0530
+Served asset /bg.png - 304 Not Modified (1ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:06:24 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "login"=>"email address"}
+Completed 500 Internal Server Error in 180ms
+
+NameError (undefined local variable or method `ss' for #<Devise::PasswordsController:0x5a9bfa0>):
+  app/controllers/devise/passwords_controller.rb:13:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:09:18 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "login"=>"username"}
+Completed 500 Internal Server Error in 39ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/devise/passwords_controller.rb:13:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:09:46 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "login"=>"email address"}
+Completed 500 Internal Server Error in 36ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/devise/passwords_controller.rb:13:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:12:08 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "login"=>"email address"}
+Completed 500 Internal Server Error in 30ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/devise/passwords_controller.rb:13:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-28 23:12:12 +0530
+  Processing by Devise::PasswordsController#new as HTML
+ERROR: compiling _app_views_devise_passwords_new_html_erb__227210128_46715808 RAISED c:/Users/manikandan/pecaa_new/pecaa_28/pecaa/app/views/devise/passwords/new.html.erb:10: syntax error, unexpected ':', expecting ')'
+...field :email,:id=>"gUsername" :class=>"textbox" );@output_bu...
+...                               ^
+c:/Users/manikandan/pecaa_new/pecaa_28/pecaa/app/views/devise/passwords/new.html.erb:18: syntax error, unexpected ':', expecting ')'
+...field :email,:id=>"gUsername" :class=>"textbox" );@output_bu...
+...                               ^
+c:/Users/manikandan/pecaa_new/pecaa_28/pecaa/app/views/devise/passwords/new.html.erb:19: syntax error, unexpected ':', expecting ')'
+...ld :username,:id=>"gUsername" :class=>"textbox" );@output_bu...
+...                               ^
+Function body:           def _app_views_devise_passwords_new_html_erb__227210128_46715808(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "devise/passwords/new";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('
+<a href="/"><img src="/assets/goBack.png" id="goBackButton"></a>
+
+<div id="logo">
+    <img src="/assets/logo.png" height="35" width="210">
+</div>
+');@output_buffer.append=  form_for User.new, :as => :user, :url => user_password_path do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('	<div id="forgotUsername">
+		<label for="gUsername">forgot username</label>
+		');@output_buffer.append= ( f.email_field :email,:id=>"gUsername" :class=>"textbox" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	</div>
+
+	<p><input value="Get Username" class="blueButton" id="" type="submit"></p>
+');end
+@output_buffer.append=  form_for User.new, :as => :user, :url => user_password_path do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('	<div id="forgotPassword">
+		<label for="gEmailAddress">forgot password</label>
+		');@output_buffer.append= ( f.email_field :email,:id=>"gUsername" :class=>"textbox" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		');@output_buffer.append= ( f.text_field :username,:id=>"gUsername" :class=>"textbox" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	</div>
+	
+	<p><input value="Get Password" class="blueButton" id="" type="submit"></p>
+');end
+@output_buffer.safe_concat('
+
+
+
+<!--        <div class="rcTable2">
+	<div class="cornerFold"></div>
+    <div class="btnGoBack"><img src="/assets/btn-go-back.png" /></div>
+    
+    	<div class="logo"></div>
+		');@output_buffer.append=  form_for User.new, :as => :user, :url => user_password_path do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('		<div class="fieldsHolder">
+        <span class="lblTxt">forgot user name</span>
+        ');@output_buffer.append= ( f.email_field :email,:class=>"inp" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <div class="clear" style="height:10px;"></div>
+        <span class="lblTxt">forgot password</span>
+        ');@output_buffer.append= ( f.email_field :username,:class=>"inp" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        ');@output_buffer.append= ( f.text_field :username,:class=>"inp" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <div class="clear"></div>
+        <span style="width:300px; float:left; color:#999999;">Your username will be emailed to you</span>
+        <div class="clear"></div>
+		');@output_buffer.append= (f.submit 'Get User Name',:class=>"btnGetUsername");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        </div>
+');	 end
+@output_buffer.safe_concat('    </div>-->');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:309:in `module_eval'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:309:in `compile'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:217:in `compile!'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:170:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:55:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:169:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:9:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:17:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:120:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:99:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rendering.rb:16:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby192/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/devise-1.4.7/lib/devise/controllers/scoped_views.rb:28:in `render_with_scope'
+c:/Users/manikandan/pecaa_new/pecaa_28/pecaa/app/controllers/devise/passwords_controller.rb:8:in `new'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/base.rb:167:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:443:in `_run__330819351__process_action__405951573__callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/base.rb:121:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:45:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal.rb:193:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal.rb:236:in `block in action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:65:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:29:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/mapper.rb:41:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:82:in `optimized_each'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/routing/route_set.rb:532:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/warden-1.0.6/lib/warden/manager.rb:35:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/warden-1.0.6/lib/warden/manager.rb:34:in `catch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/warden-1.0.6/lib/warden/manager.rb:34:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/etag.rb:23:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/conditionalget.rb:25:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/flash.rb:247:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/session/abstract/id.rb:195:in `context'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/session/abstract/id.rb:190:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/cookies.rb:331:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/query_cache.rb:64:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/sendfile.rb:101:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/runtime.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/lock.rb:15:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/static.rb:53:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/engine.rb:456:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/content_length.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.3/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.6/lib/rack/handler/webrick.rb:59:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+c:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered devise/passwords/new.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 86ms
+
+ActionView::Template::Error (c:/Users/manikandan/pecaa_new/pecaa_28/pecaa/app/views/devise/passwords/new.html.erb:10: syntax error, unexpected ':', expecting ')'
+...field :email,:id=>"gUsername" :class=>"textbox" );@output_bu...
+...                               ^
+c:/Users/manikandan/pecaa_new/pecaa_28/pecaa/app/views/devise/passwords/new.html.erb:18: syntax error, unexpected ':', expecting ')'
+...field :email,:id=>"gUsername" :class=>"textbox" );@output_bu...
+...                               ^
+c:/Users/manikandan/pecaa_new/pecaa_28/pecaa/app/views/devise/passwords/new.html.erb:19: syntax error, unexpected ':', expecting ')'
+...ld :username,:id=>"gUsername" :class=>"textbox" );@output_bu...
+...                               ^):
+    7: <%= form_for User.new, :as => :user, :url => user_password_path do |f| %>
+    8: 	<div id="forgotUsername">
+    9: 		<label for="gUsername">forgot username</label>
+    10: 		<%= f.email_field :email,:id=>"gUsername" :class=>"textbox" %>
+    11: 	</div>
+    12: 
+    13: 	<p><input value="Get Username" class="blueButton" id="" type="submit"></p>
+  app/controllers/devise/passwords_controller.rb:8:in `new'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-28 23:12:33 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 149ms (Views: 108.0ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:12:34 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/goBack.png" for 127.0.0.1 at 2012-02-28 23:12:34 +0530
+Served asset /goBack.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:12:34 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-28 23:12:34 +0530
+Served asset /blueButton.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:12:34 +0530
+Served asset /bg2.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:12:34 +0530
+Served asset /bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-28 23:12:45 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 119ms (Views: 70.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:12:45 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:12:45 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/goBack.png" for 127.0.0.1 at 2012-02-28 23:12:46 +0530
+Served asset /goBack.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:12:46 +0530
+Served asset /bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:12:46 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-28 23:12:46 +0530
+Served asset /blueButton.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-28 23:13:19 +0530
+  Processing by UsersController#index as HTML
+Completed   in 1ms
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-28 23:13:19 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 116ms (Views: 33.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:13:20 +0530
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:13:20 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:13:20 +0530
+Served asset /bg2.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-28 23:13:20 +0530
+Served asset /blueButtonLogin.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:13:20 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:13:35 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+  [1m[35mUser Load (3.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1
+  [1m[36mUser Load (16.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`reset_password_token` = 'jAg7HGqH6YQUsmAzwqis' LIMIT 1[0m
+  [1m[35mSQL (26.0ms)[0m  BEGIN
+  [1m[36m (100.0ms)[0m  [1mUPDATE `users` SET `reset_password_token` = 'jAg7HGqH6YQUsmAzwqis', `reset_password_sent_at` = '2012-02-28 17:43:35', `updated_at` = '2012-02-28 17:43:35' WHERE `users`.`id` = 2[0m
+  [1m[35m (2.0ms)[0m  COMMIT
+Rendered devise/mailer/reset_password_instructions.html.erb (17.0ms)
+Completed 500 Internal Server Error in 1404ms
+
+ActionView::Template::Error (undefined method `params' for #<Devise::Mailer:0x6ba58e0>):
+    1: <p>Hello <%= @resource.email %>!</p>
+    2: <%params[:user_name]%>%>
+    3: <p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+    4: 
+    5: <p><%= link_to 'Change my password', edit_password_url(@resource, :reset_password_token => @resource.reset_password_token) %></p>
+  app/views/devise/mailer/reset_password_instructions.html.erb:2:in `_app_views_devise_mailer_reset_password_instructions_html_erb__105301738_47142828'
+  app/controllers/devise/passwords_controller.rb:13:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:18:15 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1[0m
+Rendered devise/mailer/reset_password_instructions.html.erb (25.0ms)
+Completed 500 Internal Server Error in 348ms
+
+ActionView::Template::Error (undefined method `edit_password_url' for #<#<Class:0x550d6a0>:0x54a9518>):
+    2: 
+    3: <p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+    4: 
+    5: <p><%= link_to 'Change my password', edit_password_url(@resource, :reset_password_token => @resource.reset_password_token) %></p>
+    6: 
+    7: <p>If you didn't request this, please ignore this email.</p>
+    8: <p>Your password won't change until you access the link above and create a new one.</p>
+  app/views/devise/mailer/reset_password_instructions.html.erb:5:in `_app_views_devise_mailer_reset_password_instructions_html_erb__105301738_44785344'
+  app/mailers/devise/mailer.rb:9:in `reset_password_instructions'
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-28 23:19:07 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 117ms (Views: 75.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:19:07 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/goBack.png" for 127.0.0.1 at 2012-02-28 23:19:08 +0530
+Served asset /goBack.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:19:08 +0530
+Served asset /logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:19:08 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:19:08 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-28 23:19:08 +0530
+Served asset /blueButton.png - 304 Not Modified (0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:19:11 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1
+Rendered devise/mailer/reset_password_instructions.html.erb (23.0ms)
+Completed 500 Internal Server Error in 201ms
+
+ActionView::Template::Error (undefined method `edit_password_url' for #<#<Class:0x4f03038>:0x4efc1f8>):
+    2: 
+    3: <p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+    4: 
+    5: <p><%= link_to 'Change my password', edit_password_url(@resource, :reset_password_token => @resource.reset_password_token) %></p>
+    6: 
+    7: <p>If you didn't request this, please ignore this email.</p>
+    8: <p>Your password won't change until you access the link above and create a new one.</p>
+  app/views/devise/mailer/reset_password_instructions.html.erb:5:in `_app_views_devise_mailer_reset_password_instructions_html_erb__105301738_44785344'
+  app/mailers/devise/mailer.rb:9:in `reset_password_instructions'
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-28 23:19:36 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 140ms (Views: 81.0ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:19:36 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/goBack.png" for 127.0.0.1 at 2012-02-28 23:19:36 +0530
+Served asset /goBack.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:19:36 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:19:37 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-28 23:19:37 +0530
+Served asset /blueButton.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:19:37 +0530
+Served asset /bg2.png - 304 Not Modified (1ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:19:39 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1[0m
+Rendered devise/mailer/reset_password_instructions.html.erb (28.0ms)
+Completed 500 Internal Server Error in 229ms
+
+ActionView::Template::Error (undefined method `edit_password_url' for #<#<Class:0x4e12bb8>:0x4dff088>):
+    2: 
+    3: <p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+    4: 
+    5: <p><%= link_to 'Change my password', edit_password_url(@resource, :reset_password_token => @resource.reset_password_token) %></p>
+    6: 
+    7: <p>If you didn't request this, please ignore this email.</p>
+    8: <p>Your password won't change until you access the link above and create a new one.</p>
+  app/views/devise/mailer/reset_password_instructions.html.erb:5:in `_app_views_devise_mailer_reset_password_instructions_html_erb__105301738_44785344'
+  app/mailers/devise/mailer.rb:9:in `reset_password_instructions'
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:19:51 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1
+Rendered devise/mailer/reset_password_instructions.html.erb (25.0ms)
+Completed 500 Internal Server Error in 273ms
+
+ActionView::Template::Error (undefined method `edit_password_url' for #<#<Class:0x542b428>:0x5880708>):
+    2: 
+    3: <p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+    4: 
+    5: <p><%= link_to 'Change my password', edit_password_url(@resource, :reset_password_token => @resource.reset_password_token) %></p>
+    6: 
+    7: <p>If you didn't request this, please ignore this email.</p>
+    8: <p>Your password won't change until you access the link above and create a new one.</p>
+  app/views/devise/mailer/reset_password_instructions.html.erb:5:in `_app_views_devise_mailer_reset_password_instructions_html_erb__105301738_44785344'
+  app/mailers/devise/mailer.rb:9:in `reset_password_instructions'
+  app/controllers/devise/passwords_controller.rb:17:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:20:04 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1[0m
+Rendered devise/mailer/reset_password_instructions.html.erb (23.0ms)
+Completed 500 Internal Server Error in 379ms
+
+ActionView::Template::Error (undefined method `edit_password_url' for #<#<Class:0x5a48dc8>:0x5a35ec8>):
+    2: 
+    3: <p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+    4: 
+    5: <p><%= link_to 'Change my password', edit_password_url(@resource, :reset_password_token => @resource.reset_password_token) %></p>
+    6: 
+    7: <p>If you didn't request this, please ignore this email.</p>
+    8: <p>Your password won't change until you access the link above and create a new one.</p>
+  app/views/devise/mailer/reset_password_instructions.html.erb:5:in `_app_views_devise_mailer_reset_password_instructions_html_erb__105301738_44785344'
+  app/mailers/devise/mailer.rb:9:in `reset_password_instructions'
+  app/controllers/devise/passwords_controller.rb:13:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:20:35 +0530
+
+ActionController::RoutingError (No route matches [POST] "/user/password"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-28 23:20:46 +0530
+  Processing by UsersController#index as HTML
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:46 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:46 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:47 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:47 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:47 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:47 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:48 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:48 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:48 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:49 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:49 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:50 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:50 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:50 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:50 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:51 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:51 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:51 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 0ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:51 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:20:51 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-28 23:21:10 +0530
+  Processing by UsersController#index as HTML
+Completed   in 1ms
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-28 23:21:10 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 230ms (Views: 33.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:21:11 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:21:11 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:21:11 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:21:11 +0530
+Served asset /bg2.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-28 23:21:11 +0530
+Served asset /blueButtonLogin.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-28 23:21:19 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 117ms (Views: 74.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:21:19 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/goBack.png" for 127.0.0.1 at 2012-02-28 23:21:19 +0530
+Served asset /goBack.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:21:19 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:21:20 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:21:20 +0530
+Served asset /bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-28 23:21:20 +0530
+Served asset /blueButton.png - 304 Not Modified (0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:21:32 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1
+Rendered devise/mailer/reset_password_instructions.html.erb (26.0ms)
+Completed 500 Internal Server Error in 204ms
+
+ActionView::Template::Error (undefined method `edit_password_url' for #<#<Class:0x4dff1a8>:0x4de27b0>):
+    2: 
+    3: <p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+    4: 
+    5: <p><%= link_to 'Change my password', edit_password_url(@resource, :reset_password_token => @resource.reset_password_token) %></p>
+    6: 
+    7: <p>If you didn't request this, please ignore this email.</p>
+    8: <p>Your password won't change until you access the link above and create a new one.</p>
+  app/views/devise/mailer/reset_password_instructions.html.erb:5:in `_app_views_devise_mailer_reset_password_instructions_html_erb__105301738_44785344'
+  app/mailers/devise/mailer.rb:9:in `reset_password_instructions'
+  app/controllers/devise/passwords_controller.rb:13:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:22:13 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1[0m
+Rendered devise/mailer/reset_password_instructions.html.erb (25.0ms)
+Completed 500 Internal Server Error in 284ms
+
+ActionView::Template::Error (undefined method `edit_password_url' for #<#<Class:0x6b7ac80>:0x6b675d0>):
+    2: 
+    3: <p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+    4: 
+    5: <p><%= link_to 'Change my password', edit_password_url(@resource, :reset_password_token => @resource.reset_password_token) %></p>
+    6: 
+    7: <p>If you didn't request this, please ignore this email.</p>
+    8: <p>Your password won't change until you access the link above and create a new one.</p>
+  app/views/devise/mailer/reset_password_instructions.html.erb:5:in `_app_views_devise_mailer_reset_password_instructions_html_erb__105301738_44785344'
+  app/mailers/devise/mailer.rb:9:in `reset_password_instructions'
+  app/controllers/devise/passwords_controller.rb:13:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:23:10 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1
+Rendered devise/mailer/reset_password_instructions.html.erb (23.0ms)
+Completed 500 Internal Server Error in 180ms
+
+ActionView::Template::Error (undefined method `edit_password_url' for #<#<Class:0x3e1bc40>:0x3da59f8>):
+    2: 
+    3: <p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+    4: 
+    5: <p><%= link_to 'Change my password', edit_password_url(@resource, :reset_password_token => @resource.reset_password_token) %></p>
+    6: 
+    7: <p>If you didn't request this, please ignore this email.</p>
+    8: <p>Your password won't change until you access the link above and create a new one.</p>
+  app/views/devise/mailer/reset_password_instructions.html.erb:5:in `_app_views_devise_mailer_reset_password_instructions_html_erb__105301738_44785344'
+  app/mailers/devise/mailer.rb:9:in `reset_password_instructions'
+  app/controllers/devise/passwords_controller.rb:13:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:25:26 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1[0m
+Rendered devise/mailer/reset_password_instructions.html.erb (30.0ms)
+Completed 500 Internal Server Error in 349ms
+
+ActionView::Template::Error (undefined method `edit_password_url' for #<#<Class:0x5d3bb20>:0x5c6d8b8>):
+    2: 
+    3: <p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+    4: 
+    5: <p><%= link_to 'Change my password', edit_password_url(@resource, :reset_password_token => @resource.reset_password_token) %></p>
+    6: 
+    7: <p>If you didn't request this, please ignore this email.</p>
+    8: <p>Your password won't change until you access the link above and create a new one.</p>
+  app/views/devise/mailer/reset_password_instructions.html.erb:5:in `_app_views_devise_mailer_reset_password_instructions_html_erb__105301738_44785344'
+  app/controllers/devise/passwords_controller.rb:13:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:29:52 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1
+Rendered devise/mailer/reset_password_instructions.html.erb (1.0ms)
+
+Sent mail to manikandan.nitt@gmail.com (9239ms)
+Date: Tue, 28 Feb 2012 23:29:54 +0530
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: manikandan.nitt@gmail.com
+Message-ID: <4f4d161a9dd2_18c02c68b7880947@manikandan-HP.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello manikandan.nitt@gmail.com!</p>
+
+<p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+
+<p><a href="/user/password/edit?reset_password_token=jAg7HGqH6YQUsmAzwqis">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+Completed 500 Internal Server Error in 9922ms
+
+NoMethodError (undefined method `new_session_path' for #<Devise::PasswordsController:0x2e3e588>):
+  app/controllers/devise/passwords_controller.rb:48:in `after_sending_reset_password_instructions_path_for'
+  app/controllers/devise/passwords_controller.rb:17:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-28 23:32:48 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1[0m
+Rendered devise/mailer/reset_password_instructions.html.erb (1.0ms)
+
+Sent mail to manikandan.nitt@gmail.com (6097ms)
+Date: Tue, 28 Feb 2012 23:32:49 +0530
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: manikandan.nitt@gmail.com
+Message-ID: <4f4d16c9a1c4_18c02cc18648106a@manikandan-HP.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello manikandan.nitt@gmail.com!</p>
+
+<p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+
+<p><a href="/user/password/edit?reset_password_token=jAg7HGqH6YQUsmAzwqis">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 6426ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2012-02-28 23:32:55 +0530
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed   in 1ms
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-28 23:32:55 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 119ms (Views: 35.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:32:55 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:32:56 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:32:56 +0530
+Served asset /bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-28 23:32:56 +0530
+Served asset /blueButtonLogin.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:32:56 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-28 23:33:13 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 188ms (Views: 77.0ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/assets/goBack.png" for 127.0.0.1 at 2012-02-28 23:33:14 +0530
+Served asset /goBack.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:33:14 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:33:14 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-28 23:33:14 +0530
+Served asset /blueButton.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:33:14 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:33:14 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-28 23:33:41 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (54.0ms)
+Completed 200 OK in 236ms (Views: 77.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:33:41 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/goBack.png" for 127.0.0.1 at 2012-02-28 23:33:41 +0530
+Served asset /goBack.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:33:41 +0530
+Served asset /logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:33:42 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:33:42 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-28 23:33:42 +0530
+Served asset /blueButton.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/edit?reset_password_token=[FILTERED]" for 127.0.0.1 at 2012-02-28 23:35:27 +0530
+  Processing by Devise::PasswordsController#edit as HTML
+  Parameters: {"reset_password_token"=>"[FILTERED]"}
+Rendered devise/passwords/edit.html.erb within layouts/application (449.0ms)
+Completed 500 Internal Server Error in 635ms
+
+ActionView::Template::Error (undefined method `password_path' for #<#<Class:0x5bd6be0>:0x5bd3a60>):
+    1: <h2>Change your password</h2>
+    2: 
+    3: <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+    5:   <%= f.hidden_field :reset_password_token %>
+    6: 
+  app/views/devise/passwords/edit.html.erb:3:in `_app_views_devise_passwords_edit_html_erb__35491583_48141348'
+  app/controllers/devise/passwords_controller.rb:27:in `edit'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.0ms)
+
+
+Started GET "/user/password/edit?reset_password_token=[FILTERED]" for 127.0.0.1 at 2012-02-28 23:38:33 +0530
+  Processing by Devise::PasswordsController#edit as HTML
+  Parameters: {"reset_password_token"=>"[FILTERED]"}
+Rendered devise/shared/_links.erb (319.0ms)
+Rendered devise/passwords/edit.html.erb within layouts/application (413.0ms)
+Completed 500 Internal Server Error in 503ms
+
+ActionView::Template::Error (undefined method `new_session_path' for #<#<Class:0x51ad070>:0x51a1f70>):
+    1: <%- if controller_name != 'sessions' %>
+    2:   <%= link_to "Sign in", new_session_path(resource_name) %><br />
+    3: <% end -%>
+    4: 
+    5: <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+  app/views/devise/shared/_links.erb:2:in `_app_views_devise_shared__links_erb___105038772_41201364'
+  app/views/devise/passwords/edit.html.erb:16:in `_app_views_devise_passwords_edit_html_erb__35491583_42793176'
+  app/controllers/devise/passwords_controller.rb:27:in `edit'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (54.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (65.0ms)
+
+
+Started GET "/user/password/edit?reset_password_token=[FILTERED]" for 127.0.0.1 at 2012-02-28 23:38:55 +0530
+  Processing by Devise::PasswordsController#edit as HTML
+  Parameters: {"reset_password_token"=>"[FILTERED]"}
+Rendered devise/passwords/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 216ms (Views: 38.0ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:38:56 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:38:56 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:38:56 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/edit?reset_password_token=[FILTERED]" for 127.0.0.1 at 2012-02-28 23:40:40 +0530
+  Processing by Devise::PasswordsController#edit as HTML
+  Parameters: {"reset_password_token"=>"[FILTERED]"}
+Rendered devise/passwords/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 295ms (Views: 38.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:40:41 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:40:41 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:40:41 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/edit?reset_password_token=[FILTERED]" for 127.0.0.1 at 2012-02-28 23:41:18 +0530
+  Processing by Devise::PasswordsController#edit as HTML
+  Parameters: {"reset_password_token"=>"[FILTERED]"}
+Rendered devise/passwords/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 168ms (Views: 32.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:41:19 +0530
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:41:19 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-28 23:41:19 +0530
+Served asset /blueButton.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:41:19 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-28 23:42:22 +0530
+  Processing by UsersController#index as HTML
+Completed   in 1ms
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-28 23:42:22 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 252ms (Views: 95.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:42:22 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:42:22 +0530
+Served asset /logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:42:23 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-28 23:42:23 +0530
+Served asset /blueButtonLogin.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:42:23 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-28 23:42:35 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 133ms (Views: 85.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/goBack.png" for 127.0.0.1 at 2012-02-28 23:42:35 +0530
+Served asset /goBack.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:42:35 +0530
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:42:35 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:42:36 +0530
+Served asset /bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-28 23:42:36 +0530
+Served asset /blueButton.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:42:36 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-28 23:54:49 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 206ms (Views: 89.0ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-28 23:54:49 +0530
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/goBack.png" for 127.0.0.1 at 2012-02-28 23:54:49 +0530
+Served asset /goBack.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-28 23:54:49 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-28 23:54:50 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-28 23:54:50 +0530
+Served asset /bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-28 23:54:50 +0530
+Served asset /blueButton.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-02-29 00:44:28 +0530
+  Processing by UsersController#index as HTML
+Completed   in 1ms
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-29 00:44:28 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 114ms (Views: 33.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-29 00:44:28 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-29 00:44:28 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-29 00:44:28 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-29 00:44:29 +0530
+Served asset /bg2.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-29 00:44:29 +0530
+Served asset /blueButtonLogin.png - 304 Not Modified (0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 00:44:37 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"admin-pecaa@gmail.com"}, "commit"=>"Get Username"}
+  [1m[35mUser Load (3.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin-pecaa@gmail.com' LIMIT 1
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`reset_password_token` = 'xosDGMg6PAP7g22kGCdC' LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36m (2.0ms)[0m  [1mUPDATE `users` SET `reset_password_token` = 'xosDGMg6PAP7g22kGCdC', `reset_password_sent_at` = '2012-02-28 19:14:37', `updated_at` = '2012-02-28 19:14:37' WHERE `users`.`id` = 1[0m
+  [1m[35m (20.0ms)[0m  COMMIT
+Rendered devise/mailer/reset_password_instructions.html.erb (1.0ms)
+
+Sent mail to admin-pecaa@gmail.com (11144ms)
+Date: Wed, 29 Feb 2012 00:44:37 +0530
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: admin-pecaa@gmail.com
+Message-ID: <4f4d279d75649_18c035d933c811e2@manikandan-HP.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello admin-pecaa@gmail.com!</p>
+
+<p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+
+<p><a href="rails.brightstores.com/user/password/edit?reset_password_token=xosDGMg6PAP7g22kGCdC">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+Redirected to http://localhost:3000/user/sign_in
+Completed 302 Found in 11462ms
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-29 00:44:48 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 127ms (Views: 34.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-29 00:44:49 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-29 00:44:49 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-29 00:44:49 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-29 00:44:49 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-29 00:44:49 +0530
+Served asset /blueButtonLogin.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-29 00:48:54 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 130ms (Views: 85.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-29 00:48:54 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/goBack.png" for 127.0.0.1 at 2012-02-29 00:48:54 +0530
+Served asset /goBack.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-29 00:48:54 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-29 00:48:54 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-29 00:48:54 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-29 00:48:54 +0530
+Served asset /blueButton.png - 304 Not Modified (0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 00:49:01 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}, "commit"=>"Get Username"}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1[0m
+Rendered devise/mailer/reset_password_instructions.html.erb (0.0ms)
+
+Sent mail to manikandan.nitt@gmail.com (5498ms)
+Date: Wed, 29 Feb 2012 00:49:02 +0530
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: manikandan.nitt@gmail.com
+Message-ID: <4f4d28a624dc3_18c0366aad0812cd@manikandan-HP.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello manikandan.nitt@gmail.com!</p>
+
+<p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+
+<p><a href="rails.brightstores.com/user/password/edit?reset_password_token=jAg7HGqH6YQUsmAzwqis">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+Redirected to http://localhost:3000/user/sign_in
+Completed 302 Found in 5897ms
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-29 00:49:07 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 129ms (Views: 35.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-29 00:49:08 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-29 00:49:08 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-29 00:49:08 +0530
+Served asset /blueButtonLogin.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-29 00:49:08 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-29 00:49:08 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-29 00:50:49 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 236ms (Views: 75.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-29 00:50:49 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-29 00:50:50 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/goBack.png" for 127.0.0.1 at 2012-02-29 00:50:50 +0530
+Served asset /goBack.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-29 00:50:50 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-29 00:50:50 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-29 00:50:50 +0530
+Served asset /blueButton.png - 304 Not Modified (0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 00:50:59 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"admin-pecaa@gmail.com"}, "commit"=>"Get Username"}
+  [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'admin-pecaa@gmail.com' LIMIT 1
+Rendered devise/mailer/reset_password_instructions.html.erb (2.0ms)
+
+Sent mail to admin-pecaa@gmail.com (5327ms)
+Date: Wed, 29 Feb 2012 00:51:00 +0530
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: admin-pecaa@gmail.com
+Message-ID: <4f4d291c67358_18c02bac9048134a@manikandan-HP.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello admin-pecaa@gmail.com!</p>
+	<p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+	
+	<p><a href="rails.brightstores.com/user/password/edit?reset_password_token=xosDGMg6PAP7g22kGCdC">Change my password</a></p>
+	
+	<p>If you didn't request this, please ignore this email.</p>
+	<p>Your password won't change until you access the link above and create a new one.</p>
+
+
+Redirected to http://localhost:3000/user/sign_in
+Completed 302 Found in 5793ms
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-29 00:51:05 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 180ms (Views: 31.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-29 00:51:06 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-29 00:51:06 +0530
+Served asset /logo.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-29 00:51:06 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-29 00:51:06 +0530
+Served asset /blueButtonLogin.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-29 00:51:06 +0530
+Served asset /bg.png - 304 Not Modified (1ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 00:52:30 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 192ms
+
+NameError (undefined local variable or method `aa' for #<Devise::PasswordsController:0x5bd6388>):
+  app/controllers/devise/passwords_controller.rb:13:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 00:53:13 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 31ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:17:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 00:54:32 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 22ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:17:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 00:54:54 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 94ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:17:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 00:57:27 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 31ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:17:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:04:45 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 2ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:17:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (112.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:08:45 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 30ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:15:10 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 34ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:15:44 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 23ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:15:52 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 145ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:17:33 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 139ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:18:18 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 82ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:18:34 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 138ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:21:42 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 33ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:22:46 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 30ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:24:09 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 38ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:29:36 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 52ms
+
+NoMethodError (undefined method `send_reset_password_instructions' for Devise::Mailer:Class):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:31:52 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 53ms
+
+RuntimeError (Could not find a valid mapping for {"email"=>"manikandan.nitt@gmail.com"}):
+  app/mailers/devise/mailer.rb:27:in `initialize_from_record'
+  app/mailers/devise/mailer.rb:22:in `setup_mail'
+  app/mailers/devise/mailer.rb:11:in `reset_password_instructions'
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (92.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:34:14 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 226ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:34:46 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 115ms
+
+NameError (undefined local variable or method `ss' for #<Devise::PasswordsController:0x546f8e8>):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:35:29 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 494ms
+
+ArgumentError (Unknown key: email):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:37:13 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1[0m
+Completed 500 Internal Server Error in 158ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:17:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:39:12 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 43ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:40:42 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 45ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/mailers/devise/mailer.rb:8:in `reset_password_instructions'
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:41:38 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 72ms
+
+RuntimeError (Could not find a valid mapping for {"email"=>"manikandan.nitt@gmail.com"}):
+  app/mailers/devise/mailer.rb:9:in `reset_password_instructions'
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:42:38 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 22ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:43:52 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 25ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:48:14 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 165ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:50:41 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+Completed 500 Internal Server Error in 31ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/devise/passwords_controller.rb:16:in `create'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:53:13 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`reset_password_token` = 'VyWLStTCWrmdLmMaxVoU' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.0ms)[0m  UPDATE `users` SET `reset_password_token` = 'VyWLStTCWrmdLmMaxVoU', `reset_password_sent_at` = '2012-02-28 20:23:22', `updated_at` = '2012-02-28 20:23:22' WHERE `users`.`id` = 2
+  [1m[36m (28.0ms)[0m  [1mCOMMIT[0m
+Rendered devise/mailer/reset_password_instructions.html.erb (45.0ms)
+
+Sent mail to manikandan.nitt@gmail.com (9607ms)
+Date: Wed, 29 Feb 2012 01:53:23 +0530
+From: no-reply@pecaa.com
+Reply-To: no-reply@pecaa.com
+To: manikandan.nitt@gmail.com
+Message-ID: <4f4d37baf02fe_1d702b7b908125db@manikandan-HP.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello manikandan.nitt@gmail.com!</p>
+	<p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+	
+	<p><a href="rails.brightstores.com/user/password/edit?reset_password_token=VyWLStTCWrmdLmMaxVoU">Change my password</a></p>
+	
+	<p>If you didn't request this, please ignore this email.</p>
+	<p>Your password won't change until you access the link above and create a new one.</p>
+
+
+Redirected to http://localhost:3000/user/sign_in
+Completed 302 Found in 11095ms
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-29 01:53:32 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 192ms (Views: 109.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-29 01:53:33 +0530
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-29 01:53:33 +0530
+Served asset /logo.png - 304 Not Modified (9ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-29 01:53:33 +0530
+Served asset /bg.png - 304 Not Modified (67ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-29 01:53:33 +0530
+Served asset /bg2.png - 304 Not Modified (26ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-29 01:53:33 +0530
+Served asset /blueButtonLogin.png - 304 Not Modified (11ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-29 01:54:44 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 250ms (Views: 85.0ms | ActiveRecord: 69.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-29 01:54:45 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/goBack.png" for 127.0.0.1 at 2012-02-29 01:54:45 +0530
+Served asset /goBack.png - 304 Not Modified (91ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-29 01:54:45 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-29 01:54:45 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-29 01:54:45 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-29 01:54:45 +0530
+Served asset /blueButton.png - 304 Not Modified (14ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 01:57:25 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}, "commit"=>"Get Username"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1
+Rendered devise/mailer/reset_password_instructions.html.erb (0.0ms)
+
+Sent mail to manikandan.nitt@gmail.com (5491ms)
+Date: Wed, 29 Feb 2012 01:57:25 +0530
+From: no-reply@pecaa.com
+Reply-To: no-reply@pecaa.com
+To: manikandan.nitt@gmail.com
+Message-ID: <4f4d38adc7e07_1d702d111b412623@manikandan-HP.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello manikandan.nitt@gmail.com!</p>
+	<p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+	
+	<p><a href="rails.brightstores.com/user/password/edit?reset_password_token=VyWLStTCWrmdLmMaxVoU">Change my password</a></p>
+	
+	<p>If you didn't request this, please ignore this email.</p>
+	<p>Your password won't change until you access the link above and create a new one.</p>
+
+
+Redirected to http://localhost:3000/user/sign_in
+Completed 302 Found in 5721ms
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-29 01:57:31 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 210ms (Views: 76.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-29 01:57:32 +0530
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-29 01:57:32 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-29 01:57:32 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-29 01:57:32 +0530
+Served asset /blueButtonLogin.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-29 01:57:32 +0530
+Served asset /bg.png - 304 Not Modified (1ms)
+
+
+Started GET "/user/password/new" for 127.0.0.1 at 2012-02-29 02:17:24 +0530
+  Processing by Devise::PasswordsController#new as HTML
+Rendered devise/passwords/new.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 84ms (Views: 52.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-29 02:17:24 +0530
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/goBack.png" for 127.0.0.1 at 2012-02-29 02:17:24 +0530
+Served asset /goBack.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-29 02:17:24 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-29 02:17:24 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButton.png" for 127.0.0.1 at 2012-02-29 02:17:24 +0530
+Served asset /blueButton.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-29 02:17:24 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started POST "/user/password" for 127.0.0.1 at 2012-02-29 02:17:29 +0530
+  Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swVLKhQqIXyj2gmWN/WRR5ucHmvDhuYWyTibBEk4ULA=", "user"=>{"email"=>"manikandan.nitt@gmail.com"}, "commit"=>"Get Username"}
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'manikandan.nitt@gmail.com' LIMIT 1[0m
+Rendered devise/mailer/reset_password_instructions.html.erb (2.0ms)
+
+Sent mail to manikandan.nitt@gmail.com (5971ms)
+Date: Wed, 29 Feb 2012 02:17:29 +0530
+From: no-reply@pecaa.com
+Reply-To: no-reply@pecaa.com
+To: manikandan.nitt@gmail.com
+Message-ID: <4f4d3d61c9108_1d7026a91081278@manikandan-HP.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello manikandan.nitt@gmail.com!</p>
+	<p> Your Username is  </p>
+	<p>Someone has requested a link to change your password, and you can do this through the link below.</p>
+	
+	<p><a href="rails.brightstores.com/user/password/edit?reset_password_token=VyWLStTCWrmdLmMaxVoU">Change my password</a></p>
+	
+	<p>If you didn't request this, please ignore this email.</p>
+	<p>Your password won't change until you access the link above and create a new one.</p>
+
+
+Redirected to http://localhost:3000/user/sign_in
+Completed 302 Found in 6216ms
+
+
+Started GET "/user/sign_in" for 127.0.0.1 at 2012-02-29 02:17:35 +0530
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 245ms (Views: 92.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-02-29 02:17:36 +0530
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2012-02-29 02:17:36 +0530
+Served asset /logo.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2012-02-29 02:17:36 +0530
+Served asset /bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blueButtonLogin.png" for 127.0.0.1 at 2012-02-29 02:17:36 +0530
+Served asset /blueButtonLogin.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bg2.png" for 127.0.0.1 at 2012-02-29 02:17:36 +0530
+Served asset /bg2.png - 304 Not Modified (0ms)

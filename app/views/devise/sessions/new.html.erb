@@ -1,4 +1,24 @@
-<div class="rcTable">
+<div id="logo">
+        <img src="/assets/logo.png" width="210" height="35" />
+</div>
+<%= form_for :user, :url => user_session_path do |f| %>
+    <div id="login">
+    	<%= f.text_field :email, :value=>"username", :class => 'textbox', :id=>'gUsername' %><br />
+		<%= f.password_field :email, :value=>"password", :class => 'textbox', :id=>'gPassword' %>
+    </div>
+    
+    <p><%= f.check_box :remember_me %> 
+    remember me on this computer</p>
+    
+    <p><%= f.submit "Login",:class=>'blueButton',:id=>"gLogin"%></p>
+<%end%>
+<div id="forgotPassword">
+	<%=link_to "forgot username / password",new_user_password_path%>
+</div>
+
+
+
+<!--<div class="rcTable">
     	<div class="logo"></div>
 		<% if flash[:alert] %>
   <div class="flash errors"><%= flash[:alert] %></div>
@@ -20,3 +40,5 @@
     </div>
     <%= button_to "forgot username / password", new_user_password_path,:class=>'btnForgot',:method=>"get" %>
 </div>
+-->
+

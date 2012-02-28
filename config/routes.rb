@@ -3,7 +3,7 @@ Mystore3::Application.routes.draw do
   
 # devise_for :users,  :controllers => { :registrations => "users/registrations" }
  resources :users
-# devise_for :user,
+ devise_for :user
 #         :path_names => {:sign_in => "", :sign_out => "logout",:sign_up => "register"}
   get 'uploads/new'
   get 'uploads/index'
