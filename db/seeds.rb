@@ -9,8 +9,11 @@
 Role.delete_all
 User.delete_all
 
-role = Role.create(:name=>"SuperAdmin")
+role = Role.create(:name=>"SuperAdmin",:display_name=>"System Administrator")
+role2 = Role.create(:name=>"Administrator",:display_name=>"Administrator")
+role3 = Role.create(:name=>"WebsiteBuilder",:display_name=>"Website Builder")
 user_role = Role.create(:name=>"user")
+
 User.create(:email=>"admin-pecaa@gmail.com",:username=>"admin-pecaa",:password=>"pecaa123",:role=>role).roles = [role]
 20.times do |i|
   u = User.create(:email=>"test#{i}@gmail.com",:username=>"test#{i}", :password=>"test#{i}",:role=>user_role)
