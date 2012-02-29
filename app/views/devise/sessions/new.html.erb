@@ -4,7 +4,7 @@
 <%= form_for :user, :url => user_session_path do |f| %>
     <div id="login">
     	<%= f.text_field :email, :value=>"username", :class => 'textbox', :id=>'gUsername' %><br />
-		<%= f.password_field :email, :value=>"password", :class => 'textbox', :id=>'gPassword' %>
+		<%= f.password_field :password, :value=>"password", :class => 'textbox', :id=>'gPassword' %>
     </div>
     
     <p><%= f.check_box :remember_me %> 
