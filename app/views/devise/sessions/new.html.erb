@@ -1,8 +1,26 @@
-<div class="rcTable">
+<div id="logo">
+        <img src="/assets/logo.png" width="210" height="35" />
+</div>
+<%= form_for :user, :url => user_session_path do |f| %>
+    <div id="login">
+    	<%= f.text_field :email, :value=>"username", :class => 'textbox', :id=>'gUsername' %><br />
+		<%= f.password_field :password, :value=>"password", :class => 'textbox', :id=>'gPassword' %>
+    </div>
+    
+    <p><%= f.check_box :remember_me %> 
+    remember me on this computer</p>
+    
+    <p><%= f.submit "Login",:class=>'blueButton',:id=>"gLogin"%></p>
+<%end%>
+<div id="forgotPassword">
+	<%=link_to "forgot username / password",new_user_password_path%>
+</div>
+
+<!-- <div class="rcTable">
   <div class="logo"></div>
   <div class="fieldsHolder">
     <div class="flash errors">&nbsp;<% if flash[:alert] %><%= flash[:alert] %>  <% end %></div>
-	  <%= form_for :user, :url => user_session_path do |f| %>
+    <%= form_for :user, :url => user_session_path do |f| %>
       <%= f.text_field :email, :class => "inp defaultText", :title => "username" %>
       <%= text_field_tag "password-clear", "", :class => 'inp defaultText', :title => "password" %>
       <%= f.password_field :password, :class => 'inp', :title => "password", :autocomplete => 'off'%>
@@ -11,7 +29,25 @@
          <%= f.check_box :remember_me %> Remember me on this computer
       </span>
       <div class="clear"></div>
-		  <%= f.submit "Login",:class=>'btnLogin'%>
+      <%= f.submit "Login",:class=>'btnLogin'%> -->
+<!--<div class="rcTable">
+    	<div class="logo"></div>
+		<% if flash[:alert] %>
+  <div class="flash errors"><%= flash[:alert] %></div>
+<% end %>
+
+		<%= form_for :user, :url => user_session_path do |f| %>
+
+        <div class="fieldsHolder">
+        	<%= f.text_field :email, :class => 'inp' %>
+		    <%= f.password_field :password, :class => 'inp' %>
+		  
+        <div class="clear"></div>
+        <span style="width:300px; float:left; color:#999999;">Remember me on this computer <%= f.check_box :remember_me %></span>
+        <div class="clear"></div>
+		<%= f.submit "Login",:class=>'btnLogin'%>
+        </div>
+		
 		<%end%>
 		<%= button_to "forgot username / password?", new_user_password_path, :class=>'btnForgot', :method=>"get" %>
   </div>
@@ -61,5 +97,4 @@ $(document).ready(function()
        }
     });
 });
-//-->
-</script>
+</script>//-->

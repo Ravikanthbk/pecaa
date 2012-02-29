@@ -2,9 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Login</title>
+<title>PECAA</title>
 <%= stylesheet_link_tag "pecaa" %>
 <%= stylesheet_link_tag "facebox" %>
+<%= stylesheet_link_tag "style" %>
 <%= csrf_meta_tag %>
 <%= javascript_include_tag 'jquery.min.js','rails.js'%>
 <%= javascript_include_tag 'facebox.js'%>
@@ -12,10 +13,11 @@
 </head>
 
 <body>
-<div class="mainContainer">
 
-<%= yield %>
-
+<div class="roundedBox" id="loginBox">
+	<%=yield%>
 </div>
+
+
 </body>
 </html>
