@@ -7,7 +7,7 @@
 <%= form_for User.new, :as => :user, :url => user_password_path do |f| %>
 	<div id="forgotUsername">
 		<label for="gUsername">forgot username</label>
-		<%= f.email_field :email,:id=>"gUsername", :class=>"textbox" %>
+		<%= f.email_field :email,:id=>"gUsername", :class=>"textbox",:value=>"email address" %>
 	</div>
 
 	<p><%= f.submit "Get Username",:class=>'blueButton'%></p>
@@ -15,8 +15,8 @@
 <%= form_for User.new, :as => :user, :url => user_password_path do |f| %>
 	<div id="forgotPassword">
 		<label for="gEmailAddress">forgot password</label>
-		<%= f.email_field :email,:id=>"gUsername", :class=>"textbox" %><br/>
-		<%= f.text_field :username,:id=>"gUsername", :class=>"textbox" %>
+		<%= f.email_field :email,:id=>"gUsername", :class=>"textbox",:value=>"email address" %><br/>
+		<%= f.text_field :username,:id=>"gUsername", :class=>"textbox",:value=>"username" %>
 	</div>
 	
 	<p><%= f.submit "Get Password",:class=>'blueButton'%></p>
