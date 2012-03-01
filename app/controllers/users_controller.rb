@@ -109,6 +109,24 @@ class UsersController < ApplicationController
       end
     end
   end
+  
+  def update
+    @user_obj = User.find(params[:id])
+    params[:user][:password] = @user_obj.password
+    if @user_obj.update_attributes(params[:user])
+      respond_to do |format|
+        format.json { render :json => @user_obj.to_json, :status => 200 }
+        format.xml  { head :ok }
+        format.html { redirect_to :action => :index }
+      end
+    else
+      respond_to do |format|
+        format.json { render :text => "Could not create user", :status => :unprocessable_entity } # placeholder
+        format.xml  { head :ok }
+        format.html { render :action => :edit, :status => :unprocessable_entity }
+      end
+    end
+  end
 
   def dashboard
     

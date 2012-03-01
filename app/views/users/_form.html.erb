@@ -5,7 +5,7 @@
     </li>
     <% end %>
 </ul>
-<%=form_for(@user_obj) do |f| %>
+
 <div class="ueBodyContent">
     <div class="fLeft">
         User Management
@@ -15,6 +15,7 @@
     </div>
     <div class="clear">
     </div>
+<%=form_for(@user_obj) do |f| %>
     <!-- black table -->
     <div class="rcBlack">
         <div class="ueNameDisplay">
@@ -49,6 +50,7 @@
                 </div>
                 <span id="nameInfo" class="error"></span>
             </div>
+			<%if @user_obj.new_record?%>
             <div class="row1">
                 <div class="inpTxt">
                     password:
@@ -58,6 +60,7 @@
                 </div>
                 <span id="passInfo" class="error"></span>
             </div>
+			<%end%>
             <div class="row1">
                 <div class="inpTxt correctFieldTxt">
                     email:
@@ -144,31 +147,31 @@
                     <div class="inpTxt">
                         nick name:
                     </div>
-                    <%=address.text_field "nickname[]",:class=>"ueInp" %>
+                    <%=address.text_field "nickname",:class=>"ueInp",:value=>"#{@user_obj.addresses.first.nickname if @user_obj.addresses.first}" %>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         address:
                     </div>
-                    <%=address.text_field "address[]",:class=>"ueInp" %>
+                    <%=address.text_field "address_one",:class=>"ueInp",:value=>"#{@user_obj.addresses.first.address_one if @user_obj.addresses.first}" %>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         city:
                     </div>
-                    <%=address.text_field "city[]",:class=>"ueInp" %>
+                    <%=address.text_field "city",:class=>"ueInp",:value=>"#{@user_obj.addresses.first.city if @user_obj.addresses.first}" %>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         state:
                     </div>
-                    <%=address.text_field "state[]",:class=>"ueInp" %>
+                    <%=address.text_field "state",:class=>"ueInp",:value=>"#{@user_obj.addresses.first.city if @user_obj.addresses.first}" %>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         zip:
                     </div>
-                    <%=address.text_field "zipcode[]",:class=>"ueInp" %>
+                    <%=address.text_field "zipcode",:class=>"ueInp" ,:value=>"#{@user_obj.addresses.first.city if @user_obj.addresses.first}"%>
                 </div>
                 <div class="clear">
                 </div>
@@ -182,31 +185,31 @@
                     <div class="inpTxt">
                         nick name:
                     </div>
-                    <%=address.text_field "nickname[]",:class=>"ueInp" %>
+                    <%#=address.text_field "nickname[]",:class=>"ueInp" %>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         address:
                     </div>
-                    <%=address.text_field "address[]",:class=>"ueInp" %>
+                    <%#=address.text_field "address[]",:class=>"ueInp" %>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         city:
                     </div>
-                    <%=address.text_field "city[]",:class=>"ueInp" %>
+                    <%#=address.text_field "city[]",:class=>"ueInp" %>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         state:
                     </div>
-                    <%=address.text_field "state[]",:class=>"ueInp" %>
+                    <%#=address.text_field "state[]",:class=>"ueInp" %>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         zip:
                     </div>
-                    <%=address.text_field "zipcode[]",:class=>"ueInp" %>
+                    <%#=address.text_field "zipcode[]",:class=>"ueInp" %>
                 </div>
                 <div class="clear">
                 </div>
@@ -231,7 +234,7 @@
                         <span class="holderWrap" style="width: 17px; height: 17px; "><span class="holder" style="width: 17px; "></span></span>
                         <%=role.display_name %>
                     </label>
-                    <%=f.check_box "role_ids",:value=>role.id,:id=>"checkbox-#{role.id}",:class=>"hiddenCheckbox" %>
+                    <%=check_box_tag "user[role_ids][]",role.id,@user_obj.role_ids.include?(role.id), {:class=>"hiddenCheckbox"}%>
                     <%end %>
                 </div>
             </div>
@@ -259,6 +262,7 @@
             </div>-->
         </div>
         <!-- end of third column -->
+		
         <div class="clear ueBdrBottom">
         </div>
 		
@@ -271,5 +275,5 @@
         </div>
     </div>
     <!-- end of black table -->
-</div>
 <%end %>
+</div>
