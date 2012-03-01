@@ -5,8 +5,8 @@
 
 <%= form_for :user, :url => user_session_path do |f| %>
     <div id="login">
-    	<%= f.text_field :email, :value=>"username", :class => 'textbox', :id=>'gUsername' %><br />
-		<%= f.password_field :password, :value=>"password", :class => 'textbox', :id=>'gPassword' %>
+    	<%= f.text_field :email, :class => 'textbox watermark', :id=>'gUsername',:title=>"username"%><br />
+		<%= f.password_field :password, :value=>"password", :class => 'textbox watermarked', :id=>'gPassword' ,:title=>"password"%>
     </div>
     
     <p><%= f.check_box :remember_me %> 
@@ -18,3 +18,10 @@
 	<%=link_to "forgot username / password",new_user_password_path%>
 </div>
 
+<script type="text/javascript">
+	$(function () {
+		$("#gUsername").watermark("username", {useNative: false});
+	    $("#gPassword").watermark("password", {useNative: false});
+    });
+
+</script>
