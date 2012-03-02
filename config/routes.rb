@@ -1,5 +1,7 @@
 Mystore3::Application.routes.draw do
 
+  resources :sites
+
   get "users/index"
   
   # match 'users/list', :to => "users/users#index", :as => :user_list

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @site.description %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @site.name %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @site.created_by %>
+</p>
+
+<p>
+  <b>Is active:</b>
+  <%= @site.is_active %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @site.title %>
+</p>
+
+
+<%= link_to 'Edit', edit_site_path(@site) %> |
+<%= link_to 'Back', sites_path %>
