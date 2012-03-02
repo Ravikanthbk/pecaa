@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-  load_and_authorize_resource :only => [:show,:new,:destroy,:edit,:update]
+  load_and_authorize_resource :only => [:show,:new,:destroy,:edit,:update,:dashboard]
   
-  before_filter :check_permissions, :only => [:new, :create, :cancel]
+  before_filter :check_permissions, :only => [:new, :cancel]
   skip_before_filter :require_no_authentication
   
   layout 'pecaa_application'
@@ -93,6 +93,10 @@ class UsersController < ApplicationController
   # POST /users.json                                      HTML AND AJAX
   #-----------------------------------------------------------------
   def create
+    params[:user][:addresses]=[params[:user][:addresses1]] << params[:user][:addresses2]
+    params[:user].delete(:addresses1)
+    params[:user].delete(:addresses2)
+    params[:user][:role_ids] = params[:users][:role_ids]
     @user_obj = User.new(params[:user])
  
     if @user_obj.save
@@ -112,6 +116,10 @@ class UsersController < ApplicationController
   
   def update
     @user_obj = User.find(params[:id])
+    params[:user][:addresses]=[params[:user][:addresses1]] << params[:user][:addresses2]
+    params[:user].delete(:addresses1)
+    params[:user].delete(:addresses2)
+    params[:user][:role_ids] = params[:users][:role_ids] if params[:users]
     params[:user][:password] = @user_obj.password
     if @user_obj.update_attributes(params[:user])
       respond_to do |format|
@@ -129,6 +137,6 @@ class UsersController < ApplicationController
   end
 
   def dashboard
-    
+    render :layout=>false
   end
 end

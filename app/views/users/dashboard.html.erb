@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<%= stylesheet_link_tag "pecaa" %>
+<%= stylesheet_link_tag "facebox" %>
+<%= stylesheet_link_tag "style" %>
+<%= csrf_meta_tag %>
+<%= javascript_include_tag 'jquery.min.js','rails.js','jquery.watermark.js'%>
+<%= javascript_include_tag 'facebox.js'%>
+<%= javascript_include_tag 'common.js'%>
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<div class="roundedBox" id="loginBox">
+    <div id="logo">
+        <img src="/assets/logo.png" width="210" height="35" />
+    </div>
+    
+    <div id="dashBoard">
+    	<div class="leftColumn">
+        	<a href="" id="dashboardWebsiteList" class="dashboardButtonsOne">Website List</a>
+            <a href="" id="dashboardReports" class="dashboardButtonsTwo">Reports</a>
+            <a href="/users" id="dashboardUsers" class="dashboardButtonsThree">Users</a>
+            <a href="" id="dashboardSystemConfig" class="dashboardButtonsFour">System Config</a>
+        </div>
+        
+        <div class="rightColumn">
+        	<a href="" id="dashboardSystemStats" class="dashboardButtonsOne">System Statistics</a>
+            <a href="" id="dashboardAdSetup" class="dashboardButtonsTwo">Ad Setup</a>
+            <a href="/uploads" id="dashboardContentLibrary" class="dashboardButtonsThree">Content Library</a>
+            <a href="" id="dashboardCreateNewSite" class="dashboardButtonsFive">Create New Site</a>
+        </div>
+        <div class="clear"></div>
+        
+        <div id="takeMeTo">
+        	The next time I log in, please take me to the 
+            <select id="takeMeToSelect" class="dropDownMenu">
+            	<option>Dashboard</option>
+                <option>Website List</option>
+                <option>System Statistics</option>
+                <option>Reports</option>
+                <option>Ad Setup</option>
+                <option>Users</option>
+                <option>Content Library</option>
+                <option>System Config</option>
+                <option>Create New Site</option>
+            </select>
+        </div>
+    </div>
+    
+    <div id="footerMyAccount">
+    	<a href="myaccount.html">my account</a>
+    </div>
+    <div id="footerLogOut">
+    	<a href="logout.html">log out</a>
+    </div>
+</div>
+
+
+</body>
+</html>

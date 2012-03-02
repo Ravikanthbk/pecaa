@@ -32,9 +32,9 @@
         <div class="status">
             <div id="checkboxDemo">
                 <label for="checkbox-4" tabindex="4" class="txtColorWhite prettyCheckbox checkbox list">
-                    <span class="holderWrap" style="width: 17px; height: 17px; "><span class="holder" style="width: 17px; "></span></span>active
+                    active
                 </label>
-                <%=f.check_box "active",:value=>"checkbox-4",:id=>"checkbox-4",:class=>"hiddenCheckbox" %>
+                <%=f.check_box "active",{:id=>"checkbox-4",:class=>"hiddenCheckbox" },1,0%>
             </div>
         </div>
         <div class="clearHeight10Border">
@@ -132,10 +132,10 @@
             <%=f.fields_for(:addresses, :include_id => false) do |address| %>
             <ol id="toc">
                 <li>
-                    <a href="#page-1" class="active"><span>shipping address</span></a>
+                    <a href="#page-1" class=" active"><span>shipping address</span></a>
                 </li>
                 <li>
-                    <a href="#page-2" class="inactive"><span>billing address</span></a>
+                    <a href="#page-2" class=" inactive"><span>billing address</span></a>
                 </li>
             </ol>
             <div class="content active" id="page-1">
@@ -147,31 +147,31 @@
                     <div class="inpTxt">
                         nick name:
                     </div>
-                    <%=address.text_field "nickname",:class=>"ueInp",:value=>"#{@user_obj.addresses.first.nickname if @user_obj.addresses.first}" %>
+                    <%=f.text_field "addresses1[nickname]",:class=>"ueInp",:value=>"#{@user_obj.addresses.first.nickname if @user_obj.addresses.first}" %>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         address:
                     </div>
-                    <%=address.text_field "address_one",:class=>"ueInp",:value=>"#{@user_obj.addresses.first.address_one if @user_obj.addresses.first}" %>
+                    <%=f.text_field "addresses1[address_one]",:class=>"ueInp",:value=>"#{@user_obj.addresses.first.address_one if @user_obj.addresses.first}" %>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         city:
                     </div>
-                    <%=address.text_field "city",:class=>"ueInp",:value=>"#{@user_obj.addresses.first.city if @user_obj.addresses.first}" %>
+                    <%=f.text_field "addresses1[city]",:class=>"ueInp",:value=>"#{@user_obj.addresses.first.city if @user_obj.addresses.first}" %>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         state:
                     </div>
-                    <%=address.text_field "state",:class=>"ueInp",:value=>"#{@user_obj.addresses.first.city if @user_obj.addresses.first}" %>
+                    <%=f.text_field "addresses1[state]",:class=>"ueInp",:value=>"#{@user_obj.addresses.first.city if @user_obj.addresses.first}" %>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         zip:
                     </div>
-                    <%=address.text_field "zipcode",:class=>"ueInp" ,:value=>"#{@user_obj.addresses.first.city if @user_obj.addresses.first}"%>
+                    <%=f.text_field "addresses1[zipcode]",:class=>"ueInp" ,:value=>"#{@user_obj.addresses.first.city if @user_obj.addresses.first}"%>
                 </div>
                 <div class="clear">
                 </div>
@@ -185,31 +185,31 @@
                     <div class="inpTxt">
                         nick name:
                     </div>
-                    <%#=address.text_field "nickname[]",:class=>"ueInp" %>
+                    <%=f.text_field "addresses2[nickname]",:class=>"ueInp" ,:value=>"#{@user_obj.addresses.second.nickname if @user_obj.addresses.second}"%>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         address:
                     </div>
-                    <%#=address.text_field "address[]",:class=>"ueInp" %>
+                    <%=f.text_field "addresses2[address_one]",:class=>"ueInp",:value=>"#{@user_obj.addresses.second.address_one if @user_obj.addresses.second}" %>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         city:
                     </div>
-                    <%#=address.text_field "city[]",:class=>"ueInp" %>
+                    <%=f.text_field "addresses2[city]",:class=>"ueInp",:value=>"#{@user_obj.addresses.second.city if @user_obj.addresses.second}" %>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         state:
                     </div>
-                    <%#=address.text_field "state[]",:class=>"ueInp" %>
+                    <%=f.text_field "addresses2[state]",:class=>"ueInp",:value=>"#{@user_obj.addresses.second.state if @user_obj.addresses.second}" %>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         zip:
                     </div>
-                    <%#=address.text_field "zipcode[]",:class=>"ueInp" %>
+                    <%=f.text_field "addresses2[zipcode]",:class=>"ueInp" ,:value=>"#{@user_obj.addresses.second.zipcode if @user_obj.addresses.second}"%>
                 </div>
                 <div class="clear">
                 </div>
@@ -228,13 +228,13 @@
                 <div class="clear"></div>
                 <div class="roles"><img src="/assets/icon-close.png" /><span>Website Builder</span></div>
                 <div class="clear"></div>-->
+				
                 <div id="checkboxDemo">
                     <%Role.all.collect do |role| %>
                     <label for="checkbox-<%=role.id%>" tabindex="<%=role.id%>" class="txtColorWhite prettyCheckbox checkbox list">
-                        <span class="holderWrap" style="width: 17px; height: 17px; "><span class="holder" style="width: 17px; "></span></span>
                         <%=role.display_name %>
                     </label>
-                    <%=check_box_tag "user[role_ids][]",role.id,@user_obj.role_ids.include?(role.id), {:class=>"hiddenCheckbox"}%>
+                    <%=check_box_tag "users[role_ids][]",role.id,@user.roles.include?(role),{:id=>"checkbox-#{role.id}",:class=>"hiddenCheckbox"} %>
                     <%end %>
                 </div>
             </div>
@@ -277,3 +277,14 @@
     <!-- end of black table -->
 <%end %>
 </div>
+<%= javascript_include_tag "activatables" %>
+<script type="text/javascript">
+activatables('page', ['page-1', 'page-2']);
+</script>
+<%= javascript_include_tag "prettyCheckboxes" %>
+<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$('#checkboxDemo input[type=checkbox]').prettyCheckboxes();
+				$('.inlineRadios input[type=radio]').prettyCheckboxes({'display':'inline'});
+			});
+</script>
