@@ -260,21 +260,23 @@ float:left; padding:1px 0px 0px 10px;
 }
 
 .btnAshGrey {
-	background:url(../assets/btn-ash-grey.png) no-repeat right bottom; border:0px; padding-right:10px; height:35px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif;
+	background:url(/assets/btn-ash-grey.png) no-repeat right bottom; border:0px; padding-right:10px; height:35px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif;
 }
 
 .btnAshGreyLeft {
-	float:right; background:url(../assets/btn-ash-grey.png) no-repeat left top; padding-left:0px; height:35px;
+	float:right; background:url(/assets/btn-ash-grey.png) no-repeat left top; padding-left:0px; height:35px;
+}
+.ueBtnCancel {
+	width:80px; float:left;
 }
 
 .btnGreen {
-	background:url(../assets/btn-green.png) no-repeat right bottom; border:0px; padding-right:15px; height:34px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif;
+	background:url(/assets/btn-green.png) no-repeat right bottom; border:0px; padding-right:15px; height:34px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif;
 }
 
 .btnGreenLeft {
-	float:right; background:url(../assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px;
+	float:right; background:url(/assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px;
 }
-
 .rcFooter {
 	float:left; width:968px; background:url(../assets/rc-footer.jpg) no-repeat left top; height:12px;
 }
@@ -645,7 +647,7 @@ ul.ConLibraHeads .edit {
 }
 
 .btnUploadFileLeft {
-	background:url(../assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px; width:100px; width:10px; float:left; margin-left:300px;
+	background:url(../assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px; width:100px; width:10px; float:left; margin-left:280px;
 }
 
 .btnCancel {
@@ -661,7 +663,7 @@ ul.ConLibraHeads .edit {
 }
 
 .helpPopUp p {
-	font:bold 13px Arial, Helvetica, sans-serif; margin-left:20px;
+	font:bold 13px Arial, Helvetica, sans-serif; margin-left:20px; color:#000;
 }
 
 .helpGreyTxt {
@@ -672,6 +674,10 @@ ul.ConLibraHeads .edit {
 
 .error{
 	color:#FF5A5A
+}
+
+.ueBdrBottom {
+	background:url(/assets/border-bottom.gif) repeat-x left bottom; height:10px; margin-bottom:20px;
 }
 
 /* end of add file */

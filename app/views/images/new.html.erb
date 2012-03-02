@@ -1,0 +1,19 @@
+<div class="addFileHolder" style="margin-top:10px">
+    <div class="addFileTop">Add Image <img src="/assets/icon-help-grey.png" class="help" /></div>
+    <%= form_for(@image, :html => { :multipart => true }, :remote => true) do |f| %>
+    <%#= f.object.errors %>
+    <div class="addFileBody">
+      <%= f.file_field :upload %>
+      <p>File Path</p>
+      <p>users/jim/desktop/image.png</p>
+    </div>
+    <div class="addFileBottom">
+      <div class="btnCancelLeft">
+        <input type="reset" value="Cancel" class="btnCancel" />
+      </div>
+      <div class="btnUploadFileLeft">
+        <%= f.submit "Upload File", :class => "btnUploadFile" %>
+      </div>
+    </div>
+    <% end %>
+</div>

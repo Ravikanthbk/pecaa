@@ -8,18 +8,19 @@
 		<script type="text/javascript" charset="utf-8">
 			google.load("jquery", "1.3.2");
 		</script>
-<%= javascript_include_tag "prettyCheckboxes" %>
+
 <%= javascript_include_tag "activatables" %>
 <%= javascript_include_tag "validation"%>
 <%= stylesheet_link_tag "pecaa" %>
 <%= stylesheet_link_tag "tabs" %>
 <%= stylesheet_link_tag "prettyCheckboxes.css" %>
-<%#= stylesheet_link_tag "pecaa" %>
 <%= stylesheet_link_tag "facebox" %>
 <%= csrf_meta_tag %>
 <%= javascript_include_tag 'jquery.min.js','rails.js'%>
 <%= javascript_include_tag 'facebox.js'%>
 <%= javascript_include_tag 'common.js'%>
+<%= javascript_include_tag "prettyCheckboxes" %>
+
 <script type="text/javascript" src="/assets/users/scripts/Datepicker/jquery-ui.js"></script>
 <script type="text/javascript" src="/assets/users/scripts/Datepicker/jquery.ui.core.js"></script>
 <script type="text/javascript" src="/assets/users/scripts/Datepicker/jquery.ui.datepicker.js"></script>
@@ -73,17 +74,6 @@
         </div>
    </div>
 </div>
-<script type="text/javascript">
-activatables('page', ['page-1', 'page-2']);
-</script>
-<!-- end of tabs script -->
 
-<!-- custom checks script -->
-<script type="text/javascript" charset="utf-8">
-			$(document).ready(function(){
-				$('#checkboxDemo input[type=checkbox],#radioDemo input[type=radio]').prettyCheckboxes();
-				$('.inlineRadios input[type=radio]').prettyCheckboxes({'display':'inline'});
-			});
-		</script>
 </body>
 </html>
