@@ -1,5 +1,13 @@
-<p id="notice"><%= notice %></p>
-
-
-<%= link_to 'Edit', edit_image_path(@image) %> |
-<%= link_to 'Back', images_path %>
+<div class="viewImgHolder">
+  <div class="viewImgTop"><%= @image.upload_file_name %><img src="images/icon-help-grey.png" class="help" /></div>
+    <div class="viewImgBody">
+      <div class="imgDisplay">
+        <% image = @image.upload.url(:medium).split('?')[0] %>
+        <%#*<img src="images/flowers.jpg" />%>
+        <img src="<%= image %>" />
+      </div>
+    </div>
+    <div class="viewImgBottom">
+      <div class="btnOKLeft"><input type="button" value="OK" class="btnOK btnCancel" /></div>
+    </div>
+</div>

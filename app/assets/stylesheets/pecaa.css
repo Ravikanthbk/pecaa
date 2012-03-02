@@ -675,3 +675,63 @@ ul.ConLibraHeads .edit {
 }
 
 /* end of add file */
+
+/* view video */
+.viewVideoHolder {
+	margin:0px 0px 0px 0px; width:660px; border-radius:5px; -moz-border-radius:5px; box-shadow: 2px 2px 2px 0px #999999; position:relative;
+}
+
+.viewVideoTop {
+	float:left; width:643px; border:1px solid #797979; border-radius:5px 5px 0px 0px; background:url(../assets/add-file-bg.jpg) repeat left top; font:bold 25px Arial, Helvetica, sans-serif; color:#d9e5eb; line-height:38px; text-align:left; padding-left:15px; position:relative;
+}
+
+.viewVideoBody {
+	float:left; width:630px; background-color:#dbe6eb; padding:20px 15px;
+}
+
+.viewVideoBottom {
+	float:left; width:628px; border:1px solid #797979; border-radius:0px 0px 5px 5px; background:url(../assets/add-file-bg.jpg) repeat left top; padding:5px 15px;
+}
+
+.videoDisplay {
+	margin:auto; width:490px; height:320px; border-radius:5px; -moz-border-radius:5px; background:url(../assets/add-file-bg.jpg) repeat left top; padding:20px;
+}
+
+.imgDisplay .video {
+	width:490px; height:320px;
+}
+
+/* end of view video */
+/* view image */
+.viewImgHolder {
+	margin:0px 0px 0px 0px; width:660px; border-radius:5px; -moz-border-radius:5px; box-shadow: 2px 2px 2px 0px #999999; position:relative;
+}
+
+.viewImgTop {
+	float:left; width:643px; border:1px solid #797979; border-radius:5px 5px 0px 0px; background:url(../assets/add-file-bg.jpg) repeat left top; font:bold 25px Arial, Helvetica, sans-serif; color:#d9e5eb; line-height:38px; text-align:left; padding-left:15px; position:relative;
+}
+
+.viewImgBody {
+	float:left; width:630px; background-color:#dbe6eb; padding:15px;
+}
+
+.viewImgBottom {
+	float:left; width:628px; border:1px solid #797979; border-radius:0px 0px 5px 5px; background:url(../assets/add-file-bg.jpg) repeat left top; padding:5px 15px;
+}
+
+.imgDisplay {
+	margin:auto; width:300px; height:300px; border-radius:5px; -moz-border-radius:5px; background:url(../assets/add-file-bg.jpg) repeat left top; padding:20px;
+}
+
+.imgDisplay img {
+	width:300px; height:300px;
+}
+
+.btnOK {
+	background:url(../assets/btn-green.png) no-repeat right bottom; border:0px; padding-right:15px; height:34px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif; margin-left:10px;
+}
+
+.btnOKLeft {
+	background:url(../assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px; float:right;
+}
+/* end of view image */

@@ -44,12 +44,15 @@ class Video < ActiveRecord::Base
 
   # This method creates the ffmpeg command that we'll be using
   def convert_command
-    flv = File.join(File.dirname(source.path), "#{id}.flv")
-    File.open(flv, 'w')
+#    flv = File.join(File.dirname(source.path), "#{id}.flv")
+#    File.open(flv, 'w')
 
+#    command = <<-end_command
+#      ffmpeg -i #{ source.path } -ar 22050 -ab 32 -acodec mp3
+#    -s 480x360 -vcodec flv -r 25 -qscale 8 -f flv -y #{ flv }
+#end_command
     command = <<-end_command
-      ffmpeg -i #{ source.path } -ar 22050 -ab 32 -acodec mp3
-    -s 480x360 -vcodec flv -r 25 -qscale 8 -f flv -y #{ flv }
+      ffmpeg -i #{ source.path } -f flv -vcodec copy -acodec copy #{id}.flv
 end_command
     command.gsub!(/\s+/, " ")
   end
@@ -59,8 +62,4 @@ end_command
     update_attribute(:source_file_name, "#{id}.flv")
   end
 
-#    has_attached_file :source, :styles => {
-#      :medium => { :geometry => "640x480", :format => 'flv' },
-#      :thumb => { :geometry => "100x100#", :format => 'jpg', :time => 10 }
-#    }, :processors => [:ffmpeg]
 end

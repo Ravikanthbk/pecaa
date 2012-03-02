@@ -1,18 +1,11 @@
-<%#*<p id="notice"><%= notice %></p>%>
-<%= javascript_include_tag 'swfobject' %>
-<div id="player">
-  You need to have <%= link_to 'Flash Player', 'http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash' %> installed to display this video
+<div class="viewVideoHolder">
+  <div class="viewVideoTop"><%= @video.source_file_name %><img src="/assets/icon-help-grey.png" class="help" /></div>
+  <div class="viewVideoBody">
+    <div class="videoDisplay">
+      <embed src ="/flash/mediaplayer.swf?file=<%= @video.source.url %>" width="480" height="320" allowfullscreen="true" />
+    </div>
+  </div>
+  <div class="viewVideoBottom">
+    <div class="btnOKLeft"><input type="button" value="OK" class="btnOK btnCancel" /></div>
+  </div>
 </div>
-
-<script type="text/javascript">
-  var so = new SWFObject('/flash/mediaplayer.swf', 'mpl', '480', '360', '8');
-  so.addParam('allowscriptaccess', 'always');
-  so.addParam('allowfullscreen', 'true');
-  so.addVariable('height', '360');
-  so.addVariable('width', '480');
-  so.addVariable('file', '<%= @video.source.url %>');
-  so.write('player');
-</script>
-
-<%#= link_to 'Edit', edit_video_path(@video) %> |
-<%= link_to 'Back', videos_path %>

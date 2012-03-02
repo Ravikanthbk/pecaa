@@ -103,13 +103,13 @@
                   <% unless @content_libraries.blank? %>
                     <% @content_libraries.each do |content| %>
                       <li class="<%= cycle("dark", "light") %>">
-                        <span class="name"><p><%= content.name %></p> <%= display_content(content) %></span>
+                        <span class="name" title="<%= content.name %>"><p><%= truncate(content.name, :length => 25, :separator => '..') %></p> <%= display_content(content) %></span>
                         <span class="type"><%= content.source_type %></span>
                         <span class="lastUsed">admin</span>
                         <span class="timesUsed">99</span>
                         <span class="dateAdded">02/08/11</span>
                         <span class="addedBy" title="<%= content.added_by %>"><%= truncate(content.added_by, :length => 10, :separator => '..') %></span>
-                        <span class="edit"><a href='<%= edit_image_path(content.source_id) %>' rel="facebox"><img src="images/btn-edit.png" /></a></span>
+                        <span class="edit"><%= edit_content(content) %></span>
                       </li>
                     <% end %>
                   <% else %>

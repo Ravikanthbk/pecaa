@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('a[rel*=facebox]').facebox({
-  loadingImage : '/assets/loading.gif',
-  closeImage   : '/assets/closelabel.png'
+  loadingImage : '/assets/loading.gif'
+  //closeImage   : '/assets/closelabel.png'
   })
 
   $(".btnCancel").live('click', function(){
