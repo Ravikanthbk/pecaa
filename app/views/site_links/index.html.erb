@@ -1,7 +1,12 @@
 <div class="ueBodyContent">
-  <div class="btnGreyLeft ueBtnCreateNewUser">
-  <%= link_to 'New Site link', new_site_site_link_path(@site), :class=>"btnGrey" %> | <%= link_to 'Back to Site Settings', site_path(@site), :class=>"btnGrey" %>
+  <div class="btnGreyLeft">
+    <%= button_to 'New Site link', new_site_site_link_path(@site), :class=>'btnGrey', :method=>"get" %>
   </div>
+  <ul class="ueNavlink">
+    <li>
+      <%= link_to 'Back to Site Settings', site_path(@site) %>
+    </li>
+  </ul>
 
   <div class="userSearch">
     <!-- rc table -->
@@ -67,7 +72,7 @@
             <% @site_links.each do |site_link| %>
                 <li class="dark">
                   <p>
-                    <span class="name"><%=link_to site_link.name, site_site_link_path(@site, site_link)%></span>
+                    <span class="name"><%=link_to site_link.name, site_site_link_path(@site, site_link), :class=>"links"%></span>
                   </p>
                   <span class="type"><%=site_link.is_active ? "Yes": "No"%></span> 
                   <span class="name"><%=site_link.created_at.strftime("%m/%d/%Y %T")%></span>

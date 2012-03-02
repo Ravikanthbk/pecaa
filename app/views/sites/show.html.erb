@@ -1,6 +1,12 @@
-<div class="btnGreyLeft ueBtnCreateNewUser">
-<%= link_to 'Add Link', new_site_site_link_path(@site) %> | <%= link_to 'All Links', site_site_links_path(@site) %>
-</div>
+<div class="ueBodyContent">
+  <ul class="ueNavlink">
+    <li>
+      <%= link_to 'Add New Link', new_site_site_link_path(@site) %>
+    </li>
+    <li>
+      <%= link_to 'All Links', site_site_links_path(@site) %>
+    </li>
+  </ul>
 
 <p id="notice"><%= notice %></p>
 
@@ -16,7 +22,7 @@
 
 <p>
   <b>Created by:</b>
-  <%= @site.created_by %>
+  <%= @site.created_by.username %>
 </p>
 
 <p>
@@ -29,5 +35,12 @@
   <%= @site.title %>
 </p>
 
-
-<%= link_to 'Edit', edit_site_path(@site) %> | <%= link_to 'Back to all Sites', sites_path %> 
+<ul class="ueNavlink">
+  <li>
+    <%= link_to 'Edit', edit_site_path(@site) %>
+  </li>
+  <li>
+    <%= link_to 'Back to all Sites', sites_path %> 
+  </li>
+</ul>
+</div>

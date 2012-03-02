@@ -679,5 +679,18 @@ ul.ConLibraHeads .edit {
 .ueBdrBottom {
 	background:url(/assets/border-bottom.gif) repeat-x left bottom; height:10px; margin-bottom:20px;
 }
+a.links{font: 15px "calibri",Arial,Helvetica,sans-serif;color:#6c95a9; margin:0px 10px 0px 0px; text-decoration:none; padding:0px 0px 0px 0px; height:34px;}
+
+.ueNavlink {
+	font:normal 15px "calibri", Arial, Helvetica, sans-serif; margin:0px 0px 0px 0px; padding:0px; float:right; width:500px;
+}
+
+.ueNavlink li {
+	list-style-type:none; text-decoration:none; margin-right:0px; display:inline; float:right;
+}
+
+.ueNavlink li a {
+	float:left; color:#6c95a9; margin:0px 10px 0px 0px; text-decoration:none; padding:0px 0px 0px 0px; height:34px;
+}
 
 /* end of add file */

@@ -1,7 +1,14 @@
-<h1>Editing site_link</h1>
-
+<div class="ueBodyContent">
+  <ul class="ueNavlink">
+  <li>
+    <%= link_to 'Show', site_site_link_path(@site, @site_link) %>
+  </li>
+  <li>
+    <%= link_to 'Back to All Links', site_site_links_path(@site) %>
+  </li>
+  <li>
+    <%= link_to 'Back to Site Settings', site_path(@site) %>
+  </li>
+</ul>
 <%= render 'form' %>
-
-<%= link_to 'Show', site_site_link_path(@site, @site_link) %> |
-<%= link_to 'Back to All Links', site_site_links_path(@site) %> | <%= link_to 'Back to Site Settings', site_path(@site) %>
-
+</div>

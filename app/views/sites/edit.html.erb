@@ -1,6 +1,11 @@
-<h1>Editing site</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @site %> |
-<%= link_to 'Back', sites_path %>
+<div class="ueBodyContent">
+  <ul class="ueNavlink">
+    <li>
+      <%= link_to 'Show', @site, :class=>'links'%>
+    </li>
+    <li>
+      <%= link_to 'Back', sites_path, :class=>'links' %>
+    </li>
+  </ul>
+  <%= render 'form' %>
+</div>

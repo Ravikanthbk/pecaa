@@ -333,6 +333,10 @@ float:left; padding:1px 0px 0px 10px;
 	list-style-type:none; text-decoration:none; margin-right:0px; display:inline;
 }
 
+.uelink {
+	list-style-type:none; text-decoration:none; margin-right:0px; display:inline;
+}
+
 .ueNavBottom li a {
 	float:left; color:#6c95a9; margin:0px 10px 0px 0px; text-decoration:none; padding:0px 0px 0px 0px; height:34px;
 }
