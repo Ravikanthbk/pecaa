@@ -1,0 +1,2 @@
+module SiteLinksHelper
+end

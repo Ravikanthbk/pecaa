@@ -1,10 +1,13 @@
-<%= link_to 'New Site', new_site_path %>
 <div class="ueBodyContent">
+  <div class="btnGreyLeft ueBtnCreateNewUser">
+  <%= link_to 'New Site link', new_site_site_link_path(@site), :class=>"btnGrey" %> | <%= link_to 'Back to Site Settings', site_path(@site), :class=>"btnGrey" %>
+  </div>
+
   <div class="userSearch">
     <!-- rc table -->
     <div class="rcPaleBlue" style="padding:50px 5px 10px 5px; position:relative;">
       <!-- search and select -->
-      <form action=<%=url_for(:action=>:search)%> method="post" name="searchbox" id='searchbox'>
+      <form action=<%=url_for(:action=>:search, :id=>@site)%> method="post" name="searchbox" id='searchbox'>
         <input id="tokentag" type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
         <input type="text" name='query' class="userSearchField"> <img src="/assets/users/images/icon-user-search-field.png" style="position:absolute; right:0; top:0;">
         <div class="selectDiv">
@@ -61,19 +64,16 @@
         <div class="viewport">
           <div class="overview">
             <ul class="ConLibra">
-              <%@sites.each do |s|%>
+            <% @site_links.each do |site_link| %>
                 <li class="dark">
                   <p>
-                    <span class="name">
-                    <%=link_to s.name, s%> 
-                      <%=link_to(image_tag( "/images/icon-eye.png"),"/sites/#{s.id}/preview")%>
-                    </span>
+                    <span class="name"><%=link_to site_link.name, site_site_link_path(@site, site_link)%></span>
                   </p>
-                  <span class="type"><%=s.is_active ? "Yes": "No"%></span> 
-                  <span class="name"><%=s.created_at.strftime("%m/%d/%Y %T")%></span>
-                  <span class="addedBy"><%=s.created_by.username%></span> 
+                  <span class="type"><%=site_link.is_active ? "Yes": "No"%></span> 
+                  <span class="name"><%=site_link.created_at.strftime("%m/%d/%Y %T")%></span>
+                  <span class="addedBy"><%=site_link.created_by.username%></span> 
                   <span class="edit">
-                    <%= link_to (image_tag( "/assets/users/images/btn-edit.png"), edit_site_path(s)) %>
+                    <%= link_to (image_tag( "/assets/users/images/btn-edit.png"), edit_site_site_link_path(@site, site_link)) %>
                   </span>
                 </li>
               <%end%>

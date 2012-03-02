@@ -5,7 +5,8 @@ class UsersController < ApplicationController
   skip_before_filter :require_no_authentication
   
   layout 'pecaa_application'
- 
+  before_filter :setup
+    
   def check_permissions
     authorize! :create, User
   end
@@ -113,4 +114,11 @@ class UsersController < ApplicationController
   def dashboard
     
   end
+  
+  protected  
+  
+  def setup
+    @symbol = "Users"
+  end
+  
 end

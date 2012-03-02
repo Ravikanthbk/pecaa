@@ -1,3 +1,7 @@
+<div class="btnGreyLeft ueBtnCreateNewUser">
+<%= link_to 'Add Link', new_site_site_link_path(@site) %> | <%= link_to 'All Links', site_site_links_path(@site) %>
+</div>
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -26,5 +30,4 @@
 </p>
 
 
-<%= link_to 'Edit', edit_site_path(@site) %> |
-<%= link_to 'Back', sites_path %>
+<%= link_to 'Edit', edit_site_path(@site) %> | <%= link_to 'Back to all Sites', sites_path %> 

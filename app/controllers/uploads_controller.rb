@@ -1,5 +1,8 @@
 class UploadsController < ApplicationController
   layout 'pecaa_application', :except => [:new]
+  
+  before_filter :setup
+  
   def index
     @uploads = Upload.order("created_at desc").page(params[:page]).per(5)
   end
@@ -41,4 +44,11 @@ class UploadsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  protected
+  
+  def setup
+    @symbol = "Content_Library"
+  end
+  
 end

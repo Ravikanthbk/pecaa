@@ -2,6 +2,7 @@ class SitesController < ApplicationController
   # GET /sites
   # GET /sites.json
   layout 'pecaa_application'
+  before_filter :setup
   
   def index
     @sites = Site.all
@@ -58,7 +59,6 @@ class SitesController < ApplicationController
   # PUT /sites/1.json
   def update
     @site = Site.find(params[:id])
-
     respond_to do |format|
       if @site.update_attributes(params[:site])
         format.html { redirect_to @site, :notice => 'Site was successfully updated.' }
@@ -75,10 +75,31 @@ class SitesController < ApplicationController
   def destroy
     @site = Site.find(params[:id])
     @site.destroy
-
     respond_to do |format|
       format.html { redirect_to sites_url }
       format.json { head :ok }
     end
+  end
+  
+  def search
+    if params[:query].blank? && params[:date_added].blank?
+      @sites = Site.all
+    elsif !params[:query].blank? && params[:date_added].blank?
+      @sites = Site.where("#{params[:search_on]} like ?", "%#{params[:query]}%")
+    elsif params[:query].blank? && !params[:date_added].blank?
+      @sites = Site.where(:created_at => (Date.strptime(params[:start_date],"%m-%d-%Y")..Date.strptime(params[:end_date],"%m-%d-%Y")))
+    end
+    render :action => 'index'
+  end
+  
+  def preview
+    @site = Site.find(params[:id])
+    render :layout=> false
+  end
+  
+  protected
+  
+  def setup
+    @symbol="Website_List"
   end
 end
