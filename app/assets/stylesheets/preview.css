@@ -324,9 +324,11 @@ float:left; padding:1px 0px 0px 10px;
 }
 
 .ueNavBottom {
-	font:normal 15px "calibri", Arial, Helvetica, sans-serif; margin:0px 0px 0px 0px; padding:0px; float:right; width:500px;
+    font: 15px "calibri",Arial,Helvetica,sans-serif;
+    margin: 40px;
+    padding: 0;
+    width: 500px;
 }
-
 .ueNavBottom li {
 	list-style-type:none; text-decoration:none; margin-right:0px; display:inline;
 }
