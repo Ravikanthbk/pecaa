@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-  load_and_authorize_resource :only => [:show,:new,:destroy,:edit,:update]
+  load_and_authorize_resource :only => [:show,:new,:destroy,:edit,:update,:dashboard]
   
-  before_filter :check_permissions, :only => [:new, :create, :cancel]
+  before_filter :check_permissions, :only => [:new, :cancel]
   skip_before_filter :require_no_authentication
   
   layout 'pecaa_application'
@@ -93,6 +93,10 @@ class UsersController < ApplicationController
   # POST /users.json                                      HTML AND AJAX
   #-----------------------------------------------------------------
   def create
+    params[:user][:addresses]=[params[:user][:addresses1]] << params[:user][:addresses2]
+    params[:user].delete(:addresses1)
+    params[:user].delete(:addresses2)
+    params[:user][:role_ids] = params[:users][:role_ids]
     @user_obj = User.new(params[:user])
  
     if @user_obj.save
@@ -109,8 +113,30 @@ class UsersController < ApplicationController
       end
     end
   end
+  
+  def update
+    @user_obj = User.find(params[:id])
+    params[:user][:addresses]=[params[:user][:addresses1]] << params[:user][:addresses2]
+    params[:user].delete(:addresses1)
+    params[:user].delete(:addresses2)
+    params[:user][:role_ids] = params[:users][:role_ids] if params[:users]
+    params[:user][:password] = @user_obj.password
+    if @user_obj.update_attributes(params[:user])
+      respond_to do |format|
+        format.json { render :json => @user_obj.to_json, :status => 200 }
+        format.xml  { head :ok }
+        format.html { redirect_to :action => :index }
+      end
+    else
+      respond_to do |format|
+        format.json { render :text => "Could not create user", :status => :unprocessable_entity } # placeholder
+        format.xml  { head :ok }
+        format.html { render :action => :edit, :status => :unprocessable_entity }
+      end
+    end
+  end
 
   def dashboard
-    
+    render :layout=>false
   end
 end
