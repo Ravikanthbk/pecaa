@@ -21,7 +21,9 @@ Mystore3::Application.routes.draw do
   devise_for :users
   resources :users
 
-# devise_for :user,
+# devise_for :users,  :controllers => { :registrations => "users/registrations" }
+ resources :users
+ devise_for :user
 #         :path_names => {:sign_in => "", :sign_out => "logout",:sign_up => "register"}
 
 

@@ -1,4 +1,31 @@
-        <div class="rcTable2">
+
+<a href="/"><img src="/assets/goBack.png" id="goBackButton"></a>
+
+<div id="logo">
+    <img src="/assets/logo.png" height="35" width="210">
+</div>
+<%= form_for User.new, :as => :user, :url => user_password_path do |f| %>
+	<div id="forgotUsername">
+		<label for="gUsername">forgot username</label>
+		<%= f.email_field :email,:id=>"gUsername", :class=>"textbox",:value=>"email address" %>
+	</div>
+
+	<p><%= f.submit "Get Username",:class=>'blueButton'%></p>
+<%end%>
+<%= form_for User.new, :as => :user, :url => user_password_path do |f| %>
+	<div id="forgotPassword">
+		<label for="gEmailAddress">forgot password</label>
+		<%= f.email_field :email,:id=>"gUsername", :class=>"textbox",:value=>"email address" %><br/>
+		<%= f.text_field :username,:id=>"gUsername", :class=>"textbox",:value=>"username" %>
+	</div>
+	
+	<p><%= f.submit "Get Password",:class=>'blueButton'%></p>
+<%end%>
+
+
+
+
+<!--        <div class="rcTable2">
 	<div class="cornerFold"></div>
     <div class="btnGoBack"><img src="/assets/btn-go-back.png" /></div>
     
@@ -17,4 +44,4 @@
 		<%=f.submit 'Get User Name',:class=>"btnGetUsername"%>
         </div>
 	 <%end%>
-    </div>
+    </div>-->

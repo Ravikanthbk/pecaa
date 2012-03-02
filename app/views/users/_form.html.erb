@@ -33,7 +33,7 @@
                 <label for="checkbox-4" tabindex="4" class="txtColorWhite">
                     active
                 </label>
-                <input type="checkbox" name="checkbox-4[braket]" id="checkbox-4" value="checkbox-4" />
+				<%=f.check_box "active",:value=>"checkbox-4",:id=>"checkbox-4"%>
             </div>
         </div>
         <div class="clearHeight10Border">
@@ -45,18 +45,24 @@
                     user name:
                 </div>
                 <%=f.text_field :username,:class=>"ueInp"%>
+				<div class="clear"></div>
+				<span id="nameInfo" class="error"></span>
             </div>
             <div class="row1">
                 <div class="inpTxt">
                     password:
                 </div>
                 <%=f.password_field :password,:class=>"ueInp"%>
+				<div class="clear"></div>
+				<span id="passInfo" class="error"></span>
             </div>
             <div class="row1">
                 <div class="inpTxt correctFieldTxt">
                     email:
                 </div>
                 <%=f.text_field :email,:class=>"ueInp"%>
+				<div class="clear"></div>
+				<span id="emailInfo" class="error"><%= @user_obj.errors["email"] unless @user_obj.errors.blank?%></span>
             </div>
             <div class="row1">
                 <div class="inpTxt">
@@ -120,13 +126,13 @@
         	<%=f.fields_for(:addresses, :include_id => false) do |address|%>
             <ol id="toc">
                 <li>
-                    <a href="#page-1"><span>shipping address</span></a>
+                    <a href="#page-1" class="active"><span>shipping address</span></a>
                 </li>
                 <li>
-                    <a href="#page-2"><span>billing address</span></a>
+                    <a href="#page-2" class="inactive"><span>billing address</span></a>
                 </li>
             </ol>
-            <div class="content" id="page-1">
+            <div class="content active" id="page-1">
                 <div class="row1">
                     <div class="inpTxt">
                     </div>
@@ -135,36 +141,36 @@
                     <div class="inpTxt">
                         nick name:
                     </div>
-                    <%=address.text_field :nickname,:class=>"ueInp"%>
+                    <%=address.text_field "nickname[]",:class=>"ueInp"%>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         address:
                     </div>
-                    <%=address.text_field :address,:class=>"ueInp"%>
+                    <%=address.text_field "address[]",:class=>"ueInp"%>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         city:
                     </div>
-                    <%=address.text_field :city,:class=>"ueInp"%>
+                    <%=address.text_field "city[]",:class=>"ueInp"%>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         state:
                     </div>
-                    <%=address.text_field :state,:class=>"ueInp"%>
+                    <%=address.text_field "state[]",:class=>"ueInp"%>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         zip:
                     </div>
-                    <%=address.text_field :zipcode,:class=>"ueInp"%>
+                    <%=address.text_field "zipcode[]",:class=>"ueInp"%>
                 </div>
                 <div class="clear">
                 </div>
             </div>
-            <div class="content" id="page-2">
+            <div class="content inactive" id="page-2">
                 <div class="row1">
                     <div class="inpTxt">
                     </div>
@@ -173,25 +179,31 @@
                     <div class="inpTxt">
                         nick name:
                     </div>
-                    <input type="text" class="ueInp" />
+                    <%=address.text_field "nickname[]",:class=>"ueInp"%>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         address:
                     </div>
-                    <input type="text" class="ueInp" />
+                    <%=address.text_field "address[]",:class=>"ueInp"%>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         city:
                     </div>
-                    <input type="text" class="ueInp" />
+                    <%=address.text_field "city[]",:class=>"ueInp"%>
                 </div>
                 <div class="row1">
                     <div class="inpTxt">
                         state:
                     </div>
-                    <input type="text" class="ueInp" />
+                    <%=address.text_field "state[]",:class=>"ueInp"%>
+                </div>
+                <div class="row1">
+                    <div class="inpTxt">
+                        zip:
+                    </div>
+                    <%=address.text_field "zipcode[]",:class=>"ueInp"%>
                 </div>
                 <div class="clear">
                 </div>
@@ -203,6 +215,7 @@
             <div class="col3Head">
                 roles
             </div>
+			
             <div class="rcRoles">
                 <!--     <div class="roles"><img src="/assets/icon-close.png" /><span>System Administrator</span></div>
                 <div class="clear"></div>
@@ -211,18 +224,12 @@
                 <div class="roles"><img src="/assets/icon-close.png" /><span>Website Builder</span></div>
                 <div class="clear"></div>-->
                 <div id="checkboxDemo">
-                    <label for="checkbox-1" tabindex="1" class="txtColorWhite">
-                        System Administrator
+                	<%Role.all.collect do |role|%>
+                    <label for="checkbox-<%=role.id%>" tabindex="<%=role.id%>" class="txtColorWhite">
+                        <%=role.display_name%>
                     </label>
-                    <input type="checkbox" name="checkbox-1[braket]" id="checkbox-1" value="checkbox-1" />
-                    <label for="checkbox-2" tabindex="2" class="txtColorWhite">
-                        Administrator
-                    </label>
-                    <input type="checkbox" name="checkbox-2[braket]" id="checkbox-2" value="checkbox-2" />
-                    <label for="checkbox-3" tabindex="3" class="txtColorWhite">
-                        Website Builder
-                    </label>
-                    <input type="checkbox" name="checkbox-3[braket]" id="checkbox-3" value="checkbox-3" />
+					<%=f.check_box "role_ids",:value=>role.id,:id=>"checkbox-#{role.id}"%>
+                    <%end%>
                 </div>
             </div>
             <div class="col3Head">

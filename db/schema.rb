@@ -10,8 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120301015628) do
-
+ActiveRecord::Schema.define(:version => 20120302145605) do
   create_table "addresses", :force => true do |t|
     t.string   "nickname"
     t.string   "address_one"
@@ -52,12 +51,41 @@ ActiveRecord::Schema.define(:version => 20120301015628) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "display_name"
   end
 
   create_table "roles_users", :id => false, :force => true do |t|
     t.integer "role_id"
     t.integer "user_id"
   end
+
+  create_table "site_links", :force => true do |t|
+    t.text     "description"
+    t.integer  "created_by"
+    t.boolean  "is_active",   :default => true
+    t.string   "title"
+    t.text     "target"
+    t.integer  "site_id"
+    t.text     "name"
+    t.string   "type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "site_links", ["created_by"], :name => "index_site_links_on_created_by"
+  add_index "site_links", ["site_id"], :name => "index_site_links_on_site_id"
+
+  create_table "sites", :force => true do |t|
+    t.text     "description"
+    t.string   "name"
+    t.integer  "created_by"
+    t.boolean  "is_active",   :default => true
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sites", ["created_by"], :name => "index_sites_on_created_by"
 
   create_table "uploads", :force => true do |t|
     t.string   "upload_file_name"
