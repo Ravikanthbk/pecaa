@@ -7,7 +7,7 @@
 <%= form_for User.new, :as => :user, :url => user_password_path do |f| %>
 	<div id="forgotUsername">
 		<label for="gUsername">forgot username</label>
-		<%= f.email_field :email,:id=>"gUsername", :class=>"textbox",:value=>"email address" %>
+		<%= f.text_field :email,:id=>"Uemailid", :class=>"textbox watermark" %>
 	</div>
 
 	<p><%= f.submit "Get Username",:class=>'blueButton'%></p>
@@ -15,12 +15,21 @@
 <%= form_for User.new, :as => :user, :url => user_password_path do |f| %>
 	<div id="forgotPassword">
 		<label for="gEmailAddress">forgot password</label>
-		<%= f.email_field :email,:id=>"gUsername", :class=>"textbox",:value=>"email address" %><br/>
-		<%= f.text_field :username,:id=>"gUsername", :class=>"textbox",:value=>"username" %>
+		<%= f.text_field :email,:id=>"gemailid", :class=>"textbox" %><br/>
+		<%= f.text_field :username,:id=>"gUsername", :class=>"textbox"%>
 	</div>
 	
 	<p><%= f.submit "Get Password",:class=>'blueButton'%></p>
 <%end%>
+
+<script type="text/javascript">
+	$(function () {
+		$("#Uemailid").watermark("email address", {useNative: false});
+	    $("#gemailid").watermark("email address", {useNative: false});
+		$("#gUsername").watermark("username", {useNative: false});
+    });
+
+</script>
 
 
 

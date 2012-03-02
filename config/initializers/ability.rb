@@ -7,16 +7,18 @@ class Ability
     if user.role? :super_admin
       can :manage, :all
     elsif user.role? :administrator
-      can :manage, [Image]
+      can :manage, [User, Role, Address]
     elsif user.role? :website_builder
-      can :read, [Product, Asset]
+      can :read, [Upload]
       # manage products, assets he owns
-      can :manage, Product do |product|
-        product.try(:owner) == user
-      end
-      can :manage, Asset do |asset|
-        asset.assetable.try(:owner) == user
-      end
+#      can :manage, Product do |product|
+#        product.try(:owner) == user
+#      end
+#      can :manage, Asset do |asset|
+#        asset.assetable.try(:owner) == user
+#      end
+    else
+#      can :manage,[User]
     end
   end
 end
