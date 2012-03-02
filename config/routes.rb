@@ -1,5 +1,11 @@
 Mystore3::Application.routes.draw do
 
+  resources :images
+
+  resources :videos
+
+  resources :content_libraries
+
   get "users/index"
   
   # match 'users/list', :to => "users/users#index", :as => :user_list

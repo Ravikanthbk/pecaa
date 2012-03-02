@@ -50,4 +50,6 @@ gem 'cancan'
 # gem 'libv8', '3.3.10.4'
 
 gem 'kaminari'
-
+gem 'acts_as_state_machine'
+gem 'paperclip-ffmpeg'
+gem 'ffmpeg'

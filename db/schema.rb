@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120222232047) do
+ActiveRecord::Schema.define(:version => 20120301015628) do
 
   create_table "addresses", :force => true do |t|
     t.string   "nickname"
@@ -23,6 +23,29 @@ ActiveRecord::Schema.define(:version => 20120222232047) do
     t.datetime "updated_at"
     t.integer  "user_id"
     t.string   "address_type"
+  end
+
+  create_table "content_libraries", :force => true do |t|
+    t.string   "name"
+    t.integer  "source_id"
+    t.string   "source_type"
+    t.string   "last_used"
+    t.integer  "times_used"
+    t.string   "added_by"
+    t.boolean  "is_deleted",  :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "images", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "upload_file_name"
+    t.string   "upload_content_type"
+    t.integer  "upload_file_size"
+    t.datetime "upload_updated_at"
+    t.boolean  "is_deleted",          :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "roles", :force => true do |t|
@@ -72,5 +95,14 @@ ActiveRecord::Schema.define(:version => 20120222232047) do
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "videos", :force => true do |t|
+    t.string   "source_content_type"
+    t.string   "source_file_name"
+    t.integer  "source_file_size"
+    t.string   "state"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

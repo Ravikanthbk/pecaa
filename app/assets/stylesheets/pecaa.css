@@ -645,7 +645,7 @@ ul.ConLibraHeads .edit {
 }
 
 .btnUploadFileLeft {
-	background:url(../assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px; width:100px; width:10px; float:left; margin-left:300px;
+	background:url(../assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px; width:100px; width:10px; float:left; margin-left:280px;
 }
 
 .btnCancel {
@@ -661,7 +661,7 @@ ul.ConLibraHeads .edit {
 }
 
 .helpPopUp p {
-	font:bold 13px Arial, Helvetica, sans-serif; margin-left:20px;
+	font:bold 13px Arial, Helvetica, sans-serif; margin-left:20px; color:#000;
 }
 
 .helpGreyTxt {
