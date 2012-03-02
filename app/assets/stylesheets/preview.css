@@ -1,3 +1,43 @@
+.roundedBox {
+	background: url(/assets/bg2.png);
+    border: 1px solid #9B9B9B;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 2px 2px 0 #b8b8b8;
+    
+}
+
+#loginBox {
+	height: 500px;
+    width: 950px;
+    margin: 50px auto 0px auto;	
+	text-align: center;
+	position: relative;
+}
+
+#loginBox #logo {
+	margin-top: 70px;
+}
+
+#loginBox #login {
+	margin-top: 65px;
+}
+
+#loginBox #forgotUsername {
+	margin-top: 45px;
+}
+
+#loginBox .textbox {
+	width: 270px;
+	margin-bottom: 10px;
+}
+
+#loginBox label {
+	text-align: left;
+	display: block;
+	margin-left: 157px;
+	font-size: 11px;
+	margin-bottom: 3px;
+}
 @charset "utf-8";
 /* CSS Document */
 
@@ -260,23 +300,21 @@ float:left; padding:1px 0px 0px 10px;
 }
 
 .btnAshGrey {
-	background:url(/assets/btn-ash-grey.png) no-repeat right bottom; border:0px; padding-right:10px; height:35px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif;
+	background:url(../assets/btn-ash-grey.png) no-repeat right bottom; border:0px; padding-right:10px; height:35px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif;
 }
 
 .btnAshGreyLeft {
-	float:right; background:url(/assets/btn-ash-grey.png) no-repeat left top; padding-left:0px; height:35px;
-}
-.ueBtnCancel {
-	width:80px; float:left;
+	float:right; background:url(../assets/btn-ash-grey.png) no-repeat left top; padding-left:0px; height:35px;
 }
 
 .btnGreen {
-	background:url(/assets/btn-green.png) no-repeat right bottom; border:0px; padding-right:15px; height:34px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif;
+	background:url(../assets/btn-green.png) no-repeat right bottom; border:0px; padding-right:15px; height:34px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif;
 }
 
 .btnGreenLeft {
-	float:right; background:url(/assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px;
+	float:right; background:url(../assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px;
 }
+
 .rcFooter {
 	float:left; width:968px; background:url(../assets/rc-footer.jpg) no-repeat left top; height:12px;
 }
@@ -286,15 +324,21 @@ float:left; padding:1px 0px 0px 10px;
 }
 
 .ueNavBottom {
-	font:normal 15px "calibri", Arial, Helvetica, sans-serif; margin:0px 0px 0px 0px; padding:0px; float:right; width:500px;
+    font: 15px "calibri",Arial,Helvetica,sans-serif;
+    margin: 40px;
+    padding: 0;
+    width: 500px;
+}
+.ueNavBottom li {
+	list-style-type:none; text-decoration:none; margin-right:0px; display:inline;
 }
 
-.ueNavBottom li {
-	list-style-type:none; text-decoration:none; margin-right:0px; display:inline; float:right;
+.uelink {
+	list-style-type:none; text-decoration:none; margin-right:0px; display:inline;
 }
 
 .ueNavBottom li a {
-	float:left; color:#6c95a9; margin:0px 10px 0px 0px; text-decoration:none; padding:0px 0px 0px 0px; height:34px; background:url(../assets/footer-nav-bg.png) no-repeat right -5px;
+	float:left; color:#6c95a9; margin:0px 10px 0px 0px; text-decoration:none; padding:0px 0px 0px 0px; height:34px;
 }
 
 .ueNavBottom li a span {
@@ -523,7 +567,7 @@ ul.userListHeads .edit {
 }
 
 ul.ConLibra {
-	margin:0px; padding:0px; width:705px;
+	margin:0px; padding:0px; width:693px;
 }
 
 ul.ConLibra li {
@@ -647,7 +691,7 @@ ul.ConLibraHeads .edit {
 }
 
 .btnUploadFileLeft {
-	background:url(../assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px; width:100px; width:10px; float:left; margin-left:280px;
+	background:url(../assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px; width:100px; width:10px; float:left; margin-left:300px;
 }
 
 .btnCancel {
@@ -663,7 +707,7 @@ ul.ConLibraHeads .edit {
 }
 
 .helpPopUp p {
-	font:bold 13px Arial, Helvetica, sans-serif; margin-left:20px; color:#000;
+	font:bold 13px Arial, Helvetica, sans-serif; margin-left:20px;
 }
 
 .helpGreyTxt {
@@ -676,81 +720,4 @@ ul.ConLibraHeads .edit {
 	color:#FF5A5A
 }
 
-.ueBdrBottom {
-	background:url(/assets/border-bottom.gif) repeat-x left bottom; height:10px; margin-bottom:20px;
-}
-a.links{font: 15px "calibri",Arial,Helvetica,sans-serif;color:#6c95a9; margin:0px 10px 0px 0px; text-decoration:none; padding:0px 0px 0px 0px; height:34px;}
-
-.ueNavlink {
-	font:normal 15px "calibri", Arial, Helvetica, sans-serif; margin:0px 0px 0px 0px; padding:0px; float:right; width:500px;
-}
-
-.ueNavlink li {
-	list-style-type:none; text-decoration:none; margin-right:0px; display:inline; float:right;
-}
-
-.ueNavlink li a {
-	float:left; color:#6c95a9; margin:0px 10px 0px 0px; text-decoration:none; padding:0px 0px 0px 0px; height:34px;
-}
-
 /* end of add file */
-
-/* view video */
-.viewVideoHolder {
-	margin:0px 0px 0px 0px; width:660px; border-radius:5px; -moz-border-radius:5px; box-shadow: 2px 2px 2px 0px #999999; position:relative;
-}
-
-.viewVideoTop {
-	float:left; width:643px; border:1px solid #797979; border-radius:5px 5px 0px 0px; background:url(../assets/add-file-bg.jpg) repeat left top; font:bold 25px Arial, Helvetica, sans-serif; color:#d9e5eb; line-height:38px; text-align:left; padding-left:15px; position:relative;
-}
-
-.viewVideoBody {
-	float:left; width:630px; background-color:#dbe6eb; padding:20px 15px;
-}
-
-.viewVideoBottom {
-	float:left; width:628px; border:1px solid #797979; border-radius:0px 0px 5px 5px; background:url(../assets/add-file-bg.jpg) repeat left top; padding:5px 15px;
-}
-
-.videoDisplay {
-	margin:auto; width:490px; height:320px; border-radius:5px; -moz-border-radius:5px; background:url(../assets/add-file-bg.jpg) repeat left top; padding:20px;
-}
-
-.imgDisplay .video {
-	width:490px; height:320px;
-}
-
-/* end of view video */
-/* view image */
-.viewImgHolder {
-	margin:0px 0px 0px 0px; width:660px; border-radius:5px; -moz-border-radius:5px; box-shadow: 2px 2px 2px 0px #999999; position:relative;
-}
-
-.viewImgTop {
-	float:left; width:643px; border:1px solid #797979; border-radius:5px 5px 0px 0px; background:url(../assets/add-file-bg.jpg) repeat left top; font:bold 25px Arial, Helvetica, sans-serif; color:#d9e5eb; line-height:38px; text-align:left; padding-left:15px; position:relative;
-}
-
-.viewImgBody {
-	float:left; width:630px; background-color:#dbe6eb; padding:15px;
-}
-
-.viewImgBottom {
-	float:left; width:628px; border:1px solid #797979; border-radius:0px 0px 5px 5px; background:url(../assets/add-file-bg.jpg) repeat left top; padding:5px 15px;
-}
-
-.imgDisplay {
-	margin:auto; width:300px; height:300px; border-radius:5px; -moz-border-radius:5px; background:url(../assets/add-file-bg.jpg) repeat left top; padding:20px;
-}
-
-.imgDisplay img {
-	width:300px; height:300px;
-}
-
-.btnOK {
-	background:url(../assets/btn-green.png) no-repeat right bottom; border:0px; padding-right:15px; height:34px; color:#ffffff; font:normal 16px Arial, Helvetica, sans-serif; margin-left:10px;
-}
-
-.btnOKLeft {
-	background:url(../assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px; float:right;
-}
-/* end of view image */

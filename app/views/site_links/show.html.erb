@@ -1,0 +1,51 @@
+<div class="ueBodyContent">
+  <ul class="ueNavlink">
+    <li>
+      <%= link_to 'Destroy', site_site_link_path(@site, @site_link), :confirm => 'Are you sure?', :method => :delete %>
+    </li>
+    <li>
+      <%= link_to 'Edit', edit_site_site_link_path(@site, @site_link) %>
+    </li>
+    <li>
+      <%= link_to 'Back to All Links', site_site_links_path(@site) %>
+    </li>
+    <li>
+      <%= link_to 'Back to Site Settings', site_path(@site) %>
+    </li>
+  </ul>
+  <p id="notice"><%= notice %></p>
+  <p>
+    <b>Description:</b>
+    <%= @site_link.description %>
+  </p>
+  <p>
+    <b>Name:</b>
+    <%= @site_link.name %>
+  </p>
+
+  <p>
+    <b>Created by:</b>
+    <%= @site_link.created_by.username %>
+  </p>
+
+  <p>
+    <b>Is active:</b>
+    <%= @site_link.is_active %>
+  </p>
+
+  <p>
+    <b>Title:</b>
+    <%= @site_link.title %>
+  </p>
+
+  <p>
+    <b>Target:</b>
+    <%= @site_link.target %>
+  </p>
+
+  <p>
+    <b>Type:</b>
+    <%= @site_link.type %>
+  </p>
+
+</div>

@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><%=@site.name%></title>
+<%= stylesheet_link_tag "preview" %>
+<%= csrf_meta_tag %>
+</head>
+
+<body>
+  <div class="roundedBox" id="loginBox">
+    <div class="ueNavMid">
+      <ul class="ueNav">
+        <%@site.site_links.each do |sl|%>
+          <li><a href=# onclick='javascript:alert("Targeted to <%=sl.target%>)' title="<%=sl.title%>"><span><%=sl.name%></span></a></li>
+        <% end %>
+      </ul>
+    </div>
+    <div>
+    <H1><%=@site.name%></H1>
+    <%=@site.description.length < 100 ? "    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec neque 
+    a ligula elementum posuere. Nunc mollis vulputate vulputate. Sed pellentesque tincidunt leo, a lacinia libero 
+    ornare vitae. Nullam id diam quam, a tempor eros. Nulla quis nunc ante. Etiam fermentum porta velit, a malesuada 
+    ante ullamcorper sit amet. Sed vel gravida metus. Sed at fringilla est." : @site.description%>
+    </div>
+    <div>
+    <ul class="ueNavBottom">
+      <li>
+        <%= link_to 'Edit', edit_site_path(@site) %> 
+      </li>
+      <li>
+        <%= link_to 'Back to all Sites', sites_path %> 
+      </li>
+    </ul>
+    </div>
+  </div>
+</body>
+</html>

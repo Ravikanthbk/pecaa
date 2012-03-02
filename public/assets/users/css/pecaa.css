@@ -322,6 +322,11 @@ float:left; padding:1px 0px 0px 10px;
 	float:left; color:#6c95a9; margin:0px 10px 0px 0px; text-decoration:none; padding:0px 0px 0px 0px; height:34px; background:url(../images/footer-nav-bg.png) no-repeat right -5px;
 }
 
+.ueNavlink li a {
+	float:left; color:#6c95a9; margin:0px 10px 0px 0px; text-decoration:none; padding:0px 0px 0px 0px; height:34px; background:url(../images/footer-nav-bg.png) no-repeat right -5px;
+}
+
+
 .ueNavBottom li a span {
 	float:left; color:#6c95a9; margin:0px 20px 0px 0px; text-decoration:none; padding:0px 0px 0px 20px; height:34px; background:url(../images/footer-nav-bg.png) no-repeat left -5px;
 }

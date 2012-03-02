@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   
   has_and_belongs_to_many :roles
+  has_many :sites
   has_many :images
   has_many :addresses
    

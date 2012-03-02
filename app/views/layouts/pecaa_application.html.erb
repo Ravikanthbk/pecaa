@@ -20,6 +20,12 @@
 <%= javascript_include_tag 'facebox.js'%>
 <%= javascript_include_tag 'common.js'%>
 <%= javascript_include_tag "prettyCheckboxes" %>
+
+<script type="text/javascript" src="/assets/users/scripts/Datepicker/jquery-ui.js"></script>
+<script type="text/javascript" src="/assets/users/scripts/Datepicker/jquery.ui.core.js"></script>
+<script type="text/javascript" src="/assets/users/scripts/Datepicker/jquery.ui.datepicker.js"></script>
+<link type="text/css" href="/assets/users/scripts/Datepicker/jquery.ui.datepicker.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -38,12 +44,12 @@
             <img src="/assets/ue-nav-bg-left.png" style="float:left;" />
             <div class="ueNavMid">
             	<ul class="ueNav">
-                	<li><a href="#"><span>Website List</span></a></li>
+                	<li <%=check_selected("Website_List")%>><a href="/sites"><span>Website List</span></a></li>
                     <li><a href="#"><span>System Stats</span></a></li>
                     <li><a href="#"><span>Reports</span></a></li>
                     <li><a href="#"><span>Ad Setup</span></a></li>
-                    <li class="select"><a href="#"><span>Content Library</span></a></li>
-                    <li><a href="/users"><span>Users</span></a></li>
+                    <li <%=check_selected("Content_Library")%>><a href="#"><span>Content Library</span></a></li>
+                    <li<%=check_selected("Users")%>><a href="/users"><span>Users</span></a></li>
                     <li><a href="#"><span>System Config</span></a></li>
                 </ul>
             </div>

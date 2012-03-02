@@ -1,9 +1,15 @@
 Mystore3::Application.routes.draw do
 
+  resources :sites do 
+    get 'preview', :on => :member
+    post 'search', :on => :collection
+    resources :site_links do
+      post 'search', :on => :collection
+    end
+  end
+  
   resources :images
-
   resources :videos
-
   resources :content_libraries
 
   get "users/index"

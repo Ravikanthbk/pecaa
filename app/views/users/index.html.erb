@@ -121,23 +121,6 @@
     <div class="clear"></div>
   </div><!-- end of col 2 -->
 </div>
-<script>
-$(function() {
-	$( ".datepicker" ).datepicker({
-		showOn: "button",
-		buttonImage: "/images/calendar.gif",
-		buttonImageOnly: true,
-		dateFormat: "mm-dd-yy"
-	});
-});
-$('#date_added').click(function(){
-  if ($('#date_added').data('checked') == false){
-    $('#date_added').data('checked', true)
-    $('#date_range').hide();
-  }else{
-    $('#date_added').data('checked', false)
-    $('#date_range').show();
-  }
-    
-});
-</script>
+
+<script >
+<%= javascript_include_tag '/assets/users/scripts/data_picker_setting.js'%>
