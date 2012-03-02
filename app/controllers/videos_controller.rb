@@ -1,5 +1,5 @@
 class VideosController < ApplicationController
-    layout 'pecaa_application', :except => [:new]
+    layout 'pecaa_application', :except => [:new, :edit]
   def index
     @videos = Video.find :all
   end
@@ -14,13 +14,15 @@ class VideosController < ApplicationController
       if @video.save
         @video.convert
         flash[:notice] = 'Video has been uploaded'
-        redirect_to videos_path
+        redirect_to content_libraries_path
       else
         respond_to do |format|
           format.html  { render(:nothing => true)}
         end
       end
     end
+  rescue
+    redirect_to content_libraries_path
   end
 
   def show
