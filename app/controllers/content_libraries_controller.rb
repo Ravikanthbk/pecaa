@@ -1,5 +1,5 @@
 class ContentLibrariesController < ApplicationController
-  layout 'pecaa_application', :except => [:new]
+  layout 'pecaa_application', :except => [:new, :edit]
   # GET /content_libraries
   # GET /content_libraries.json
   def index

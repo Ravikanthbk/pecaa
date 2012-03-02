@@ -1,5 +1,5 @@
 class ImagesController < ApplicationController
-  layout 'pecaa_application', :except => [:new]
+  layout 'pecaa_application', :except => [:new, :edit]
   def index
     @images = Image.order("created_at desc").page(params[:page]).per(5)
   end
@@ -34,8 +34,15 @@ class ImagesController < ApplicationController
 
   def update
     @image = Image.find(params[:id])
+    params[:image].merge!({:user_id => current_user})
     if @image.update_attributes(params[:image])
-      redirect_to @image
+      content_library = ContentLibrary.find_by_source_id(@image.id)
+      content_library.update_attributes({:name => @image.upload_file_name, :last_used => nil, :times_used => nil, :added_by => current_user.username})
+      redirect_to content_libraries_path
+      else
+        respond_to do |format|
+          format.html  { render(:nothing => true)}
+        end
     end
   end
 
