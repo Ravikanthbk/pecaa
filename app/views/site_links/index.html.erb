@@ -78,7 +78,7 @@
                   <span class="name"><%=site_link.created_at.strftime("%m/%d/%Y %T")%></span>
                   <span class="addedBy"><%=site_link.created_by.username%></span> 
                   <span class="edit">
-                    <%= link_to (image_tag( "/assets/users/images/btn-edit.png"), edit_site_site_link_path(@site, site_link)) %>
+                    <%= link_to(image_tag( "/assets/users/images/btn-edit.png"), edit_site_site_link_path(@site, site_link)) %>
                   </span>
                 </li>
               <%end%>
