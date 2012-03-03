@@ -555,7 +555,7 @@ ul.ConLibra .name img {
 }
 
 ul.ConLibra .type {
-	float:left; width:60px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
+	float:left; width:100px; padding:0px 5px; text-align:left; border-right:1px solid #999999;
 }
 
 ul.ConLibra .lastUsed {
