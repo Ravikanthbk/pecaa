@@ -99,7 +99,7 @@ class UsersController < ApplicationController
     params[:user].delete(:addresses2)
     params[:user][:role_ids] = params[:users][:role_ids] if params[:users]
     @user_obj = User.new(params[:user])
- 
+    @user_obj.created_by = current_user
     if @user_obj.save
       respond_to do |format|
         format.json { render :json => @user_obj.to_json, :status => 200 }
@@ -138,7 +138,11 @@ class UsersController < ApplicationController
   end
 
   def dashboard
-    render :layout=>false
+    if current_user.launch_link
+      redirect_to(current_user.launch_link) 
+    else
+	 render :layout=>false
+    end
   end
   
   protected  
