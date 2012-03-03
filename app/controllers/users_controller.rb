@@ -97,7 +97,7 @@ class UsersController < ApplicationController
     params[:user][:addresses]=[params[:user][:addresses1]] << params[:user][:addresses2]
     params[:user].delete(:addresses1)
     params[:user].delete(:addresses2)
-    params[:user][:role_ids] = params[:users][:role_ids]
+    params[:user][:role_ids] = params[:users][:role_ids] if params[:users]
     @user_obj = User.new(params[:user])
  
     if @user_obj.save
