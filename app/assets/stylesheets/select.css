@@ -23,7 +23,7 @@ span.select{
 	height:23px;
 	line-height:23px;
 	text-indent:10px;
-	background:url(../images/user-select-field-bg.png) no-repeat 0 0;
+	background:url(../assets/user-select-field-bg.png) no-repeat 0 0;
 	cursor:default;
 	z-index:1;
 	}

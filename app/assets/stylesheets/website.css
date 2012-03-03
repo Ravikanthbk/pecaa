@@ -6,4 +6,4 @@
 #scrollbar1 .track { background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
 #scrollbar1 .thumb { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 27px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -7px; }
 #scrollbar1 .thumb .end { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 27px; }
-#scrollbar1 .disable { display: none; }
+/*#scrollbar1 .disable { display: none; }*/

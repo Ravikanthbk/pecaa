@@ -127,7 +127,7 @@ body {
 }
 
 .ueBodyContent {
-	float:left; width:948px; background:url(../assets/user-edit-table-shade.jpg) repeat-y left top; padding:10px;
+	float:left; width:948px; background:url(../assets/user-edit-table-shade.jpg) repeat-y left top; padding:10px; color:#999999;
 }
 
 .btnGrey {
