@@ -27,7 +27,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       format.json { render :json => @users }
       format.xml  { render :xml => @users }
-      format.html { render :layout => 'listing'}
+      format.html
     end
   end
  

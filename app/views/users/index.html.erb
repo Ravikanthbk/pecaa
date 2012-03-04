@@ -1,38 +1,3 @@
-<div class="ueHeader">
-  <img src="/assets/users/images/ue-nav-logo.jpg"> <img src="/assets/users/images/ue-nav-btn-help.jpg"> <img src="/assets/users/images/ue-nav-btn-my-account.jpg"> <a href='/logout'><img src="/assets/users/images/ue-nav-btn-logout.jpg"></a>
-</div>
-<div class="clear"></div>
-<div class="ueBody">
-  <div class="ueNavHolder">
-    <img src="/assets/users/images/ue-nav-bg-left.png" style="float:left;">
-    <div class="ueNavMid">
-      <ul class="ueNav">
-        <li>
-          <a href="#"><span>Website List</span></a>
-        </li>
-        <li>
-          <a href="#"><span>System Stats</span></a>
-        </li>
-        <li>
-          <a href="#"><span>Reports</span></a>
-        </li>
-        <li>
-          <a href="#"><span>Ad Setup</span></a>
-        </li>
-        <li >
-          <a href="/content_libraries"><span>Content Library</span></a>
-        </li>
-        <li class="select">
-          <a href="/users"><span>Users</span></a>
-        </li>
-        <li>
-          <a href="#"><span>System Config</span></a>
-        </li>
-      </ul>
-    </div><img src="/assets/users/images/ue-nav-bg-right.png" style="float:left;">
-  </div>
-      
-
   <div class="ueBodyContent">
   	<div class="btnGreyLeft ueBtnCreateNewUser">
         <%= button_to "create new user", '/users/new',:class=>'btnGrey',:method=>"get" %>
@@ -120,7 +85,6 @@
     <div class="userGridFooter"></div>
     <div class="clear"></div>
   </div><!-- end of col 2 -->
-</div>
 
 <script >
 <%= javascript_include_tag '/assets/users/scripts/data_picker_setting.js'%>
