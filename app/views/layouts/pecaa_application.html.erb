@@ -12,22 +12,35 @@
 <%= javascript_include_tag "activatables" %>
 <%= javascript_include_tag "validation"%>
 <%= stylesheet_link_tag "pecaa" %>
+<%= stylesheet_link_tag "select" %>
 <%= stylesheet_link_tag "tabs" %>
-<%= stylesheet_link_tag "prettyCheckboxes.css" %>
+<%= stylesheet_link_tag "prettyCheckboxes" %>
+<%= stylesheet_link_tag "website" %>
 <%= stylesheet_link_tag "facebox" %>
-<%= csrf_meta_tag %>
-<%= javascript_include_tag 'jquery.min.js','rails.js'%>
-<%= javascript_include_tag 'facebox.js'%>
-<%= javascript_include_tag 'common.js'%>
+<%= stylesheet_link_tag 'jquery-ui-1.8.2.custom'%>
+<%#= csrf_meta_tag %>
+<%#= javascript_include_tag 'jquery.min.js','rails.js'%>
+<%= javascript_include_tag 'jquery-1.4.2.min'%>
+<%= javascript_include_tag 'jquery-ui-1.8.2.custom.min'%>
+<%#= javascript_include_tag 'jquery.min.js', 'rails.js'%>
+<%= javascript_include_tag 'facebox'%>
+<%= javascript_include_tag 'common'%>
+<%= javascript_include_tag 'customSelect'%>
+<%= javascript_include_tag 'slider'%>
 <%= javascript_include_tag "prettyCheckboxes" %>
-
+<%= javascript_include_tag "jquery.tinyscrollbar.min" %>
+<%= csrf_meta_tag %>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#scrollbar1').tinyscrollbar();
+  });
+</script>
+<!-- end of scroll bar scripts -->
 <script type="text/javascript" src="/assets/users/scripts/Datepicker/jquery-ui.js"></script>
 <script type="text/javascript" src="/assets/users/scripts/Datepicker/jquery.ui.core.js"></script>
 <script type="text/javascript" src="/assets/users/scripts/Datepicker/jquery.ui.datepicker.js"></script>
 <link type="text/css" href="/assets/users/scripts/Datepicker/jquery.ui.datepicker.css" rel="stylesheet" />
-
 </head>
-
 <body>
 <div class="mainContainer">
    <div class="userEditHolder">
@@ -48,7 +61,7 @@
                     <li><a href="#"><span>System Stats</span></a></li>
                     <li><a href="#"><span>Reports</span></a></li>
                     <li><a href="#"><span>Ad Setup</span></a></li>
-                    <li <%=check_selected("Content_Library")%>><a href="#"><span>Content Library</span></a></li>
+                    <li <%=check_selected("Content_Library")%>><a href="/content_libraries"><span>Content Library</span></a></li>
                     <li <%=check_selected("Users")%>> <a href="/users"><span>Users</span></a></li>
                     <li><a href="#"><span>System Config</span></a></li>
                 </ul>
@@ -74,6 +87,5 @@
         </div>
    </div>
 </div>
-
 </body>
 </html>
