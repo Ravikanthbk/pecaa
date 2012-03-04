@@ -37,16 +37,16 @@
         
         <div id="takeMeTo">
         	The next time I log in, please take me to the 
-            <select id="takeMeToSelect" class="dropDownMenu">
-            	<option>Dashboard</option>
-                <option>Website List</option>
+            <select id="takeMeToSelect" class="dropDownMenu" onchange="location.href=$(this).val();">
+            	<option value="/">Dashboard</option>
+                <option value="/sites?preferred_link=true">Website List</option>
                 <option>System Statistics</option>
                 <option>Reports</option>
                 <option>Ad Setup</option>
-                <option>Users</option>
-                <option>Content Library</option>
+                <option value="/users?preferred_link=true">Users</option>
+                <option value="/content_libraries?preferred_link=true">Content Library</option>
                 <option>System Config</option>
-                <option>Create New Site</option>
+                <option value="/sites/new?preferred_link=true">Create New Site</option>
             </select>
         </div>
     </div>

@@ -12,7 +12,7 @@ User.delete_all
 role = Role.create(:name=>"SuperAdmin",:display_name=>"System Administrator")
 role2 = Role.create(:name=>"Administrator",:display_name=>"Administrator")
 role3 = Role.create(:name=>"WebsiteBuilder",:display_name=>"Website Builder")
-user_role = Role.create(:name=>"user")
+user_role = Role.create(:name=>"user",:display_name=>"Normal User")
 
 (admin = User.create(:email=>"admin-pecaa@gmail.com",:username=>"admin-pecaa",:password=>"pecaa123")).roles = [role]
 20.times do |i|
