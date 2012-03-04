@@ -14,8 +14,21 @@ role2 = Role.create(:name=>"Administrator",:display_name=>"Administrator")
 role3 = Role.create(:name=>"WebsiteBuilder",:display_name=>"Website Builder")
 user_role = Role.create(:name=>"user")
 
-User.create(:email=>"admin-pecaa@gmail.com",:username=>"admin-pecaa",:password=>"pecaa123",:role=>role).roles = [role]
+(admin = User.create(:email=>"admin-pecaa@gmail.com",:username=>"admin-pecaa",:password=>"pecaa123")).roles = [role]
 20.times do |i|
-  u = User.create(:email=>"test#{i}@gmail.com",:username=>"test#{i}", :password=>"test#{i}",:role=>user_role)
+  u = User.create(:email=>"test#{i}@gmail.com",:username=>"test#{i}", :password=>"test#{i}")
   u.roles = [user_role]
 end
+
+site= Site.create(:name=>"Test", :description=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                  Duis sodales pulvinar felis ut placerat. Sed nisi sem, tristique ac suscipit eget,
+                                  consequat nec mauris. Nam non tellus ante, aliquet euismod lacus. Sed rutrum justo 
+                                  ac orci molestie nec venenatis purus vehicula. Quisque sodales diam in turpis semper sodales. 
+                                  Integer condimentum ornare tempus. Nam odio neque, imperdiet ut adipiscing a, interdum in turpis. 
+                                  Donec sollicitudin nulla nec lorem convallis vitae commodo nisl ornare. Pellentesque in scelerisque turpis.",
+                                  :created_by => admin, 
+                                  :is_active => true, 
+                                  :title=>'Test')
+                                  
+SiteLink.create(:name=>"Home", :description=>'Some text',:created_by => admin, :is_active => true, :title=>'Home', :target=>"www.google.com", :site_id=>site)
+SiteLink.create(:name=>"About Us", :description=>'Some text',:created_by => admin, :is_active => true, :title=>'About Us', :target=>"www.google.com", :site_id=>site)
