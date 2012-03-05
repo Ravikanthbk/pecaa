@@ -1,5 +1,8 @@
 Mystore3::Application.routes.draw do
 
+  resources :add_files
+  resources :add_forms
+
   resources :sites do 
     get 'preview', :on => :member
     post 'search', :on => :collection
