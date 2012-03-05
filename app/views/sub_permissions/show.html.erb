@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @sub_permission.name %>
+</p>
+
+<p>
+  <b>Display name:</b>
+  <%= @sub_permission.display_name %>
+</p>
+
+<p>
+  <b>Permission:</b>
+  <%= @sub_permission.permission_id %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @sub_permission.created_by %>
+</p>
+
+<p>
+  <b>Updated by:</b>
+  <%= @sub_permission.updated_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_sub_permission_path(@sub_permission) %> |
+<%= link_to 'Back', sub_permissions_path %>

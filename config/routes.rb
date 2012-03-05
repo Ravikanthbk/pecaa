@@ -1,5 +1,9 @@
 Mystore3::Application.routes.draw do
 
+  resources :sub_permissions
+
+  resources :permissions
+
   resources :sites do 
     get 'preview', :on => :member
     post 'search', :on => :collection

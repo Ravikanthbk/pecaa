@@ -1,0 +1,30 @@
+<%= form_for(@sub_permission) do |f| %>
+  <% if @sub_permission.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sub_permission.errors.count, "error") %> prohibited this sub_permission from being saved:</h2>
+
+      <ul>
+      <% @sub_permission.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :display_name %><br />
+    <%= f.text_field :display_name %>
+  </div>
+  <div class="field">
+    <%= f.label :permission_id %><br />
+    <%= f.number_field :permission_id %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

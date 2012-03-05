@@ -7,9 +7,9 @@ class Ability
     if user.role? :super_admin
       can :manage, :all
     elsif user.role? :administrator
-      can :manage, [User, Role, Address]
+      can :manage, [User, Role, Address, Permission, SubPermission]
     elsif user.role? :website_builder
-      can :read, [Upload]
+      can :manage, [Upload]
       # manage products, assets he owns
 #      can :manage, Product do |product|
 #        product.try(:owner) == user

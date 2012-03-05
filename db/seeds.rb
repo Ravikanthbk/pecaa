@@ -32,3 +32,10 @@ site= Site.create(:name=>"Test", :description=>"Lorem ipsum dolor sit amet, cons
                                   
 SiteLink.create(:name=>"Home", :description=>'Some text',:created_by => admin, :is_active => true, :title=>'Home', :target=>"www.google.com", :site_id=>site)
 SiteLink.create(:name=>"About Us", :description=>'Some text',:created_by => admin, :is_active => true, :title=>'About Us', :target=>"www.google.com", :site_id=>site)
+
+
+per = Permission.create(:name=>"user_module",:display_name=>"User Module")
+
+["show","index","new","edit","create","update"].each do |sub_per|
+sub_per_obj = role.sub_permissions.create(:name=>sub_per,:permission_id=>per.id)
+end
