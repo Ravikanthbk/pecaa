@@ -3,6 +3,7 @@ Mystore3::Application.routes.draw do
   resources :sub_permissions
 
   resources :permissions
+  resources :roles
   resources :add_files
   resources :add_forms
 
