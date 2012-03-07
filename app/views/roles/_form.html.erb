@@ -1,0 +1,47 @@
+<%= form_for(@role) do |f| %>
+  <% if @role.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@role.errors.count, "error") %> prohibited this role from being saved:</h2>
+
+      <ul>
+      <% @role.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :display_name %><br />
+    <%= f.text_field :display_name %>
+  </div>
+
+<div class="rcRoles">
+ <label>Permissions:</label>
+  <div id="checkboxDemo">
+  	    <%SubPermission.all.collect do |sub_per|%>
+        <label for="checkbox-<%=sub_per.id%>" tabindex="<%=sub_per.id%>" class="txtColorWhite prettyCheckbox checkbox list">
+
+            <%=sub_per.display_name %>
+        </label>
+        <%=check_box_tag "roles[sub_permission_ids][]",sub_per.id,@role.sub_permissions.include?(sub_per),{:id=>"checkbox-#{sub_per.id}",:class=>"hiddenCheckbox"} %>
+        <%end %>
+    </div>
+</div>
+<div style="clear:both"></div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+<script src="/assets/prettyCheckboxes.js?body=1" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$('#checkboxDemo input[type=checkbox]').prettyCheckboxes();
+				$('.inlineRadios input[type=radio]').prettyCheckboxes({'display':'inline'});
+			});
+</script>

@@ -8,5 +8,10 @@ $(document).ready(function() {
     $("#facebox").hide()
     $("#facebox_overlay").hide()      
   })
+  
+  $(".btnCancelForm").live('click', function(){
+    $("#facebox").hide()
+    $("#facebox_overlay").hide()
+  })
 })
 

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>Add Form - Form Setting</title>
+		<style>
+			.main-container{
+				width: 970px;
+				font-family: Arial;
+			}
+			.header{
+				clear:both;
+				background: #616161;
+				font-size: 18px;
+				color: #dae5eb;
+				padding:10px;
+				font-weight: bold;
+			}
+			.main-content {
+				overflow: hidden;
+				background:#dbe6eb;
+			}
+			.column-wrapper{
+				float:left;
+				width: 255px;
+				background:#ffffff;
+				margin:10px 20px 10px 10px;
+				padding:20px;
+				height:380px;
+			}
+			.column-wrapper.last-colum{
+				margin-right:0;
+				background:#616161;
+
+			}
+			.column-wrapper ul{
+				list-style: none;
+				padding:0;
+				margin:0 0 10px 0;
+			}
+			.column-wrapper ul li{
+				list-style: none;
+				padding: 3px;
+				border: 1px solid #CCC;
+				margin:0;
+			}
+			.column-wrapper div,
+			.column-wrapper p{
+				margin:0 0 15px 0;
+			}
+			.column-wrapper div input[type="text"],
+			.column-wrapper div textarea{
+				margin-bottom:10px;
+				width: 100%;
+			}
+			.column-wrapper .close-settings{
+				padding: 5px 0 5px 0;
+				margin:0;
+				background: #849fb9;
+				text-align:center;
+			}
+			.footer-section{
+				background: #616161;
+				padding:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="header">Add Form</div>
+			<div class="main-content">
+				<div class="column-wrapper">
+					<p>form elements</p>
+					<ul>
+						<li>section break /title</li>
+						<li>single line text</li>
+						<li>paragraph text</li>
+						<li>multiple choice</li>
+						<li>check boxes</li>
+						<li>date/time</li>
+					</ul>
+					<p>grouped social form elements</p>
+					<ul>
+						<li>address</li>
+						<li>name</li>
+						<li>email</li>
+						<li>website (url)</li>
+						<li>phone #</li>
+					</ul>
+				</div>
+
+				<div class="column-wrapper">
+					<p>form settings</p>
+					<div>
+						<label>form subject line</label>
+						<input type="text" placeholder="form name">
+					</div>
+					<div>
+						<label>deliver email address</label>
+						<input type="text" placeholder="jim@gmail.com">
+						<input type="text" placeholder="jim@gmail.com">
+					</div>
+					<div>
+						<label>form confirmation text</label>
+						<textarea type="text" placeholder="Thanks for filling out the form, you're being brought back to where you were."></textarea>
+					</div>
+					<div>
+						<input type="checkbox" />
+						<label>use CAPTCHA</label>
+					</div>
+					<div>
+						<input type="checkbox" />
+						<label>use Field labels</label>
+					</div>
+					<div class="close-settings">
+						Close Form Settings
+					</div>
+				</div>
+
+				<div class="column-wrapper last-colum"></div>
+			</div>
+			<div class="footer-section">
+				<button id="cancelBtn" class="btnCancelForm">Cancel</button>
+				<input type="text" placeholder="form name">
+				<button id="saveBtn">Save</button>
+
+				</div>
+		</div>
+
+	</body>
+</html>

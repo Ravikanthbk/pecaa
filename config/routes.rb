@@ -3,6 +3,8 @@ Mystore3::Application.routes.draw do
   resources :sub_permissions
 
   resources :permissions
+  resources :add_files
+  resources :add_forms
 
   resources :sites do 
     get 'preview', :on => :member
