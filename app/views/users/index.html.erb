@@ -66,6 +66,7 @@
             <div class="overview">
               <ul class="ConLibra">
                 <%@users.each do |u|%>
+                  <%if not( u.roles.include?(Role.find_by_name("SystemAdmin"))) or current_user.roles.include?(Role.find_by_name("SystemAdmin"))%>
                   <li class="dark">
                     <p>
                       <span class="name"><%=u.username%>&nbsp;</span>
@@ -75,6 +76,7 @@
                     <span class="addedBy"><%=u.created_by.username if u.created_by%> &nbsp;</span> 
                     <span class="edit"><%=link_to image_tag('/assets/users/images/btn-edit.png'),edit_user_path(u)%></span>
                   </li>
+                <%end%>
                 <%end%>
               </ul>
             </div>
