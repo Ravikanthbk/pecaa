@@ -53,6 +53,14 @@
         <div class="clear"></div>
         
         <div class="ueBody">
+<% if flash[:warning] %>
+  <div id="notice" <% if flash[:warning] %>class="warning"<% end %>>
+    <%= flash[:warning] %>
+  </div>
+  <script type="text/javascript">
+    setTimeout("new Effect.Fade('notice');", 15000)
+  </script>
+<% end %>
         	<div class="ueNavHolder">
             <img src="/assets/ue-nav-bg-left.png" style="float:left;" />
             <div class="ueNavMid">
