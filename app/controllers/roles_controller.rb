@@ -68,7 +68,7 @@ if params[:query].blank? && params[:date_added].blank?
 @role.save
     respond_to do |format|
       if @role.update_attributes(params[:role])
-        format.html { redirect_to @role, notice: 'Permission was successfully updated.' }
+        format.html { redirect_to "/roles", notice: 'Permission was successfully updated.' }
         format.json { head :ok }
       else
         format.html { render action: "edit" }
