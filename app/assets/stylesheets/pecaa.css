@@ -754,3 +754,104 @@ a.links{font: 15px "calibri",Arial,Helvetica,sans-serif;color:#6c95a9; margin:0p
 	background:url(../assets/btn-green.png) no-repeat left top; padding-left:0px; height:34px; float:right;
 }
 /* end of view image */
+/* Start View file */
+button{
+				font-size: 15px;
+				padding: 8px 25px 8px 25px;
+				margin-right:10px;
+				color:#FFFFFF;
+				font-weight: bold;
+				border-radius: 6px;
+				cursor: pointer;
+			}
+			button.cancel{
+				background:#ff6d5e;
+				border:1px solid #FF0000;
+				min-width: 100px;
+			}
+			button.primary{
+				background:#89cb5c;
+				border:1px solid #339933;
+				min-width: 100px;
+			}
+			button.secondary{
+				background:#cccccc;
+				border:1px solid #999999;
+			}
+			.main-container{
+				width: 980px;
+				font-family: Arial;
+				font-size:13px;
+				color:#333;
+			}
+			.header{
+				clear:both;
+				background: #616161;
+				font-size: 22px;
+				color: #dae5eb;
+				padding:10px 10px 10px 20px;
+				border-top-left-radius: 6px;
+				border-top-right-radius: 6px;
+				border: 1px solid #7c7c7c;
+				border-bottom: 1px solid #333;
+				margin-left:1px;
+				margin-right:1px;
+				font-family: "Arial Black";
+			}
+			.main-content {
+				overflow: hidden;
+				background:#dbe6eb;
+			}
+			.main-content .img-block{
+				margin: 40px 150px;
+				width: 640px;
+				background: #616161;
+				border-radius: 6px;
+				padding: 40px;
+				font-size:16px;
+				font-weight:bold;
+				color:#333333;
+				-moz-box-shadow: inset 0px 1px 4px #333333;
+   				-webkit-box-shadow: inset 0px 1px 4px #333333;
+  				 box-shadow: inset 0px 1px 4px #333333;
+			}
+			.img-block .img-path{
+				border: 1px solid #000000;
+				border-radius:6px;
+				color:#FFFFFF;
+				text-align: center;
+				overflow: hidden;
+			}
+			.img-path button{
+				float: right;
+				margin:0;
+				vertical-align: middle;
+			}
+			.img-path span{
+				vertical-align: middle;
+				padding-top:12px;
+			}
+			.footer-section{
+				background: #616161;
+				padding:20px;
+				border-bottom-left-radius: 6px;
+				border-bottom-right-radius: 6px;
+				border: 1px solid #7c7c7c;
+				border-top: 1px solid #333;
+				text-align: right;
+				margin-left:1px;
+				margin-right:1px;
+				overflow: hidden;
+			}
+			.footer-section .leftBtns{
+				float:left;
+			}
+			.footer-section .rightBtns{
+				float:right;
+			}
+			 input[type="text"]{
+				border-radius: 6px;
+				padding:8px;
+				border: 1px solid #999999;
+			}
+/* end View file */

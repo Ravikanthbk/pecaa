@@ -1,0 +1,13 @@
+<div class="main-container">
+  <div class="header"><%= @add_file.upload_file_name %></div>
+  <div class="main-content">
+          <div class="img-block">
+                  <div class="img-path"><span>save location chosen</span><button class="secondary" id="chooseSave">Choose Save Location</button></div>
+          </div>
+  </div>
+  <div class="footer-section">
+          <div class="leftBtns"><button class="cancel btnCancelForm" id="cancelBtn">Cancel</button> </div>
+          <%#*<div class="rightBtns"><button class="primary" id="saveBtn"><%=  link_to "Download File", @add_file.upload.url(:original, false) %-></button> </div>%>
+          <div class="rightBtns"><button class="primary" id="saveBtn">Download File</button> </div>
+  </div>
+</div>

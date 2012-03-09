@@ -1,0 +1,25 @@
+<div class="addFileHolder">
+<div class="helpPopUp">
+<p>Add File info</p>
+
+<span><span class="helpGreyTxt">file type:</span> PDF, DOC, DOCX, XLS, XLSX, PPT or PPTX</span><br />
+<span><span class="helpGreyTxt">max file size:</span> 30mb</span>
+</div>
+    <div class="addFileTop">Add File <img src="/assets/icon-help.png" class="help" /></div>
+    <%= form_for(@add_file, :html => { :multipart => true }, :remote => true) do |f| %>
+    <%#= f.object.errors %>
+    <div class="addFileBody">
+      <%= f.file_field :upload %>
+      <p>File Path</p>
+      <p>users/jim/desktop/filesforwebsite/quarterlyreport.pdf</p>
+    </div>
+    <div class="addFileBottom">
+      <div class="btnCancelLeft">
+        <input type="reset" value="Cancel" class="btnCancel" />
+      </div>
+      <div class="btnUploadFileLeft">
+        <%= f.submit "Upload File", :class => "btnUploadFile" %>
+      </div>
+    </div>
+    <% end %>
+</div>

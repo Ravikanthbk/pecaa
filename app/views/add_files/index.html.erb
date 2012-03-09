@@ -1,0 +1,21 @@
+<h1>Listing add_files</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @add_files.each do |add_file| %>
+  <tr>
+    <td><%= link_to 'Show', add_file %></td>
+    <td><%= link_to 'Edit', edit_add_file_path(add_file) %></td>
+    <td><%= link_to 'Destroy', add_file, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Add file', new_add_file_path %>
