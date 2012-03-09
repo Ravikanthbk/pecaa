@@ -3,6 +3,8 @@ Mystore3::Application.routes.draw do
   resources :sub_permissions
 
   resources :permissions
+  get "roles/index"
+  post "roles/index"
   resources :roles
   resources :add_files
   resources :add_forms

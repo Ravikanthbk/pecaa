@@ -3,7 +3,13 @@ class RolesController < ApplicationController
   # GET /permissions.json
   layout 'pecaa_application'
   def index
-    @roles = Role.all
+if params[:query].blank? && params[:date_added].blank?
+      @roles= Role.all
+    elsif !params[:query].blank? && params[:date_added].blank?
+      @roles= Role.where("#{params[:search_on]} like ?", "%#{params[:query]}%")
+    elsif params[:query].blank? && !params[:date_added].blank?
+      @roles= Role.where(:created_at => (Date.strptime(params[:start_date],"%m-%d-%Y")..Date.strptime(params[:end_date],"%m-%d-%Y")))
+    end
 
     respond_to do |format|
       format.html # index.html.erb
@@ -62,7 +68,7 @@ class RolesController < ApplicationController
 @role.save
     respond_to do |format|
       if @role.update_attributes(params[:role])
-        format.html { redirect_to @role, notice: 'Permission was successfully updated.' }
+        format.html { redirect_to "/roles", notice: 'Permission was successfully updated.' }
         format.json { head :ok }
       else
         format.html { render action: "edit" }
