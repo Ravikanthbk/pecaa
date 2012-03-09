@@ -1,7 +1,7 @@
 <div class="ueBodyContent">
   <!-- add buttons -->
   <div class="addButtons">
-    <span class="addFile"><a href="#"></a></span>
+    <span class="addFile"><a href='<%= new_add_file_path %>' rel="facebox"></a></span>
     <span class="addForm"><a href='<%= new_add_form_path %>' rel="facebox"></a></span>
     <span class="addText"><a href="#"></a></span>
     <span class="addVideo"><a href='<%= new_video_path %>' rel="facebox"></a></span>
@@ -116,7 +116,8 @@
                   <% unless @content_libraries.blank? %>
                     <% @content_libraries.each do |content| %>
                       <li class="<%= cycle("dark", "light") %>">
-                        <span class="name" title="<%= content.name %>"><p><%= truncate(content.name, :length => 25, :separator => '..') %></p> <%= display_content(content) %></span>
+                        <%#*<span class="name" title="<%= content.name %->"><p><-%= truncate(content.name, :length => 25, :separator => '..') %-></p> <%= display_content(content) %-></span>%>
+                        <span class="name" title="<%= filename(content.name) %>"><p><%= truncate(filename(content.name), :length => 20, :separator => '..') %></p> <%= display_content(content) %></span>
                         <span class="type"><%= content.source_type %></span>
                         <span class="lastUsed">admin</span>
                         <span class="timesUsed">99</span>

@@ -3,7 +3,7 @@ class ContentLibrariesController < ApplicationController
   # GET /content_libraries
   # GET /content_libraries.json
   def index
-    @content_libraries = ContentLibrary.all
+    @content_libraries = ContentLibrary.order("created_at desc")
 
     respond_to do |format|
       format.html # index.html.erb

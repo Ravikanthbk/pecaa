@@ -21,9 +21,10 @@ class ImagesController < ApplicationController
           :last_used => nil, :times_used => nil, :added_by => current_user.username})
         redirect_to content_libraries_path
       else
-        respond_to do |format|
-          format.html  { render(:nothing => true)}
-        end
+        redirect_to content_libraries_path
+#        respond_to do |format|
+#          format.html  { render(:nothing => true)}
+#        end
       end
     end
   rescue
@@ -43,9 +44,10 @@ class ImagesController < ApplicationController
           :last_used => nil, :times_used => nil, :added_by => current_user.username})
       redirect_to content_libraries_path
       else
-        respond_to do |format|
-          format.html  { render(:nothing => true)}
-        end
+        redirect_to content_libraries_path
+#        respond_to do |format|
+#          format.html  { render(:nothing => true)}
+#        end
     end
   rescue
     redirect_to content_libraries_path
