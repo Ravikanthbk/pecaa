@@ -779,7 +779,7 @@ button{
 				border:1px solid #999999;
 			}
 			.main-container{
-				width: 980px;
+				width: 780px;
 				font-family: Arial;
 				font-size:13px;
 				color:#333;
@@ -855,3 +855,41 @@ button{
 				border: 1px solid #999999;
 			}
 /* end View file */
+/* Start add Text */
+.main-content .text-editer{
+	margin: 20px 40px;
+}
+
+.footer-section .leftBtns{
+	float:left;
+}
+.footer-section .rightBtns{
+	float:right;
+}
+.footer-section .leftBtns button{
+	margin-right:10px;
+}
+.footer-section .rightBtns button{
+	margin-left:10px;
+}
+.footer-section .rightBtns input[type="text"]{
+	border-radius: 6px;
+	padding:8px;
+	border: 1px solid #999999;
+	width:245px;
+}
+.main-content .text-block {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 1px 4px #666666 inset;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    height: 480px;
+    margin: 40px 150px;
+    padding: 20px;
+    width: 660px;
+}
+/* End add Text */
+

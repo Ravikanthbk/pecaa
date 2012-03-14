@@ -10,7 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120302145605) do
+ActiveRecord::Schema.define(:version => 20120313174023) do
+
+  create_table "add_files", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "upload_file_name"
+    t.string   "upload_content_type"
+    t.integer  "upload_file_size"
+    t.boolean  "is_deleted",          :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "addresses", :force => true do |t|
     t.string   "nickname"
     t.string   "address_one"
@@ -47,11 +58,26 @@ ActiveRecord::Schema.define(:version => 20120302145605) do
     t.datetime "updated_at"
   end
 
+  create_table "permissions", :force => true do |t|
+    t.string   "name"
+    t.string   "display_name"
+    t.integer  "created_by"
+    t.integer  "updated_by"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "roles", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "display_name"
+    t.integer  "created_by"
+  end
+
+  create_table "roles_sub_permissions", :id => false, :force => true do |t|
+    t.integer "role_id"
+    t.integer "sub_permission_id"
   end
 
   create_table "roles_users", :id => false, :force => true do |t|
@@ -61,19 +87,16 @@ ActiveRecord::Schema.define(:version => 20120302145605) do
 
   create_table "site_links", :force => true do |t|
     t.text     "description"
+    t.string   "name"
     t.integer  "created_by"
-    t.boolean  "is_active",   :default => true
+    t.boolean  "is_active"
     t.string   "title"
     t.text     "target"
     t.integer  "site_id"
-    t.text     "name"
     t.string   "type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "site_links", ["created_by"], :name => "index_site_links_on_created_by"
-  add_index "site_links", ["site_id"], :name => "index_site_links_on_site_id"
 
   create_table "sites", :force => true do |t|
     t.text     "description"
@@ -86,6 +109,25 @@ ActiveRecord::Schema.define(:version => 20120302145605) do
   end
 
   add_index "sites", ["created_by"], :name => "index_sites_on_created_by"
+
+  create_table "sub_permissions", :force => true do |t|
+    t.string   "name"
+    t.string   "display_name"
+    t.integer  "permission_id"
+    t.integer  "created_by"
+    t.integer  "updated_by"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "texts", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "text_block_name"
+    t.text     "description"
+    t.boolean  "is_deleted",      :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "uploads", :force => true do |t|
     t.string   "upload_file_name"
@@ -119,6 +161,8 @@ ActiveRecord::Schema.define(:version => 20120302145605) do
     t.boolean  "active"
     t.datetime "last_login"
     t.string   "role_title"
+    t.string   "launch_link"
+    t.integer  "created_by"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
@@ -131,6 +175,8 @@ ActiveRecord::Schema.define(:version => 20120302145605) do
     t.string   "state"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
+    t.boolean  "is_deleted",          :default => false
   end
 
 end

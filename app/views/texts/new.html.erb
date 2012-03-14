@@ -1,0 +1,25 @@
+<%= form_for(@text, :remote => true) do |f| %>
+<div class="main-container">
+  <div class="header">Add Text Block</div>
+  <div class="main-content">
+    <div class="text-editer">
+      <%= f.text_area :description, :rows => 40, :cols => 120 %>
+
+    </div>
+  </div>
+  <div class="footer-section">
+    <div class="leftBtns"><button class="secondary btnCancelForm" id="cancelBtn">Cancel</button> </div>
+    <div class="rightBtns"><%= f.text_field :text_block_name, :placeholder=>"text block name" %>
+      <button class="primary" id="saveBtn">Add Text Block</button> </div>
+  </div>
+</div>
+<% end %>
+<script type="text/javascript">
+  $(function() {
+    $('textarea').tinymce({
+      width: "98%",
+      height: "50%",
+      theme: 'advanced'
+    });
+  });
+</script>
