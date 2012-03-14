@@ -1,0 +1,31 @@
+<h1>Listing themes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Base color</th>
+    <th>Theme type</th>
+    <th>Css style</th>
+    <th>Created by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @themes.each do |theme| %>
+  <tr>
+    <td><%= theme.name %></td>
+    <td><%= theme.base_color_id %></td>
+    <td><%= theme.theme_type %></td>
+    <td><%= theme.css_style %></td>
+    <td><%= theme.created_by %></td>
+    <td><%= link_to 'Show', theme %></td>
+    <td><%= link_to 'Edit', edit_theme_path(theme) %></td>
+    <td><%= link_to 'Destroy', theme, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Theme', new_theme_path %>

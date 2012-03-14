@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>PECAA</title>
+        <%= stylesheet_link_tag "layout" %>
+        <%= stylesheet_link_tag "themes" %>
+		<%= stylesheet_link_tag "facebox" %>
+		<%= javascript_include_tag 'jquery-1.4.2.min'%>
+<%= javascript_include_tag 'jquery-ui-1.8.2.custom.min'%>
+<%= javascript_include_tag 'facebox'%>        
+
+<%= javascript_include_tag "common" %>
+
+
+        
+    </head>
+    <body>
+    	<div class="mainContainer">
+	    	<div class="userEditHolder">	
+		    	<div class="header-section">
+		    		<div class="topHeader">
+		    			<div class="logoHolder"></div>
+		    			<div class="rightPanel">
+		    				<ul>
+
+		    					<li class="help"></li>
+		    					<li class="myAccount"></li>
+		    					<li class="logout"></li>
+		    				</ul>
+		    			</div>
+		    		</div>
+		    		<div class="main-nav">
+		    			<div class="navBtns">
+		    				<ul>
+
+		    					<li class="siteInfo complete"></li>
+		    					<li class="pages complete"></li>
+		    					<li class="content complete"></li>
+		    					<li class="theme active"></li>
+		    					<li class="optional"></li>
+		    					<li class="done"></li>
+		    				</ul>
+		    			</div>
+		    			<div class="rightBtns">
+
+		    				<button class="btn_External">ext</button>
+		    				<button class="btn_SaveAndGo">Save and go to next step</button>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="content-section">
+		    		<div class="themes-main">
+		    			<div class="themes-wrapper">
+
+		    				<div class="tabs">
+		    					<ul>
+		    						<li><a href="#">Choose Theme</a></li>
+		    						<li class="active"><a href="#">Choose Base Colors</a></li>
+		    						<li><a href="#">Edit All Styles</a></li>
+		    					</ul>
+		    				</div>
+
+		    				<div class="theme-content" id="content_1" style="display: none">
+		    					
+		    				</div>
+		    				<div class="theme-content" id="content_2">
+		    					<div class="theme-section">
+		    						<div class="theme-column">
+		    							<div class="colPicker-wrapper">
+		    								<ul>
+		    									<li id ="color-picker1" style="background:none repeat scroll 0	 0 #0099CC"><a href='/colorpicker' rel='facebox'>pick color<span class="piller"></span><span class="add"></span></a></li>
+		    									<li id ="color-picker2"><span class="piller"></span><span class="add"></span></li>
+
+		    									<li id ="color-picker3"><span class="piller"></span><span class="add"></span></li>
+		    									<li id ="color-picker4"><span class="piller"></span><span class="add"></span></li>
+		    									<li id ="color-picker5"><span class="piller"></span><span class="add"></span></li>
+		    								</ul>
+		    							</div>
+										<script>
+											
+											function input_example() {
+											    var cw = Raphael.colorwheel($("#input_example .colorwheel")[0], 150);
+											    cw.input($("#input_example input")[0]);
+											}
+										</script>
+		    							<div class="variation-wrapper">
+		    								<div class="variation active">
+			    								<ul>
+			    									<li></li>
+
+			    									<li></li>
+			    									<li></li>
+			    									<li></li>
+			    									<li></li>
+			    								</ul>
+			    								<span class="variationTitle">variation 1</span>
+		    								</div>
+		    								<div class="variation">
+
+			    								<ul>
+			    									<li></li>
+			    									<li></li>
+			    									<li></li>
+			    									<li></li>
+			    									<li></li>
+			    								</ul>
+			    								<span class="variationTitle">variation 2</span>
+
+		    								</div>
+		    								<div class="variation">
+			    								<ul>
+			    									<li></li>
+			    									<li></li>
+			    									<li></li>
+			    									<li></li>
+			    									<li></li>
+			    								</ul>
+
+			    								<span class="variationTitle">variation 3</span>
+		    								</div>
+		    							</div>
+		    						</div>
+		    						<div class="theme-column-right">
+		    							<div class="detail-row">
+		    								<span>name :</span>
+		    								<span><input type="text" /></span>
+
+		    								<span><button class="saveColor" id="saveScheme"></button></span>
+		    							</div>
+		    							<div class="color-schemes">
+		    								<div class="variation-wrapper">
+			    								<div class="variation">
+				    								<ul>
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+
+				    									<li></li>
+				    									<li></li>
+				    								</ul>
+				    								<span class="variationTitle">variation 1</span>
+			    								</div>
+			    								<div class="variation">
+				    								<ul>
+				    									<li></li>
+
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    								</ul>
+				    								<span class="variationTitle">variation 2</span>
+			    								</div>
+			    								<div class="variation">
+
+				    								<ul>
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    								</ul>
+				    								<span class="variationTitle">variation 3</span>
+
+			    								</div>
+			    								<div class="variation">
+				    								<ul>
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    								</ul>
+
+				    								<span class="variationTitle">variation 3</span>
+			    								</div>
+		    								</div>
+		    								<div class="variation-wrapper">
+			    								<div class="variation">
+				    								<ul>
+				    									<li></li>
+				    									<li></li>
+
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    								</ul>
+				    								<span class="variationTitle">variation 1</span>
+			    								</div>
+			    								<div class="variation">
+				    								<ul>
+
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    								</ul>
+				    								<span class="variationTitle">variation 2</span>
+			    								</div>
+
+			    								<div class="variation">
+				    								<ul>
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    								</ul>
+				    								<span class="variationTitle">variation 3</span>
+
+			    								</div>
+			    								<div class="variation">
+				    								<ul>
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    									<li></li>
+				    								</ul>
+
+				    								<span class="variationTitle">variation 3</span>
+			    								</div>
+		    								</div>
+		    							</div>
+		    						</div>
+		    					</div>
+		    				</div>
+		    				<div class="theme-content" id="content_3" style="display: none">
+
+		    					
+		    				</div>
+		    			</div>
+		    			<div class="themes-board">
+		    				<div class="grid-board">
+		    					
+		    				</div>
+		    			</div>
+		    			
+		    		</div>
+		    	</div>
+		    	
+	    	</div>
+
+        </div>
+    </body>
+</html>

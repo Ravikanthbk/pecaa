@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  base_color_id: 1
+  theme_type: MyString
+  css_style: MyText
+  created_by: 1
+
+two:
+  name: MyString
+  base_color_id: 1
+  theme_type: MyString
+  css_style: MyText
+  created_by: 1

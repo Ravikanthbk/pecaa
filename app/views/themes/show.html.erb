@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @theme.name %>
+</p>
+
+<p>
+  <b>Base color:</b>
+  <%= @theme.base_color_id %>
+</p>
+
+<p>
+  <b>Theme type:</b>
+  <%= @theme.theme_type %>
+</p>
+
+<p>
+  <b>Css style:</b>
+  <%= @theme.css_style %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @theme.created_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_theme_path(@theme) %> |
+<%= link_to 'Back', themes_path %>

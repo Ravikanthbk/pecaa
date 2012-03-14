@@ -1,0 +1,27 @@
+<h1>Listing base_colors</h1>
+
+<table>
+  <tr>
+    <th>Colors</th>
+    <th>Name</th>
+    <th>Created by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @base_colors.each do |base_color| %>
+  <tr>
+    <td><%= base_color.colors %></td>
+    <td><%= base_color.name %></td>
+    <td><%= base_color.created_by %></td>
+    <td><%= link_to 'Show', base_color %></td>
+    <td><%= link_to 'Edit', edit_base_color_path(base_color) %></td>
+    <td><%= link_to 'Destroy', base_color, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Base color', new_base_color_path %>

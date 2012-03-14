@@ -1,14 +1,19 @@
 Mystore3::Application.routes.draw do
 
+  resources :themes
+
+  resources :base_colors
+
   resources :sub_permissions
 
   resources :permissions
+  
   get "roles/index"
   post "roles/index"
   resources :roles
   resources :add_files
   resources :add_forms
-
+  
   resources :sites do 
     get 'preview', :on => :member
     post 'search', :on => :collection
@@ -20,7 +25,9 @@ Mystore3::Application.routes.draw do
   resources :images
   resources :videos
   resources :content_libraries
-
+  
+  match 'colorpicker', :to => "base_colors#colorpicker", :as => :colorpicker 
+  
   get "users/index"
   
   # match 'users/list', :to => "users/users#index", :as => :user_list
