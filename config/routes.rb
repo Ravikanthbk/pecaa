@@ -1,8 +1,12 @@
 Mystore3::Application.routes.draw do
 
+
   resources :themes
 
   resources :base_colors
+
+  resources :texts
+
 
   resources :sub_permissions
 
@@ -30,7 +34,19 @@ Mystore3::Application.routes.draw do
   match 'colorpicker', :to => "base_colors#colorpicker", :as => :colorpicker 
   
   get "users/index"
-  
+
+#  resources :add_files do
+#   member do
+#     post 'download'
+#   end
+#   end
+  match 'add_files/download' => 'add_files#download', :as => :download
+#  resources :profiles
+#
+#  match 'profiles/update_state_select/:id', :controller=>'profiles', :action => 'update_state_select'
+#
+#  match 'profiles/update_city_select/:id', :controller=>'profiles', :action => 'update_city_select'
+
   # match 'users/list', :to => "users/users#index", :as => :user_list
   # namespace :users do
   #   resources :users
