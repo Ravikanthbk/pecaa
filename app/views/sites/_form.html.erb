@@ -2,80 +2,73 @@
 	<div class="intro-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae purus id mauris mollis tincidunt. Curabitur in pellentesque mi. Nulla facilisi. Nam vel venenatis diam. Curabitur urna arcu, egestas at vehicula ullamcorper, scelerisque non est. Pellentesque pulvinar massa eu velit pulvinar accumsan ac in est. Fusce mauris nulla, vestibulum ac semper id, mollis at lectus. Nullam placerat tempor nisl, quis tincidunt sapien lacinia ac. </p></div>
 	<div class="colum-wrapper">
 		<div class="colum-section">
+	  <%= form_for(@site) do |f| %>
+	  <% if @site.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@site.errors.count, "error") %> prohibited this site from being saved:</h2>
+
+        <ul>
+        <% @site.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
 		<div class="title">Site Details <span class="help"><a href="#"></a></span></div>
 			<div class="group">
-				<span class="key">site name:</span>
-				<span class="val"><input type="text" value="Active Eyeware"></span>
-			</div>
+				<div class="field">
+				  <span class="key">site name:</span>
+				  <span class="val"><%= f.text_field :name %></span>
+        </div>
+      </div>
 			<div class="group">
-				<span class="key">domain name:</span>
-				<span class="val"><input type="text" value="http://www.activeeyeware.com"></span>
+			  <div class="field">
+				  <span class="key">domain name:</span>
+				  <span class="val"><%= f.text_field :domain_name %></span>
+        </div>
 			</div>
 			<div class="group next">
-				<span class="key">company name:</span>
-				<span class="val"><input type="text" value="Active Eyeware Ltd."></span>
+				<div class="field">
+          <span class="key">company name:</span>
+          <span class="val"><%= f.text_field :company_name %></span>
+        </div>
 			</div>
-		<div class="group">
-				<span class="key">address:</span>
-				<span class="val">
-					<input type="text" value="123 Fake St">
-					<input type="text" value="Suit 230">
-				</span>
-			</div>
-			<div class="group">
-				<span class="key">city:</span>
-				<span class="val">
-					<input type="text" value="Boston">
-				</span>
-			</div>
-			<div class="group">
-				<span class="key">state:</span>
-				<div  class="val">
-					<select>
-						<option>MA</option>
-					</select>
-					
-					<span class="zipCode">
-						<span>zip:</span>
-						<span><input type="text" value="02384"></span>
-					</span>
-				</div>
-			</div>
-			<div class="group country">
-				<span class="key">country:</span>
-				<span class="val">
-					<select>
-						<option>United States</option>
-					</select>
-				</span>
-			</div>
-			
+  		  <%= f.fields_for (@site.new_record? && !@site.address ? :address_attributes : :address) do |site| %>
+  		  <div class="group">
+  				<span class="key">address:</span>
+          <span class="val"><%= site.text_field :address_one %></span>
+        </div>
+        <div class="group">
+          <span class="key">&nbsp;</span>
+          <span class="val"><%= site.text_field :address_two %></span>
+  			</div>
+  			<div class="group">
+  				<span class="key">city:</span>
+  				<span class="val"><%= site.text_field :city %></span>
+  			</div>
+  			<div class="group">
+  				<span class="key">state:</span>
+          <span class="val"><%= site.text_field :state %></span>
+        </div>
+        <div class="group">
+          <span class="zipCode">
+            <span class="key">zip:</span>
+            <span class="val"><%= site.text_field :zipcode %></span>
+          </span>
+        </div>
+  			<div class="group country">
+  				<span class="key">country:</span>
+          <span class="val"><%= site.text_field :country %></span>
+  			</div>
+      <% end -%>
 		</div>
 		
-
 	<div class="colum-section last">
-		<div class="title">Contact Details <span class="help"><a href="#"></a></span></div>
-			<div class="group">
-				<span class="key">name:</span>
-				<span class="val"><input type="text" value="James Howard"></span>
-			</div>
-			<div class="group">
-				<span class="key">position:</span>
-				<span class="val"><input type="text" value="Manager"></span>
-			</div>
-			<div class="group">
-				<span class="key">email:</span>
-				<span class="val"><input type="text" value="jhoward1233@gmail.com"></span>
-			</div>
+		<div class="title contact_fields">Contact Details <span class="help"><a href="#"></a></span></div>
+        <%= render :partial => 'contact_form', :locals => { :f => f } %>
 		<div class="group">
-				<span class="key">phone:</span>
-				<span class="val">
-					<input type="text" value="303.345.3456">
-				</span>
-			</div>
-			<div class="group">
-				<button class="btnAddContact" type="button"></button>
-			</div>
+			<button class="btnAddContact" type="button"></button>
+		</div>
 			
 			<div class="title">Link to Existing Account <span class="help"><a href="#"></a></span></div>
 			<div class="group">
@@ -91,8 +84,23 @@
 						</div>
 						<button class="linkAccount" type="button"></button>
 					</div>
-			
 			</div>
+		  <div class="actions">
+        <%= f.submit %>
+      </div>
+    <% end %>
+      
 		</div>
 	</div>
 </div>
+<script>
+  $(".btnAddContact").click(function(){
+    $.ajax({
+      type: "GET",
+      url: "/sites/beta/rendering_partial",
+      success: function(data){
+        $('.contact_fields').append(data);
+      }
+    });
+  });
+</script>
