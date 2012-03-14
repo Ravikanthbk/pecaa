@@ -1,0 +1,273 @@
+body {
+    background: url("img/bg.gif") repeat scroll 0 0 transparent;
+    font: 12px Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body button,
+body a{
+	cursor: pointer;
+}
+.mainContainer {
+    margin: auto;
+    width: 100%;
+}
+.userEditHolder {
+    margin: auto;
+    width: 1024px;
+}
+.header-section{
+	overflow: hidden;
+}
+.header-section .topHeader{
+	background: url("img/bg_topHeader.gif") repeat-x;
+	height: 36px;
+}
+.topHeader .logoHolder{
+	display:block;
+	float:left;
+	background: url("img/pecaa_logo.png") no-repeat;
+	width:170px;
+	height:36px;
+}
+.topHeader .rightPanel{
+	float:right;
+}
+.rightPanel ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+	background:0;
+}
+.rightPanel ul li{
+	display:table-cell;
+	margin:0;
+	padding:0;
+	list-style: none;
+	background:0;
+}
+.rightPanel .help{
+	width:98px;
+	height:36px;
+	background: url("img/btn_help.png") no-repeat;
+}
+.rightPanel .myAccount{
+	width:166px;
+	height:36px;
+	background: url("img/btn_myAccount.png") no-repeat;
+}
+.rightPanel .logout{
+	width:113px;
+	height:36px;
+	background: url("img/btn_logOut.png") no-repeat;
+}
+.main-nav {
+	margin: 10px;
+	overflow: hidden;
+}
+.main-nav .navBtns{
+	float: left;
+}
+.main-nav ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+	background:0;
+}
+.main-nav ul li{
+	display:table-cell;
+	margin:0;
+	padding:0;
+	list-style: none;
+	height: 30px;
+}
+.main-nav ul li.siteInfo{
+	background: url(img/btn_siteInfo.png) no-repeat;
+	width: 113px;
+}
+.main-nav ul li.siteInfo.active{
+	background: url(img/btn_siteInfo_on.png) no-repeat;
+}
+.main-nav ul li.pages{
+	background: url(img/btn_pages.png) no-repeat;
+	width: 100px;
+}
+.main-nav ul li.content{
+	background: url(img/btn_content.png) no-repeat;
+	width: 113px;
+}
+.main-nav ul li.theme{
+	background: url(img/btn_theme.png) no-repeat;
+	width: 103px;
+}
+.main-nav ul li.optional{
+	background: url(img/btn_optional.png) no-repeat;
+	width: 117px;
+}
+.main-nav ul li.done{
+	background: url(img/btn_done.png) no-repeat;
+	width: 84px;
+}
+.main-nav .rightBtns{
+	float: right;
+}
+.main-nav button.btn_Save{
+	background:url(img/btn_saveAndNext.png)no-repeat;
+	width: 189px;
+	height:30px;
+	border:0;
+	font-size:11px;
+	color:#FFF;
+	text-indent:-9999px;
+	cursor: pointer;
+}
+
+.content-section{
+	clear:both;
+	width:95%;
+	min-height:500px;
+	padding: 0 30px;
+	margin-bottom:20px;
+}
+.siteInfo-main{
+	border-radius: 6px;
+	background:#FFFFFF;
+	border:1px solid #333;
+	min-height:500px;
+	-moz-box-shadow: inset 0px 1px 3px #CCC;
+   	-webkit-box-shadow: inset 0px 1px 3px #CCC;
+  	box-shadow: inset 0px 1px 3px #CCC;
+  	overflow: hidden;
+}
+.siteInfo-main .intro-text{
+	padding:40px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+}
+.colum-wrapper {
+	padding:0 50px;
+}
+.colum-section{
+	float: left;
+	width:350px;
+	margin-right:100px;
+	margin-bottom:30px;
+	
+}
+.colum-section.last{
+	margin-right:0;
+}
+.colum-section .title{
+	font-size:20px;
+	padding-left:100px;
+	color:#666666;
+	margin-bottom:10px;
+}
+.colum-section .title .help{
+	float: right;
+	background:url(img/icon_help.png) no-repeat;
+	width: 20px;
+	height:20px;
+}
+.help a{
+	display:block;
+}
+.group {
+	overflow: hidden;
+	margin-bottom:2px;
+}
+.group.next{
+	margin-top:10px;
+}
+.group .key{
+	width: 95px;
+	text-align:right;
+	float:left;
+	margin-right:5px;
+	padding-top: 4px;
+	color:#666666;
+}
+.group .btnAddContact{
+	background:url(img/btn_addContact.png) no-repeat;
+	width:116px;
+	height:24px;
+	border:0;
+	float:right;
+	margin-bottom:30px;
+}
+
+.group .val{
+	width: 250px;
+	color:#333;
+	float:left;
+	margin-bottom:4px;
+}
+
+.group .val input[type="text"]{
+	background: #f5f5f5;
+	border-radius: 6px;
+	border:0;
+	color:#333;
+	width: 245px;
+	height: 24px;
+	padding-left:5px;
+}
+.group .val .zipCode{
+	float: right;
+}
+.group .val .zipCode input[type="text"]{
+	background: #f5f5f5;
+	border-radius: 6px;
+	border:0;
+	color:#333;
+	width: 100px;
+	height: 24px;
+	margin-bottom:5px;
+}
+.group.country .val select{
+	width:100%;
+}
+.searchAC {
+	float: right;
+}
+.searchAC input[type="text"]{
+	height: 32px;
+	width: 245px;
+	background: url(img/icon_Zoom.png) no-repeat 100% 0;
+	border:1px solid #cccccc;
+	border-radius: 6px;
+	padding-left:5px;
+	font-size: 18px;
+	color: #666666;
+	margin-bottom:10px;
+}
+.linkAc{
+	background: #f2f6f8;
+	border:1px solid #cccccc;
+	border-radius: 6px;
+	width: 230px;
+	padding:10px;
+	float: right;
+}
+.linkAc .name{
+	color:#666666;
+	font-size:14px;
+	font-weight: bold;
+	
+}
+.linkAc .company{
+	color:#666666;
+	font-size:14px;
+	margin-bottom:10px;
+}
+.linkAc .user{
+	margin-bottom:10px;
+}
+.linkAc .linkAccount{
+	float: right;
+	background: url(img/btn_linkAccount.png) no-repeat;
+	width: 126px;
+	height:24px;
+	border:0;
+}

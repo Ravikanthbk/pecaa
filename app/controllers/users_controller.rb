@@ -141,7 +141,7 @@ class UsersController < ApplicationController
     if current_user.launch_link
       redirect_to(current_user.launch_link) 
     else
-	 render :layout=>false
+	    render :layout=>false
     end
   end
   

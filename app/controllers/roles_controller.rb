@@ -3,7 +3,7 @@ class RolesController < ApplicationController
   # GET /permissions.json
   layout 'pecaa_application'
   def index
-if params[:query].blank? && params[:date_added].blank?
+    if params[:query].blank? && params[:date_added].blank?
       @roles= Role.all
     elsif !params[:query].blank? && params[:date_added].blank?
       @roles= Role.where("#{params[:search_on]} like ?", "%#{params[:query]}%")
