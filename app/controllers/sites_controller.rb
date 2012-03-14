@@ -27,16 +27,18 @@ class SitesController < ApplicationController
   # GET /sites/new.json
   def new
     @site = Site.new
-
+    @site.site_contacts.build
     respond_to do |format|
       format.html {render :layout=>"site"}
-      format.json { render :json => @site }
     end
   end
 
   # GET /sites/1/edit
   def edit
     @site = Site.find(params[:id])
+    respond_to do |format|
+      format.html {render :layout=>"site"}
+    end
   end
 
   # POST /sites
@@ -49,7 +51,7 @@ class SitesController < ApplicationController
         format.html { redirect_to @site, :notice => 'Site was successfully created.' }
         format.json { render :json => @site, :status => :created, :location => @site }
       else
-        format.html { render :action => "new" }
+        format.html { render :action => "new", :layout=>"site" }
         format.json { render :json => @site.errors, :status => :unprocessable_entity }
       end
     end
@@ -64,7 +66,7 @@ class SitesController < ApplicationController
         format.html { redirect_to @site, :notice => 'Site was successfully updated.' }
         format.json { head :ok }
       else
-        format.html { render :action => "edit" }
+        format.html { render :action => "edit", :layout=>"site"}
         format.json { render :json => @site.errors, :status => :unprocessable_entity }
       end
     end
@@ -97,8 +99,13 @@ class SitesController < ApplicationController
     render :layout=> false
   end
   
-  protected
+  def rendering_partial
+    render '/sites/_contact_form'
+  end
   
+  
+  protected
+
   def setup
     @symbol="Website_List"
   end
