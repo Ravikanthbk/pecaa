@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>PECAA</title>
+        <%= stylesheet_link_tag "sites" %>
+    </head>
+    <body>
+    	<div class="mainContainer">
+	    	<div class="userEditHolder">	
+		    	<div class="header-section">
+		    		<div class="topHeader">
+		    			<div class="logoHolder"></div>
+		    			<div class="rightPanel">
+		    				<ul>
+		    					<li class="help"></li>
+		    					<li class="myAccount"></li>
+		    					<li class="logout"></li>
+		    				</ul>
+		    			</div>
+		    		</div>
+		    		<div class="main-nav">
+		    			<div class="navBtns">
+		    				<ul>
+		    					<li class="siteInfo active"></li>
+		    					<li class="pages"></li>
+		    					<li class="content"></li>
+		    					<li class="theme"></li>
+		    					<li class="optional"></li>
+		    					<li class="done"></li>
+		    				</ul>
+		    			</div>
+		    			<div class="rightBtns"><button class="btn_Save">Save and go to next step</button></div>
+		    		</div>
+		    	</div>
+		    	<div class="content-section">
+		    	  	<%=yield%>
+		    	</div>
+		    	
+	    	</div>
+        </div>
+    </body>
+</html>

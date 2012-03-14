@@ -29,7 +29,7 @@ class SitesController < ApplicationController
     @site = Site.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html {render :layout=>"site"}
       format.json { render :json => @site }
     end
   end
