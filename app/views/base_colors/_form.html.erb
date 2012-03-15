@@ -12,6 +12,138 @@
 <%= javascript_include_tag 'facebox'%>        
 
 <%= javascript_include_tag "common" %>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+		<script src="http://jqueryui.com/themeroller/themeswitchertool/"></script>
+
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+		<!--link href="aristo/Aristo.css" rel="stylesheet" type="text/css"/-->
+        <style>
+			body {
+				font-family:	'Segoe UI', Verdana, Arial, Helvetica, sans-serif;
+				font-size:		62.5%;
+			}
+
+			#switcher {
+				float: 			right;
+				display: 		inline-block;
+			}
+        </style>
+		<%= javascript_include_tag "jquery.colorpicker" %>
+		<%= stylesheet_link_tag "colorpicker" %>
+		<%= javascript_include_tag "jquery.ui.colorpicker-nl" %>
+		
+ <script type="text/javascript">
+           	$( function() {
+				$('#switcher').themeswitcher();
+
+                $('#cp1').colorpicker({
+					onClose: function(hex, rgba, inst) {
+								console.log('onClose: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
+							},
+					onSelect: function(hex, rgba, inst) {
+								console.log('onSelect: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
+							},
+					showOn: 'both',
+					showSwatches: true,
+					showNoneButton: true,
+					buttonColorize: true,
+					altField: '.cp1-alt',
+					limit: 'websafe',
+					parts: 'full',
+					regional: 'nl',
+					altProperties: 'background-color,color'
+				});
+                $('#cp2').colorpicker({
+					onClose: function(hex, rgba, inst) {
+								console.log('onClose: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
+							},
+					onSelect: function(hex, rgba, inst) {
+								console.log('onSelect: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
+							},
+					showOn: 'both',
+					showSwatches: true,
+					showNoneButton: true,
+					buttonColorize: true,
+					altField: '.cp1-alt',
+					limit: 'websafe',
+					parts: 'full',
+					regional: 'nl',
+					altProperties: 'background-color,color'
+				});
+
+                $('#cp3').colorpicker({
+					onClose: function(hex, rgba, inst) {
+								console.log('onClose: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
+							},
+					onSelect: function(hex, rgba, inst) {
+								console.log('onSelect: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
+							},
+					showOn: 'both',
+					showSwatches: true,
+					showNoneButton: true,
+					buttonColorize: true,
+					altField: '.cp1-alt',
+					limit: 'websafe',
+					parts: 'full',
+					regional: 'nl',
+					altProperties: 'background-color,color'
+				});
+                $('#cp4').colorpicker({
+					onClose: function(hex, rgba, inst) {
+								console.log('onClose: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
+							},
+					onSelect: function(hex, rgba, inst) {
+								console.log('onSelect: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
+							},
+					showOn: 'both',
+					showSwatches: true,
+					showNoneButton: true,
+					buttonColorize: true,
+					altField: '.cp1-alt',
+					limit: 'websafe',
+					parts: 'full',
+					regional: 'nl',
+					altProperties: 'background-color,color'
+				});
+                $('#cp5').colorpicker({
+					onClose: function(hex, rgba, inst) {
+								console.log('onClose: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
+							},
+					onSelect: function(hex, rgba, inst) {
+								console.log('onSelect: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
+							},
+					showOn: 'both',
+					showSwatches: true,
+					showNoneButton: true,
+					buttonColorize: true,
+					altField: '.cp1-alt',
+					limit: 'websafe',
+					parts: 'full',
+					regional: 'nl',
+					altProperties: 'background-color,color'
+				});
+
+
+
+                var cpb = $('#cp-buttons').colorpicker({
+					showOn: '',
+					parts: ['bar', 'map']
+				});
+				$('#cp-button-open').click( function() {
+					cpb.colorpicker('open');
+				});
+				$('#cp-button-close').click( function() {
+					cpb.colorpicker('close');
+				});
+				$('#cp-button-disable').click( function() {
+					cpb.colorpicker('disable');
+				});
+				$('#cp-button-setcolor').click( function() {
+					cpb.colorpicker('setColor', '#99ff00');
+				});
+            });
+        </script>
 
 
         
@@ -65,26 +197,21 @@
 		    				<div class="theme-content" id="content_1" style="display: none">
 		    					
 		    				</div>
+<%=form_for @base_color do |f|%>							
 		    				<div class="theme-content" id="content_2">
 		    					<div class="theme-section">
 		    						<div class="theme-column">
 		    							<div class="colPicker-wrapper">
 		    								<ul>
-		    									<li id ="color-picker1" style="background:none repeat scroll 0	 0 #0099CC"><a href='/colorpicker' rel='facebox'>pick color<span class="piller"></span><span class="add"></span></a></li>
-		    									<li id ="color-picker2"><span class="piller"></span><span class="add"></span></li>
+		    									<li ><input type="hidden" id="cp1" name="color[]" value="fe9810"/><span class="piller"></span><span class="add"></span></li>
+		    									<li ><input type="hidden" id="cp2" name="color[]" value="fe9810"/><span class="piller"></span><span class="add"></span></li>
 
-		    									<li id ="color-picker3"><span class="piller"></span><span class="add"></span></li>
-		    									<li id ="color-picker4"><span class="piller"></span><span class="add"></span></li>
-		    									<li id ="color-picker5"><span class="piller"></span><span class="add"></span></li>
+		    									<li ><input type="hidden" id="cp3" name="color[]" value="fe9810"/><span class="piller"></span><span class="add"></span></li>
+		    									<li ><input type="hidden" id="cp4" name="color[]" value="fe9810"/><span class="piller"></span><span class="add"></span></li>
+		    									<li ><input type="hidden" id="cp5" name="color[]" value="fe9810"/><span class="piller"></span><span class="add"></span></li>
 		    								</ul>
 		    							</div>
-										<script>
-											
-											function input_example() {
-											    var cw = Raphael.colorwheel($("#input_example .colorwheel")[0], 150);
-											    cw.input($("#input_example input")[0]);
-											}
-										</script>
+										
 		    							<div class="variation-wrapper">
 		    								<div class="variation active">
 			    								<ul>
@@ -125,58 +252,23 @@
 		    						<div class="theme-column-right">
 		    							<div class="detail-row">
 		    								<span>name :</span>
-		    								<span><input type="text" /></span>
+		    								<span><%=f.text_field :name%></span>
 
 		    								<span><button class="saveColor" id="saveScheme"></button></span>
 		    							</div>
 		    							<div class="color-schemes">
 		    								<div class="variation-wrapper">
+		    									<%BaseColor.where(:created_by=>current_user.id).each do |b_c|%>
 			    								<div class="variation">
 				    								<ul>
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-
-				    									<li></li>
-				    									<li></li>
-				    								</ul>
-				    								<span class="variationTitle">variation 1</span>
+				    									<%b_c.colors.split(';').each do |color|%>
+				    									  <li style="background:none repeat scroll 0	 0 #<%=color%>"></li>
+														<%end%>			   
+													</ul>
+				    								<span class="variationTitle">User Base Color Schema</span>
 			    								</div>
-			    								<div class="variation">
-				    								<ul>
-				    									<li></li>
-
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    								</ul>
-				    								<span class="variationTitle">variation 2</span>
-			    								</div>
-			    								<div class="variation">
-
-				    								<ul>
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    								</ul>
-				    								<span class="variationTitle">variation 3</span>
-
-			    								</div>
-			    								<div class="variation">
-				    								<ul>
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    								</ul>
-
-				    								<span class="variationTitle">variation 3</span>
-			    								</div>
-		    								</div>
+												<%end%>
+			    							</div>
 		    								<div class="variation-wrapper">
 			    								<div class="variation">
 				    								<ul>
@@ -228,6 +320,7 @@
 		    						</div>
 		    					</div>
 		    				</div>
+<%end%>							
 		    				<div class="theme-content" id="content_3" style="display: none">
 
 		    					

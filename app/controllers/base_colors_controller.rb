@@ -42,10 +42,11 @@ class BaseColorsController < ApplicationController
   # POST /base_colors.json
   def create
     @base_color = BaseColor.new(params[:base_color])
-
+    @base_color.colors = params[:color].join(';')
+    @base_color.created_by = current_user.id
     respond_to do |format|
       if @base_color.save
-        format.html { redirect_to @base_color, notice: 'Base color was successfully created.' }
+        format.html { redirect_to "/base_colors/new", notice: 'Base color was successfully created.' }
         format.json { render json: @base_color, status: :created, location: @base_color }
       else
         format.html { render action: "new" }
