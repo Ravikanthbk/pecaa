@@ -1,6 +1,6 @@
 class AddDomainNameToSites < ActiveRecord::Migration
   def self.up
-    add_column "sites", "domain_name", :string
+#    add_column "sites", "domain_name", :string
   end
 
   def self.down
