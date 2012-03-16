@@ -79,7 +79,27 @@ $(document).ready(function(){
 	function validatePass1(){
 		var a = $("#password1");
 		var b = $("#password2");
-
+		$.ajax({
+		  url: "/validate_users",
+		  context: document.body,
+		  success: function(data){
+		  	if(data.test(/error/)){
+		    pass1.addClass("error");
+			pass1Info.text("At least 5 characters: letters, numbers and '_'");
+			pass1Info.addClass("error");
+			pass1.removeClass("correctField");
+			return false;
+            }
+			else{			
+			pass1.removeClass("error");
+			pass1Info.text("");
+			pass1Info.removeClass("error");
+			pass1.addClass("correctField");
+			//validatePass2();
+			return true;
+		}
+		  }
+		});
 		//it's NOT valid
 		if(pass1.val().length <5){
 			pass1.addClass("error");

@@ -11,9 +11,13 @@ class ApplicationController < ActionController::Base
   end 
 
   def authorize_user
+    if current_user.active?
     if current_user and not SubPermission.where("id in (select sub_permission_id from roles_sub_permissions where role_id=#{current_user.role_ids.join(',')})").collect(&:controller_name).include?(params[:controller])
      flash[:warning] = "You are not authorized person."
      redirect_to root_url
+    end
+    else
+      redirect_to '/logout'
     end
   end
   

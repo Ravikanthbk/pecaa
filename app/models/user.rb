@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
   has_many :addresses
   has_many :site_link_accounts
   belongs_to :created_by, :class_name => "User", :foreign_key => "created_by"
+  has_many :password_histories
 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
@@ -17,7 +18,7 @@ class User < ActiveRecord::Base
   
   validates :email, :presence => true, :uniqueness => true
   validates :username, :presence => true
-#  validates :password, :presence => true
+  validates :password, :presence => true, :length => { :in => 6..30 }, :format => { :with => /^.*(?=.{6,})(?=.*[a-z])(?=.*[A-Z]).*$/ }
   
   def role?(role)
     return !!self.roles.find_by_name(role.to_s.camelize)
@@ -26,5 +27,12 @@ class User < ActiveRecord::Base
   def addresses=address
     self.addresses.destroy_all
     self.addresses.new(address)
+  end
+  
+  before_save do |user|
+#    if user.password_changed?
+#    else
+#      
+#    end
   end
 end

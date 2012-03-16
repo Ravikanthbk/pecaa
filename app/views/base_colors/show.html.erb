@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Colors:</b>
+  <%= @base_color.colors %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @base_color.name %>
+</p>
+
+<p>
+  <b>Created by:</b>
+  <%= @base_color.created_by %>
+</p>
+
+
+<%= link_to 'Edit', edit_base_color_path(@base_color) %> |
+<%= link_to 'Back', base_colors_path %>

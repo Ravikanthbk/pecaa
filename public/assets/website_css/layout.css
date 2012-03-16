@@ -1,0 +1,157 @@
+body {
+    background: url("img/bg.gif") repeat scroll 0 0 transparent;
+    font: 12px Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body button,
+body a{
+	cursor: pointer;
+}
+.mainContainer {
+    margin: auto;
+    width: 100%;
+}
+.userEditHolder {
+    margin: auto;
+    width: 1024px;
+}
+.header-section{
+	overflow: hidden;
+}
+.header-section .topHeader{
+	background: url("img/bg_topHeader.gif") repeat-x;
+	height: 36px;
+}
+.topHeader .logoHolder{
+	display:block;
+	float:left;
+	background: url("img/pecaa_logo.png") no-repeat;
+	width:170px;
+	height:36px;
+}
+.topHeader .rightPanel{
+	float:right;
+}
+.rightPanel ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+	background:0;
+}
+.rightPanel ul li{
+	display:table-cell;
+	margin:0;
+	padding:0;
+	list-style: none;
+	background:0;
+}
+.rightPanel .help{
+	width:98px;
+	height:36px;
+	background: url("img/btn_help.png") no-repeat;
+}
+.rightPanel .myAccount{
+	width:166px;
+	height:36px;
+	background: url("img/btn_myAccount.png") no-repeat;
+}
+.rightPanel .logout{
+	width:113px;
+	height:36px;
+	background: url("img/btn_logOut.png") no-repeat;
+}
+.main-nav {
+	margin: 10px;
+	overflow: hidden;
+}
+.main-nav .navBtns{
+	float: left;
+}
+.main-nav ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+	background:0;
+}
+.main-nav ul li{
+	display:table-cell;
+	margin:0;
+	padding:0;
+	list-style: none;
+	height: 31px;
+}
+.main-nav ul li.siteInfo{
+	background: url(img/btn_siteInfo.png) no-repeat;
+	width: 113px;
+}
+.main-nav ul li.siteInfo.active{
+	background: url(img/btn_siteInfo_on.png) no-repeat;
+}
+.main-nav ul li.siteInfo.complete{
+	background: url(img/btn_siteInfo_done.png) no-repeat;
+}
+
+.main-nav ul li.pages{
+	background: url(img/btn_pages.png) no-repeat;
+	width: 100px;
+}
+.main-nav ul li.pages.active{
+	background: url(img/btn_pages_on.png) no-repeat;
+}
+.main-nav ul li.content{
+	background: url(img/btn_content.png) no-repeat;
+	width: 113px;
+}
+.main-nav ul li.theme{
+	background: url(img/btn_theme.png) no-repeat;
+	width: 103px;
+}
+.main-nav ul li.optional{
+	background: url(img/btn_optional.png) no-repeat;
+	width: 117px;
+}
+.main-nav ul li.done{
+	background: url(img/btn_done.png) no-repeat;
+	width: 84px;
+}
+.main-nav .rightBtns{
+	float: right;
+}
+.main-nav button.btn_Save{
+	background:url(img/btn_saveAndNext.png)no-repeat;
+	width: 189px;
+	height:31px;
+	border:0;
+	font-size:11px;
+	color:#FFF;
+	text-indent:-9999px;
+	cursor: pointer;
+}
+.main-nav button.btn_SaveAndGo{
+	background:url(img/btn_saveAndGo.png)no-repeat;
+	width: 117px;
+	height:31px;
+	border:0;
+	font-size:11px;
+	color:#FFF;
+	text-indent:-9999px;
+	cursor: pointer;
+}
+.main-nav button.btn_External{
+	background:url(img/btn_External.png)no-repeat;
+	width: 45px;
+	height:31px;
+	border:0;
+	color:#FFF;
+	text-indent:-9999px;
+	cursor: pointer;
+}
+.content-section{
+	clear:both;
+	width:95%;
+	min-height:500px;
+	padding: 0 25px;
+	margin-bottom:20px;
+}
+
