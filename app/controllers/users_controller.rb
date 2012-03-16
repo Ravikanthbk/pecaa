@@ -145,6 +145,11 @@ class UsersController < ApplicationController
     end
   end
   
+  def search
+    @search_link_account = User.where("username like ?", "%#{params[:query]}%")
+    render :partial=>"sites/site_link_account"
+  end
+  
   protected  
   
   def setup

@@ -13,8 +13,7 @@ $(document).ready(function() {
   $(".btnCancelForm").live('click', function(){
     $("#facebox").hide()
     $("#facebox_overlay").hide()
-  })
-
+  })  
 //  $(function() {
 //    $('textarea').tinymce({
 //      width: "98%",

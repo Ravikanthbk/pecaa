@@ -1,11 +1,12 @@
 class Site < ActiveRecord::Base
   has_many :site_links, :dependent => :delete_all
   has_many :site_contacts
+  has_many :site_link_accounts
   has_one  :address
   
   belongs_to :created_by, :class_name => "User", :foreign_key => "created_by"
   accepts_nested_attributes_for :address
-  accepts_nested_attributes_for :site_contacts
+  accepts_nested_attributes_for :site_contacts, :reject_if => lambda { |a| a[:name].blank? }, :allow_destroy => true
   
   validates_presence_of :name
   validates_length_of :name, :maximum => 255 

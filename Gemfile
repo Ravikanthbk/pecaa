@@ -55,3 +55,5 @@ gem 'paperclip-ffmpeg'
 gem 'ffmpeg'
 #gem 'tiny_mce'
 gem 'tinymce-rails'
+
+gem 'tzinfo'

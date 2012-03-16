@@ -1,5 +1,5 @@
 <div class="siteInfo-main">
-	<div class="intro-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae purus id mauris mollis tincidunt. Curabitur in pellentesque mi. Nulla facilisi. Nam vel venenatis diam. Curabitur urna arcu, egestas at vehicula ullamcorper, scelerisque non est. Pellentesque pulvinar massa eu velit pulvinar accumsan ac in est. Fusce mauris nulla, vestibulum ac semper id, mollis at lectus. Nullam placerat tempor nisl, quis tincidunt sapien lacinia ac. </p></div>
+	<div class="intro-text"><p>Some Intro Test "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae purus id mauris mollis tincidunt. Curabitur in pellentesque mi. Nulla facilisi. Nam vel venenatis diam. Curabitur urna arcu, egestas at vehicula ullamcorper, scelerisque non est. Pellentesque pulvinar massa eu velit pulvinar accumsan ac in est. Fusce mauris nulla, vestibulum ac semper id, mollis at lectus. Nullam placerat tempor nisl, quis tincidunt sapien lacinia ac." </p></div>
 	<div class="colum-wrapper">
 		<div class="colum-section">
 	  <%= form_for(@site) do |f| %>
@@ -58,49 +58,93 @@
         </div>
   			<div class="group country">
   				<span class="key">country:</span>
-          <span class="val"><%= site.text_field :country %></span>
+          <span class="val">
+          <%= site.select(:country, options_for_select(TZInfo::Country.all_codes.map {|code|
+            ["#{TZInfo::Country.get(code).name}", "#{code}" ]}), :prompt=>"Select Country")%>
+          </span>
   			</div>
       <% end -%>
 		</div>
 		
+		
 	<div class="colum-section last">
-		<div class="title contact_fields">Contact Details <span class="help"><a href="#"></a></span></div>
-        <%= render :partial => 'contact_form', :locals => { :f => f } %>
+		<div class="title">Contact Details <span class="help"><a href="#"></a></span></div>
+		<div class="contact_fields" >
+        <%= render :partial => 'site_contact_fields', :locals => { :f => f } %>
+    </div>
 		<div class="group">
-			<button class="btnAddContact" type="button"></button>
+		  <%= link_to_add_fields "Add Contact", f, :site_contacts %>
 		</div>
 			
 			<div class="title">Link to Existing Account <span class="help"><a href="#"></a></span></div>
 			<div class="group">
 					<div class="searchAC"><input type="text" class="search" placeholder="search accounts"></div>
 			</div>
-			<div class="group">
-					<div class="linkAc">
-						<div class="name">Bob Knowels</div>
-						<div class="company">Active Eyeware</div>
-						<div class="user">
-							<input type="checkbox" checked="checked">
-							<span>user can edit site</span>
-						</div>
-						<button class="linkAccount" type="button"></button>
-					</div>
-			</div>
-		  <div class="actions">
-        <%= f.submit %>
+			<div class="group" id="site_link_account">
+        <% @link_account.each do |a|%>
+          <div class="linkAc">
+            <div class="name"><%=a.account%></div>
+            <div class="company"><%=a.company%></div>
+            <div class="user">
+            	<input type="checkbox" checked="checked" id="editor_<%=a.id%>">
+            	<span>user can edit site</span>
+            </div>
+            <% link_to('', "/editor/#{a.id}", :class=>"linkAccount") %>
+          </div>
+        <%end%>
+        <div id="search_results"></div>
+      </div>
+			<div class="main-nav">
+      	<div class="rightBtns"><button class="btn_Save"><%= f.submit("Save and go to next step") %></button></div>
       </div>
     <% end %>
-      
 		</div>
 	</div>
 </div>
 <script>
-  $(".btnAddContact").click(function(){
-    $.ajax({
-      type: "GET",
-      url: "/sites/beta/rendering_partial",
-      success: function(data){
-        $('.contact_fields').append(data);
-      }
-    });
+var new_site = <%=@site.new_record?%>;
+var site_id = <%=@site.id ? @site.id : 0%>;
+
+   $(".remove_fields").live('click', function(){
+     var link = $(this)
+     $(link).prev("input[type=hidden]").val("1");
+     $(link).closest(".fields").hide();
+     return false;
   });
+
+  function add_fields(link, association, content) {
+    var new_id = new Date().getTime();
+    var regexp = new RegExp("new_" + association, "g");
+    $('.contact_fields').append(content.replace(regexp, new_id));
+        // $(link).parent().before(content.replace(regexp1, "["+new_id+"]"));
+  }
+  
+  $(".search").live('keydown', function(e){
+    if (e.keyCode == 13){
+      $.ajax({
+        type: "POST",
+        url: "/users/search",
+        data:"query="+$(this).attr('value'),
+        success: function(result){
+          $('#search_results').html(result);
+        }});
+        return false;
+    }
+  });
+  
+  $(".linkAccount").live('click', function(){
+    if (new_site == true){
+      
+      }
+      var acc = $("#editor_"+$(this).attr('rel')).val();
+      $.ajax({
+        type: "POST",
+        url: "/sites/0/site_link_account",
+        data:{id : , user_id : $(this).attr('rel'), access : acc},
+        success: function(result){
+          $('#site_link_account').html(result);
+        }});
+      return false;
+    });
+  
 </script>

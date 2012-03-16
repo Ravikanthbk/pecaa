@@ -13,6 +13,7 @@ Mystore3::Application.routes.draw do
 
   resources :sites do 
     get 'preview', :on => :member
+    post 'site_link_account', :on => :member
     get 'rendering_partial', :on => :member
     post 'search', :on => :collection
     resources :site_links do
@@ -52,7 +53,10 @@ Mystore3::Application.routes.draw do
 #  resources :users
 
 # devise_for :users,  :controllers => { :registrations => "users/registrations" }
- resources :users
+ resources :users do 
+   post 'search', :on => :collection
+ end
+
  devise_for :user
 #         :path_names => {:sign_in => "", :sign_out => "logout",:sign_up => "register"}
 

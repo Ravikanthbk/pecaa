@@ -27,7 +27,10 @@ class SitesController < ApplicationController
   # GET /sites/new.json
   def new
     @site = Site.new
-    @site.site_contacts.build
+    @link_account = SiteLinkAccount.where(:site_id=>@site.id)
+    # 3.times do 
+      @site.site_contacts.build
+    # end
     respond_to do |format|
       format.html {render :layout=>"site"}
     end
@@ -100,10 +103,19 @@ class SitesController < ApplicationController
   end
   
   def rendering_partial
-    render '/sites/_contact_form'
+    render :partial => "contact_form"
   end
   
-  
+  def site_link_account
+    @site = Site.find(params[:id])
+    access_to =  params[:access].to_i == "on" ? "All" : "Few"
+    @site.site_link_accounts.new({:user_id => params[:user_id], :access => access_to})
+    if @site.save
+      @search_link_account = SitelinkAccounts.where(:site)
+      render :partial => "site_link_account"
+    end
+  end
+
   protected
 
   def setup

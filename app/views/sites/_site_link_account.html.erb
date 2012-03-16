@@ -1,0 +1,17 @@
+<%if @search_link_account && @search_link_account.count > 0%>
+  <% @search_link_account.each do |a|%>
+    <div class="linkAc">
+      <div class="name"><%=a.username%></div>
+      <div class="company"><%=a.company%></div>
+      <div class="user">
+      	<input type="checkbox" checked="checked" id="editor_<%=a.id%>">
+      	<span>user can edit site</span>
+      </div>
+      <button class="linkAccount" type="button" rel="<%=a.id%>"></button>
+    </div>
+  <%end%>
+<%else%>
+  <div class="linkAc">
+    <span> No records found</span>
+  </div>
+<%end%>
