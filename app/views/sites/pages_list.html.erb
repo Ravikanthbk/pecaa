@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <title>pages_list.html</title>
+
+	  <%= stylesheet_link_tag "website_css/pages.css" %>
+	  
+	  <!--Nested Sortables-->
+<script type="text/javascript" src="/assets/externals/released-externals/jquery-1.1.4.js"></script>
+<script type="text/javascript" src="/assets/externals/released-externals/interface-1.2.js"></script>
+<script type="text/javascript" src="/assets/compressed/nested_sortable/inestedsortable.js"></script>
+    <style type="text/css">
+      div.wrap {
+        border:1px solid #BBBBBB;
+        padding: 1em 1em 1em 1em;
+      }
+      
+      .page-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+      
+      .clear-element {
+        clear: both;
+      }
+      
+      .page-item1 > div,
+      .page-item2 > div,
+      .page-item3 > div,
+      .page-item4 > div {
+        background: #f8f8f8;
+        margin: 0.25em 0 0 0;
+      }
+
+      .left {
+        text-align: left;
+      }
+      
+      .right {
+        text-align: right;
+      }
+
+      .sort-handle {
+        cursor:move;
+      }
+      
+      .helper {
+      border:2px dashed #777777;
+      }
+      
+      .current-nesting {
+        background-color: yellow;
+      }
+      
+      .bold {
+        color: red;
+        font-weight: bold;
+      }
+      
+    </style>
+ 
+  </head>
+  <body>
+        <div class="main-nav">
+          <div class="navBtns">
+            <ul>
+              <li class="siteInfo complete"></li>
+              <li class="pages active"></li>
+              <li class="content"></li>
+              <li class="theme"></li>
+              <li class="optional"></li>
+              <li class="done"></li>
+            </ul>
+          </div>
+          <div class="rightBtns"><button class="btn_External">ext</button><button class="btn_SaveAndGo">Save and go to next step</button></div>
+        </div>
+  </div>
+  <div class="content-section">
+            <div class="pages-main">
+              <div class="pages-wrapper">
+                <div class="site-pages">
+                <div class="title">Organize Site Pages <span class="help"><a href="#"></a></span></div>
+                  <div class="page-data">
+                            <div class="wrap">
+                                <span id="spans-divs" class="page-list">
+                                    <div class="clear-element page-item3 sort-handle left">
+                                        <div>Element 1</div>
+                                    </div>
+                                    <div class="clear-element page-item3 sort-handle left">
+                                        <div>Element 2</div>
+                                    </div>
+                                    <div class="clear-element page-item3 sort-handle left">
+                                        <div>Element 3</div>
+                                    </div>
+                                    <div class="clear-element page-item3 sort-handle left">
+                                       <div>Element 4</div>
+                                       <span class="page-list">
+                                                  <div class="clear-element page-item3 sort-handle left">
+                                                      <div>Element 5</div>
+                                            <span class="page-list">
+                                                      <div class="clear-element page-item3 sort-handle left">
+                                                          <div>Element 6</div>
+                                                      </div>
+                                            </span>
+                                          </div>
+                                        </span>
+                                    </div>
+                                </span>
+                            </div>
+                    <table class="pagesTable" cellpadding="0" cellspacing="0" border="0">
+                      <thead>
+                        <tr>
+                          <th class="pageName">Page Name</th>
+                          <th class="status"></th>
+                          <th class="home">Home Page</th>
+                          <th class="other">Other</th>
+                          <th class="misc"></th>
+                          <th class="misc"></th>
+                          <th class="misc"></th>
+                          <th class="misc"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="pageName">Home</td>
+                          <td class="status"><a href="#" class="on"></a></td>
+                          <td class="home"><input type="radio" checked="checked" /></td>
+                          <td class="other">Other Info?</td>
+                          <td class="misc"></td>
+                          <td class="misc"></td>
+                          <td class="misc"></td>
+                          <td class="misc"></td>
+                        </tr>
+                        <tr class="selected">
+                          <td>Home</td>
+                          <td class="status"><a href="#" class="on"></a></td>
+                          <td class="home"><input type="radio" value="off" /></td>
+                          <td class="other">Other Info?</td>
+                          <td class="misc"><img src="css/img/btnCopy.png" border="0"></td>
+                          <td class="misc"><img src="css/img/btnSEO.png" border="0"></td>
+                          <td class="misc"><img src="css/img/btnEdit.png" border="0"></td>
+                          <td class="misc"><img src="css/img/btnDelete.png" border="0"></td>
+                        </tr>
+                        <tr>
+                          <td>Home</td>
+                          <td class="status"><a href="#" class="on"></a></td>
+                          <td class="home"><input type="radio" checked="checked" /></td>
+                          <td class="other">Other Info?</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Home</td>
+                          <td class="status"><a href="#" class="on"></a></td>
+                          <td class="home"><input type="radio" value="off" /></td>
+                          <td class="other">Other Info?</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Home</td>
+                          <td class="status"><a href="#" class="on"></a></td>
+                          <td class="home"><input type="radio" value="off" /></td>
+                          <td class="other">Other Info?</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Home</td>
+                          <td class="status"><a href="#" class="off"></a></td>
+                          <td class="home"><input type="radio" value="off" /></td>
+                          <td class="other">Other Info?</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Home</td>
+                          <td class="status"><a href="#" class="on"></a></td>
+                          <td class="home"><input type="radio" value="off" /></td>
+                          <td class="other">Other Info?</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Home</td>
+                          <td class="status"><a href="#" class="on"></a></td>
+                          <td class="home"><input type="radio" value="off" /></td>
+                          <td class="other">Other Info?</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Home</td>
+                          <td class="status"><a href="#" class="off"></a></td>
+                          <td class="home"><input type="radio" value="off" /></td>
+                          <td class="other">Other Info?</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Home</td>
+                          <td class="status"><a href="#" class="on"></a></td>
+                          <td class="home"><input type="radio" value="off" /></td>
+                          <td class="other">Other Info?</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Home</td>
+                          <td class="status"><a href="#" class="on"></a></td>
+                          <td class="home"><input type="radio" value="off"   /></td>
+                          <td class="other">Other Info?</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td colspan="8"></td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                    
+                  </div>
+                  <div class="rightBtns">
+                    <a href="/sites/new?preferred_link=true"><input  class="addPage" type="button"></input></a>
+                    <button class="addLink" type="button"></button>
+                  </div>
+                </div>
+                
+
+              <div class="subNav">
+                <div class="title">Choose Sub Nav Type <span class="help"><a href="#"></a></span></div>
+                  <div class="subNav-wrapper">
+                    <div class="subNav-section">
+                      <div><input type="radio" checked="checked" />use dropdown type</div>
+                      <div class="dropDownType"><img src="css/img/img_dropdown1.png" border="0"></div>
+                    </div>
+                    <div class="subNav-section">
+                      <div><input type="radio" checked="checked" />use dropdown type</div>
+                      <div class="dropDownType"><img src="css/img/img_dropdown2.png" border="0"></div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+            
+            </div>
+          </div>
+  <%= yield %>
+  </body>
+  
+  
+  <script type="text/javascript">
+jQuery( function($) {
+
+$('#spans-divs').NestedSortable(
+  {
+  accept: 'page-item3',
+  opacity: 0.8,
+  helperclass: 'helper',
+  nestingPxSpace: 20,
+  currentNestingClass: 'current-nesting',
+  fx:400,
+  revert: true,
+  autoScroll: false
+  }
+);
+
+
+});
+</script>
+    
+</html>

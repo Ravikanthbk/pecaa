@@ -1,0 +1,142 @@
+.siteInfo-main{
+	border-radius: 6px;
+	background:#FFFFFF;
+	border:1px solid #333;
+	min-height:500px;
+	-moz-box-shadow: inset 0px 1px 3px #CCC;
+   	-webkit-box-shadow: inset 0px 1px 3px #CCC;
+  	box-shadow: inset 0px 1px 3px #CCC;
+  	overflow: hidden;
+}
+.siteInfo-main .intro-text{
+	padding:40px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+}
+.colum-wrapper {
+	padding:0 50px;
+}
+.colum-section{
+	float: left;
+	width:350px;
+	margin-right:100px;
+	margin-bottom:30px;
+	
+}
+.colum-section.last{
+	margin-right:0;
+}
+.colum-section .title{
+	font-size:20px;
+	padding-left:100px;
+	color:#666666;
+	margin-bottom:10px;
+}
+.colum-section .title .help{
+	float: right;
+	background:url(img/icon_help.png) no-repeat;
+	width: 25px;
+	height:25px;
+}
+.help a{
+	display:block;
+}
+.group {
+	overflow: hidden;
+}
+.group.next{
+	margin-top:10px;
+}
+.group .key{
+	width: 95px;
+	text-align:right;
+	float:left;
+	margin-right:5px;
+	padding-top: 4px;
+	color:#666666;
+}
+.group .btnAddContact{
+	background:url(img/btn_addContact.png) no-repeat;
+	width:116px;
+	height:25px;
+	border:0;
+	float:right;
+	margin-bottom:30px;
+}
+
+.group .val{
+	width: 250px;
+	color:#333;
+	float:left;
+	margin-bottom:4px;
+}
+
+.group .val input[type="text"]{
+	background: #f5f5f5;
+	border-radius: 6px;
+	border:0;
+	color:#333;
+	width: 245px;
+	height: 24px;
+	padding-left:5px;
+	margin-bottom: 5px;
+}
+.group .val .zipCode{
+	float: right;
+}
+.group .val .zipCode input[type="text"]{
+	background: #f5f5f5;
+	border-radius: 6px;
+	border:0;
+	color:#333;
+	width: 100px;
+	height: 24px;
+	margin-bottom:5px;
+}
+.group.country .val select{
+	width:100%;
+}
+.searchAC {
+	float: right;
+}
+.searchAC input[type="text"]{
+	height: 32px;
+	width: 245px;
+	background: url(img/icon_Zoom.png) no-repeat 100% 0;
+	border:1px solid #cccccc;
+	border-radius: 6px;
+	padding-left:5px;
+	font-size: 18px;
+	color: #666666;
+	margin-bottom:10px;
+}
+.linkAc{
+	background: #f2f6f8;
+	border:1px solid #cccccc;
+	border-radius: 6px;
+	width: 230px;
+	padding:10px;
+	float: right;
+}
+.linkAc .name{
+	color:#666666;
+	font-size:14px;
+	font-weight: bold;
+	
+}
+.linkAc .company{
+	color:#666666;
+	font-size:14px;
+	margin-bottom:10px;
+}
+.linkAc .user{
+	margin-bottom:10px;
+}
+.linkAc .linkAccount{
+	float: right;
+	background: url(img/btn_linkAccount.png) no-repeat;
+	width: 126px;
+	height:25px;
+	border:0;
+}
