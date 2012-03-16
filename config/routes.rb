@@ -22,6 +22,7 @@ Mystore3::Application.routes.draw do
     get 'preview', :on => :member
     get 'rendering_partial', :on => :member
     post 'search', :on => :collection
+    get 'pages_list', :on => :collection
     resources :site_links do
       post 'search', :on => :collection
     end
