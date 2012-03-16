@@ -1,0 +1,155 @@
+.pages-main{
+	min-height:500px;
+  	overflow: hidden;
+}
+.pages-wrapper {
+}
+.site-pages{
+	float: left;
+	width:70%;
+	margin-right:20px;
+	margin-bottom:30px;
+}
+.subNav{
+	width:27%;
+	float:right;
+}
+.site-pages .title,
+.subNav .title{
+	font-size:20px;
+	color:#99aec0;
+	margin-bottom:5px;
+}
+
+.title .help{
+	float: right;
+	background:url(img/helpIcon.png) no-repeat;
+	width: 20px;
+	height:20px;
+}
+.help a{
+	display:block;
+}
+
+.site-pages table{
+	table-layout: fixed;
+	border: 1px solid #333333;
+	border-radius: 6px;
+}
+.site-pages table thead {
+	background: #666666;
+	color:#FFFFFF;
+}
+.site-pages table th {
+	padding:5px;
+	border-bottom: 1px solid #333333;
+}
+.site-pages table tbody td{
+	padding: 5px;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #666666;
+	border-top: 1px solid #f0f0f0;
+}
+.site-pages table tbody tr{
+	background:#f0f0f0;
+}
+.site-pages table tfoot td {
+	background: #666666;
+	height:15px;
+	border-top: 1px solid #333333;
+}
+.site-pages .alt {
+	background:#cccccc;
+}
+.site-pages .selected {
+	background:#787878;
+}
+.site-pages .selected td {
+	border-top:1px solid #333333;
+	border-bottom:1px solid #333333;
+}
+
+.site-pages table td:first-child{
+	padding-left:20px;
+	border-left: 0;
+}
+.site-pages table tbody tr:first-child td{
+	border-top: 0;
+	background: -moz-linear-gradient(bottom,  #cccccc, #cccccc,  #cccccc,  #666666);
+	background: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#cccccc), to(#cccccc), to(#cccccc));
+}
+.site-pages table tbody tr:last-child td{
+	border-bottom: 0;
+	background: -moz-linear-gradient(top,  #cccccc, #cccccc,  #cccccc,  #666666);
+	background: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#cccccc), to(#cccccc), to(#cccccc));
+}
+
+
+.site-pages table .pageName{
+	width:170px;
+	text-align: left;
+	padding-left:20px;	
+}
+.site-pages table .status,
+.site-pages table .home{
+	width:50px;	
+	padding: 0 3px 0 3px;
+	text-align: center;
+}
+.status .on{
+	width: 48px;
+	height:21px;
+	background: url(img/bg_On.png) no-repeat;
+	display:block;
+}
+.status .off{
+	width: 48px;
+	height:21px;
+	background: url(img/bg_Off.png) no-repeat;
+	display:block;
+}
+.site-pages table .other{
+	width:200px;
+	text-align: center;	
+}
+.site-pages table .misc{
+	text-align: center;
+    width: 35px;
+}
+.subNav-wrapper{
+	background:#FFFFFF;
+	-moz-box-shadow: inset 0px 1px 4px #666666;
+	-webkit-box-shadow: inset 0px 1px 4px #666666;
+	 box-shadow: inset 0px 1px 4px #666666;
+	 border-radius: 6px;
+	 border:1px solid #333;
+	 height:365px;
+	 padding:10px;
+}
+.subNav-section div{
+	margin-bottom:8px;
+}
+.subNav-section{
+	margin-bottom:50px;
+}
+.page-data{
+	margin-bottom:10px;
+}
+.rightBtns{
+	float: right;
+}
+.rightBtns button{
+	margin-left:10px;
+}
+.rightBtns .addPage{
+	width: 96px;
+	height:30px;
+	border:0;
+	background:url(img/btnAddPage.png) no-repeat;
+}
+.rightBtns .addLink{
+	width: 194px;
+	height:30px;
+	border:0;
+	background:url(img/btnAddLink.png) no-repeat;
+}
