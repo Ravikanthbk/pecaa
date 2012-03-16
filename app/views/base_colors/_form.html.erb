@@ -258,63 +258,29 @@
 		    							</div>
 		    							<div class="color-schemes">
 		    								<div class="variation-wrapper">
-		    									<%BaseColor.where(:created_by=>current_user.id).each do |b_c|%>
+		    									<%BaseColor.where(:created_by=>current_user.id).order('created_at').limit(4).each do |b_c|%>
 			    								<div class="variation">
 				    								<ul>
 				    									<%b_c.colors.split(';').each do |color|%>
 				    									  <li style="background:none repeat scroll 0	 0 #<%=color%>"></li>
 														<%end%>			   
 													</ul>
-				    								<span class="variationTitle">User Base Color Schema</span>
+				    								<span class="variationTitle"><%=b_c.name%></span>
 			    								</div>
 												<%end%>
 			    							</div>
 		    								<div class="variation-wrapper">
+												<%BaseColor.where(:created_by=>current_user.id).order('created_at').offset(4).limit(4).each do |b_c|%>
 			    								<div class="variation">
 				    								<ul>
-				    									<li></li>
-				    									<li></li>
-
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    								</ul>
-				    								<span class="variationTitle">variation 1</span>
+				    									<%b_c.colors.split(';').each do |color|%>
+				    									  <li style="background:none repeat scroll 0	 0 #<%=color%>"></li>
+														<%end%>			   
+													</ul>
+				    								<span class="variationTitle"><%=b_c.name%></span>
 			    								</div>
-			    								<div class="variation">
-				    								<ul>
+												<%end%>
 
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    								</ul>
-				    								<span class="variationTitle">variation 2</span>
-			    								</div>
-
-			    								<div class="variation">
-				    								<ul>
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    								</ul>
-				    								<span class="variationTitle">variation 3</span>
-
-			    								</div>
-			    								<div class="variation">
-				    								<ul>
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    									<li></li>
-				    								</ul>
-
-				    								<span class="variationTitle">variation 3</span>
-			    								</div>
 		    								</div>
 		    							</div>
 		    						</div>
