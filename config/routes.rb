@@ -18,6 +18,9 @@ Mystore3::Application.routes.draw do
   resources :add_files
   resources :add_forms
   
+   resources :pages
+  resources :external_links
+  
   resources :sites do 
     get 'preview', :on => :member
     post 'site_link_account', :on => :member
