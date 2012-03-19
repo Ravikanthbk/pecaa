@@ -80,22 +80,30 @@
 		</div>
 			
 			<div class="title">Link to Existing Account <span class="help"><a href="#"></a></span></div>
-			<div class="group">
-					<div class="searchAC"><input type="text" class="search" placeholder="search accounts"></div>
+			<div class="group" id="link_account">
+			  <%= render :partial => 'link_accounts'%>
 			</div>
+			<div class="group searchAC">
+			  <input type="text" class="search" placeholder="search accounts">
+			</div>
+			<div style="clear:both"></div>
+      
 			<div class="group" id="site_link_account">
         <div id="search_results"></div>
       </div>
 			<div class="main-nav">
-      	<div class="rightBtns"><button class="btn_Save"><%= f.submit("Save and go to next step") %></button></div>
+      	<div class="rightBtns"><button class="btn_Save">
+      	  <%= f.submit("Save and go to next step") %></button>
+      	</div>
       </div>
     <% end %>
 		</div>
 	</div>
 </div>
 <script>
+var acc_val =[];
 var new_site = <%=@site.new_record?%>;
-var site_id = <%=@site.id ? @site.id : 0%>;
+var siteid = <%=@site.id ? @site.id : 0%>;
 
    $(".remove_fields").live('click', function(){
      var link = $(this)
@@ -123,22 +131,31 @@ var site_id = <%=@site.id ? @site.id : 0%>;
         return false;
     }
   });
-  
   $(".linkAccount").live('click', function(){
-    console.log(new_site);
-    if (new_site){
+    var acc = $("#editor_"+$(this).attr('rel')).is(':checked');
+    var u_id = $(this).attr('rel');
+    if(new_site){
+      var s = $("#site_link_accounts");
+      acc_val.push($(this).attr('rel')+"_"+acc);
+      s.attr('value', acc_val);
+    }else{
       
-      }else{
-        var acc = $("#editor_"+$(this).attr('rel')).val();
-        $.ajax({
-          type: "POST",
-          url: "/sites/site_link_account",
-          data:{id : site_id , user_id : $(this).attr('rel'), access : acc},
-          success: function(result){
-            $('#site_link_account').html(result);
-          }});
-      }
-      return false;
-    });
+      make_request(u_id, false);
+    }
+    return false;
+  });
+  
+  function make_request(uid, rm){
+    var acc = $("#editor_"+ uid).is(':checked');
+    $.ajax({
+      type: "POST",
+      url: "/sites/site_link_account",
+      data:{site_id : siteid , user_id : uid, access : acc, remove : rm},
+      success: function(result){
+        $('#link_account').html(result);
+        if( rm == true){$('#'+uid).remove}
+      }});
+  }
+  
   
 </script>
