@@ -34,7 +34,10 @@ Mystore3::Application.routes.draw do
   
   resources :images
   resources :videos
-  resources :content_libraries
+
+  resources :content_libraries do
+    get 'search', :on => :collection
+  end
   
   match 'colorpicker', :to => "base_colors#colorpicker", :as => :colorpicker 
   

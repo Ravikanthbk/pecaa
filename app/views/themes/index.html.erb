@@ -1,31 +1,290 @@
-<h1>Listing themes</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Base color</th>
-    <th>Theme type</th>
-    <th>Css style</th>
-    <th>Created by</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @themes.each do |theme| %>
-  <tr>
-    <td><%= theme.name %></td>
-    <td><%= theme.base_color_id %></td>
-    <td><%= theme.theme_type %></td>
-    <td><%= theme.css_style %></td>
-    <td><%= theme.created_by %></td>
-    <td><%= link_to 'Show', theme %></td>
-    <td><%= link_to 'Edit', edit_theme_path(theme) %></td>
-    <td><%= link_to 'Destroy', theme, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Theme', new_theme_path %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>PECAA</title>
+        <%= stylesheet_link_tag "layout" %>
+        <%= stylesheet_link_tag "themes" %>
+        <%= javascript_include_tag 'jquery-1.4.2.min'%>
+<%= javascript_include_tag 'jquery-ui-1.8.2.custom.min'%>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        	
+        	$(".theme-snap").hover(function () {
+			    	$(this).find(".hover-box").fadeIn();
+			  	},
+			  	function () {
+			   		$(this).find(".hover-box").fadeOut();
+			  	}
+			)
+        })
+			
+        </script>
+        
+    </head>
+    <body>
+    	<div class="mainContainer">
+	    	<div class="userEditHolder">	
+		    	<div class="header-section">
+		    		<div class="topHeader">
+		    			<div class="logoHolder"></div>
+		    			<div class="rightPanel">
+		    				<ul>
+		    					<li class="help"></li>
+		    					<li class="myAccount"></li>
+		    					<li class="logout"></li>
+		    				</ul>
+		    			</div>
+		    		</div>
+		    		<div class="main-nav">
+		    			<div class="navBtns">
+		    				<ul>
+		    					<li class="siteInfo complete"></li>
+		    					<li class="pages complete"></li>
+		    					<li class="content complete"></li>
+		    					<li class="theme active"></li>
+		    					<li class="optional"></li>
+		    					<li class="done"></li>
+		    				</ul>
+		    			</div>
+		    			<div class="rightBtns">
+		    				<button class="btn_External">ext</button>
+		    				<button class="btn_SaveAndGo">Save and go to next step</button>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="content-section">
+		    		<div class="themes-main">
+		    			<div class="themes-wrapper">
+		    				<div class="tabs">
+		    					<ul>
+		    						<li><a href="#">Choose Theme</a></li>
+		    						<li class="active"><a href="#">Choose Base Colors</a></li>
+		    						<li><a href="#">Edit All Styles</a></li>
+		    					</ul>
+		    				</div>
+		    				
+		    				<div class="theme-content" id="content_1">
+		    					<div class="theme-section">
+		    						<div class="theme-column">
+		    							<div class="searchTheme">
+		    								<input type="text" placeholder="search themes" />
+		    								<span class="searchIcon"><a href="#"></a></span>
+		    							</div>
+		    							<div class="choose-baseColor">
+		    								<div class="colorPick"><span class="piller"></span><span class="add"></span></div>
+		    								<span class="nameText">choose base color</span>
+		    								<span class="iconDelete"><a href="#"></a></span>
+		    							</div>
+		    							<div class="sortBy">
+		    								<select>
+		    									<option>sort by..</option>
+		    									<option>theme</option>
+		    								</select>
+		    							</div>
+		    							
+		    						</div>
+		    						<div class="theme-column-right">
+		    							<div class="theme-tabs">
+		    								<ul>
+		    									<li class="active"><a href="#">Purchased</a></li>
+		    									<li><a href="#">Premium</a></li>
+		    									<li><a href="#">Free</a></li>
+		    									<li><a href="#">Favorites</a></li>
+		    								</ul>
+		    							</div>
+		    							<div id="tab-purchased" class="theme-tabContent">
+		    								<div class="theme-carousel">
+		    									<div class="leftBtn"><a href="#"></a></div>
+		    									<div class="carousel-content">
+		    										<div class="theme-item">
+		    											<div class="theme-title">Theme 1</div>
+		    											<div class="theme-snap">
+		    												<div class="hover-box">
+		    													<div class="pointer"></div>
+		    													<div class="colorSnap"></div>
+		    													<div class="themeDetail">
+		    														<div class="theme-name">Theme 1</div>
+		    														<div>ID# 9323857098345</div>
+		    														<div>purchased</div>
+		    														<div class="theme-rating"></div>
+		    													</div>
+		    													<div class="themeBtns">
+		    														<button class="btn_Fav"></button>
+		    														<button class="btn_Edit"></button>
+		    													</div>
+		    												</div>
+		    											</div>
+		    											<div class="theme-rating"></div>
+		    											<div class="theme-price">$150.00</div>
+		    											<div class="theme-action"><button class="btnPurchase"></button></div>
+		    										</div>
+		    										<div class="theme-item">
+		    											<div class="theme-title">Theme 1</div>
+		    											<div class="theme-snap">
+		    												<div class="hover-box">
+		    													<div class="pointer"></div>
+		    													<div class="colorSnap"></div>
+		    													<div class="themeDetail">
+		    														<div class="theme-name">Theme 1</div>
+		    														<div>ID# 9323857098345</div>
+		    														<div>purchased</div>
+		    														<div class="theme-rating"></div>
+		    													</div>
+		    													<div class="themeBtns">
+		    														<button class="btn_Fav"></button>
+		    														<button class="btn_Edit"></button>
+		    													</div>
+		    												</div>
+		    											</div>
+		    											<div class="theme-rating"></div>
+		    											<div class="theme-price">$150.00</div>
+		    											<div class="theme-action"><button class="btnPurchase"></button></div>
+		    										</div>
+		    										<div class="theme-item">
+		    											<div class="theme-title">Theme 1</div>
+		    											<div class="theme-snap">
+		    												<div class="hover-box">
+		    													<div class="pointer"></div>
+		    													<div class="colorSnap"></div>
+		    													<div class="themeDetail">
+		    														<div class="theme-name">Theme 1</div>
+		    														<div>ID# 9323857098345</div>
+		    														<div>purchased</div>
+		    														<div class="theme-rating"></div>
+		    													</div>
+		    													<div class="themeBtns">
+		    														<button class="btn_Fav"></button>
+		    														<button class="btn_Edit"></button>
+		    													</div>
+		    												</div>
+		    											</div>
+		    											<div class="theme-rating"></div>
+		    											<div class="theme-price">$150.00</div>
+		    											<div class="theme-action"><button class="btnPurchase"></button></div>
+		    										</div>
+		    										<div class="theme-item">
+		    											<div class="theme-title">Theme 1</div>
+		    											<div class="theme-snap">
+		    												<div class="hover-box">
+		    													<div class="pointer"></div>
+		    													<div class="colorSnap"></div>
+		    													<div class="themeDetail">
+		    														<div class="theme-name">Theme 1</div>
+		    														<div>ID# 9323857098345</div>
+		    														<div>purchased</div>
+		    														<div class="theme-rating"></div>
+		    													</div>
+		    													<div class="themeBtns">
+		    														<button class="btn_Fav"></button>
+		    														<button class="btn_Edit"></button>
+		    													</div>
+		    												</div>
+		    											</div>
+		    											<div class="theme-rating"></div>
+		    											<div class="theme-price">$150.00</div>
+		    											<div class="theme-action"><button class="btnPurchase"></button></div>
+		    										</div>
+		    										<div class="theme-item">
+		    											<div class="theme-title">Theme 1</div>
+		    											<div class="theme-snap">
+		    												<div class="hover-box">
+		    													<div class="pointer"></div>
+		    													<div class="colorSnap"></div>
+		    													<div class="themeDetail">
+		    														<div class="theme-name">Theme 1</div>
+		    														<div>ID# 9323857098345</div>
+		    														<div>purchased</div>
+		    														<div class="theme-rating"></div>
+		    													</div>
+		    													<div class="themeBtns">
+		    														<button class="btn_Fav"></button>
+		    														<button class="btn_Edit"></button>
+		    													</div>
+		    												</div>
+		    											</div>
+		    											<div class="theme-rating"></div>
+		    											<div class="theme-price">free</div>
+		    											<div class="theme-action"><button class="btnApply"></button></div>
+		    										</div>
+		    										<div class="theme-item">
+		    											<div class="theme-title">Theme 1</div>
+		    											<div class="theme-snap">
+		    												<div class="hover-box">
+		    													<div class="pointer"></div>
+		    													<div class="colorSnap"></div>
+		    													<div class="themeDetail">
+		    														<div class="theme-name">Theme 1</div>
+		    														<div>ID# 9323857098345</div>
+		    														<div>purchased</div>
+		    														<div class="theme-rating"></div>
+		    													</div>
+		    													<div class="themeBtns">
+		    														<button class="btn_Fav"></button>
+		    														<button class="btn_Edit"></button>
+		    													</div>
+		    												</div>
+		    											</div>
+		    											<div class="theme-rating"></div>
+		    											<div class="theme-price">Purchased</div>
+		    											<div class="theme-action"><button class="btnEdit"></button></div>
+		    										</div>
+		    										<div class="theme-item">
+		    											<div class="theme-title">Theme 1</div>
+		    											<div class="theme-snap">
+		    												<div class="hover-box">
+		    													<div class="pointer"></div>
+		    													<div class="colorSnap"></div>
+		    													<div class="themeDetail">
+		    														<div class="theme-name">Theme 1</div>
+		    														<div>ID# 9323857098345</div>
+		    														<div>purchased</div>
+		    														<div class="theme-rating"></div>
+		    													</div>
+		    													<div class="themeBtns">
+		    														<button class="btn_Fav"></button>
+		    														<button class="btn_Edit"></button>
+		    													</div>
+		    												</div>
+		    											</div>
+		    											<div class="theme-rating"></div>
+		    											<div class="theme-price">$150.00</div>
+		    											<div class="theme-action"><button class="btnPurchase"></button></div>
+		    										</div>
+		    									</div>
+		    									<div class="rightBtn"><a href="#"></a></div>
+		    								</div>
+		    							</div>
+		    							<div id="tab-premium" class="theme-tabContent" style="display: none">
+		    								
+		    							</div>
+		    							<div id="tab-free" class="theme-tabContent" style="display: none">
+		    								
+		    							</div>
+		    							<div id="tab-favorites" class="theme-tabContent" style="display: none">
+		    								
+		    							</div>
+		    						</div>
+		    					</div>
+		    				</div>
+		    				<div class="theme-content" id="content_2" style="display: none">
+		    					
+		    				</div>
+		    				<div class="theme-content" id="content_3" style="display: none">
+		    					
+		    				</div>
+		    			</div>
+		    			<div class="themes-board">
+		    				<div class="grid-board">
+		    					
+		    				</div>
+		    			</div>
+		    			
+		    		</div>
+		    	</div>
+		    	
+	    	</div>
+        </div>
+    </body>
+</html>

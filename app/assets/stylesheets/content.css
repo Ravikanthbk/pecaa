@@ -1,0 +1,218 @@
+.content-main .content-wrapper{
+	min-height: 180px;
+	position: relative;
+	margin-top: 10px;
+}
+.content-tabs{
+	position: relative;
+	height:39px;
+}
+.content-tabs ul{
+	margin:0;
+	padding:0;
+	background:0;
+	position: absolute;
+}
+.content-tabs ul li{
+	margin:0 5px 0 0;
+	padding:0;
+	background: url(/assets/bg_ContentTab.png) repeat-x 0 bottom;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	width:95px;
+	display:inline-block;
+	font-size:18px;
+	line-height:18px;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding:10px 0 10px 0;
+	text-align: center;
+	border: 1px solid #333;
+}
+.content-tabs ul li.active{
+	background:#acc0d1;
+	border-bottom: 1px solid #acc0d1;
+}
+.tabContent{
+	background:#acc0d1;
+	border-radius: 4px;
+	border-top-left-radius: 0px;
+	border:0;
+	border: 1px solid #333333;
+}
+.tabContent .tabContent-wrapper{
+	margin:7px 0 7px 0;
+	min-height: 92px;
+	border-top:1px solid #333333;
+	border-bottom:1px solid #333333;
+	padding:0;
+}
+.tabContent-wrapper .navLeft,
+.tabContent-wrapper .navRight{
+	float: left;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 35px;
+    width: 20px;
+}
+.tabContent-wrapper .navLeft{
+	background: url(/assets/bg_NavLeft.png) no-repeat;
+}
+.tabContent-wrapper .navRight{
+	background: url(/assets/bg_NavRight.png) no-repeat;
+}
+.tabContent-wrapper .item-wrapper{
+	width: 906px;
+	height:93px;
+	float:left;
+	border-left:1px solid #333;
+	background:url(/assets/bg_contentItems.png)repeat-x;
+	position: relative;
+}
+.item-wrapper .leftShadow,
+.item-wrapper .rightShadow{
+	position: absolute;
+	top:0;
+	width:20px;
+	height:93px;
+	display:block;
+	z-index: 1;
+}
+.item-wrapper .leftShadow{
+	background:url(/assets/bg_leftShadow.png) repeat-y;
+	left:0;
+}
+.item-wrapper .rightShadow{
+	background:url(/assets/bg_rightShadow.png) repeat-y;
+	right:0;
+}
+.item-wrapper ul{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	background:none;
+}
+.item-wrapper ul li{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+.item-wrapper .item{
+	background:#bcbec0;
+	border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    color: #FFFFFF;
+    display: table-cell;
+    float: left;
+    font-size: 12px;
+    height: 30px;
+    text-align: center;
+    width: 150px;
+    position: relative;
+}
+.item-wrapper .item.newItem{
+	background:url(/assets/bg_newItem.png)repeat;
+}
+.item-wrapper .item:hover{
+	background:url(/assets/bg_ItemHover.png)repeat-x;
+	cursor: pointer;
+}
+.item span.dragable{
+	background:url(/assets/icon_Dragable.png)no-repeat;
+	display: block;
+    float: right;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.item span.title{
+	display: inline-block;
+    overflow: hidden;
+    width: 120px;
+    line-height: 26px;
+    vertical-align: middle;
+}
+.item .hotspot{
+	position: absolute;
+	top: 33px;
+	width: 128px;
+	height:90px;
+	padding:10px;
+	border-radius:4px;
+	border:1px solid #333333;
+	background:#666666;
+	z-index: 9999;
+	display: none;
+}
+.item .hotspot .pointer{
+	width:30px;
+	height:10px;
+	position: absolute;
+	top: -10px;
+	left: 44%;
+	background: url(/assets/hotspotPointer.png) no-repeat;
+}
+.item .hotspot .hotspotContent{
+	background:#333;
+}
+.searchContent {
+	background:#FFFFFF;
+	border:1px solid #666666;
+	border-radius:4px;
+	-moz-box-shadow: inset 0px 0px 3px #999;
+	-webkit-box-shadow: inset 0px 0px 3px #999;
+	margin-bottom:10px;
+	position: absolute;
+	right:0;
+}
+.searchContent .searchIcon{
+	display:inline-block;
+	background: url(/assets/icon_Search.gif) no-repeat;
+	height:32px;
+	width:30px;
+	vertical-align: middle;
+}
+.searchContent input[type="text"]{
+	background:none;
+	width:155px;
+	vertical-align: middle;
+	border:0;
+	padding-left:3px;
+	font-size:16px;
+}
+.themes-board{
+	height:70%;
+	top:270px;
+}
+.contentObject{
+	position: absolute;
+	z-index: 99999;
+}
+.contentObject .expandable{
+	background:#0099CC;
+	opacity: 0.2;
+	position: relative;
+}
+.expandable .delete,
+.expandable .drag,
+.expandable .scale{
+	position: absolute;
+	background:red;
+	display:block;
+}
+.expandable .delete{
+	left:-2px;
+	top:-2px;
+}
+.expandable .drag{
+	right:-101%;
+	top:-2px;
+}
+.expandable .scale{
+	right:-101%;
+	bottom:-2px;
+}
