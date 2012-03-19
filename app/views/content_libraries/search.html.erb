@@ -29,17 +29,22 @@
 											<%@content_libraries.each do |content|%>
 											<li class="item newItem">
 												<span class="title"><%=truncate(content.name, :length => 15, :separator => '..')%></span><span class="dragable"></span>
-												<%if content.source_type == "Image" or content.source_type == "Video"%>
+												<%if content.source_type == "Image"%>
 												<div class="hotspot" style="display: none;">
 													<span class="pointer"></span>
 													<div class="hotspotContent"><img border="0" src="<%=content.source.upload%>" width="120" height="90"></div>
+												</div>
+												<%elsif content.source_type == "Video"%>
+												<div class="hotspot" style="display: none;">
+													<span class="pointer"></span>
+													<div class="hotspotContent"><img border="0" src="<%=content.source.source%>" width="120" height="90"></div>
 												</div>
 												<%end%>
 											</li>
 											<%end%>
 										</ul>
 									</div>
-									<div class="navRight"><a href="#"></a></div>
+									<div class="navRight"><a href="<%=request.url.split(/&page=(.*)/).join('&page=#{params[:page]+1}')%>"></a></div>
 								</div>
 		    				</div>
 		    				<div  id="content_2" class="tabContent">
