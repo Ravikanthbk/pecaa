@@ -3,6 +3,7 @@ class Site < ActiveRecord::Base
   has_many :site_contacts
   has_many :site_link_accounts
   has_one  :address
+  has_and_belongs_to_many :content_libraries
   
   belongs_to :created_by, :class_name => "User", :foreign_key => "created_by"
   accepts_nested_attributes_for :address

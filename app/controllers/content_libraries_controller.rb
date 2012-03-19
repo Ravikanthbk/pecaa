@@ -81,4 +81,12 @@ class ContentLibrariesController < ApplicationController
       format.json { head :ok }
     end
   end
+  
+  def search
+    @content_libraries = ContentLibrary.search(params).page(params[:page]).per(18)
+    respond_to do |format|
+      format.html { render :action => "search",:layout=>"site" }
+      format.json { head :ok }
+    end
+  end
 end

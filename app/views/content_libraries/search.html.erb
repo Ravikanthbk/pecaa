@@ -1,0 +1,64 @@
+<div class="content-main">
+		    			<div class="content-wrapper">
+
+		    				<div class="content-tabs">
+								<ul>
+									<li class="active"><a href="#">Search</a></li>
+									<li><a href="#">Text</a></li>
+									<li><a href="#">Forms</a></li>
+									<li><a href="#">Images</a></li>
+									<li><a href="#">Video</a></li>
+									<li><a href="#">Docs</a></li>
+									<li><a href="#">Misc</a></li>
+								</ul>
+								<%=form_for '/content_libraries/search',:id=>"search" do%>
+								<div class="searchContent">
+									  <%=text_field :search, :name,:value=>params[:name],:placeholder=>"search"%>
+		    								<span class="searchIcon"><a href="#" onclick="$('#search').submit();"></a></span>
+		    							</div>
+							    <%end%>
+							</div>
+							
+		    				<div id="content_1" class="tabContent">
+								<div class="tabContent-wrapper">
+									<div class="navLeft"><a href="#"></a></div>
+									<div class="item-wrapper">
+										<span class="leftShadow"></span>
+										<span class="rightShadow"></span>
+										<ul>
+											<%@content_libraries.each do |content|%>
+											<li class="item newItem">
+												<span class="title"><%=truncate(content.name, :length => 15, :separator => '..')%></span><span class="dragable"></span>
+												<%if content.source_type == "Image"%>
+												<div class="hotspot" style="display: none;">
+													<span class="pointer"></span>
+													<div class="hotspotContent"><img border="0" src="<%=content.source.upload%>" width="120" height="90"></div>
+												</div>
+												<%elsif content.source_type == "Video"%>
+												<div class="hotspot" style="display: none;">
+													<span class="pointer"></span>
+													<div class="hotspotContent"><img border="0" src="<%=content.source.source%>" width="120" height="90"></div>
+												</div>
+												<%end%>
+											</li>
+											<%end%>
+										</ul>
+									</div>
+									<div class="navRight"><a href="<%=request.url.split(/&page=(.*)/).join('&page=#{params[:page]+1}')%>"></a></div>
+								</div>
+		    				</div>
+		    				<div  id="content_2" class="tabContent">
+		    					
+		    				</div>
+		    				<div style="display: none" id="content_3" class="tabContent">
+		    					
+		    				</div>
+		    				<div style="display: none" id="content_4" class="tabContent">
+		    					
+		    				</div>
+		    				<div style="display: none" id="content_5" class="tabContent">
+		    					
+		    				</div>
+		    			</div>
+		    			
+		    		</div>

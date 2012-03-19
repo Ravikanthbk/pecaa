@@ -5,9 +5,24 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>PECAA</title>
         <%= stylesheet_link_tag "sites" %>
+		<%= stylesheet_link_tag "layout" %>
+        <%= stylesheet_link_tag "content" %>
+
         <%= csrf_meta_tag %>
         <%= javascript_include_tag 'jquery.min.js','rails.js','jquery.watermark.js'%>
-        
+        <script type="text/javascript">
+        $(document).ready(function(){
+        	$(".item-wrapper ul li.item").hover(function () {
+			    	$(this).find(".hotspot").fadeIn();
+			  	},
+			  	function () {
+			   		$(this).find(".hotspot").fadeOut();
+			  	}
+			)
+
+        })
+			
+        </script>
     </head>
     <body>
     	<div class="mainContainer">
@@ -26,9 +41,9 @@
 		    		<div class="main-nav">
 		    			<div class="navBtns">
 		    				<ul>
-		    					<li class="siteInfo active"></li>
+		    					<li class="siteInfo <%=params[:controller]== 'sites' ? 'active' : ''%>"></li>
 		    					<li class="pages"></li>
-		    					<li class="content"></li>
+		    					<li class="content <%= params[:controller]== 'content_libraries' ? 'active' : ''%>"></li>
 		    					<li class="theme"></li>
 		    					<li class="optional"></li>
 		    					<li class="done"></li>
