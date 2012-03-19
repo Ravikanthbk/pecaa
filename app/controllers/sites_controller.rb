@@ -27,7 +27,7 @@ class SitesController < ApplicationController
   # GET /sites/new.json
   def new
     @site = Site.new
-    @link_account = SiteLinkAccount.where(:site_id=>@site.id)
+    @link_account = SiteLinkAccount.all
     # 3.times do 
       @site.site_contacts.build
     # end
@@ -64,6 +64,7 @@ class SitesController < ApplicationController
   # PUT /sites/1.json
   def update
     @site = Site.find(params[:id])
+    raise params.inspect
     respond_to do |format|
       if @site.update_attributes(params[:site])
         format.html { redirect_to @site, :notice => 'Site was successfully updated.' }

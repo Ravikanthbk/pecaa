@@ -20,7 +20,7 @@ Mystore3::Application.routes.draw do
   
   resources :sites do 
     get 'preview', :on => :member
-    post 'site_link_account', :on => :member
+    post 'site_link_account', :on => :collection
     get 'rendering_partial', :on => :member
     post 'search', :on => :collection
     get 'pages_list', :on => :collection

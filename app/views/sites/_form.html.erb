@@ -3,6 +3,7 @@
 	<div class="colum-wrapper">
 		<div class="colum-section">
 	  <%= form_for(@site) do |f| %>
+      <%= hidden_field_tag "site_link_accounts" %>
 	  <% if @site.errors.any? %>
       <div id="error_explanation">
         <h2><%= pluralize(@site.errors.count, "error") %> prohibited this site from being saved:</h2>
@@ -69,8 +70,10 @@
 		
 	<div class="colum-section last">
 		<div class="title">Contact Details <span class="help"><a href="#"></a></span></div>
-		<div class="contact_fields" >
-        <%= render :partial => 'site_contact_fields', :locals => { :f => f } %>
+		<div class="contactfields" >
+		  <%= f.fields_for :site_contacts do |contact_fields| %>
+        <%= render :partial => 'site_contact_fields', :locals => { :f => contact_fields } %>
+      <%end%>
     </div>
 		<div class="group">
 		  <%= link_to_add_fields "Add Contact", f, :site_contacts %>
@@ -81,17 +84,6 @@
 					<div class="searchAC"><input type="text" class="search" placeholder="search accounts"></div>
 			</div>
 			<div class="group" id="site_link_account">
-        <% @link_account.each do |a|%>
-          <div class="linkAc">
-            <div class="name"><%=a.account%></div>
-            <div class="company"><%=a.company%></div>
-            <div class="user">
-            	<input type="checkbox" checked="checked" id="editor_<%=a.id%>">
-            	<span>user can edit site</span>
-            </div>
-            <% link_to('', "/editor/#{a.id}", :class=>"linkAccount") %>
-          </div>
-        <%end%>
         <div id="search_results"></div>
       </div>
 			<div class="main-nav">
@@ -115,7 +107,7 @@ var site_id = <%=@site.id ? @site.id : 0%>;
   function add_fields(link, association, content) {
     var new_id = new Date().getTime();
     var regexp = new RegExp("new_" + association, "g");
-    $('.contact_fields').append(content.replace(regexp, new_id));
+    $('.contactfields').append(content.replace(regexp, new_id));
         // $(link).parent().before(content.replace(regexp1, "["+new_id+"]"));
   }
   
@@ -133,17 +125,19 @@ var site_id = <%=@site.id ? @site.id : 0%>;
   });
   
   $(".linkAccount").live('click', function(){
-    if (new_site == true){
+    console.log(new_site);
+    if (new_site){
       
+      }else{
+        var acc = $("#editor_"+$(this).attr('rel')).val();
+        $.ajax({
+          type: "POST",
+          url: "/sites/site_link_account",
+          data:{id : site_id , user_id : $(this).attr('rel'), access : acc},
+          success: function(result){
+            $('#site_link_account').html(result);
+          }});
       }
-      var acc = $("#editor_"+$(this).attr('rel')).val();
-      $.ajax({
-        type: "POST",
-        url: "/sites/0/site_link_account",
-        data:{id : , user_id : $(this).attr('rel'), access : acc},
-        success: function(result){
-          $('#site_link_account').html(result);
-        }});
       return false;
     });
   

@@ -1,23 +1,21 @@
 <div class ='fields'>
-  <%= f.fields_for :site_contacts do |contact_fields| %>
     <div class="group">
     	<span class="key">Name:</span>
-    	<span class="val"><%=contact_fields.text_field :name %></span>
+    	<span class="val"><%=f.text_field :name %></span>
     </div>
     <div class="group">
     	<span class="key">position:</span>
-    	<span class="val"><%=contact_fields.text_field :position %></span>
+    	<span class="val"><%=f.text_field :position %></span>
     </div>
     <div class="group">
     	<span class="key">email:</span>
-    	<span class="val"><%=contact_fields.text_field :email %></span>
+    	<span class="val"><%=f.text_field :email %></span>
     </div>
     <div class="group">
     	<span class="key">phone:</span>
-    	<span class="val"><%=contact_fields.text_field :phone %></span>
+    	<span class="val"><%=f.text_field :phone %></span>
     </div>
     <div class="group">
-    	<span class="key"><%=link_to_remove_fields('Remove', contact_fields)%></span>
+    	<span class="key"><%=link_to_remove_fields('Remove', f)%></span>
     </div>
-  <%end%>
 </div>
