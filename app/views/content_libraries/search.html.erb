@@ -11,7 +11,7 @@
 										<span class="rightShadow"></span>
 										<ul class="ui-accordion ui-widget ui-helper-reset ui-accordion-icons">
 											<%@content_libraries.each do |content|%>
-											<li class="item newItem">
+											<li class="item newItem ui-draggable">
 												<span class="title"><%=truncate(content.name, :length => 15, :separator => '..')%></span><span class="dragable"></span>
 												<%if content.source_type == "Image"%>
 												<div class="hotspot" style="display: none;">
