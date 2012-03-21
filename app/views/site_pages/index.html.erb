@@ -1,0 +1,134 @@
+<% if @site_page && @site_page.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@site_page.errors.count, "error") %> prohibited this site_link from being saved:</h2>
+
+    <ul>
+    <% @site_page.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div class="pages-main">
+	<div class="pages-wrapper">
+		<div class="site-pages">
+		<div class="title">Organize Site Pages <span class="help"><a href="#"></a></span></div>
+			<div class="page-data">
+				<table class="pagesTable" cellpadding="0" cellspacing="0" border="0">
+					<thead>
+						<tr>
+							<th class="pageName">Page Name</th>
+							<th class="status"></th>
+							<th class="home">Home Page</th>
+							<th class="other">Other</th>
+							<th class="misc"></th>
+							<th class="misc"></th>
+							<th class="misc"></th>
+							<th class="misc"></th>
+						</tr>
+					</thead>
+					<tbody>
+					  <%@site_pages.each do |sp|%>
+  						<tr id="<%=sp.id%>">
+  							<td class="pageName"><%=sp.name%></td>
+  							<td class="status">
+  							  <a href="<%=site_site_page_path(@site, sp)%>" class="remote_call <%=sp.is_active ? 'on' : 'off' %>"></a>
+  							</td>
+  							<td class="home">
+  							  <input type="radio" checked=<%=sp.is_home_page ? "checked" : "" %> class="styled" name="is_home_page"/>
+  							</td>
+  							<td class="other">Other Info?</td>
+  							<td class="misc">
+  							  <a href="<%=copy_page_site_site_page_path(@site, sp)%>">
+  							    <img src="/assets/btnCopy.png" border="0">
+  							  </a>
+  							</td>
+  							<td class="misc">
+  							  <a href="<%=seo_page_site_site_page_path(@site, sp)%>" rel='facebox'>
+  							    <img src="/assets/btnSEO.png" border="0">
+  							  </a>
+  							</td>
+  							<td class="misc">
+  							  <a href="<%=search_content_libraries_path%>">
+  							    <img src="/assets/btnEdit.png" border="0"></td>
+  							  </a>
+  							<td class="misc">
+  							  <%= link_to image_tag("/assets/btnDelete.png", :border=>"0"), '#',:class=>'confirm_delete', :rel=>sp.id %>
+  							  <!-- Alert message box start -->
+                  <div id="alertBox_<%=sp.id%>" class="alert-box" style="display:none">
+                    	<div class="msgTitle">Are you sure?!</div>
+                    	<div class="msgContent">
+                    	  Hey, you are about to delete the entire "<%=sp.name%>" <%=sp.category%>. Are you sure you want to do this?
+                    	</div>
+                    	<div class="msgFooter">
+                      <%= link_to "Cancel","#", :class=>'secondary cancel_alert', :rel=>sp.id%>
+                      <%= link_to "OK!", site_site_page_path(@site, sp), :method => :delete, :class=>'primary' %>
+                    	</div>
+                  </div>
+                  <!-- Alert message box ends -->
+  							</td>
+  						</tr>
+						<%end%>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="8"></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+
+			<div class="rightBtns">
+			  <a href='<%= new_site_site_page_path(:type=>'page') %>' rel="facebox" style="display:block; float:left;" class="addPage"></a>
+			  <span style="display:block; float:left;">&nbsp;&nbsp;</span>
+    	  <a href='<%= new_site_site_page_path(:type=>'link') %>' rel="facebox" style="display:block; float:left;" class="addLink"></a>
+    	  <span style="clear:both;"></span>
+			</div>
+		</div>
+		
+
+	<div class="subNav">
+		<div class="title">Choose Sub Nav Type <span class="help"><a href="#"></a></span></div>
+			<div class="subNav-wrapper">
+				<div class="subNav-section">
+					<div><input type="radio" checked="checked" class="styled" name="site_nav_type" value='dropdown'/>use dropdown type</div>
+					<div class="dropDownType"><img src="/assets/img_dropdown1.png" border="0"></div>
+				</div>
+				<div class="subNav-section">
+					<div><input type="radio" checked="checked" class="styled" name="site_nav_type" value='sidebar'/>use left sidebar type</div>
+					<div class="dropDownType"><img src="/assets/img_dropdown2.png" border="0"></div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+
+</div>
+
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$(".pagesTable tbody tr:even").addClass("alt");
+
+		$(".pagesTable tbody tr").click(function(){
+			var $this = $(this);
+			if(!$this.hasClass("selected")){
+				$(".pagesTable tbody tr").removeClass("selected");
+				$this.addClass("selected");
+			}
+		})
+	});
+  $('.confirm_delete').click(function(){
+    $("#alertBox_"+$(this).attr("rel")).show();
+    return false;
+  });
+  $('.cancel_alert').click(function(){
+    $("#alertBox_"+$(this).attr("rel")).hide();
+    return false;
+  });
+	$('a[rel*=facebox]').facebox();
+	
+</script>

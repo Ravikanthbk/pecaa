@@ -4,25 +4,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>PECAA</title>
-        <%= stylesheet_link_tag "sites" %>
-		<%= stylesheet_link_tag "layout" %>
-        <%= stylesheet_link_tag "content" %>
-
+        <%= stylesheet_link_tag "sites", "layout", "content", "site_pages", "facebox", "pages" %>
+        <%= javascript_include_tag 'jquery.min.js','rails.js','jquery.watermark.js', 'facebox'%>
         <%= csrf_meta_tag %>
-        <%= javascript_include_tag 'jquery.min.js','rails.js','jquery.watermark.js'%>
-        <script type="text/javascript">
-        $(document).ready(function(){
-        	$(".item-wrapper ul li.item").hover(function () {
-			    	$(this).find(".hotspot").fadeIn();
-			  	},
-			  	function () {
-			   		$(this).find(".hotspot").fadeOut();
-			  	}
-			)
-
-        })
-			
-        </script>
     </head>
     <body>
     	<div class="mainContainer">

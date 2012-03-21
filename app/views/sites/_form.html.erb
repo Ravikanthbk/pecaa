@@ -131,6 +131,7 @@ var siteid = <%=@site.id ? @site.id : 0%>;
         return false;
     }
   });
+
   $(".linkAccount").live('click', function(){
     var acc = $("#editor_"+$(this).attr('rel')).is(':checked');
     var u_id = $(this).attr('rel');
@@ -139,7 +140,6 @@ var siteid = <%=@site.id ? @site.id : 0%>;
       acc_val.push($(this).attr('rel')+"_"+acc);
       s.attr('value', acc_val);
     }else{
-      
       make_request(u_id, false);
     }
     return false;
@@ -157,5 +157,12 @@ var siteid = <%=@site.id ? @site.id : 0%>;
       }});
   }
   
-  
+  $(document).ready(function(){
+  	$(".item-wrapper ul li.item").hover(function () {
+    	$(this).find(".hotspot").fadeIn();
+  	},
+  	function () {
+   		$(this).find(".hotspot").fadeOut();
+   	})
+  })
 </script>
