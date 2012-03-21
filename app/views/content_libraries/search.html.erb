@@ -6,10 +6,10 @@
 								<div class="tabContent-wrapper">
 									<%params[:page] ||=1%>
 									<div ><%=link_to('',content_search_url(:page =>params[:page].to_i-1),:class=>"navLeft")%></div>
-									<div class="item-wrapper">
+									<div class="item-wrapper" id="catalog">
 										<span class="leftShadow"></span>
 										<span class="rightShadow"></span>
-										<ul id="catalog" class="ui-accordion ui-widget ui-helper-reset ui-accordion-icons">
+										<ul class="ui-accordion ui-widget ui-helper-reset ui-accordion-icons">
 											<%@content_libraries.each do |content|%>
 											<li class="item newItem">
 												<span class="title"><%=truncate(content.name, :length => 15, :separator => '..')%></span><span class="dragable"></span>
@@ -31,7 +31,12 @@
 									<div><%=link_to('',content_search_url(:page =>params[:page].to_i+1),:class=>"navRight")%></div>
 								</div>
 		    				</div>
-		    				<div  id="content_2" class="tabContent">
+		    				<div  id="content_2"  class="tabContent">
+		    					<div id="cart" >
+		    						<ol class="ui-droppable ui-sortable" style="height:400px;width:100%">
+										<li class="placeholder">Drop Here to Edit</li>
+									</ol>
+		    					</div>
 		    					
 		    				</div>
 		    				<div style="display: none" id="content_3" class="tabContent">
