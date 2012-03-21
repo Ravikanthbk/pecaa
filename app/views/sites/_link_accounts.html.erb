@@ -1,0 +1,18 @@
+<%if @link_accounts && @link_accounts.count > 0%>
+  <% @link_accounts.each do |a|%>
+    <div class="linkAc" id="<%=a.id%>" >
+      <div class="name"><%=a.user.username%></div>
+      <div class="company"><%=a.user.company%></div>
+      <div class="user">
+      	<input type="checkbox" <%= a.access ? "checked" : '' %> id="editor_<%=a.id%>">
+      	<span>user can edit site</span>
+      </div>
+      <button type="button" rel="<%=a.id%>" onclick="javascript:make_request(<%=a.user.id%>, true)">Remove</button>
+      <button class="linkAccount" type="button" rel="<%=a.user.id%>"></button>
+    </div>
+  <%end%>
+<%else%>
+  <div class="linkAc">
+    <span> No records found</span>
+  </div>
+<%end%>

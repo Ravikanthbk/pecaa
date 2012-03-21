@@ -27,7 +27,7 @@ class SitesController < ApplicationController
   # GET /sites/new.json
   def new
     @site = Site.new
-    @link_account = SiteLinkAccount.all
+    @link_accounts = @site.site_link_accounts
     # 3.times do 
       @site.site_contacts.build
     # end
@@ -39,6 +39,8 @@ class SitesController < ApplicationController
   # GET /sites/1/edit
   def edit
     @site = Site.find(params[:id])
+    @link_accounts = @site.site_link_accounts
+    
     respond_to do |format|
       format.html {render :layout=>"site"}
     end
@@ -48,14 +50,23 @@ class SitesController < ApplicationController
   # POST /sites.json
   def create
     @site = Site.new(params[:site])
+    # raise params[:site_link_accounts].inspect
     @site.created_by = current_user
     respond_to do |format|
-      if @site.save
-        format.html { redirect_to @site, :notice => 'Site was successfully created.' }
-        format.json { render :json => @site, :status => :created, :location => @site }
-      else
-        format.html { render :action => "new", :layout=>"site" }
-        format.json { render :json => @site.errors, :status => :unprocessable_entity }
+      @site.transaction do 
+        if @site.save
+          
+          params[:site_link_accounts].split(',').uniq.each do |s|
+             sla = SiteLinkAccount.create(:user_id => s.split('_')[0].to_i, :access=>s.split('_')[1], :created_by => current_user)
+             @site.site_link_accounts << sla
+          end
+          
+          format.html { redirect_to @site, :notice => 'Site was successfully created.' }
+          format.json { render :json => @site, :status => :created, :location => @site }
+        else
+          format.html { render :action => "new", :layout=>"site" }
+          format.json { render :json => @site.errors, :status => :unprocessable_entity }
+        end
       end
     end
   end
@@ -108,12 +119,10 @@ class SitesController < ApplicationController
   end
   
   def site_link_account
-    @site = Site.find(params[:id])
-    access_to =  params[:access].to_i == "on" ? "All" : "Few"
-    @site.site_link_accounts.new({:user_id => params[:user_id], :access => access_to})
-    if @site.save
-      @search_link_account = SitelinkAccounts.where(:site)
-      render :partial => "site_link_account"
+    if SiteLinkAccount.save_link(params)
+      @link_accounts = Site.find(params[:site_id]).site_link_accounts
+      # raise @link_accounts.inspect
+      render :partial => "link_accounts"
     end
   end
 
