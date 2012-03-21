@@ -1,6 +1,8 @@
 class SitePagesController < ApplicationController
   before_filter :setup
   layout 'site'
+  load_and_authorize_resource
+  
   
   def index
     @site_pages = @site.site_pages
@@ -48,8 +50,7 @@ class SitePagesController < ApplicationController
     else
       flash[:notice] = "Coping #{@site_page.category} was unsuccessful"
     end
-    @site_pages = @site.site_pages
-    render :index
+    redirect_to site_site_pages_path(@site)
   end
   
   def seo_page

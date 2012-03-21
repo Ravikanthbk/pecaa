@@ -66,7 +66,7 @@
       			<div class="navBtns">
       				<ul>
       					<li class="siteInfo <%=params[:controller]== 'sites' ? 'active' : ''%>"></li>
-      					<li class="pages"></li>
+      					<li class="pages <%=params[:controller]== 'site_pages' ? 'active' : ''%>"></li>
       					<li class="content <%= params[:controller]== 'content_libraries' ? 'active' : ''%>"></li>
       					<li class="theme"></li>
       					<li class="optional"></li>
