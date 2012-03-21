@@ -1,46 +1,87 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>PECAA</title>
-        <%= stylesheet_link_tag "sites", "layout", "content", "site_pages", "facebox", "pages" %>
-        <%= javascript_include_tag 'jquery.min.js','rails.js','jquery.watermark.js', 'facebox'%>
-        <%= csrf_meta_tag %>
-    </head>
-    <body>
-    	<div class="mainContainer">
-	    	<div class="userEditHolder">	
-		    	<div class="header-section">
-		    		<div class="topHeader">
-		    			<div class="logoHolder"></div>
-		    			<div class="rightPanel">
-		    				<ul>
-		    					<li class="help"></li>
-		    					<li class="myAccount"></li>
-		    					<li class="logout"></li>
-		    				</ul>
-		    			</div>
-		    		</div>
-		    		<div class="main-nav">
-		    			<div class="navBtns">
-		    				<ul>
-		    					<li class="siteInfo <%=params[:controller]== 'sites' ? 'active' : ''%>"></li>
-		    					<li class="pages"></li>
-		    					<li class="content <%= params[:controller]== 'content_libraries' ? 'active' : ''%>"></li>
-		    					<li class="theme"></li>
-		    					<li class="optional"></li>
-		    					<li class="done"></li>
-		    				</ul>
-		    			</div>
-		    			<div class="rightBtns"><button class="btn_Save">Save and go to next step</button></div>
-		    		</div>
-		    	</div>
-		    	<div class="content-section">
-		    	  	<%=yield%>
-		    	</div>
-		    	
-	    	</div>
-        </div>
-    </body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>PECAA</title>
+      <%= stylesheet_link_tag "sites", "layout", "content", "site_pages", "facebox", "pages" %>
+      <%= javascript_include_tag 'jquery.min.js','rails.js','jquery.watermark.js', 'facebox'%>
+      <%= csrf_meta_tag %>
+      <%= javascript_include_tag 'jquery-1.4.2.min'%>
+      <%= javascript_include_tag 'jquery-ui-1.8.2.custom.min'%>
+      <%= javascript_include_tag 'jquery.ui.core','jquery.ui.widget','jquery.ui.draggable.js','jquery.ui.droppable','jquery.ui.sortable','jquery.ui.accordion.js'%>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+        	$(".item-wrapper ul li.item").hover(function () {
+          	$(this).find(".hotspot").fadeIn();
+        	},
+        	function () {
+         		$(this).find(".hotspot").fadeOut();
+        	})
+        })
+      </script>
+		
+  		<script>
+    	$(function() {
+    		$( "#catalog" ).accordion();
+    		$( "#catalog li" ).draggable({
+    			appendTo: "body",
+    			helper: "clone"
+    		});
+    		$( "#cart ol" ).droppable({
+    			activeClass: "ui-state-default",
+    			hoverClass: "ui-state-hover",
+    			accept: ":not(.ui-sortable-helper)",
+    			drop: function( event, ui ) {
+    				$( this ).find( ".placeholder" ).remove();
+    				$( "<li></li>" ).text( ui.draggable.text() ).appendTo( this );
+    			}
+    		}).sortable({
+    			items: "li:not(.placeholder)",
+    			sort: function() {
+    				// gets added unintentionally by droppable interacting with sortable
+    				// using connectWithSortable fixes this, but doesn't allow you to customize active/hoverClass options
+    				$( this ).removeClass( "ui-state-default" );
+    			}
+    		});
+    	});
+  	</script>
+  </head>
+  <body>
+  	<div class="mainContainer">
+    	<div class="userEditHolder">	
+      	<div class="header-section">
+      		<div class="topHeader">
+      			<div class="logoHolder"></div>
+      			<div class="rightPanel">
+      				<ul>
+      					<li class="help"></li>
+      					<li class="myAccount"></li>
+      					<li class="logout"></li>
+      				</ul>
+      			</div>
+      		</div>
+      		<div class="main-nav">
+      			<div class="navBtns">
+      				<ul>
+      					<li class="siteInfo <%=params[:controller]== 'sites' ? 'active' : ''%>"></li>
+      					<li class="pages"></li>
+      					<li class="content <%= params[:controller]== 'content_libraries' ? 'active' : ''%>"></li>
+      					<li class="theme"></li>
+      					<li class="optional"></li>
+  						<li class="users"></li>
+      					<li class="done"></li>
+      				</ul>
+      			</div>
+      			<div class="rightBtns"><button class="btn_Save">Save and go to next step</button></div>
+      		</div>
+      	</div>
+      	<div class="content-section">
+      	  	<%=yield%>
+      	</div>
+    	
+    	</div>
+      </div>
+  </body>
 </html>
