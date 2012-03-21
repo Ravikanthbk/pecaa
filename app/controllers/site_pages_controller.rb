@@ -1,8 +1,6 @@
 class SitePagesController < ApplicationController
   before_filter :setup
-  layout 'site'
-  load_and_authorize_resource
-  
+  layout 'site'  
   
   def index
     @site_pages = @site.site_pages
