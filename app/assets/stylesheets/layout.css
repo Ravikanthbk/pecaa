@@ -104,6 +104,11 @@ body a{
 	background: url(img/btn_optional.png) no-repeat;
 	width: 117px;
 }
+
+.main-nav ul li.users{
+	background: url(img/btn_users.png) no-repeat;
+	width: 94px;
+}
 .main-nav ul li.done{
 	background: url(img/btn_done.png) no-repeat;
 	width: 84px;
