@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
      redirect_to root_url
     end
     else
-      redirect_to '/logout'
+#      redirect_to '/logout'
     end
   end
   

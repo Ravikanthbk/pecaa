@@ -35,10 +35,14 @@ Mystore3::Application.routes.draw do
   resources :images
   resources :videos
 
-  resources :content_libraries do
-    get 'search', :on => :collection
+
+  match 'content_libraries/search', :to=> 'content_libraries#search',:as=>:content_search
+  
+resources :content_libraries do
+    
   end
   
+
   match 'colorpicker', :to => "base_colors#colorpicker", :as => :colorpicker 
   
   get "users/index"

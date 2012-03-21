@@ -1,0 +1,20 @@
+<div class="content-tabs">
+	<ul>
+		<%params[:search]||={}%>
+		<li class="<%= params[:search][:source_type_equals].blank? ? 'active' : ''%>"><a href="/content_libraries/search" style="text-decoration:none;color:#fff">Search</a></li>
+		<li class="<%= params[:search][:source_type_equals] == 'Text' ? 'active' : ''%>" ><a href="/content_libraries/search?search[source_type_equals]=Text" style="text-decoration:none;color:#fff">Text</a></li>
+		<li class="<%= params[:search][:source_type_equals] == 'Form' ? 'active' : ''%>"><a href="/content_libraries/search?search[source_type_equals]=Form" style="text-decoration:none;color:#fff">Forms</a></li>
+		<li class="<%= params[:search][:source_type_equals] == 'Image' ? 'active' : ''%>"><a href="/content_libraries/search?search[source_type_equals]=Image" style="text-decoration:none;color:#fff">Images</a></li>
+		<li class="<%= params[:search][:source_type_equals] == 'Video' ? 'active' : ''%>"><a href="/content_libraries/search?search[source_type_equals]=Video" style="text-decoration:none;color:#fff">Video</a></li>
+		<li class="<%= params[:search][:source_type_equals] == 'Doc' ? 'active' : ''%>"><a href="/content_libraries/search?search[source_type_equals]=Doc" style="text-decoration:none;color:#fff">Docs</a></li>
+		<li class="<%= params[:search][:source_type_equals] == 'Misc' ? 'active' : ''%>"><a href="/content_libraries/search?search[source_type_equals]=Misc" style="text-decoration:none;color:#fff">Misc</a></li>
+	</ul>
+	<%=form_for '/content_libraries/search',:id=>"search",:method=>"get" do%>
+	<div class="searchContent">
+		  <%=text_field :search, :name_contains,:value=>"#{params[:search].blank? ? '' : params[:search][:name_contains]}",:placeholder=>"search"%>
+		       <%=hidden_field_tag "search[source_type_equals]", params[:source_type_equals]%>
+				<span class="searchIcon"><a href="#" onclick="submit_search()"></a></span>
+			</div>
+			
+    <%end%>
+</div>
