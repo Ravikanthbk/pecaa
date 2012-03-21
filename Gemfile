@@ -13,6 +13,7 @@ gem 'paperclip'
 
 gem 'json'
 
+gem 'meta_search'
 # gem "railties", "~> 4.0.0"
 
 # Gems used only for assets and not required
