@@ -83,7 +83,7 @@ class ContentLibrariesController < ApplicationController
   end
   
   def search
-    @content_libraries = ContentLibrary.search(params[:search]).page(params[:page]).per(18)
+    @content_libraries = ContentLibrary.search(params[:search]).page(params[:page]).per(13)
     respond_to do |format|
       format.html { render :action => "search",:layout=>"site" }
       format.json { head :ok }

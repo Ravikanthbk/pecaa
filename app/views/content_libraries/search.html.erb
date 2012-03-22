@@ -10,33 +10,35 @@
 										<span class="leftShadow"></span>
 										<span class="rightShadow"></span>
 										<ul class="ui-accordion ui-widget ui-helper-reset ui-accordion-icons">
-											<%if params[:search].blank? or params[:search][:source_type_equals]=="Text"%>
-											<li class="item newItem"><span class="title">New Text Block</span>
-											</li>
-											<%end%>
-											<%if params[:search].blank? or params[:search][:source_type_equals]=="Form"%>
-											<li class="item newItem"><span class="title">New Form</span>
-											</li>
-											<%end%>
-											<%if params[:search].blank? or params[:search][:source_type_equals]=="Image"%>
-											<li class="item newItem"><span class="title">New Image</span>
-											</li>
-											<%end%>
-											<%if params[:search].blank? or params[:search][:source_type_equals]=="Video"%>
-											<li class="item newItem"><span class="title">New Video</span>
-											</li>
-											<%end%>
-											<%if params[:search].blank? or params[:search][:source_type_equals]=="File"%>
-												<li class="item newItem">
-													<span class="title">New Doc</span>
-														<%=hidden_field_tag 'source',"File"%>
-														<div style="display:none;width:200px;" id="doc_form">
-															<%@add_file = AddFile.new%>
-															<%@from_content=true%>
-															<%=render :partial=>"add_files/form"%>
-														</div>
-													
+											<%if params[:page].blank? or params[:page] == 0 or params[:page] == 1%>
+												<%if params[:search].blank? or params[:search][:source_type_equals]=="Text"%>
+												<li class="item newItem"><span class="title">New Text Block</span>
 												</li>
+												<%end%>
+												<%if params[:search].blank? or params[:search][:source_type_equals]=="Form"%>
+												<li class="item newItem"><span class="title">New Form</span>
+												</li>
+												<%end%>
+												<%if params[:search].blank? or params[:search][:source_type_equals]=="Image"%>
+												<li class="item newItem"><span class="title">New Image</span>
+												</li>
+												<%end%>
+												<%if params[:search].blank? or params[:search][:source_type_equals]=="Video"%>
+												<li class="item newItem"><span class="title">New Video</span>
+												</li>
+												<%end%>
+												<%if params[:search].blank? or params[:search][:source_type_equals]=="File"%>
+													<li class="item newItem">
+														<span class="title">New Doc</span>
+															<%=hidden_field_tag 'source',"File"%>
+															<div style="display:none;width:200px;" id="doc_form">
+																<%@add_file = AddFile.new%>
+																<%@from_content=true%>
+																<%=render :partial=>"add_files/form"%>
+															</div>
+														
+													</li>
+												<%end%>
 											<%end%>
 											<%@content_libraries.each do |content|%>
 											<li class="item newItem ui-draggable">
