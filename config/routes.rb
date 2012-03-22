@@ -29,6 +29,8 @@ Mystore3::Application.routes.draw do
     get 'pages_list', :on => :collection
     resources :site_pages do
       get 'copy_page', :on => :member
+      post 'rename_page', :on => :collection
+      get 'update_page', :on => :member, :to => 'site_pages#update'
       get 'seo_page', :on => :member
     end
     resources :site_links do

@@ -37,8 +37,7 @@ class SitePagesController < ApplicationController
     else
       flash[:notice] = "Saving #{@site_page.category} was unsuccessful"
     end
-    @site_pages = @site.site_pages
-    render :index
+    redirect_to site_site_pages_path(@site)
   end
   
   def copy_page
@@ -55,6 +54,14 @@ class SitePagesController < ApplicationController
     @site_page = @site.site_pages.find(params[:id])
     render :layout=>false
   end
+  
+  def rename_page
+    @site_page = @site.site_pages.find(params[:id])
+    @site_page.name = params[:value]
+    @site_page.save
+    render :text => params[:value] || ''
+  end
+  
   
   def destroy
     @site_page = @site.site_pages.find(params[:id])
