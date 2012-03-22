@@ -1,0 +1,21 @@
+<%= form_for(@add_file, :html => { :multipart => true }) do |f| %>
+	<%=hidden_field_tag :from_content, @from_content%>
+<div class="contentObject">
+	<div class="alphaBg"></div>
+	<div class="expandable">
+		<span class="delete"></span>
+		<span class="drag"></span>
+		<span class="scale"></span>
+		<div class="objectContent"><img src="/assets/iconDoc.png" border="0"><span class="title"><%=content.name%></span></div>
+	</div>
+</div>
+<div class="dragableObject">
+	<div class="dragable">
+		<span class="drag"></span>
+		<div class="dragContent"><span class="key">name :</span><span class="val"><%=text_field_tag :name%>
+			</span>
+			<div class="rightBtn"><%=f.submit 'select icon', :class=>"blueBtn"%></div>
+			</div>
+	</div>
+</div>
+<%end%>

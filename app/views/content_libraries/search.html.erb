@@ -10,6 +10,34 @@
 										<span class="leftShadow"></span>
 										<span class="rightShadow"></span>
 										<ul class="ui-accordion ui-widget ui-helper-reset ui-accordion-icons">
+											<%if params[:search].blank? or params[:search][:source_type_equals]=="Text"%>
+											<li class="item newItem"><span class="title">New Text Block</span>
+											</li>
+											<%end%>
+											<%if params[:search].blank? or params[:search][:source_type_equals]=="Form"%>
+											<li class="item newItem"><span class="title">New Form</span>
+											</li>
+											<%end%>
+											<%if params[:search].blank? or params[:search][:source_type_equals]=="Image"%>
+											<li class="item newItem"><span class="title">New Image</span>
+											</li>
+											<%end%>
+											<%if params[:search].blank? or params[:search][:source_type_equals]=="Video"%>
+											<li class="item newItem"><span class="title">New Video</span>
+											</li>
+											<%end%>
+											<%if params[:search].blank? or params[:search][:source_type_equals]=="File"%>
+												<li class="item newItem">
+													<span class="title">New Doc</span>
+														<%=hidden_field_tag 'source',"File"%>
+														<div style="display:none;width:200px;" id="doc_form">
+															<%@add_file = AddFile.new%>
+															<%@from_content=true%>
+															<%=render :partial=>"add_files/form"%>
+														</div>
+													
+												</li>
+											<%end%>
 											<%@content_libraries.each do |content|%>
 											<li class="item newItem ui-draggable">
 												<span class="title"><%=truncate(content.name, :length => 15, :separator => '..')%></span><span class="dragable"></span>
@@ -23,6 +51,12 @@
 													<span class="pointer"></span>
 													<div class="hotspotContent"><img border="0" src="<%=content.source.source%>" width="120" height="90"></div>
 												</div>
+												<%elsif content.source_type == "File"%>
+												  <div style="display:none;width:200px;" id="doc_form">
+															<%@add_file = AddFile.find(content.source_id)%>
+															<%@from_content=true%>
+															<%=render :partial=>"add_files/edit_content_form",:locals=>{:content=>content}%>
+												  </div>
 												<%end%>
 											</li>
 											<%end%>
@@ -32,12 +66,6 @@
 								</div>
 		    				</div>
 		    				<div  id="content_2"  class="tabContent">
-		    					<div id="cart" >
-		    						<ol class="ui-droppable ui-sortable" style="height:400px;width:100%">
-										<li class="placeholder">Drop Here to Edit</li>
-									</ol>
-		    					</div>
-		    					
 		    				</div>
 		    				<div style="display: none" id="content_3" class="tabContent">
 		    					
@@ -51,3 +79,13 @@
 		    			</div>
 		    			
 		    		</div>
+					
+					<div class="themes-board">
+		    				<div class="grid-board">
+		    					<div id="cart" >
+		    						<div class="ui-droppable ui-sortable" style="height:400px;width:100%">
+										<li class="placeholder">Drop Here to Edit</li>
+									</div>
+		    					</div>
+		    				</div>
+		    			</div>
