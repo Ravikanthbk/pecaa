@@ -5,7 +5,7 @@ class SiteLinksController < ApplicationController
   layout 'pecaa_application'
   
   def index
-    @site_links = @site.site_links.all
+    @site_links = @site.site_links
 
     respond_to do |format|
       format.html # index.html.erb

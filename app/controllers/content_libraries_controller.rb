@@ -1,4 +1,4 @@
-  	class ContentLibrariesController < ApplicationController
+class ContentLibrariesController < ApplicationController
   layout 'pecaa_application'
   # GET /content_libraries
   # GET /content_libraries.json

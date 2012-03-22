@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  load_and_authorize_resource :only => [:show,:new,:destroy,:edit,:update,:dashboard]
+  load_and_authorize_resource :only => [:show,:new,:destroy,:edit,:update,:dashboard,:search]
   
   before_filter :check_permissions, :only => [:new, :cancel]
   skip_before_filter :require_no_authentication

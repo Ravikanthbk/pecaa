@@ -1,0 +1,39 @@
+<%= stylesheet_link_tag "sites", "layout", "content", "site_pages", "facebox", "modal_layout", 'themes' %>
+<div class="main-container midium">
+	<div class="header">New External Link<span class="helpIcon"></span></div>
+	<%= form_for [@site, @site_page] do |f| %>
+	  <%= f.hidden_field :category, :value => 'link' %>
+    <div class="main-content">
+    	<div class="newExt-Link">
+    		<div class="extForm">
+    			<div class="form-row">
+    			  <span class="key">Name :</span>
+    			  <span class="val"><%= f.text_field :name, :placeholder=>"My New Link" %></span>
+    			</div>
+    			<div class="form-row">
+    			  <span class="key">Link URL :</span>
+    			  <span class="val"><%= f.text_field :link_url %></span>
+    			</div>
+    			<div class="form-row">
+    			  <span class="key">Target :</span>
+    			  <span class="val"><%= f.text_field :target %></span>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="footer-section">
+    	<div class="leftBtns">
+    	  <button class="secondary" id="cancelBtn">Cancel</button>
+    	</div>
+    	<div class="rightBtns">
+    	  <button class="primary" id="saveBtn">Save Changes</button>
+    	</div>
+    </div>
+  <% end %>
+</div>
+<script>
+$('#cancelBtn').click(function(){
+    $(document).trigger('close.facebox');
+    return false
+});
+</script>

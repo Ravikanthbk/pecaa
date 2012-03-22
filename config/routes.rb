@@ -1,6 +1,8 @@
 Mystore3::Application.routes.draw do
 
 
+  get "site_pages/index"
+
   resources :themes
 
   resources :base_colors
@@ -17,8 +19,6 @@ Mystore3::Application.routes.draw do
   resources :roles
   resources :add_files
   resources :add_forms
-  
-   resources :pages
   resources :external_links
   
   resources :sites do 
@@ -27,6 +27,10 @@ Mystore3::Application.routes.draw do
     get 'rendering_partial', :on => :member
     post 'search', :on => :collection
     get 'pages_list', :on => :collection
+    resources :site_pages do
+      get 'copy_page', :on => :member
+      get 'seo_page', :on => :member
+    end
     resources :site_links do
       post 'search', :on => :collection
     end
