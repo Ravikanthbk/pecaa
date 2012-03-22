@@ -6,7 +6,7 @@
 		<li class="<%= params[:search][:source_type_equals] == 'Form' ? 'active' : ''%>"><a href="/content_libraries/search?search[source_type_equals]=Form" style="text-decoration:none;color:#fff">Forms</a></li>
 		<li class="<%= params[:search][:source_type_equals] == 'Image' ? 'active' : ''%>"><a href="/content_libraries/search?search[source_type_equals]=Image" style="text-decoration:none;color:#fff">Images</a></li>
 		<li class="<%= params[:search][:source_type_equals] == 'Video' ? 'active' : ''%>"><a href="/content_libraries/search?search[source_type_equals]=Video" style="text-decoration:none;color:#fff">Video</a></li>
-		<li class="<%= params[:search][:source_type_equals] == 'Doc' ? 'active' : ''%>"><a href="/content_libraries/search?search[source_type_equals]=Doc" style="text-decoration:none;color:#fff">Docs</a></li>
+		<li class="<%= params[:search][:source_type_equals] == 'File' ? 'active' : ''%>"><a href="/content_libraries/search?search[source_type_equals]=File" style="text-decoration:none;color:#fff">Docs</a></li>
 		<li class="<%= params[:search][:source_type_equals] == 'Misc' ? 'active' : ''%>"><a href="/content_libraries/search?search[source_type_equals]=Misc" style="text-decoration:none;color:#fff">Misc</a></li>
 	</ul>
 	<%=form_for '/content_libraries/search',:id=>"search",:method=>"get" do%>

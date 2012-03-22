@@ -19,16 +19,24 @@ class AddFilesController < ApplicationController
         ContentLibrary.create({:name => @add_file.upload_file_name,
           :source_id => @add_file.id, :source_type => 'File',
           :last_used => nil, :times_used => nil, :added_by => current_user.username})
-        redirect_to content_libraries_path
+          if params[:from_content]
+            redirect_to content_search_path+"?search[source_type_equals]=File"
+          else
+            redirect_to content_libraries_path
+          end
       else
-        redirect_to content_libraries_path
+        if params[:from_content]
+            redirect_to content_search_path+"?search[source_type_equals]=File"
+        else
+          redirect_to content_libraries_path
+        end
 #        respond_to do |format|
 #          format.html  { render(:nothing => true)}
 #        end
       end
     end
-  rescue
-    redirect_to content_libraries_path
+#  rescue
+#    redirect_to content_libraries_path
   end
 
   def edit
@@ -37,20 +45,27 @@ class AddFilesController < ApplicationController
 
   def update
     @add_file = AddFile.find(params[:id])
-    params[:add_file].merge!({:user_id => current_user})
-    if @add_file.update_attributes(params[:add_file])
-      content_library = ContentLibrary.find_by_source_id(@add_file.id)
-      content_library.update_attributes({:name => @add_file.upload_file_name,
-          :last_used => nil, :times_used => nil, :added_by => current_user.username})
-      redirect_to content_libraries_path
-      else
+    if params[:from_content]
+      content_library = ContentLibrary.find_by_source_type_and_source_id("File",@add_file.id)
+      content_library.update_attributes({:name => params[:name],
+            :last_used => nil, :times_used => nil, :added_by => current_user.username})
+      redirect_to content_search_path+"?search[source_type_equals]=File"
+    else
+      params[:add_file].merge!({:user_id => current_user})
+      if @add_file.update_attributes(params[:add_file])
+        content_library = ContentLibrary.find_by_source_id(@add_file.id)
+        content_library.update_attributes({:name => @add_file.upload_file_name,
+            :last_used => nil, :times_used => nil, :added_by => current_user.username})
         redirect_to content_libraries_path
-#        respond_to do |format|
-#          format.html  { render(:nothing => true)}
-#        end
+        else
+          redirect_to content_libraries_path
+  #        respond_to do |format|
+  #          format.html  { render(:nothing => true)}
+  #        end
     end
-  rescue
-    redirect_to content_libraries_path
+   end
+#  rescue
+#    redirect_to content_libraries_path
   end
 
   def download

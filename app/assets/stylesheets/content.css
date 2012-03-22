@@ -191,28 +191,150 @@
 .contentObject{
 	position: absolute;
 	z-index: 99999;
+	left: 30%;
+	top:20%;
+}
+
+.dragableObject{
+	position: absolute;
+	z-index: 99999;
+	left: 30%;
+	top:50%;
+}
+.dragableObject .dragable{
+	position: relative;
+}
+.dragableObject .dragable .drag{
+	position: absolute;
+	right:8px;
+	top:8px;
+	background: url(/assets/btn_OnlyDrag.png) no-repeat;
+	width:20px;
+	height:20px;
+	cursor: pointer;
+}
+.dragable .dragContent{
+	background: url(/assets/bg_DraggableContent.png)no-repeat;
+	width:286px;
+	height: 55px;
+	padding:40px 10px 10px 10px;
+}
+.dragContent .key,
+.dragContent .val{
+	display: inline-block;
+	margin:2px;
+}
+.dragContent .val input[type="text"]{
+	width:230px;
+	background:#FFFFFF;
+	border-radius:4px;
+	border:1px solid #999999;
+}
+.dragContent .rightBtn{
+	float:right;
+	margin-top:5px;
+} 
+.dragContent .rightBtn button.blueBtn{
+	border:0;
+	background:url(/assets/bg_blueBtn.png) no-repeat;
+	width:94px;
+	height:24px;
+	padding:0 0 5px;
 }
 .contentObject .expandable{
-	background:#0099CC;
-	opacity: 0.2;
 	position: relative;
+}
+.contentObject .alphaBg{
+	width:100%;
+	height:100%;
+	position: absolute;
+	background:#E3EDE3;
+	opacity: 0.5;
+	z-index: 0;
+}
+.contentObject .expandable .objectContent{
+	min-width:130px;
+	min-height: 30px;
+	border-radius: 6px;
+	border: 1px solid #579DC4;
+	padding:40px;
+}
+.objectContent .title,
+.objectContent img{
+	vertical-align: middle;
+	padding:5px;
 }
 .expandable .delete,
 .expandable .drag,
 .expandable .scale{
 	position: absolute;
-	background:red;
 	display:block;
+	z-index: 999;
+	cursor: pointer;
 }
 .expandable .delete{
 	left:-2px;
 	top:-2px;
+	width:35px;
+	height:35px;
+	background: url(/assets/btn_ContentDelete.png) no-repeat;
 }
 .expandable .drag{
-	right:-101%;
+	right:-1%;
 	top:-2px;
+	width:36px;
+	height:35px;
+	background: url(/assets/btn_ContentDrag.png) no-repeat;
 }
 .expandable .scale{
-	right:-101%;
+	right:-1%;
 	bottom:-2px;
+	width:22px;
+	height:22px;
+	background: url(/assets/btn_ContentScale.png) no-repeat;
+}
+
+.objectContent .formRow{
+	margin-bottom:5px;
+	overflow: hidden;
+}
+.objectContent label{
+	display: inline-block;
+    margin-right: 5px;
+    text-align: right;
+    width: 80px;
+}
+.objectContent input[type="text"]{
+	width:200px;
+	border-radius:6px;
+	background:#FFFFFF;
+	border:1px solid #CCCCCC;
+	height:24px;
+}
+.formRow button.submitBtn{
+	margin:0;
+	width:200px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#9bbcff), to(#6699ff));
+	background: -moz-linear-gradient(top,  #9bbcff,  #6699ff);
+}
+.themes-board{
+	background: url(/assets/bg_grid.gif) repeat;
+	height:60%;
+	width:1015px;
+	position: absolute;
+	top:290px;
+	border-top:1px solid black;
+}
+.themes-board .grid-board{
+	background:url(/assets/bg_gridTop.png) repeat-x;
+	height:8px;
+	margin-top:-8px;
+}
+
+.blueBtn{
+	border:0;
+	background:url(/assets/bg_blueBtn.png) no-repeat;
+	width:94px;
+	height:24px;
+	padding:0 0 5px;
 }
