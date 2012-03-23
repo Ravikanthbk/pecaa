@@ -1,6 +1,216 @@
-<h1>New theme</h1>
-<div id='colorpicker'/> 
-<script type="text/javascript">
- $('#colorpicker').ColorPicker(options);
+<%= stylesheet_link_tag "layout" %>
+<%= stylesheet_link_tag "themes" %>
+<%= stylesheet_link_tag "facebox" %>
+<%= javascript_include_tag 'jquery-1.4.2.min' %>
+<%= javascript_include_tag 'jquery-ui-1.8.2.custom.min' %>
+<%= javascript_include_tag 'facebox' %>
+<%= javascript_include_tag "common" %>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js">
 </script>
-<%= link_to 'Back', themes_path %>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js">
+</script>
+<script src="http://jqueryui.com/themeroller/themeswitchertool/">
+</script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<%= javascript_include_tag "jquery.colorpicker" %>
+<%= stylesheet_link_tag "colorpicker" %>
+<%= javascript_include_tag "jquery.ui.colorpicker-nl" %>
+<script type="text/javascript">
+    $(function(){
+        $('#switcher').themeswitcher();
+        
+        $('#cp1').colorpicker({
+            onClose: function(hex, rgba, inst){
+                console.log('onClose: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            onSelect: function(hex, rgba, inst){
+                console.log('onSelect: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+			
+            showOn: 'both',
+            showSwatches: true,
+            showNoneButton: true,
+            buttonColorize: true,
+            altField: '.cp1-alt',
+            limit: 'websafe',
+            parts: 'full',
+            regional: 'nl',
+            altProperties: 'background-color,color'			
+        });
+        $('#cp2').colorpicker({
+            onClose: function(hex, rgba, inst){
+                console.log('onClose: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            onSelect: function(hex, rgba, inst){
+                console.log('onSelect: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            showOn: 'both',
+            showSwatches: true,
+            showNoneButton: true,
+            buttonColorize: true,
+            altField: '.cp1-alt',
+            limit: 'websafe',
+            parts: 'full',
+            regional: 'nl',
+            altProperties: 'background-color,color'
+        });
+        
+        $('#cp3').colorpicker({
+            onClose: function(hex, rgba, inst){
+                console.log('onClose: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            onSelect: function(hex, rgba, inst){
+                console.log('onSelect: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            showOn: 'both',
+            showSwatches: true,
+            showNoneButton: true,
+            buttonColorize: true,
+            altField: '.cp1-alt',
+            limit: 'websafe',
+            parts: 'full',
+            regional: 'nl',
+            altProperties: 'background-color,color'
+        });
+        $('#cp4').colorpicker({
+            onClose: function(hex, rgba, inst){
+                console.log('onClose: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            onSelect: function(hex, rgba, inst){
+                console.log('onSelect: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            showOn: 'both',
+            showSwatches: true,
+            showNoneButton: true,
+            buttonColorize: true,
+            altField: '.cp1-alt',
+            limit: 'websafe',
+            parts: 'full',
+            regional: 'nl',
+            altProperties: 'background-color,color'
+        });
+        $('#cp5').colorpicker({
+            onClose: function(hex, rgba, inst){
+                console.log('onClose: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            onSelect: function(hex, rgba, inst){
+                console.log('onSelect: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            showOn: 'both',
+            showSwatches: true,
+            showNoneButton: true,
+            buttonColorize: true,
+            altField: '.cp1-alt',
+            limit: 'websafe',
+            parts: 'full',
+            regional: 'nl',
+            altProperties: 'background-color,color'
+        });
+        
+        
+        
+        var cpb = $('#cp-buttons').colorpicker({
+            showOn: '',
+            parts: ['bar', 'map']
+        });
+        $('#cp-button-open').click(function(){
+            cpb.colorpicker('open');
+        });
+        $('#cp-button-close').click(function(){
+            cpb.colorpicker('close');
+        });
+        $('#cp-button-disable').click(function(){
+            cpb.colorpicker('disable');
+        });
+        $('#cp-button-setcolor').click(function(){
+            cpb.colorpicker('setColor', '#99ff00');
+        });
+    });
+</script>
+
+    <div class="themes-main">
+        <div class="themes-wrapper">
+            <%=render '/themes/theme_menu'%>
+			<div class="theme-content" id="content_3">
+		    					<div class="theme-SubTabs left">
+		    						<ul>
+		    							<li class="active"><a href="#">Text</a></li>
+		    							<li><a href="#">Background</a></li>
+		    							<li><a href="#">Block</a></li>
+		    						</ul>
+		    					</div>
+		    							    					
+		    					<div class="subTab-Content left">
+		    						<div class="resetAll"><a href="#"></a></div>
+		    						<div class="colum-wrapper left">
+		    							<div class="changePanel">
+		    								<label>color</label>
+		    								<div class="palletBox">
+		    									<div class="colPicker-wrapper">
+						                                    
+															<div class="solidColor left"><input type="hidden" id="cp1" name="color[]" value="fe9810"/><span class="piller"></span><span class="add"></span></div>
+		    												<span class="textColor" id='text_color' style="color:fe9810">text color</span>
+											    </div>
+		    									
+		    								</div>
+		    							</div>
+		    							<div class="changePanel">
+		    								<label>opacity</label>
+		    								<div class="palletBox">
+		    									<div id="slider" style="width:200px; margin-left:5px;"></div>
+		    									<div class="slider-alpha">
+		    										<div class="alphaPointer"><span class="val">25%</span></div>
+		    									</div>
+		    								</div>
+		    							</div>
+		    						</div>
+		    						<div class="colum-wrapper last left">
+		    							<div class="changePanel">
+		    								<label>text shadow</label>
+		    								<div class="palletBox">
+		    									
+		    									<div class="boxShadow right">
+		    										<div class="slider-boxShadow left">
+		    											<div class="amt"><span class="val">amt</span></div>
+		    											<div class="spread"><span class="val">spread</span></div>
+		    										</div>
+		    									</div>
+		    									
+		    								</div>
+		    							</div>
+		    							<div class="changePanel">
+		    								<label>shadow direction</label>
+		    								<div class="palletBox">
+		    									<div class="tileBox left">
+		    										<ul>
+		    											<li></li>
+		    											<li></li>
+		    											<li></li>
+		    											<li></li>
+		    											<li></li>
+		    											<li></li>
+		    											<li></li>
+		    											<li></li>
+		    											<li class="active"></li>
+		    										</ul>
+												</div>
+												<div class="textShadowPrev left">
+													<div class="textShadow">shadow</div>
+												</div>
+		    								</div>
+		    							</div>
+		    						</div>
+		    					</div>
+		    					
+		    					<div class="subTab-Content left" style="display: none"></div>
+		    					
+		    					<div class="subTab-Content left" style="display: none"></div>
+		    					
+		    				</div>
+                        <div class="theme-content" id="content_3" style="display: none">
+            </div>
+        </div>
+        <div class="themes-board">
+            <div class="grid-board">
+            </div>
+        </div>

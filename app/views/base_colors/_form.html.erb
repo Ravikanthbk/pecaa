@@ -1,308 +1,258 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>PECAA</title>
-        <%= stylesheet_link_tag "layout" %>
-        <%= stylesheet_link_tag "themes" %>
-		<%= stylesheet_link_tag "facebox" %>
-		<%= javascript_include_tag 'jquery-1.4.2.min'%>
-<%= javascript_include_tag 'jquery-ui-1.8.2.custom.min'%>
-<%= javascript_include_tag 'facebox'%>        
-
+<%= stylesheet_link_tag "layout" %>
+<%= stylesheet_link_tag "themes" %>
+<%= stylesheet_link_tag "facebox" %>
+<%= javascript_include_tag 'jquery-1.4.2.min' %>
+<%= javascript_include_tag 'jquery-ui-1.8.2.custom.min' %>
+<%= javascript_include_tag 'facebox' %>
 <%= javascript_include_tag "common" %>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
-		<script src="http://jqueryui.com/themeroller/themeswitchertool/"></script>
-
-		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css"/>
-		<!--link href="aristo/Aristo.css" rel="stylesheet" type="text/css"/-->
-        <style>
-			body {
-				font-family:	'Segoe UI', Verdana, Arial, Helvetica, sans-serif;
-				font-size:		62.5%;
-			}
-
-			#switcher {
-				float: 			right;
-				display: 		inline-block;
-			}
-        </style>
-		<%= javascript_include_tag "jquery.colorpicker" %>
-		<%= stylesheet_link_tag "colorpicker" %>
-		<%= javascript_include_tag "jquery.ui.colorpicker-nl" %>
-		
- <script type="text/javascript">
-           	$( function() {
-				$('#switcher').themeswitcher();
-
-                $('#cp1').colorpicker({
-					onClose: function(hex, rgba, inst) {
-								console.log('onClose: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
-							},
-					onSelect: function(hex, rgba, inst) {
-								console.log('onSelect: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
-							},
-					showOn: 'both',
-					showSwatches: true,
-					showNoneButton: true,
-					buttonColorize: true,
-					altField: '.cp1-alt',
-					limit: 'websafe',
-					parts: 'full',
-					regional: 'nl',
-					altProperties: 'background-color,color'
-				});
-                $('#cp2').colorpicker({
-					onClose: function(hex, rgba, inst) {
-								console.log('onClose: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
-							},
-					onSelect: function(hex, rgba, inst) {
-								console.log('onSelect: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
-							},
-					showOn: 'both',
-					showSwatches: true,
-					showNoneButton: true,
-					buttonColorize: true,
-					altField: '.cp1-alt',
-					limit: 'websafe',
-					parts: 'full',
-					regional: 'nl',
-					altProperties: 'background-color,color'
-				});
-
-                $('#cp3').colorpicker({
-					onClose: function(hex, rgba, inst) {
-								console.log('onClose: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
-							},
-					onSelect: function(hex, rgba, inst) {
-								console.log('onSelect: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
-							},
-					showOn: 'both',
-					showSwatches: true,
-					showNoneButton: true,
-					buttonColorize: true,
-					altField: '.cp1-alt',
-					limit: 'websafe',
-					parts: 'full',
-					regional: 'nl',
-					altProperties: 'background-color,color'
-				});
-                $('#cp4').colorpicker({
-					onClose: function(hex, rgba, inst) {
-								console.log('onClose: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
-							},
-					onSelect: function(hex, rgba, inst) {
-								console.log('onSelect: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
-							},
-					showOn: 'both',
-					showSwatches: true,
-					showNoneButton: true,
-					buttonColorize: true,
-					altField: '.cp1-alt',
-					limit: 'websafe',
-					parts: 'full',
-					regional: 'nl',
-					altProperties: 'background-color,color'
-				});
-                $('#cp5').colorpicker({
-					onClose: function(hex, rgba, inst) {
-								console.log('onClose: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
-							},
-					onSelect: function(hex, rgba, inst) {
-								console.log('onSelect: '+hex+', ('+rgba.r+','+rgba.g+','+rgba.b+','+rgba.a+')');
-							},
-					showOn: 'both',
-					showSwatches: true,
-					showNoneButton: true,
-					buttonColorize: true,
-					altField: '.cp1-alt',
-					limit: 'websafe',
-					parts: 'full',
-					regional: 'nl',
-					altProperties: 'background-color,color'
-				});
-
-
-
-                var cpb = $('#cp-buttons').colorpicker({
-					showOn: '',
-					parts: ['bar', 'map']
-				});
-				$('#cp-button-open').click( function() {
-					cpb.colorpicker('open');
-				});
-				$('#cp-button-close').click( function() {
-					cpb.colorpicker('close');
-				});
-				$('#cp-button-disable').click( function() {
-					cpb.colorpicker('disable');
-				});
-				$('#cp-button-setcolor').click( function() {
-					cpb.colorpicker('setColor', '#99ff00');
-				});
-            });
-        </script>
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js">
+</script>
+<script src="http://jqueryui.com/themeroller/themeswitchertool/">
+</script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<%= javascript_include_tag "jquery.colorpicker" %>
+<%= stylesheet_link_tag "colorpicker" %>
+<%= javascript_include_tag "jquery.ui.colorpicker-nl" %>
+<script type="text/javascript">
+    $(function(){
+        $('#switcher').themeswitcher();
         
-    </head>
-    <body>
-    	<div class="mainContainer">
-	    	<div class="userEditHolder">	
-		    	<div class="header-section">
-		    		<div class="topHeader">
-		    			<div class="logoHolder"></div>
-		    			<div class="rightPanel">
-		    				<ul>
+        $('#cp1').colorpicker({
+            onClose: function(hex, rgba, inst){
+                console.log('onClose: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            onSelect: function(hex, rgba, inst){
+                console.log('onSelect: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            showOn: 'both',
+            showSwatches: true,
+            showNoneButton: true,
+            buttonColorize: true,
+            altField: '.cp1-alt',
+            limit: 'websafe',
+            parts: 'full',
+            regional: 'nl',
+            altProperties: 'background-color,color'
+        });
+        $('#cp2').colorpicker({
+            onClose: function(hex, rgba, inst){
+                console.log('onClose: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            onSelect: function(hex, rgba, inst){
+                console.log('onSelect: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            showOn: 'both',
+            showSwatches: true,
+            showNoneButton: true,
+            buttonColorize: true,
+            altField: '.cp1-alt',
+            limit: 'websafe',
+            parts: 'full',
+            regional: 'nl',
+            altProperties: 'background-color,color'
+        });
+        
+        $('#cp3').colorpicker({
+            onClose: function(hex, rgba, inst){
+                console.log('onClose: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            onSelect: function(hex, rgba, inst){
+                console.log('onSelect: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            showOn: 'both',
+            showSwatches: true,
+            showNoneButton: true,
+            buttonColorize: true,
+            altField: '.cp1-alt',
+            limit: 'websafe',
+            parts: 'full',
+            regional: 'nl',
+            altProperties: 'background-color,color'
+        });
+        $('#cp4').colorpicker({
+            onClose: function(hex, rgba, inst){
+                console.log('onClose: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            onSelect: function(hex, rgba, inst){
+                console.log('onSelect: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            showOn: 'both',
+            showSwatches: true,
+            showNoneButton: true,
+            buttonColorize: true,
+            altField: '.cp1-alt',
+            limit: 'websafe',
+            parts: 'full',
+            regional: 'nl',
+            altProperties: 'background-color,color'
+        });
+        $('#cp5').colorpicker({
+            onClose: function(hex, rgba, inst){
+                console.log('onClose: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            onSelect: function(hex, rgba, inst){
+                console.log('onSelect: ' + hex + ', (' + rgba.r + ',' + rgba.g + ',' + rgba.b + ',' + rgba.a + ')');
+            },
+            showOn: 'both',
+            showSwatches: true,
+            showNoneButton: true,
+            buttonColorize: true,
+            altField: '.cp1-alt',
+            limit: 'websafe',
+            parts: 'full',
+            regional: 'nl',
+            altProperties: 'background-color,color'
+        });
+        
+        
+        
+        var cpb = $('#cp-buttons').colorpicker({
+            showOn: '',
+            parts: ['bar', 'map']
+        });
+        $('#cp-button-open').click(function(){
+            cpb.colorpicker('open');
+        });
+        $('#cp-button-close').click(function(){
+            cpb.colorpicker('close');
+        });
+        $('#cp-button-disable').click(function(){
+            cpb.colorpicker('disable');
+        });
+        $('#cp-button-setcolor').click(function(){
+            cpb.colorpicker('setColor', '#99ff00');
+        });
+    });
+</script>
 
-		    					<li class="help"></li>
-		    					<li class="myAccount"></li>
-		    					<li class="logout"></li>
-		    				</ul>
-		    			</div>
-		    		</div>
-		    		<div class="main-nav">
-		    			<div class="navBtns">
-		    				<ul>
-
-		    					<li class="siteInfo complete"></li>
-		    					<li class="pages complete"></li>
-		    					<li class="content complete"></li>
-		    					<li class="theme active"></li>
-		    					<li class="optional"></li>
-		    					<li class="done"></li>
-		    				</ul>
-		    			</div>
-		    			<div class="rightBtns">
-
-		    				<button class="btn_External">ext</button>
-		    				<button class="btn_SaveAndGo">Save and go to next step</button>
-		    			</div>
-		    		</div>
-		    	</div>
-		    	<div class="content-section">
-		    		<div class="themes-main">
-		    			<div class="themes-wrapper">
-
-		    				<div class="tabs">
-		    					<ul>
-		    						<li><a href="#">Choose Theme</a></li>
-		    						<li class="active"><a href="#">Choose Base Colors</a></li>
-		    						<li><a href="#">Edit All Styles</a></li>
-		    					</ul>
-		    				</div>
-
-		    				<div class="theme-content" id="content_1" style="display: none">
-		    					
-		    				</div>
-<%=form_for @base_color do |f|%>							
-		    				<div class="theme-content" id="content_2">
-		    					<div class="theme-section">
-		    						<div class="theme-column">
-		    							<div class="colPicker-wrapper">
-		    								<ul>
-		    									<li ><input type="hidden" id="cp1" name="color[]" value="fe9810"/><span class="piller"></span><span class="add"></span></li>
-		    									<li ><input type="hidden" id="cp2" name="color[]" value="fe9810"/><span class="piller"></span><span class="add"></span></li>
-
-		    									<li ><input type="hidden" id="cp3" name="color[]" value="fe9810"/><span class="piller"></span><span class="add"></span></li>
-		    									<li ><input type="hidden" id="cp4" name="color[]" value="fe9810"/><span class="piller"></span><span class="add"></span></li>
-		    									<li ><input type="hidden" id="cp5" name="color[]" value="fe9810"/><span class="piller"></span><span class="add"></span></li>
-		    								</ul>
-		    							</div>
-										
-		    							<div class="variation-wrapper">
-		    								<div class="variation active">
-			    								<ul>
-			    									<li></li>
-
-			    									<li></li>
-			    									<li></li>
-			    									<li></li>
-			    									<li></li>
-			    								</ul>
-			    								<span class="variationTitle">variation 1</span>
-		    								</div>
-		    								<div class="variation">
-
-			    								<ul>
-			    									<li></li>
-			    									<li></li>
-			    									<li></li>
-			    									<li></li>
-			    									<li></li>
-			    								</ul>
-			    								<span class="variationTitle">variation 2</span>
-
-		    								</div>
-		    								<div class="variation">
-			    								<ul>
-			    									<li></li>
-			    									<li></li>
-			    									<li></li>
-			    									<li></li>
-			    									<li></li>
-			    								</ul>
-
-			    								<span class="variationTitle">variation 3</span>
-		    								</div>
-		    							</div>
-		    						</div>
-		    						<div class="theme-column-right">
-		    							<div class="detail-row">
-		    								<span>name :</span>
-		    								<span><%=f.text_field :name%></span>
-
-		    								<span><button class="saveColor" id="saveScheme"></button></span>
-		    							</div>
-		    							<div class="color-schemes">
-		    								<div class="variation-wrapper">
-		    									<%BaseColor.where(:created_by=>current_user.id).order('created_at').limit(4).each do |b_c|%>
-			    								<div class="variation">
-				    								<ul>
-				    									<%b_c.colors.split(';').each do |color|%>
-				    									  <li style="background:none repeat scroll 0	 0 #<%=color%>"></li>
-														<%end%>			   
-													</ul>
-				    								<span class="variationTitle"><%=b_c.name%></span>
-			    								</div>
-												<%end%>
-			    							</div>
-		    								<div class="variation-wrapper">
-												<%BaseColor.where(:created_by=>current_user.id).order('created_at').offset(4).limit(4).each do |b_c|%>
-			    								<div class="variation">
-				    								<ul>
-				    									<%b_c.colors.split(';').each do |color|%>
-				    									  <li style="background:none repeat scroll 0	 0 #<%=color%>"></li>
-														<%end%>			   
-													</ul>
-				    								<span class="variationTitle"><%=b_c.name%></span>
-			    								</div>
-												<%end%>
-
-		    								</div>
-		    							</div>
-		    						</div>
-		    					</div>
-		    				</div>
-<%end%>							
-		    				<div class="theme-content" id="content_3" style="display: none">
-
-		    					
-		    				</div>
-		    			</div>
-		    			<div class="themes-board">
-		    				<div class="grid-board">
-		    					
-		    				</div>
-		    			</div>
-		    			
-		    		</div>
-		    	</div>
-		    	
-	    	</div>
-
+    <div class="themes-main">
+        <div class="themes-wrapper">
+            <%=render '/themes/theme_menu'%>
+            <div class="theme-content" id="content_1" style="display: none">
+            </div>
+            <%=form_for @base_color do |f| %>
+            <div class="theme-content" id="content_2">
+                <div class="theme-section">
+                    <div class="theme-column">
+                        <div class="colPicker-wrapper">
+                            <ul>
+                                <li>
+                                    <input type="hidden" id="cp1" name="color[]" value="fe9810"/><span class="piller"></span>
+                                    <span class="add"></span>
+                                </li>
+                                <li>
+                                    <input type="hidden" id="cp2" name="color[]" value="fe9810"/><span class="piller"></span>
+                                    <span class="add"></span>
+                                </li>
+                                <li>
+                                    <input type="hidden" id="cp3" name="color[]" value="fe9810"/><span class="piller"></span>
+                                    <span class="add"></span>
+                                </li>
+                                <li>
+                                    <input type="hidden" id="cp4" name="color[]" value="fe9810"/><span class="piller"></span>
+                                    <span class="add"></span>
+                                </li>
+                                <li>
+                                    <input type="hidden" id="cp5" name="color[]" value="fe9810"/><span class="piller"></span>
+                                    <span class="add"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="variation-wrapper">
+                            <div class="variation active">
+                                <ul>
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                </ul>
+                                <span class="variationTitle">variation 1</span>
+                            </div>
+                            <div class="variation">
+                                <ul>
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                </ul>
+                                <span class="variationTitle">variation 2</span>
+                            </div>
+                            <div class="variation">
+                                <ul>
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                </ul>
+                                <span class="variationTitle">variation 3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-column-right">
+                        <div class="detail-row">
+                            <span>name :</span>
+                            <span><%=f.text_field :name %></span>
+                            <span>
+                                <button class="saveColor" id="saveScheme">
+                                </button>
+                            </span>
+                        </div>
+                        <div class="color-schemes">
+                            <div class="variation-wrapper">
+                                <%BaseColor.where(:created_by=>current_user.id).order('created_at').limit(4).each do |b_c| %>
+                                <div class="variation">
+                                    <ul>
+                                        <%b_c.colors.split(';').each do |color| %>
+                                        <li style="background:none repeat scroll 0	 0 #<%=color%>">
+                                        </li>
+                                        <%end %>
+                                    </ul>
+                                    <span class="variationTitle"><%=b_c.name %></span>
+                                </div>
+                                <%end %>
+                            </div>
+                            <div class="variation-wrapper">
+                                <%BaseColor.where(:created_by=>current_user.id).order('created_at').offset(4).limit(4).each do |b_c| %>
+                                <div class="variation">
+                                    <ul>
+                                        <%b_c.colors.split(';').each do |color| %>
+                                        <li style="background:none repeat scroll 0	 0 #<%=color%>">
+                                        </li>
+                                        <%end %>
+                                    </ul>
+                                    <span class="variationTitle"><%=b_c.name %></span>
+                                </div>
+                                <%end %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%end %>
+            <div class="theme-content" id="content_3" style="display: none">
+            </div>
         </div>
-    </body>
-</html>
+        <div class="themes-board">
+            <div class="grid-board">
+            </div>
+        </div>
