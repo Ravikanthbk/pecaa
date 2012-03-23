@@ -1,0 +1,13 @@
+<div class="tabs">
+                <ul>
+                    <li <%=request.path == '/themes/choose_theme' ? 'class=active' : ''%>">
+                        <a href="/themes/choose_theme">Choose Theme</a>
+                    </li>
+                    <li <%=request.path == '/base_color/new' ? 'class=active' : ''%>>
+                        <a href="/base_colors/new">Choose Base Colors</a>
+                    </li>
+                    <li <%=request.path == '/themes/new' ? 'class=active' : ''%>>
+                        <a href="/themes/new">Edit All Styles</a>
+                    </li>
+                </ul>
+            </div>

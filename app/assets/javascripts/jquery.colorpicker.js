@@ -208,7 +208,7 @@
 			altProperties:		'background-color',	// comma separated list of any of 'background-color', 'color', 'border-color', 'outline-color'
 			autoOpen:			false,		// Open dialog automatically upon creation
 			buttonColorize:		false,
-			buttonImage:		'assets/images/ui-colorpicker.png',
+			buttonImage:		'/assets/ui-colorpicker.png',
 			buttonImageOnly:	false,
 			buttonText:			null,	// Text on the button and/or title of button image.
 			closeOnOutside:		true,		// Close the dialog when clicking outside the dialog (not for inline)

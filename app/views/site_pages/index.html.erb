@@ -30,13 +30,15 @@
 					</thead>
 					<tbody>
 					  <%@site_pages.each do |sp|%>
-  						<tr id="<%=sp.id%>">
-  							<td class="pageName"><%=sp.name%></td>
-  							<td class="status">
-  							  <a href="<%=site_site_page_path(@site, sp)%>" class="remote_call <%=sp.is_active ? 'on' : 'off' %>"></a>
+  						<tr id="page_<%=sp.id%>">
+  							<td class="pageName" id="<%=sp.id%>"><%=sp.name%></td>
+  							<td class="status" >
+  							  <a href="<%=update_page_site_site_page_path(@site, sp, :site_page=>{:is_active => !(sp.is_active)})%>" class=<%=sp.is_active ? 'on' : 'off' %>></a>
   							</td>
   							<td class="home">
-  							  <input type="radio" checked=<%=sp.is_home_page ? "checked" : "" %> class="styled" name="is_home_page"/>
+  							  <a href="<%=update_page_site_site_page_path(@site, sp, :site_page=>{:is_home_page => true})%>">
+  							    <input type="radio" <%=sp.is_home_page ? 'checked' : '' %> class="styled" name="is_home_page"/>
+  							    </a>
   							</td>
   							<td class="other">Other Info?</td>
   							<td class="misc">
@@ -109,7 +111,7 @@
 
 
 <script type="text/javascript">
-	
+	var rename_url = "<%=rename_page_site_site_pages_path(@site)%>";
 	$(document).ready(function(){
 		$(".pagesTable tbody tr:even").addClass("alt");
 
@@ -130,5 +132,17 @@
     return false;
   });
 	$('a[rel*=facebox]').facebox();
+	
+  $('.pageName').editable(rename_url, editor_options());
+
+  function editor_options(t){
+    return {
+        type      : "text",
+        width     : '120px',
+        height    : '15px',
+        tooltip   : 'Click to edit...',
+        onsubmit  : function(){}
+    }
+  }
 	
 </script>

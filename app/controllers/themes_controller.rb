@@ -1,7 +1,7 @@
 class ThemesController < ApplicationController
   # GET /themes
   # GET /themes.json
-  layout 'pecaa_application'
+  layout 'site'
   def index
     @themes = Theme.all
 

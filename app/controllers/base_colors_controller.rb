@@ -1,7 +1,7 @@
 class BaseColorsController < ApplicationController
   # GET /base_colors
   # GET /base_colors.json
-    layout false
+    layout 'site'
   def index
     @base_colors = BaseColor.all
 
