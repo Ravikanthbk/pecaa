@@ -85,14 +85,6 @@ resources :content_libraries do
 #         :path_names => {:sign_in => "", :sign_out => "logout",:sign_up => "register"}
 
 
-#  get 'uploads/new'
-#  get 'uploads/index'
-#  get 'uploads/show'
-#  get 'uploads/destroy'
-#  match 'uploads/delete', :to => 'uploads#delete'
-#  match 'uploads/show', :to => 'uploads#show'
-
-  resources :uploads
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

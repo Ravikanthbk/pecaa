@@ -878,7 +878,7 @@ button{
 	border: 1px solid #999999;
 	width:245px;
 }
-.main-content .text-block {
+/*.main-content .text-block {
     background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #CCCCCC;
     border-radius: 6px 6px 6px 6px;
@@ -890,6 +890,21 @@ button{
     margin: 40px 150px;
     padding: 20px;
     width: 660px;
+}*/
+.main-content .text-block{
+    margin: 40px;
+    height: 280px;
+    width: 85%;
+    background:#ffffff;
+    border-radius: 6px;
+    border:1px solid #CCCCCC;
+    padding: 20px;
+    font-size:16px;
+    font-weight:bold;
+    color:#333333;
+    -moz-box-shadow: inset 0px 1px 4px #666666;
+    -webkit-box-shadow: inset 0px 1px 4px #666666;
+     box-shadow: inset 0px 1px 4px #666666;
 }
 /* End add Text */
 

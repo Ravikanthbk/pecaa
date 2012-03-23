@@ -1,8 +1,10 @@
-<div class="main-container">
-  <div class="header"><%= @text.text_block_name %></div>
+<style>
+#facebox .content {background: none repeat scroll 0 0 #FFFFFF;border-radius: 4px 4px 4px 4px;display: table;padding: 10px;width: 700px;}
+</style>
+<div class="header"><%= @text.text_block_name %></div>
   <div class="main-content">
     <div class="text-block">
-      <%= @text.description %>
+      <%= raw  @text.description %>
 
     </div>
   </div>
